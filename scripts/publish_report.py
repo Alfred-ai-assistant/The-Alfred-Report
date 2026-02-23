@@ -11,6 +11,7 @@ from weather_skill import get_forecast as get_weather
 from todoist_skill import get_tasks as get_todoist
 from kanban_skill import get_kanban_status as get_kanban
 from ai_news_skill import get_ai_news
+from youtube_skill import get_youtube_updates
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
@@ -59,6 +60,9 @@ def main():
     
     # AI News section
     sections["ai_news"] = get_ai_news()
+    
+    # YouTube section
+    sections["youtube"] = get_youtube_updates()
     
     payload = {
         "schema_version": 1,

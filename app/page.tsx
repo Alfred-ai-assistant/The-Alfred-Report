@@ -113,6 +113,19 @@ export default async function Home() {
                           </div>
                         )}
 
+                        {/* YouTube-specific fields */}
+                        {item.title && item.url && item.channel && !item.source && !item.status && !item.content && (
+                          <div>
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-red-400 hover:text-red-300 mb-2 block hover:underline">
+                              {item.title}
+                            </a>
+                            <div className="text-sm text-gray-500">
+                              <span>{item.channel}</span>
+                              {item.published_at && <span className="ml-4">{item.published_at.split('T')[0]}</span>}
+                            </div>
+                          </div>
+                        )}
+
                         {/* News-specific fields */}
                         {item.title && item.source && !item.status && !item.content && (
                           <div>
