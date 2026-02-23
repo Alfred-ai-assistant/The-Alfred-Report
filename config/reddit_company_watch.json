@@ -1,0 +1,36 @@
+{
+  "companies": [
+    {
+      "company_name": "Netskope",
+      "ticker": null,
+      "aliases": ["Netskope IPO", "Netskope S-1", "SASE", "Zero Trust"],
+      "keywords": [
+        "IPO",
+        "S-1",
+        "valuation",
+        "pricing",
+        "ARR",
+        "funding",
+        "Zero Trust",
+        "SASE",
+        "CIO",
+        "enterprise security"
+      ],
+      "topics": [
+        "ipo_private_markets",
+        "earnings_financials",
+        "partnership",
+        "competitive_landscape",
+        "enterprise_security"
+      ],
+      "subreddit_scopes": [
+        "technology",
+        "cybersecurity",
+        "stocks",
+        "investing",
+        "wallstreetbets"
+      ],
+      "enabled": true
+    }
+  ]
+}
