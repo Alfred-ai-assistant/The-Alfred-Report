@@ -1,13 +1,25 @@
 async function getReport() {
-  const res = await fetch("/alfred-report/latest.json", {
-    cache: "no-store",
-  });
+  try {
+    // Try absolute URL first (for Vercel SSR)
+    const baseUrl = process.env.VERCEL_URL 
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000";
+    
+    const url = `${baseUrl}/alfred-report/latest.json`;
+    const res = await fetch(url, {
+      cache: "no-store",
+    });
 
-  if (!res.ok) {
+    if (!res.ok) {
+      console.error(`Fetch failed: ${res.status} ${res.statusText}`);
+      return null;
+    }
+
+    return res.json();
+  } catch (error) {
+    console.error("Failed to fetch report:", error);
     return null;
   }
-
-  return res.json();
 }
 
 export default async function Home() {
