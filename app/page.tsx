@@ -1,54 +1,37 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-
 export default function Home() {
-  const [report, setReport] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchReport = async () => {
-      try {
-        const res = await fetch('/alfred-report/latest.json');
-        if (res.ok) {
-          const data = await res.json();
-          setReport(data);
-        } else {
-          console.error(`Fetch failed with status ${res.status}`);
-        }
-      } catch (error) {
-        console.error('Failed to fetch report:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchReport();
-  }, []);
-
   return (
     <main className="min-h-screen bg-black text-white p-10">
       <h1 className="text-4xl font-bold mb-6">
         The Alfred Report
       </h1>
-
-      {loading ? (
-        <p className="text-gray-400">Loading...</p>
-      ) : !report ? (
-        <p className="text-gray-400">
-          Report unavailable.
+      <p className="text-gray-400 mb-4">
+        Loading report data...
+      </p>
+      <div id="report-container">
+        <p className="text-sm text-gray-500">
+          Data will load below when JavaScript runs.
         </p>
-      ) : (
-        <>
-          <p className="text-gray-400 mb-4">
-            {report.report_date}
-          </p>
+      </div>
 
-          <pre className="bg-zinc-900 p-4 rounded text-sm overflow-x-auto">
-            {JSON.stringify(report, null, 2)}
-          </pre>
-        </>
-      )}
+      <script dangerouslySetInnerHTML={{__html: `
+        (async () => {
+          try {
+            const res = await fetch('/alfred-report/latest.json');
+            const report = await res.json();
+            const container = document.getElementById('report-container');
+            if (container) {
+              container.innerHTML = '<pre style="background: #27272a; padding: 1rem; border-radius: 0.5rem; font-size: 0.875rem; overflow-x: auto; color: #e4e4e7;">' + 
+                JSON.stringify(report, null, 2) + 
+                '</pre>';
+            }
+          } catch (error) {
+            const container = document.getElementById('report-container');
+            if (container) {
+              container.innerHTML = '<p class="text-red-400">Failed to load report: ' + error.message + '</p>';
+            }
+          }
+        })();
+      `}} />
     </main>
   );
 }
