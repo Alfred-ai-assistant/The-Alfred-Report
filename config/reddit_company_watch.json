@@ -2,7 +2,7 @@
   "companies": [
     {
       "company_name": "Netskope",
-      "ticker": null,
+      "ticker": "NTSK",
       "aliases": ["Netskope IPO", "Netskope S-1", "SASE", "Zero Trust"],
       "keywords": [
         "IPO",
@@ -26,6 +26,38 @@
       "subreddit_scopes": [
         "technology",
         "cybersecurity",
+        "stocks",
+        "investing",
+        "wallstreetbets"
+      ],
+      "enabled": true
+    },
+    {
+      "company_name": "Cerebras Systems",
+      "ticker": null,
+      "aliases": ["Cerebras Systems IPO", "Cerebras Systems S-1", "CS-3", "CS-4"],
+      "keywords": [
+        "IPO",
+        "S-1",
+        "valuation",
+        "pricing",
+        "ARR",
+        "funding",
+        "Wafer Scale Engine",
+        "CS-4",
+        "Inference",
+        "LLM"
+      ],
+      "topics": [
+        "ipo_private_markets",
+        "earnings_financials",
+        "partnership",
+        "competitive_landscape",
+        "enterprise_security"
+      ],
+      "subreddit_scopes": [
+        "technology",
+        "AI",
         "stocks",
         "investing",
         "wallstreetbets"
