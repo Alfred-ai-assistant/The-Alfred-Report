@@ -9,12 +9,12 @@ export default function Home() {
   useEffect(() => {
     const fetchReport = async () => {
       try {
-        const res = await fetch('/alfred-report/latest.json', {
-          cache: 'no-store',
-        });
+        const res = await fetch('/alfred-report/latest.json');
         if (res.ok) {
           const data = await res.json();
           setReport(data);
+        } else {
+          console.error(`Fetch failed with status ${res.status}`);
         }
       } catch (error) {
         console.error('Failed to fetch report:', error);
