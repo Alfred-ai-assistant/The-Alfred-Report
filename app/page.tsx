@@ -97,8 +97,23 @@ export default async function Home() {
                           </p>
                         )}
 
+                        {/* Todoist-specific fields */}
+                        {item.content && (
+                          <div>
+                            <p className="text-gray-300 mb-2">
+                              {item.content}
+                            </p>
+                            {(item.due || item.overdue) && (
+                              <div className="flex gap-4 text-xs text-gray-500">
+                                {item.due && <span>Due: {item.due}</span>}
+                                {item.overdue && <span className="text-red-400 font-semibold">OVERDUE</span>}
+                              </div>
+                            )}
+                          </div>
+                        )}
+
                         {/* Generic fields */}
-                        {!item.temperature && item.summary && (
+                        {!item.temperature && !item.content && item.summary && (
                           <p className="text-gray-400 text-sm">
                             {item.summary}
                           </p>
