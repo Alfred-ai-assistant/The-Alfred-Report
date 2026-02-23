@@ -1,29 +1,30 @@
-async function getReport() {
-  try {
-    // Try absolute URL first (for Vercel SSR)
-    const baseUrl = process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}`
-      : "http://localhost:3000";
-    
-    const url = `${baseUrl}/alfred-report/latest.json`;
-    const res = await fetch(url, {
-      cache: "no-store",
-    });
+'use client';
 
-    if (!res.ok) {
-      console.error(`Fetch failed: ${res.status} ${res.statusText}`);
-      return null;
-    }
+import { useEffect, useState } from 'react';
 
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch report:", error);
-    return null;
-  }
-}
+export default function Home() {
+  const [report, setReport] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-export default async function Home() {
-  const report = await getReport();
+  useEffect(() => {
+    const fetchReport = async () => {
+      try {
+        const res = await fetch('/alfred-report/latest.json', {
+          cache: 'no-store',
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setReport(data);
+        }
+      } catch (error) {
+        console.error('Failed to fetch report:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReport();
+  }, []);
 
   return (
     <main className="min-h-screen bg-black text-white p-10">
@@ -31,7 +32,9 @@ export default async function Home() {
         The Alfred Report
       </h1>
 
-      {!report ? (
+      {loading ? (
+        <p className="text-gray-400">Loading...</p>
+      ) : !report ? (
         <p className="text-gray-400">
           Report unavailable.
         </p>
