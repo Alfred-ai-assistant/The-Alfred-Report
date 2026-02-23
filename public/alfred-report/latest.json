@@ -1,7 +1,91 @@
 {
   "schema_version": 1,
   "report_date": "2026-02-23",
-  "generated_at": "2026-02-23T08:00:00-05:00",
+  "generated_at": "2026-02-23T07:00:00-05:00",
   "timezone": "America/New_York",
-  "sections": {}
+  "sections": {
+    "weather": {
+      "title": "Weather — Arlington, VA",
+      "summary": "Today: Cloudy, high 40°F. Next 3 days show variable conditions with possible precipitation mid-week.",
+      "items": [
+        {
+          "name": "This Afternoon",
+          "temperature": "40°F",
+          "forecast": "Cloudy",
+          "wind": "15 to 18 mph",
+          "wind_direction": "NW",
+          "precipitation_chance": "9%",
+          "details": "Cloudy, with a high near 40. Northwest wind 15 to 18 mph, with gusts as high as 33 mph."
+        },
+        {
+          "name": "Tonight",
+          "temperature": "25°F",
+          "forecast": "Partly Cloudy",
+          "wind": "10 to 15 mph",
+          "wind_direction": "NW",
+          "precipitation_chance": "5%",
+          "details": "Partly cloudy, with a low around 25. Northwest wind 10 to 15 mph, with gusts as high as 26 mph."
+        },
+        {
+          "name": "Tuesday",
+          "temperature": "39°F",
+          "forecast": "Sunny",
+          "wind": "5 to 10 mph",
+          "wind_direction": "W",
+          "precipitation_chance": "2%",
+          "details": "Sunny, with a high near 39. West wind 5 to 10 mph, with gusts as high as 18 mph."
+        },
+        {
+          "name": "Tuesday Night",
+          "temperature": "32°F",
+          "forecast": "Mostly Cloudy then Chance Light Snow",
+          "wind": "2 to 9 mph",
+          "wind_direction": "S",
+          "precipitation_chance": "29%",
+          "details": "A chance of snow between 1am and 4am, then a chance of rain and snow. Mostly cloudy, with a low around 32. South wind 2 to 9 mph, with gusts as high as 18 mph. Chance of precipitation is 30%."
+        },
+        {
+          "name": "Wednesday",
+          "temperature": "54°F",
+          "forecast": "Chance Rain And Snow",
+          "wind": "8 to 12 mph",
+          "wind_direction": "SW",
+          "precipitation_chance": "29%",
+          "details": "A chance of rain and snow before 1pm. Partly sunny, with a high near 54. Southwest wind 8 to 12 mph, with gusts as high as 21 mph. Chance of precipitation is 30%."
+        },
+        {
+          "name": "Wednesday Night",
+          "temperature": "37°F",
+          "forecast": "Partly Cloudy then Slight Chance Light Rain",
+          "wind": "2 to 7 mph",
+          "wind_direction": "W",
+          "precipitation_chance": "16%",
+          "details": "A slight chance of rain after 1am. Partly cloudy, with a low around 37. Chance of precipitation is 20%."
+        },
+        {
+          "name": "Thursday",
+          "temperature": "48°F",
+          "forecast": "Rain Likely",
+          "wind": "2 to 8 mph",
+          "wind_direction": "E",
+          "precipitation_chance": "73%",
+          "details": "Rain likely. Mostly cloudy, with a high near 48. Chance of precipitation is 70%."
+        },
+        {
+          "name": "Thursday Night",
+          "temperature": "34°F",
+          "forecast": "Rain Likely",
+          "wind": "7 mph",
+          "wind_direction": "N",
+          "precipitation_chance": "73%",
+          "details": "Rain likely. Mostly cloudy, with a low around 34. Chance of precipitation is 70%."
+        }
+      ],
+      "meta": {
+        "location": "Arlington, VA (22207)",
+        "source": "National Weather Service (weather.gov)",
+        "updated_at": "2026-02-23T14:40:23.787044"
+      }
+    }
+  }
 }
