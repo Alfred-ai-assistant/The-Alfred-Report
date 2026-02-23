@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 import json
 import os
+import sys
 from datetime import datetime
 from pathlib import Path
+
+# Add scripts dir to path so we can import skills
+sys.path.insert(0, str(Path(__file__).parent))
+from weather_skill import get_forecast as get_weather
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
@@ -37,13 +42,18 @@ def main():
     if not report_date:
         report_date = datetime.now().astimezone().date().isoformat()
 
-    # Placeholder payload for now. Later OpenClaw will populate sections.
+    # Build sections
+    sections = {}
+    
+    # Weather section
+    sections["weather"] = get_weather()
+    
     payload = {
         "schema_version": 1,
         "report_date": report_date,
-        "generated_at": f"{report_date}T08:00:00-05:00",
+        "generated_at": f"{report_date}T07:00:00-05:00",
         "timezone": "America/New_York",
-        "sections": {}
+        "sections": sections
     }
 
     daily_path = DAILY_DIR / f"{report_date}.json"
