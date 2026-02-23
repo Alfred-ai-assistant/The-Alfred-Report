@@ -113,6 +113,33 @@ export default async function Home() {
                           </div>
                         )}
 
+                        {/* Kanban-specific fields */}
+                        {item.status && (
+                          <div>
+                            <div className="flex items-center gap-3 mb-3">
+                              <span className={`font-semibold text-sm px-3 py-1 rounded ${
+                                item.status === 'In progress' ? 'bg-blue-900/50 text-blue-200' :
+                                item.status === 'Ready' ? 'bg-purple-900/50 text-purple-200' :
+                                item.status === 'Backlog' ? 'bg-gray-700 text-gray-100' :
+                                item.status === 'Done' ? 'bg-green-900/50 text-green-200' :
+                                'bg-yellow-900/50 text-yellow-200'
+                              }`}>
+                                {item.status}
+                              </span>
+                              <span className="text-gray-400 text-sm">{item.count} card{item.count !== 1 ? 's' : ''}</span>
+                            </div>
+                            {item.cards && item.cards.length > 0 && (
+                              <div className="space-y-2">
+                                {item.cards.map((card: string, cardIdx: number) => (
+                                  <div key={cardIdx} className="text-sm text-gray-400 pl-4 border-l border-gray-600">
+                                    {card}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
+
                         {/* Generic fields */}
                         {!item.temperature && !item.content && item.summary && (
                           <p className="text-gray-400 text-sm">
