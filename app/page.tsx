@@ -13,19 +13,25 @@ export default function Home() {
         </div>
       </main>
       
-      {/* Client-side JSON loader */}
-      <script async>
+      {/* Client-side JSON loader - use absolute URL */}
+      <script>
         {`
-          fetch('/alfred-report/latest.json')
-            .then(r => r.json())
-            .then(data => {
-              document.getElementById('status').textContent = 'Report for ' + data.report_date;
-              document.getElementById('report').classList.remove('hidden');
-              document.getElementById('json-output').textContent = JSON.stringify(data, null, 2);
-            })
-            .catch(err => {
-              document.getElementById('status').textContent = 'Failed to load: ' + err.message;
-            });
+          (function() {
+            const url = new URL('/alfred-report/latest.json', window.location.origin).href;
+            fetch(url)
+              .then(r => {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json();
+              })
+              .then(data => {
+                document.getElementById('status').textContent = 'Report for ' + data.report_date;
+                document.getElementById('report').classList.remove('hidden');
+                document.getElementById('json-output').textContent = JSON.stringify(data, null, 2);
+              })
+              .catch(err => {
+                document.getElementById('status').textContent = 'Error: ' + err.message;
+              });
+          })();
         `}
       </script>
     </>
