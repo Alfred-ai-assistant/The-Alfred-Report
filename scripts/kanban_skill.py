@@ -35,7 +35,7 @@ def get_kanban_status() -> Dict:
         
         if result.returncode != 0:
             return {
-                "title": "Tech Kanban Board",
+                "title": "Alfred's Tech Build Out",
                 "summary": f"Error fetching kanban status",
                 "items": [],
                 "meta": {
@@ -79,9 +79,9 @@ def get_kanban_status() -> Dict:
                     status_counts[status] += 1
                     status_cards[status].append(title)
         
-        # Build items showing status breakdown
+        # Build items showing status breakdown (skip Impeded or On Hold)
         items = []
-        for status in ["In progress", "Ready", "Backlog", "Impeded or On Hold", "Done"]:
+        for status in ["In progress", "Ready", "Backlog", "Done"]:
             count = status_counts[status]
             cards = status_cards[status]
             
@@ -89,7 +89,7 @@ def get_kanban_status() -> Dict:
             item = {
                 "status": status,
                 "count": count,
-                "cards": cards[:3]  # Show first 3 cards as examples
+                "cards": cards[:5]  # Show up to 5 cards as examples
             }
             items.append(item)
         
@@ -103,7 +103,7 @@ def get_kanban_status() -> Dict:
         summary = f"{total} cards total • {in_progress} in progress • {ready} ready • {backlog} backlog • {done} done"
         
         return {
-            "title": "Tech Kanban Board",
+            "title": "Alfred's Tech Build Out",
             "summary": summary,
             "items": items,
             "meta": {
@@ -119,7 +119,7 @@ def get_kanban_status() -> Dict:
     
     except subprocess.TimeoutExpired:
         return {
-            "title": "Tech Kanban Board",
+            "title": "Alfred's Tech Build Out",
             "summary": "Kanban fetch timed out",
             "items": [],
             "meta": {
@@ -129,7 +129,7 @@ def get_kanban_status() -> Dict:
         }
     except Exception as e:
         return {
-            "title": "Tech Kanban Board",
+            "title": "Alfred's Tech Build Out",
             "summary": f"Failed to fetch kanban status: {str(e)}",
             "items": [],
             "meta": {
