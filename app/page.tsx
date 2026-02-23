@@ -100,10 +100,11 @@ export default async function Home() {
                         {/* Todoist-specific fields */}
                         {item.content && (
                           <div>
-                            <p className="text-gray-300 mb-2">
+                            <p className={`mb-2 ${item.completed ? 'line-through text-gray-500' : 'text-gray-300'}`}>
+                              {item.completed && '✓ '}
                               {item.content}
                             </p>
-                            {(item.due || item.overdue) && (
+                            {!item.completed && (item.due || item.overdue) && (
                               <div className="flex gap-4 text-xs text-gray-500">
                                 {item.due && <span>Due: {item.due}</span>}
                                 {item.overdue && <span className="text-red-400 font-semibold">OVERDUE</span>}
