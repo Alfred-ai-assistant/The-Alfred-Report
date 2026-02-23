@@ -41,7 +41,7 @@ def main():
     payload = {
         "schema_version": 1,
         "report_date": report_date,
-        "generated_at": now_iso_local(),
+        "generated_at": f"{report_date}T08:00:00-05:00",
         "timezone": "America/New_York",
         "sections": {}
     }
