@@ -116,17 +116,26 @@ export default async function Home() {
                         {/* News-specific fields */}
                         {item.title && item.source && !item.status && !item.content && (
                           <div>
-                            <h4 className="font-semibold text-gray-200 mb-2">
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
                               {item.title}
-                            </h4>
-                            {item.summary && (
+                            </a>
+                            {item.why_it_matters && (
                               <p className="text-gray-400 text-sm mb-2">
-                                {item.summary}
+                                {item.why_it_matters}
                               </p>
+                            )}
+                            {item.tags && item.tags.length > 0 && (
+                              <div className="flex gap-2 mb-2">
+                                {item.tags.map((tag: string) => (
+                                  <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
                             )}
                             <div className="flex justify-between text-xs text-gray-500">
                               <span>{item.source}</span>
-                              <span>{item.date}</span>
+                              {item.published_at && <span>{item.published_at.split('T')[0]}</span>}
                             </div>
                           </div>
                         )}
