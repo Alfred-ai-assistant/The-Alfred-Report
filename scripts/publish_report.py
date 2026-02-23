@@ -10,6 +10,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from weather_skill import get_forecast as get_weather
 from todoist_skill import get_tasks as get_todoist
 from kanban_skill import get_kanban_status as get_kanban
+from ai_news_skill import get_ai_news
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
@@ -55,6 +56,9 @@ def main():
     
     # Kanban section
     sections["kanban"] = get_kanban()
+    
+    # AI News section
+    sections["ai_news"] = get_ai_news()
     
     payload = {
         "schema_version": 1,

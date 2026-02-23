@@ -113,6 +113,24 @@ export default async function Home() {
                           </div>
                         )}
 
+                        {/* News-specific fields */}
+                        {item.title && item.source && !item.status && !item.content && (
+                          <div>
+                            <h4 className="font-semibold text-gray-200 mb-2">
+                              {item.title}
+                            </h4>
+                            {item.summary && (
+                              <p className="text-gray-400 text-sm mb-2">
+                                {item.summary}
+                              </p>
+                            )}
+                            <div className="flex justify-between text-xs text-gray-500">
+                              <span>{item.source}</span>
+                              <span>{item.date}</span>
+                            </div>
+                          </div>
+                        )}
+
                         {/* Kanban-specific fields */}
                         {item.status && (
                           <div>
