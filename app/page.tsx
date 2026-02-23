@@ -1,8 +1,7 @@
 async function getReport() {
-  const res = await fetch(
-    "https://the-alfred-report.vercel.app/alfred-report/latest.json",
-    { cache: "no-store" }
-  );
+  const res = await fetch("/alfred-report/latest.json", {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     return null;
