@@ -8,6 +8,7 @@ from pathlib import Path
 # Add scripts dir to path so we can import skills
 sys.path.insert(0, str(Path(__file__).parent))
 from weather_skill import get_forecast as get_weather
+from todoist_skill import get_tasks as get_todoist
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
@@ -47,6 +48,9 @@ def main():
     
     # Weather section
     sections["weather"] = get_weather()
+    
+    # Todoist section
+    sections["todoist"] = get_todoist()
     
     payload = {
         "schema_version": 1,
