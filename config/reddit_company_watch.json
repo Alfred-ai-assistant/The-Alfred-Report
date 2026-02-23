@@ -44,7 +44,9 @@
         "ARR",
         "funding",
         "Wafer Scale Engine",
+        "Wafer-Scale Engine",
         "CS-4",
+        "CS-3",
         "Inference",
         "LLM"
       ],
@@ -63,6 +65,26 @@
         "wallstreetbets"
       ],
       "enabled": true
-    }
+    },
+    {
+      "company_name": "OpenAI",
+      "ticker": null,
+      "aliases": ["OpenAI", "OpenClaw"],
+      "keywords": [
+        "IPO",
+        "OpenClaw",
+        "valuation"
+      ],
+      "topics": [
+        "OpenClaw",
+        "Agents",
+        "AI Agents"
+      ],
+      "subreddit_scopes": [
+        "technology",
+        "wallstreetbets"
+      ],
+      "enabled": true
+    },
   ]
 }
