@@ -12,10 +12,10 @@
           "name": "This Afternoon",
           "temperature": "40°F",
           "forecast": "Cloudy",
-          "wind": "15 to 18 mph",
+          "wind": "17 mph",
           "wind_direction": "NW",
           "precipitation_chance": "9%",
-          "details": "Cloudy, with a high near 40. Northwest wind 15 to 18 mph, with gusts as high as 33 mph."
+          "details": "Cloudy, with a high near 40. Northwest wind around 17 mph, with gusts as high as 33 mph."
         },
         {
           "name": "Tonight",
@@ -84,25 +84,13 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-02-23T15:51:01.753775"
+        "updated_at": "2026-02-23T15:56:09.868290"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "19 outstanding tasks (3 overdue)",
+      "summary": "5 outstanding tasks",
       "items": [
-        {
-          "id": "6g2cmvFPqW5Mf3fc",
-          "content": "For you: getting started with Todoist ([Watch](https://youtu.be/x_Phw6skLxo)) 📽️",
-          "due": "Feb 14",
-          "overdue": true
-        },
-        {
-          "id": "6g2cmvGqfhRgF3Cc",
-          "content": "All about tasks ([Watch](https://youtu.be/3VVTwfjs22w?t=239))",
-          "due": "Feb 15",
-          "overdue": true
-        },
         {
           "id": "6g2cpJh4JfXHVWjh",
           "content": "Make vet appointment for eve",
@@ -110,50 +98,8 @@
           "overdue": false
         },
         {
-          "id": "6g2cmvCj9RpGMv36",
-          "content": "Get Todoist for desktop ([Download](https://www.todoist.com/downloads))",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvGvr865G3R6",
-          "content": "Viewing tasks ([Inbox & Today](https://youtu.be/3VVTwfjs22w?t=719) | [Upcoming](https://youtu.be/3VVTwfjs22w?t=817))",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvGc4WxX4fw6",
-          "content": "Capture: add your first task",
-          "due": "Feb 14 ",
-          "overdue": true
-        },
-        {
           "id": "6g2cpfmq4X9vHQv9",
           "content": "Amazon returns to Whole Foods",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvCQPfjhFXxc",
-          "content": "Clarify: review your Inbox, Today, and Upcoming views",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvMWGR8q8rf6",
-          "content": "Set aside 5 minutes every day to review your Inbox",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvMfw3JwHFc6",
-          "content": "Connect your calendar to see your events with tasks",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvChfVpmwgFc",
-          "content": "Complete: check off tasks as you complete them!",
           "due": "No due date",
           "overdue": false
         },
@@ -164,38 +110,8 @@
           "overdue": false
         },
         {
-          "id": "6g2cmvGWVj6fJ89c",
-          "content": "Organize with projects ([Watch](https://youtu.be/6qbRubRorcs?si=UKwSI-qk35kCu5bk))",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvHRpHqmgpw6",
-          "content": "Add sections ([Watch](https://youtu.be/wkgvyEYfkIo?si=ZNkG1ZRIWsIdAiVm))",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvHVc74MRcm6",
-          "content": "Discover layouts ([List](https://www.todoist.com/help/articles/use-the-list-layout-in-todoist-AMAhHMVRH) | [Board](https://www.todoist.com/help/articles/use-the-board-layout-in-todoist-AiAVsyEI) | [Calendar](https://www.todoist.com/help/articles/use-the-calendar-layout-in-todoist-lPHRQTu0o))",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvGr9HvcJMQ6",
-          "content": "Turn any email into a task ([Read](https://www.todoist.com/help/articles/forward-emails-to-todoist-JPJ1V339) | [get it](https://www.todoist.com/integrations/category/email))",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
           "id": "6g3hwPFvcQgmFvgh",
           "content": "Amazon return to UPS - Lee Hwy",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g2cmvH3xMHp23vc",
-          "content": "Receive monthly Todoist inspiration ([Subscribe](https://www.todoist.com/inspiration?_gl=1*h8sfre*_gcl_au*MTY2MDY1ODU0Mi4xNzU1MjY3NjM4*_ga*NDM0NDA1Nzk3LjE3Mzc0ODE2ODY.*_ga_L1YQDZCTV5*czE3NTYzODA3NDEkbzM5OSRnMSR0MTc1NjM4MzA3NyRqNTkkbDAkaDA.))",
           "due": "No due date",
           "overdue": false
         },
@@ -208,9 +124,9 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-02-23T15:51:03.818990",
-        "task_count": 19,
-        "overdue_count": 3
+        "updated_at": "2026-02-23T15:56:10.233008",
+        "task_count": 5,
+        "overdue_count": 0
       }
     }
   }

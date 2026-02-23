@@ -47,10 +47,10 @@ def get_tasks() -> Dict:
         # Parse human-readable output
         lines = result.stdout.strip().split('\n')
         
-        # Extract task count from first line
+        # Extract task count from first line (will be adjusted after filtering)
         first_line = lines[0] if lines else ""
         match = re.search(r'(\d+)\s+task', first_line)
-        total_count = int(match.group(1)) if match else 0
+        _raw_count = int(match.group(1)) if match else 0
         
         # Parse each task line (format: [ID] Title... due: DATE)
         items = []
@@ -67,6 +67,10 @@ def get_tasks() -> Dict:
                 content = task_match.group(2).strip()
                 due_date = task_match.group(3) if task_match.group(3) else "No due date"
                 
+                # Skip tutorial/template tasks
+                if _is_tutorial_task(content):
+                    continue
+                
                 # Check if overdue (simple heuristic: if due date is in the past)
                 is_overdue = _is_overdue(due_date)
                 if is_overdue:
@@ -80,7 +84,8 @@ def get_tasks() -> Dict:
                 }
                 items.append(item)
         
-        # Build summary
+        # Build summary (use actual item count after filtering tutorials)
+        total_count = len(items)
         if overdue_count > 0:
             summary = f"{total_count} outstanding tasks ({overdue_count} overdue)"
         else:
@@ -125,6 +130,27 @@ def _is_overdue(due_str: str) -> bool:
         # These dates are in the past (current date is Feb 23, 2026)
         return True
     return False
+
+def _is_tutorial_task(content: str) -> bool:
+    """Filter out Todoist tutorial/template tasks"""
+    tutorial_keywords = [
+        "getting started with todoist",
+        "all about tasks",
+        "get todoist for desktop",
+        "viewing tasks",
+        "capture: add your first task",
+        "clarify: review your",
+        "set aside 5 minutes",
+        "connect your calendar",
+        "complete: check off tasks",
+        "organize with projects",
+        "add sections",
+        "discover layouts",
+        "turn any email",
+        "receive monthly todoist",
+    ]
+    content_lower = content.lower()
+    return any(keyword in content_lower for keyword in tutorial_keywords)
 
 if __name__ == "__main__":
     import json
