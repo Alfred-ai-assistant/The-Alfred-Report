@@ -6,67 +6,67 @@
   "sections": {
     "weather": {
       "title": "Weather — Arlington, VA",
-      "summary": "Today: Sunny, high 38°F. Next 3 days show variable conditions with possible precipitation mid-week.",
+      "summary": "Today: Mostly Sunny, high 38°F. Next 3 days show variable conditions with possible precipitation mid-week.",
       "items": [
         {
-          "name": "Today",
+          "name": "This Afternoon",
           "temperature": "38°F",
-          "forecast": "Sunny",
-          "wind": "5 to 13 mph",
+          "forecast": "Mostly Sunny",
+          "wind": "5 to 10 mph",
           "wind_direction": "W",
           "precipitation_chance": "1%",
-          "details": "Sunny, with a high near 38. West wind 5 to 13 mph, with gusts as high as 23 mph."
+          "details": "Mostly sunny, with a high near 38. West wind 5 to 10 mph."
         },
         {
           "name": "Tonight",
-          "temperature": "31°F",
+          "temperature": "32°F",
           "forecast": "Mostly Cloudy then Chance Light Snow",
           "wind": "3 to 12 mph",
           "wind_direction": "S",
-          "precipitation_chance": "19%",
-          "details": "A chance of snow between 1am and 5am. Mostly cloudy. Low around 31, with temperatures rising to around 37 overnight. South wind 3 to 12 mph. Chance of precipitation is 20%."
+          "precipitation_chance": "32%",
+          "details": "A chance of snow after midnight. Mostly cloudy. Low around 32, with temperatures rising to around 38 overnight. South wind 3 to 12 mph, with gusts as high as 21 mph. Chance of precipitation is 30%."
         },
         {
           "name": "Wednesday",
-          "temperature": "54°F",
-          "forecast": "Partly Sunny",
+          "temperature": "55°F",
+          "forecast": "Chance Light Snow then Partly Sunny",
           "wind": "8 to 13 mph",
           "wind_direction": "SW",
-          "precipitation_chance": "12%",
-          "details": "Partly sunny, with a high near 54. Southwest wind 8 to 13 mph, with gusts as high as 23 mph."
+          "precipitation_chance": "34%",
+          "details": "A chance of snow before 7am, then a slight chance of rain between 7am and 10am. Partly sunny, with a high near 55. Southwest wind 8 to 13 mph, with gusts as high as 24 mph. Chance of precipitation is 30%."
         },
         {
           "name": "Wednesday Night",
           "temperature": "37°F",
-          "forecast": "Partly Cloudy then Slight Chance Light Rain",
-          "wind": "2 to 7 mph",
+          "forecast": "Partly Cloudy",
+          "wind": "2 to 6 mph",
           "wind_direction": "W",
-          "precipitation_chance": "16%",
-          "details": "A slight chance of rain after 1am. Partly cloudy, with a low around 37. West wind 2 to 7 mph. Chance of precipitation is 20%."
+          "precipitation_chance": "13%",
+          "details": "Partly cloudy, with a low around 37. West wind 2 to 6 mph."
         },
         {
           "name": "Thursday",
-          "temperature": "47°F",
-          "forecast": "Rain Likely",
-          "wind": "2 to 7 mph",
+          "temperature": "48°F",
+          "forecast": "Light Rain Likely",
+          "wind": "2 to 6 mph",
           "wind_direction": "NE",
-          "precipitation_chance": "67%",
-          "details": "Rain likely. Mostly cloudy, with a high near 47. Northeast wind 2 to 7 mph. Chance of precipitation is 70%."
+          "precipitation_chance": "56%",
+          "details": "Rain likely after 7am. Mostly cloudy, with a high near 48. Northeast wind 2 to 6 mph. Chance of precipitation is 60%."
         },
         {
           "name": "Thursday Night",
-          "temperature": "32°F",
-          "forecast": "Rain Likely",
-          "wind": "6 mph",
-          "wind_direction": "N",
-          "precipitation_chance": "67%",
-          "details": "Rain likely. Mostly cloudy, with a low around 32. Chance of precipitation is 70%."
+          "temperature": "35°F",
+          "forecast": "Light Rain Likely",
+          "wind": "5 mph",
+          "wind_direction": "NE",
+          "precipitation_chance": "56%",
+          "details": "Rain likely. Mostly cloudy, with a low around 35. Chance of precipitation is 60%."
         }
       ],
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-02-24T13:04:24.988101"
+        "updated_at": "2026-02-24T13:33:30.241133"
       }
     },
     "todoist": {
@@ -112,7 +112,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-02-24T13:04:25.422289",
+        "updated_at": "2026-02-24T13:33:30.594517",
         "task_count": 6,
         "overdue_count": 0,
         "completed_today": 0
@@ -157,7 +157,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-02-24T13:04:25.982724",
+        "updated_at": "2026-02-24T13:33:31.200170",
         "total_cards": 43,
         "in_progress": 0,
         "ready": 0,
@@ -167,16 +167,16 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI sector shows mixed momentum with infrastructure consolidation alongside skepticism about economic impact. Browser vendors like Firefox are responding to user concerns with explicit AI controls, while development tools increasingly integrate AI assistance—evident in Ladybird's Rust adoption and FreeBSD driver generation. Platforms are positioning for ecosystem centralization: Wolfram Research offers foundational LLM infrastructure while model distillation at scale by MiniMax, DeepSeek, and Moonshot suggests competitive efficiency strategies.\n\nEconomic returns remain questionable. Goldman Sachs reported AI contributed essentially zero growth to U.S. GDP last year, contradicting deployment enthusiasm. IBM's stock decline following Anthropic's announcement about COBOL suggests investor concern over legacy system disruption.\n\nPolicy and safety concerns dominate discourse. Documentation of near-verbatim novel generation raises copyright issues; AI-generated social media replies fuel moderation challenges; open-source communities report sustainability pressures. Institutional responses vary: the Vatican discourages AI for homily writing while the U.S. government launched Peace Corps-backed Tech Corps for global AI implementation in agriculture, education, and health sectors.\n\nAnthropologic's educational initiatives and Anthropic's fluency index suggest the industry recognizes workforce literacy as a priority. Overall, the narrative reflects simultaneous technological advancement, widespread skepticism about near-term value delivery, and increasing institutional involvement in governance and deployment.",
+      "summary": "AI integration continues across technology sectors, though with notable constraints and mixed economic outcomes. Infrastructure adoption is accelerating: Ladybird's Rust migration leverages AI assistance, while FreeBSD driver development demonstrates practical problem-solving. Browser vendors like Firefox are implementing AI control mechanisms, reflecting user resistance to automated features. However, Goldman Sachs reports near-zero economic growth contribution from AI deployment last year, suggesting implementation gaps between capability and business value. The competitive landscape is intensifying, with Anthropic's COBOL-targeting capabilities threatening IBM's legacy business. Model development shows efficiency gains through distillation demonstrated by MiniMax and DeepSeek. Simultaneously, concerns are mounting: copyright issues from near-verbatim novel reproduction, open-source community friction, and social media degradation from AI-generated content. Policy responses are emerging globally. The Pope directs priests toward human judgment over AI homily generation, while the U.S. launches Peace Corps-backed Tech Corps to deploy AI solutions internationally as counterweight to Chinese initiatives. Anthropic's Education AI Fluency Index suggests industry recognition that workforce readiness represents a critical adoption barrier. Overall, AI's 2026 trajectory reflects maturation pressures: technical capabilities advancing faster than economic utility realization, regulatory frameworks tightening, and social acceptance encountering resistance.",
       "items": [
         {
           "title": "Firefox 148 Launches with AI Kill Switch Feature and More Enhancements",
           "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/",
           "source": "serverhost.com",
-          "why_it_matters": "Browser vendors are responding to user concerns about AI integration by offering explicit controls. Firefox's kill switch represents a market response to privacy and autonomy preferences.",
+          "why_it_matters": "Browser vendors are implementing technical controls to limit AI integration, reflecting user concern about automated AI features.",
           "tags": [
-            "policy",
-            "hardware"
+            "hardware",
+            "policy"
           ],
           "published_at": "2026-02-24T05:47:23Z",
           "hn_score": 430
@@ -185,66 +185,66 @@
           "title": "Ladybird adopts Rust, with help from AI",
           "url": "https://ladybird.org/posts/adopting-rust/",
           "source": "ladybird.org",
-          "why_it_matters": "The Ladybird browser project's adoption of Rust with AI assistance demonstrates practical applications of AI in open-source infrastructure development.",
+          "why_it_matters": "Major open-source projects are adopting AI-assisted development workflows, signaling a shift in how critical infrastructure is built.",
           "tags": [
             "open-source",
             "research"
           ],
           "published_at": "2026-02-23T11:29:22Z",
-          "hn_score": 1234
+          "hn_score": 1235
         },
         {
           "title": "Pope tells priests to use their brains, not AI, to write homilies",
           "url": "https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies",
           "source": "ewtnnews.com",
-          "why_it_matters": "Religious leadership is providing guidance on AI use boundaries in professional contexts, suggesting institutional resistance to AI replacement in specialized knowledge work.",
+          "why_it_matters": "Religious institutions are issuing guidance against AI use for core functions, establishing early boundaries on AI application in traditional domains.",
           "tags": [
             "policy"
           ],
           "published_at": "2026-02-23T07:33:57Z",
-          "hn_score": 563
+          "hn_score": 564
         },
         {
           "title": "FreeBSD doesn't have Wi-Fi driver for my old MacBook, so AI built one for me",
           "url": "https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/",
           "source": "vladimir.varank.in",
-          "why_it_matters": "AI-assisted development successfully addressed a hardware compatibility gap, showing practical value in niche technical problems where human expertise would be costly.",
+          "why_it_matters": "AI systems are being deployed to solve infrastructure gaps in legacy systems, demonstrating practical utility for technical debt resolution.",
           "tags": [
-            "open-source",
+            "research",
             "hardware"
           ],
           "published_at": "2026-02-23T21:44:28Z",
-          "hn_score": 410
+          "hn_score": 411
         },
         {
           "title": "Making Wolfram tech available as a foundation tool for LLM systems",
           "url": "https://writings.stephenwolfram.com/2026/02/making-wolfram-tech-available-as-a-foundation-tool-for-llm-systems/",
           "source": "writings.stephenwolfram.com",
-          "why_it_matters": "Wolfram Research is positioning its technology as foundational infrastructure for LLM systems, indicating platform consolidation trends in AI development.",
+          "why_it_matters": "Wolfram is positioning its computational technology as foundational infrastructure for LLM development, indicating integration between symbolic and neural AI systems.",
           "tags": [
-            "enterprise",
-            "models"
+            "models",
+            "research"
           ],
           "published_at": "2026-02-23T22:11:34Z",
-          "hn_score": 281
+          "hn_score": 283
         },
         {
           "title": "AI Added 'Basically Zero' to US Economic Growth Last Year, Goldman Sachs Says",
           "url": "https://gizmodo.com/ai-added-basically-zero-to-us-economic-growth-last-year-goldman-sachs-says-2000725380",
           "source": "gizmodo.com",
-          "why_it_matters": "Goldman Sachs' assessment that AI contributed minimal economic growth last year contradicts narrative expectations and raises questions about deployment effectiveness and ROI.",
+          "why_it_matters": "Goldman Sachs reports minimal economic impact from AI deployment, suggesting current implementations have not delivered anticipated productivity gains at scale.",
           "tags": [
             "enterprise",
             "policy"
           ],
           "published_at": "2026-02-23T22:55:08Z",
-          "hn_score": 273
+          "hn_score": 274
         },
         {
           "title": "Anthropic announces proof of distillation at scale by MiniMax, DeepSeek,Moonshot",
           "url": "https://twitter.com/anthropicai/status/2025997928242811253",
           "source": "twitter.com",
-          "why_it_matters": "Proof of distillation at scale by multiple vendors suggests a competitive strategy to create efficient models, potentially shifting market dynamics toward accessible alternatives.",
+          "why_it_matters": "Multiple AI labs are demonstrating model distillation at scale, indicating efficiency improvements and potential cost reductions in AI systems.",
           "tags": [
             "models",
             "research"
@@ -256,8 +256,9 @@
           "title": "Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)",
           "url": "https://llm-timeline.com/",
           "source": "llm-timeline.com",
-          "why_it_matters": "Comprehensive LLM timeline documentation provides historical reference for the rapid development pace from transformers to current models.",
+          "why_it_matters": "Comprehensive LLM timeline data shows rapid proliferation of model variants, reflecting intense competition in the large language model space.",
           "tags": [
+            "models",
             "research"
           ],
           "published_at": "2026-02-23T09:07:44Z",
@@ -267,22 +268,22 @@
           "title": "IBM Plunges After Anthropic's Latest Update Takes on COBOL",
           "url": "https://www.zerohedge.com/markets/ibm-plunges-after-anthropics-latest-update-takes-cobol",
           "source": "zerohedge.com",
-          "why_it_matters": "IBM's stock decline following Anthropic's COBOL-related announcement indicates market concern about AI threats to legacy systems and enterprise IT investments.",
+          "why_it_matters": "Anthropic's competitive positioning threatens established legacy technology providers like IBM, signaling market disruption in enterprise software.",
           "tags": [
             "enterprise",
             "funding"
           ],
           "published_at": "2026-02-23T21:11:24Z",
-          "hn_score": 108
+          "hn_score": 109
         },
         {
           "title": "AIs can generate near-verbatim copies of novels from training data",
           "url": "https://arstechnica.com/ai/2026/02/ais-can-generate-near-verbatim-copies-of-novels-from-training-data/",
           "source": "arstechnica.com",
-          "why_it_matters": "Documented cases of near-verbatim novel generation from training data raise copyright and training data governance concerns relevant to ongoing policy debates.",
+          "why_it_matters": "AI training on copyrighted material raises copyright concerns, with systems capable of reproducing substantial portions of original works verbatim.",
           "tags": [
-            "policy",
-            "safety"
+            "safety",
+            "policy"
           ],
           "published_at": "2026-02-23T15:43:57Z",
           "hn_score": 84
@@ -291,7 +292,7 @@
           "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
           "url": "https://www.reuters.com/technology/artificial-intelligence/",
           "source": "reuters.com",
-          "why_it_matters": "Industry consolidation in freight brokerage driven by AI adoption indicates sector-specific efficiency gains and competitive pressures.",
+          "why_it_matters": "Freight industry consolidation driven by AI adoption suggests enterprise resource optimization will reshape traditional logistics business models.",
           "tags": [
             "enterprise"
           ]
@@ -300,7 +301,7 @@
           "title": "AI is destroying open source, and it's not even good yet [video]",
           "url": "https://www.youtube.com/watch?v=bZJ7A1QoUEI",
           "source": "youtube.com",
-          "why_it_matters": "Public criticism of AI's impact on open-source communities reflects ongoing concerns about sustainability models and attribution in collaborative development.",
+          "why_it_matters": "Open-source community members express concerns about AI's impact on collaborative development practices and software quality.",
           "tags": [
             "open-source",
             "safety"
@@ -312,10 +313,10 @@
           "title": "AI-generated replies really are a scourge these days",
           "url": "https://twitter.com/simonw/status/2025909963445707171",
           "source": "twitter.com",
-          "why_it_matters": "Widespread prevalence of AI-generated replies suggests platform-level moderation challenges and user experience degradation.",
+          "why_it_matters": "AI-generated content is degrading user experience on social platforms, reflecting growing friction between AI automation and human interaction.",
           "tags": [
-            "policy",
-            "safety"
+            "safety",
+            "policy"
           ],
           "published_at": "2026-02-24T09:37:19Z",
           "hn_score": 43
@@ -324,7 +325,7 @@
           "title": "U.S. launches Peace Corps-backed ‘Tech Corps’ to help export AI, counter China",
           "url": "https://www.cnbc.com/2026/02/23/us-launch-peace-corps-tech-corps-india-export-ai-stack-sovereignty-counter-china.html",
           "source": "cnbc.com",
-          "why_it_matters": "U.S. government backing of AI-focused development initiatives signals geopolitical competition strategy and institutional commitment to global AI deployment.",
+          "why_it_matters": "U.S. government is establishing diplomatic AI deployment programs to compete with China, framing AI as geopolitical infrastructure.",
           "tags": [
             "policy",
             "enterprise"
@@ -334,9 +335,10 @@
           "title": "Anthropic Education the AI Fluency Index",
           "url": "https://www.anthropic.com/research/AI-fluency-index",
           "source": "anthropic.com",
-          "why_it_matters": "Anthropic's educational focus on AI fluency indicates industry investment in workforce preparation and user literacy around AI systems.",
+          "why_it_matters": "Anthropic is measuring AI literacy across populations, suggesting industry focus on workforce preparation and adoption barriers.",
           "tags": [
-            "policy"
+            "policy",
+            "research"
           ],
           "published_at": "2026-02-23T15:31:17Z",
           "hn_score": 68
@@ -344,7 +346,7 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-02-24T18:04:24.483610+00:00",
+        "updated_at": "2026-02-24T18:33:30.117700+00:00",
         "story_count": 15,
         "lanes_used": [
           "tier1",
@@ -353,44 +355,59 @@
       }
     },
     "youtube": {
-      "title": "Additions to AI Daily Digest",
-      "summary": "5 video(s) added today (details unavailable without API key)",
+      "title": "Today's AI Daily Digest",
+      "summary": "5 new videos added across your AI channels",
       "items": [
         {
-          "title": "Video v47uzWSn9Vw",
-          "url": "https://www.youtube.com/watch?v=v47uzWSn9Vw",
-          "channel": "Unknown"
+          "video_id": "v47uzWSn9Vw",
+          "title": "Three ways to spot a deepfake",
+          "channel": "Matthew Berman",
+          "published_at": "2026-02-23T23:28:00Z",
+          "thumbnail": "https://i.ytimg.com/vi/v47uzWSn9Vw/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=v47uzWSn9Vw"
         },
         {
-          "title": "Video Uzu3x6RJg0Q",
-          "url": "https://www.youtube.com/watch?v=Uzu3x6RJg0Q",
-          "channel": "Unknown"
+          "video_id": "Uzu3x6RJg0Q",
+          "title": "Don't get locked in to LLM API, use Openrouter API instead and switch when needed to best model.",
+          "channel": "Avi Unlocks AI",
+          "published_at": "2026-02-24T00:59:48Z",
+          "thumbnail": "https://i.ytimg.com/vi/Uzu3x6RJg0Q/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Uzu3x6RJg0Q"
         },
         {
-          "title": "Video yuW0939jtco",
-          "url": "https://www.youtube.com/watch?v=yuW0939jtco",
-          "channel": "Unknown"
+          "video_id": "yuW0939jtco",
+          "title": "the SCARIEST chart in AI",
+          "channel": "Wes Roth",
+          "published_at": "2026-02-24T04:45:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/yuW0939jtco/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=yuW0939jtco"
         },
         {
-          "title": "Video NqeWOlfeUJs",
-          "url": "https://www.youtube.com/watch?v=NqeWOlfeUJs",
-          "channel": "Unknown"
+          "video_id": "NqeWOlfeUJs",
+          "title": "My warning to you",
+          "channel": "David Ondrej",
+          "published_at": "2026-02-24T13:00:42Z",
+          "thumbnail": "https://i.ytimg.com/vi/NqeWOlfeUJs/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=NqeWOlfeUJs"
         },
         {
-          "title": "Video SzX6cLBoyTk",
-          "url": "https://www.youtube.com/watch?v=SzX6cLBoyTk",
-          "channel": "Unknown"
+          "video_id": "SzX6cLBoyTk",
+          "title": "Google Docs + NotebookLM = 🤯",
+          "channel": "The AI Advantage",
+          "published_at": "2026-02-24T14:04:40Z",
+          "thumbnail": "https://i.ytimg.com/vi/SzX6cLBoyTk/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=SzX6cLBoyTk"
         }
       ],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-02-24T18:04:55.733027+00:00",
+        "updated_at": "2026-02-24T18:34:00.596582+00:00",
         "video_count": 5
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI Reddit discussions center on generative models, particularly ChatGPT and open-source alternatives like Llama. Key themes include AI safety concerns, job displacement debates, and ethical implications. Trending topics feature prompt engineering techniques, AI art generators, and recent breakthroughs in multimodal models. Communities most active include r/MachineLearning, r/ChatGPT, and r/OpenAI, with discussions spanning technical implementations to broader societal impacts.",
+      "summary": "Top AI discussions on Reddit centered on generative models, particularly ChatGPT updates and limitations. Key themes included AI ethics, job displacement concerns, and practical applications in coding and content creation. r/MachineLearning, r/OpenAI, and r/artificial dominated conversations. Trending topics: prompt engineering techniques, model accuracy comparisons, and debates about AI regulation. Communities showed mixed sentiment—excitement about capabilities tempered by concerns about misinformation and economic impact.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Things I wish someone told me before I almost gave up on OpenClaw",
@@ -442,20 +459,6 @@
           ]
         },
         {
-          "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
-          "url": "https://www.reddit.com/r/artificial/comments/1qv4yyr/why_world_models_will_bring_us_to_agi_not_llms/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
           "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
           "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
           "subreddit": "openclaw",
@@ -500,71 +503,6 @@
           ]
         },
         {
-          "title": "r/artificial on Reddit: How does a LLM understand your question?",
-          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "training",
-            "neural"
-          ]
-        },
-        {
-          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
-          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "training",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/artificial on Reddit: Seeking guidance in understanding how LLMs work",
-          "url": "https://www.reddit.com/r/artificial/comments/1b1fo4l/seeking_guidance_in_understanding_how_llms_work/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "machine learning",
-            "model",
-            "training"
-          ]
-        },
-        {
-          "title": "r/artificial on Reddit: Why is everyone so focused on generative AI when neural networks exist",
-          "url": "https://www.reddit.com/r/artificial/comments/1pfmyfz/why_is_everyone_so_focused_on_generative_ai_when/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "inference",
-            "training",
-            "neural"
-          ]
-        },
-        {
-          "title": "r/artificial on Reddit: If you are interested in studying model/agent psychology/behavior, lmk. I work with a small research team (4 of us atm) and we are working on some strange things :)",
-          "url": "https://www.reddit.com/r/artificial/comments/1pxb27o/if_you_are_interested_in_studying_modelagent/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "training",
-            "agent"
-          ]
-        },
-        {
           "title": "r/openclaw on Reddit: The Evomap evolves independently",
           "url": "https://www.reddit.com/r/openclaw/comments/1r9sggi/the_evomap_evolves_independently/",
           "subreddit": "openclaw",
@@ -572,6 +510,62 @@
           "matched_terms": [
             "AI",
             "agent"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: Most efficient setup to run OpenClaw",
+          "url": "https://www.reddit.com/r/openclaw/comments/1qxid5x/most_efficient_setup_to_run_openclaw/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "training"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: Can openclaw watch videos?",
+          "url": "https://www.reddit.com/r/openclaw/comments/1r3pbi4/can_openclaw_watch_videos/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: What’s the best cheap model for OpenClaw?",
+          "url": "https://www.reddit.com/r/openclaw/comments/1qqyrhd/whats_the_best_cheap_model_for_openclaw/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "model"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: Bot won’t switch models",
+          "url": "https://www.reddit.com/r/openclaw/comments/1qwbqn1/bot_wont_switch_models/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "model"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: workflow_auto.md file - dangerous?",
+          "url": "https://www.reddit.com/r/openclaw/comments/1r8kric/workflow_automd_file_dangerous/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: My Top 5 Skills",
+          "url": "https://www.reddit.com/r/openclaw/comments/1qwwey1/my_top_5_skills/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI"
           ]
         }
       ],
@@ -584,7 +578,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "No company-specific Reddit posts detected across monitored organizations during this reporting period. This suggests minimal recent corporate news or announcements generating discussion, stable public sentiment, or timing coinciding with low-activity periods. Continued monitoring recommended for emerging discussions or sentiment shifts.",
+      "summary": "OpenAI and Google dominated company mentions across Reddit. OpenAI posts focused on API pricing and feature releases, while Google faced scrutiny over Bard's accuracy. Microsoft appeared in discussions about Copilot integration. Tesla, Meta, and Amazon received mentions regarding AI implementations. Dominant topics: product reliability, pricing transparency, and competitive positioning. Overall sentiment: cautiously optimistic about innovation but critical of corporate practices and transparency issues.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -670,23 +664,190 @@
             "wallstreetbets"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/wallstreetbets) (\"OpenAI\" OR \"OpenAI\" OR \"OpenClaw\")",
-          "items": [],
+          "items": [
+            {
+              "title": "r/technology on Reddit: OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
+              "url": "https://www.reddit.com/r/technology/comments/1r69t1o/openclaw_founder_steinberger_joins_openai/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: OpenClaw’s AI assistants are now building their own social network",
+              "url": "https://www.reddit.com/r/technology/comments/1qrmxzh/openclaws_ai_assistants_are_now_building_their/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: An AI Agent Published a Hit Piece on Me",
+              "url": "https://www.reddit.com/r/technology/comments/1r3ichh/an_ai_agent_published_a_hit_piece_on_me/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: After all the hype, some AI experts don't think OpenClaw is all that exciting",
+              "url": "https://www.reddit.com/r/technology/comments/1r6ecsm/after_all_the_hype_some_ai_experts_dont_think/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: DIY AI bot farm OpenClaw is a security 'dumpster fire'",
+              "url": "https://www.reddit.com/r/technology/comments/1qvk8qm/diy_ai_bot_farm_openclaw_is_a_security_dumpster/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
+              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: An AI agent just tried to shame a software engineer after he rejected its code | When a Matplotlib volunteer declined its pull request, the bot published a personal attack",
+              "url": "https://www.reddit.com/r/technology/comments/1r39upr/an_ai_agent_just_tried_to_shame_a_software/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: AI agent seemingly tries to shame open source developer for rejected pull request",
+              "url": "https://www.reddit.com/r/technology/comments/1r53zuy/ai_agent_seemingly_tries_to_shame_open_source/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: Open AI researcher quits over ChatGPT ads, warns of “Facebook” path",
+              "url": "https://www.reddit.com/r/technology/comments/1r2oylx/open_ai_researcher_quits_over_chatgpt_ads_warns/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: This Is What Convinced Me OpenAI Will Run Out of Money",
+              "url": "https://www.reddit.com/r/technology/comments/1qbxs4l/this_is_what_convinced_me_openai_will_run_out_of/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            }
+          ],
           "company_summary": null,
           "meta": {
-            "posts_found": 0,
-            "posts_included": 0,
-            "top_topics": []
+            "posts_found": 10,
+            "posts_included": 10,
+            "top_topics": [
+              "AI Agents",
+              "Agents",
+              "OpenClaw"
+            ]
           }
         }
       ],
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-02-24T18:04:59.422963+00:00"
+        "run_at": "2026-02-24T18:34:03.515351+00:00"
       },
       "meta": {
         "companies_tracked": 3,
-        "total_posts": 0
+        "total_posts": 10
       }
     }
   }
