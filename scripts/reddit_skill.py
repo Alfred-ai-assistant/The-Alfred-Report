@@ -16,9 +16,15 @@ import yaml
 import urllib.request
 import urllib.parse
 import re
+import sys
+from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from typing import Dict, List
 from collections import defaultdict
+
+# Add scripts dir to path
+sys.path.insert(0, str(Path(__file__).parent))
+from cache_util import get_cached, save_cache, hash_data
 
 BRAVE_API_KEY = os.environ.get("BRAVE_API_KEY", "")
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
@@ -281,9 +287,23 @@ def get_company_reddit_watch() -> Dict:
 # ── LLM Summaries ─────────────────────────────────────────────────────────────
 
 def add_summaries(ai_trending: Dict, company_watch: Dict) -> tuple:
-    """One bounded haiku call to generate summaries for both sections."""
+    """One bounded haiku call to generate summaries for both sections.
+    Uses cache to avoid re-running on same data."""
     
     if not ANTHROPIC_KEY:
+        return ai_trending, company_watch
+    
+    # Check cache first
+    today = datetime.now(timezone.utc).date().isoformat()
+    source_data = {
+        "ai_urls": [item["url"] for item in ai_trending.get("items", [])],
+        "company_urls": [item["url"] for c in company_watch.get("companies", []) for item in c.get("items", [])]
+    }
+    
+    cached = get_cached("reddit_summaries", today, source_data)
+    if cached:
+        ai_trending["summary"] = cached.get("ai_reddit_summary", ai_trending["summary"])
+        company_watch["summary"] = cached.get("company_watch_summary", company_watch.get("summary", ""))
         return ai_trending, company_watch
 
     # Build a compact prompt for both sections
@@ -330,6 +350,9 @@ Return ONLY the JSON object. No markdown."""
         
         ai_trending["summary"] = summaries.get("ai_reddit_summary", ai_trending["summary"])
         company_watch["summary"] = summaries.get("company_watch_summary", "")
+        
+        # Save to cache
+        save_cache("reddit_summaries", today, source_data, summaries)
         
         return ai_trending, company_watch
 

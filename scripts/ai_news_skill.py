@@ -25,6 +25,12 @@ from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional
 import time
 import re
+import sys
+from pathlib import Path
+
+# Add scripts dir to path
+sys.path.insert(0, str(Path(__file__).parent))
+from cache_util import get_cached, save_cache, hash_data
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
@@ -326,6 +332,7 @@ def generate_summary_with_llm(stories: List[Dict]) -> tuple[List[Dict], str]:
     ONE bounded LLM call.
     Adds why_it_matters + tags to each story.
     Returns (enriched_stories, narrative).
+    Uses cache to avoid re-running on same data.
     """
     if not ANTHROPIC_KEY:
         # Fallback: no LLM enrichment
@@ -333,6 +340,26 @@ def generate_summary_with_llm(stories: List[Dict]) -> tuple[List[Dict], str]:
             s.setdefault("why_it_matters", "")
             s.setdefault("tags", [])
         return stories, "AI news summary unavailable (no LLM key)."
+    
+    # Check cache first
+    today = datetime.now(timezone.utc).date().isoformat()
+    source_data = [s["url"] for s in stories]  # Hash based on URLs only
+    
+    cached = get_cached("ai_news", today, source_data)
+    if cached:
+        narrative = cached.get("narrative", "")
+        enriched = cached.get("enriched", [])
+        
+        # Merge cached enrichment back into stories
+        for i, s in enumerate(stories):
+            if i < len(enriched):
+                s["why_it_matters"] = enriched[i].get("why_it_matters", "")
+                s["tags"] = enriched[i].get("tags", [])
+            else:
+                s.setdefault("why_it_matters", "")
+                s.setdefault("tags", [])
+        
+        return stories, narrative
 
     # Build compact structured input (no full article bodies)
     story_list = "\n".join(
@@ -410,6 +437,13 @@ Return ONLY valid JSON. No markdown. No commentary outside the JSON object."""
             meta = enriched_meta[i] if i < len(enriched_meta) else {}
             s["why_it_matters"] = meta.get("why_it_matters", "")
             s["tags"]           = meta.get("tags", [])
+
+        # Save to cache for future runs
+        cache_data = {
+            "narrative": narrative,
+            "enriched": enriched_meta
+        }
+        save_cache("ai_news", today, source_data, cache_data)
 
         return stories, narrative
 
