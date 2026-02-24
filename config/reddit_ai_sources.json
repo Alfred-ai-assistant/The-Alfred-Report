@@ -1,0 +1,29 @@
+{
+  "ai_daily_sources": [
+    {
+      "subreddit": "MachineLearning",
+      "weight": 1.2,
+      "enabled": true
+    },
+    {
+      "subreddit": "artificial",
+      "weight": 1.0,
+      "enabled": true
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "weight": 1.1,
+      "enabled": true
+    },
+    {
+      "subreddit": "OpenAI",
+      "weight": 1.0,
+      "enabled": true
+    },
+    {
+      "subreddit": "technology",
+      "weight": 0.8,
+      "enabled": true
+    }
+  ]
+}
