@@ -1,14 +1,35 @@
 import fs from 'fs';
 import path from 'path';
 
-export default async function Home() {
+interface PageProps {
+  searchParams?: {
+    date?: string;
+  };
+}
+
+export default async function Home({ searchParams }: PageProps) {
   let report = null;
   let error = null;
+  let viewDate = searchParams?.date || null;
 
   try {
-    const filePath = path.join(process.cwd(), 'public', 'alfred-report', 'latest.json');
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    report = JSON.parse(fileContent);
+    let filePath: string;
+    
+    if (viewDate) {
+      // Validate date format YYYY-MM-DD
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(viewDate)) {
+        error = 'Invalid date format. Use YYYY-MM-DD.';
+      } else {
+        filePath = path.join(process.cwd(), 'public', 'alfred-report', 'daily', `${viewDate}.json`);
+      }
+    } else {
+      filePath = path.join(process.cwd(), 'public', 'alfred-report', 'latest.json');
+    }
+
+    if (filePath && !error) {
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      report = JSON.parse(fileContent);
+    }
   } catch (e: any) {
     error = `Failed to read report: ${e.message}`;
   }
@@ -17,7 +38,12 @@ export default async function Home() {
     <main className="min-h-screen bg-gradient-to-br from-slate-900 to-black text-white p-8">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
-          <h1 className="text-5xl font-bold mb-2">The Alfred Report</h1>
+          <div className="flex items-center justify-between mb-4">
+            <h1 className="text-5xl font-bold">The Alfred Report</h1>
+            <a href="/archive" className="text-cyan-400 hover:text-cyan-300 text-sm font-medium">
+              View Archives →
+            </a>
+          </div>
           {report && (
             <p className="text-gray-400 text-lg">
               {new Date(report.report_date).toLocaleDateString('en-US', {
@@ -26,6 +52,7 @@ export default async function Home() {
                 month: 'long',
                 day: 'numeric'
               })}
+              {viewDate && viewDate !== report.report_date && ' (archived)'}
             </p>
           )}
         </header>
