@@ -1,0 +1,96 @@
+# Reddit Company Watch — Tracked Companies
+# -----------------------------------------------------------------------------
+# Managed by Sean. Used by the Company Reddit Watch section of The Alfred Report.
+# ticker: stock ticker if public, null if private
+# aliases: alternate names/terms to match in post titles
+# keywords: terms that boost relevance when found in posts
+# topics: internal topic tags for categorization
+# subreddit_scopes: subreddits to search for this company
+# enabled: set to false to temporarily pause without removing
+# -----------------------------------------------------------------------------
+
+companies:
+
+  - company_name: Netskope
+    ticker: NTSK
+    aliases:
+      - Netskope IPO
+      - Netskope S-1
+      - SASE
+      - Zero Trust
+    keywords:
+      - IPO
+      - S-1
+      - valuation
+      - pricing
+      - ARR
+      - funding
+      - Zero Trust
+      - SASE
+      - CIO
+      - enterprise security
+    topics:
+      - ipo_private_markets
+      - earnings_financials
+      - partnership
+      - competitive_landscape
+      - enterprise_security
+    subreddit_scopes:
+      - technology
+      - cybersecurity
+      - stocks
+      - investing
+      - wallstreetbets
+    enabled: true
+
+  - company_name: Cerebras Systems
+    ticker: null
+    aliases:
+      - Cerebras Systems IPO
+      - Cerebras Systems S-1
+      - CS-3
+      - CS-4
+    keywords:
+      - IPO
+      - S-1
+      - valuation
+      - pricing
+      - ARR
+      - funding
+      - Wafer Scale Engine
+      - Wafer-Scale Engine
+      - CS-4
+      - CS-3
+      - Inference
+      - LLM
+    topics:
+      - ipo_private_markets
+      - earnings_financials
+      - partnership
+      - competitive_landscape
+      - enterprise_security
+    subreddit_scopes:
+      - technology
+      - AI
+      - stocks
+      - investing
+      - wallstreetbets
+    enabled: true
+
+  - company_name: OpenAI
+    ticker: null
+    aliases:
+      - OpenAI
+      - OpenClaw
+    keywords:
+      - IPO
+      - OpenClaw
+      - valuation
+    topics:
+      - OpenClaw
+      - Agents
+      - AI Agents
+    subreddit_scopes:
+      - technology
+      - wallstreetbets
+    enabled: true

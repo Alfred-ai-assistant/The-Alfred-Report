@@ -54,7 +54,7 @@ Subreddit Sources
 
 A configurable list in a file for specifics:
 
-config/reddit_ai_sources.json
+config/reddit_ai_sources.yaml
 
 These should include AI-focused subreddits and related high-signal communities.
 
@@ -133,7 +133,7 @@ Source of Truth
 
 Companies are defined in:
 
-config/reddit_company_watch.json
+config/reddit_company_watch.yaml
 
 This file acts as the “table Alfred remembers.”
 
