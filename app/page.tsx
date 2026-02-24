@@ -13,7 +13,7 @@ export default async function Home({ searchParams }: PageProps) {
   let viewDate = searchParams?.date || null;
 
   try {
-    let filePath: string;
+    let filePath: string = path.join(process.cwd(), 'public', 'alfred-report', 'latest.json');
     
     if (viewDate) {
       // Validate date format YYYY-MM-DD
@@ -22,8 +22,6 @@ export default async function Home({ searchParams }: PageProps) {
       } else {
         filePath = path.join(process.cwd(), 'public', 'alfred-report', 'daily', `${viewDate}.json`);
       }
-    } else {
-      filePath = path.join(process.cwd(), 'public', 'alfred-report', 'latest.json');
     }
 
     if (filePath && !error) {
