@@ -56,6 +56,203 @@ export default async function Home() {
           <div className="text-gray-400">Report not available</div>
         ) : (
           <div className="space-y-8">
+            {/* Render sections in TOC order */}
+            {report.sections?.weather && (
+              <section id="section-weather" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                  {report.sections.weather.title}
+                </h2>
+                {report.sections.weather.summary && (
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {report.sections.weather.summary}
+                  </p>
+                )}
+                {report.sections.weather.items && report.sections.weather.items.length > 0 && (
+                  <div className="space-y-4">
+                    {report.sections.weather.items.map((item: any, idx: number) => (
+                      <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                        <h3 className="font-semibold text-gray-100 mb-2">
+                          {item.name}
+                        </h3>
+                        <div className="grid grid-cols-2 gap-4 mb-3 text-sm">
+                          <div>
+                            <span className="text-gray-400">Temp:</span>
+                            <span className="ml-2 font-mono">{item.temperature}</span>
+                          </div>
+                          {item.forecast && (
+                            <div>
+                              <span className="text-gray-400">Forecast:</span>
+                              <span className="ml-2">{item.forecast}</span>
+                            </div>
+                          )}
+                          {item.wind && (
+                            <div>
+                              <span className="text-gray-400">Wind:</span>
+                              <span className="ml-2">{item.wind}</span>
+                            </div>
+                          )}
+                          {item.precipitation_chance && (
+                            <div>
+                              <span className="text-gray-400">Precip:</span>
+                              <span className="ml-2">{item.precipitation_chance}</span>
+                            </div>
+                          )}
+                        </div>
+                        {item.details && (
+                          <p className="text-gray-400 text-sm">
+                            {item.details}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
+            {report.sections?.todoist && (
+              <section id="section-todoist" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                  {report.sections.todoist.title}
+                </h2>
+                {report.sections.todoist.summary && (
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {report.sections.todoist.summary}
+                  </p>
+                )}
+                {report.sections.todoist.items && report.sections.todoist.items.length > 0 && (
+                  <div className="space-y-4">
+                    {report.sections.todoist.items.map((item: any, idx: number) => (
+                      <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                        <p className={`mb-2 ${item.completed ? 'line-through text-gray-500' : 'text-gray-300'}`}>
+                          {item.completed && '✓ '}
+                          {item.content}
+                        </p>
+                        {!item.completed && (item.due || item.overdue) && (
+                          <div className="flex gap-4 text-xs text-gray-500">
+                            {item.due && <span>Due: {item.due}</span>}
+                            {item.overdue && <span className="text-red-400 font-semibold">OVERDUE</span>}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
+            {report.sections?.kanban && (
+              <section id="section-kanban" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                  {report.sections.kanban.title}
+                </h2>
+                {report.sections.kanban.summary && (
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {report.sections.kanban.summary}
+                  </p>
+                )}
+                {report.sections.kanban.items && report.sections.kanban.items.length > 0 && (
+                  <div className="space-y-4">
+                    {report.sections.kanban.items.map((item: any, idx: number) => (
+                      <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span className={`font-semibold text-sm px-3 py-1 rounded ${
+                            item.status === 'In progress' ? 'bg-blue-900/50 text-blue-200' :
+                            item.status === 'Ready' ? 'bg-purple-900/50 text-purple-200' :
+                            item.status === 'Backlog' ? 'bg-gray-700 text-gray-100' :
+                            item.status === 'Done' ? 'bg-green-900/50 text-green-200' :
+                            'bg-yellow-900/50 text-yellow-200'
+                          }`}>
+                            {item.status}
+                          </span>
+                          <span className="text-gray-400 text-sm">{item.count} card{item.count !== 1 ? 's' : ''}</span>
+                        </div>
+                        {item.cards && item.cards.length > 0 && (
+                          <div className="space-y-2">
+                            {item.cards.map((card: string, cardIdx: number) => (
+                              <div key={cardIdx} className="text-sm text-gray-400 pl-4 border-l border-gray-600">
+                                {card}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
+            {report.sections?.ai_news && (
+              <section id="section-ai_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                  {report.sections.ai_news.title}
+                </h2>
+                {report.sections.ai_news.summary && (
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {report.sections.ai_news.summary}
+                  </p>
+                )}
+                {report.sections.ai_news.items && report.sections.ai_news.items.length > 0 && (
+                  <div className="space-y-4">
+                    {report.sections.ai_news.items.map((item: any, idx: number) => (
+                      <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                        <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
+                          {item.title}
+                        </a>
+                        {item.why_it_matters && (
+                          <p className="text-gray-400 text-sm mb-2">
+                            {item.why_it_matters}
+                          </p>
+                        )}
+                        {item.tags && item.tags.length > 0 && (
+                          <div className="flex gap-2 mb-2">
+                            {item.tags.map((tag: string) => (
+                              <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                        <div className="flex justify-between text-xs text-gray-500">
+                          <span>{item.source}</span>
+                          {item.published_at && <span>{item.published_at.split('T')[0]}</span>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
+            {report.sections?.youtube && (
+              <section id="section-youtube" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                  {report.sections.youtube.title}
+                </h2>
+                {report.sections.youtube.summary && (
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {report.sections.youtube.summary}
+                  </p>
+                )}
+                {report.sections.youtube.items && report.sections.youtube.items.length > 0 && (
+                  <div className="space-y-4">
+                    {report.sections.youtube.items.map((item: any, idx: number) => (
+                      <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                        <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-red-400 hover:text-red-300 mb-2 block hover:underline">
+                          {item.title}
+                        </a>
+                        <div className="text-sm text-gray-500">
+                          <span>{item.channel}</span>
+                          {item.published_at && <span className="ml-4">{item.published_at.split('T')[0]}</span>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
             {/* AI Reddit Trending + Company Watch (nested) */}
             {report.sections?.ai_reddit_trending && (
               <>
@@ -187,10 +384,7 @@ export default async function Home() {
               </section>
             )}
 
-            {/* All other sections */}
-            {Object.entries(report.sections || {})
-              .filter(([key]) => !['company_reddit_watch', 'ai_reddit_trending'].includes(key))
-              .map(([key, section]: [string, any]) => (
+            {/* Duplicate removal - sections now rendered in explicit order above */}
               <section key={key} id={`section-${key}`} className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                 <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                   {section.title}
