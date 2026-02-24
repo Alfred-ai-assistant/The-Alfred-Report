@@ -12,6 +12,7 @@ from todoist_skill import get_tasks as get_todoist
 from kanban_skill import get_kanban_status as get_kanban
 from ai_news_skill import get_ai_news
 from youtube_skill import get_youtube_updates
+from reddit_skill import get_reddit_sections
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
@@ -63,6 +64,11 @@ def main():
     
     # YouTube section
     sections["youtube"] = get_youtube_updates()
+    
+    # Reddit sections
+    ai_reddit, company_reddit = get_reddit_sections()
+    sections["ai_reddit_trending"] = ai_reddit
+    sections["company_reddit_watch"] = company_reddit
     
     payload = {
         "schema_version": 1,

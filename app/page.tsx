@@ -17,9 +17,7 @@ export default async function Home() {
     <main className="min-h-screen bg-gradient-to-br from-slate-900 to-black text-white p-8">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
-          <h1 className="text-5xl font-bold mb-2">
-            The Alfred Report
-          </h1>
+          <h1 className="text-5xl font-bold mb-2">The Alfred Report</h1>
           {report && (
             <p className="text-gray-400 text-lg">
               {new Date(report.report_date).toLocaleDateString('en-US', {
@@ -40,8 +38,56 @@ export default async function Home() {
           <div className="text-gray-400">Report not available</div>
         ) : (
           <div className="space-y-8">
-            {/* Render each section */}
-            {Object.entries(report.sections || {}).map(([key, section]: [string, any]) => (
+            {/* Company Reddit Watch (special nested structure) */}
+            {report.sections?.company_reddit_watch && (
+              <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                  {report.sections.company_reddit_watch.title}
+                </h2>
+                {report.sections.company_reddit_watch.summary && (
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {report.sections.company_reddit_watch.summary}
+                  </p>
+                )}
+                <div className="space-y-6">
+                  {report.sections.company_reddit_watch.companies?.map((company: any) => (
+                    <div key={company.company_name} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                      <h3 className="font-semibold text-gray-100 mb-2">
+                        {company.company_name}
+                        {company.ticker && <span className="text-gray-500 ml-2">({company.ticker})</span>}
+                      </h3>
+                      {company.items && company.items.length > 0 ? (
+                        <div className="space-y-3">
+                          {company.items.map((item: any, idx: number) => (
+                            <div key={idx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
+                              <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 hover:underline text-sm font-medium block mb-2">
+                                {item.title}
+                              </a>
+                              <div className="flex gap-2 flex-wrap text-xs">
+                                {item.subreddit && <span className="bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>}
+                                {item.matched_terms?.slice(0, 2).map((term: string) => (
+                                  <span key={term} className="bg-blue-900 text-blue-200 px-2 py-1 rounded">{term}</span>
+                                ))}
+                                {item.topics?.slice(0, 2).map((topic: string) => (
+                                  <span key={topic} className="bg-purple-900 text-purple-200 px-2 py-1 rounded">{topic}</span>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-gray-500 text-sm">No posts found today</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* All other sections */}
+            {Object.entries(report.sections || {})
+              .filter(([key]) => key !== 'company_reddit_watch')
+              .map(([key, section]: [string, any]) => (
               <section key={key} className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                 <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                   {section.title}
@@ -57,48 +103,46 @@ export default async function Home() {
                   <div className="space-y-4">
                     {section.items.map((item: any, idx: number) => (
                       <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                        {item.name && (
-                          <h3 className="font-semibold text-gray-100 mb-2">
-                            {item.name}
-                          </h3>
-                        )}
-                        
-                        {/* Weather-specific fields */}
-                        {item.temperature && (
-                          <div className="grid grid-cols-2 gap-4 mb-3 text-sm">
-                            <div>
-                              <span className="text-gray-400">Temp:</span>
-                              <span className="ml-2 font-mono">{item.temperature}</span>
+                        {/* Weather items */}
+                        {item.name && item.temperature && (
+                          <>
+                            <h3 className="font-semibold text-gray-100 mb-2">
+                              {item.name}
+                            </h3>
+                            <div className="grid grid-cols-2 gap-4 mb-3 text-sm">
+                              <div>
+                                <span className="text-gray-400">Temp:</span>
+                                <span className="ml-2 font-mono">{item.temperature}</span>
+                              </div>
+                              {item.forecast && (
+                                <div>
+                                  <span className="text-gray-400">Forecast:</span>
+                                  <span className="ml-2">{item.forecast}</span>
+                                </div>
+                              )}
+                              {item.wind && (
+                                <div>
+                                  <span className="text-gray-400">Wind:</span>
+                                  <span className="ml-2">{item.wind}</span>
+                                </div>
+                              )}
+                              {item.precipitation_chance && (
+                                <div>
+                                  <span className="text-gray-400">Precip:</span>
+                                  <span className="ml-2">{item.precipitation_chance}</span>
+                                </div>
+                              )}
                             </div>
-                            {item.forecast && (
-                              <div>
-                                <span className="text-gray-400">Forecast:</span>
-                                <span className="ml-2">{item.forecast}</span>
-                              </div>
+                            {item.details && (
+                              <p className="text-gray-400 text-sm">
+                                {item.details}
+                              </p>
                             )}
-                            {item.wind && (
-                              <div>
-                                <span className="text-gray-400">Wind:</span>
-                                <span className="ml-2">{item.wind}</span>
-                              </div>
-                            )}
-                            {item.precipitation_chance && (
-                              <div>
-                                <span className="text-gray-400">Precip:</span>
-                                <span className="ml-2">{item.precipitation_chance}</span>
-                              </div>
-                            )}
-                          </div>
+                          </>
                         )}
 
-                        {item.details && (
-                          <p className="text-gray-400 text-sm">
-                            {item.details}
-                          </p>
-                        )}
-
-                        {/* Todoist-specific fields */}
-                        {item.content && (
+                        {/* Todoist items */}
+                        {item.content && !item.title && (
                           <div>
                             <p className={`mb-2 ${item.completed ? 'line-through text-gray-500' : 'text-gray-300'}`}>
                               {item.completed && '✓ '}
@@ -113,49 +157,9 @@ export default async function Home() {
                           </div>
                         )}
 
-                        {/* YouTube-specific fields */}
-                        {item.title && item.url && item.channel && !item.source && !item.status && !item.content && (
-                          <div>
-                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-red-400 hover:text-red-300 mb-2 block hover:underline">
-                              {item.title}
-                            </a>
-                            <div className="text-sm text-gray-500">
-                              <span>{item.channel}</span>
-                              {item.published_at && <span className="ml-4">{item.published_at.split('T')[0]}</span>}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* News-specific fields */}
-                        {item.title && item.source && !item.status && !item.content && (
-                          <div>
-                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
-                              {item.title}
-                            </a>
-                            {item.why_it_matters && (
-                              <p className="text-gray-400 text-sm mb-2">
-                                {item.why_it_matters}
-                              </p>
-                            )}
-                            {item.tags && item.tags.length > 0 && (
-                              <div className="flex gap-2 mb-2">
-                                {item.tags.map((tag: string) => (
-                                  <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
-                                    {tag}
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-                            <div className="flex justify-between text-xs text-gray-500">
-                              <span>{item.source}</span>
-                              {item.published_at && <span>{item.published_at.split('T')[0]}</span>}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Kanban-specific fields */}
+                        {/* Kanban items */}
                         {item.status && (
-                          <div>
+                          <>
                             <div className="flex items-center gap-3 mb-3">
                               <span className={`font-semibold text-sm px-3 py-1 rounded ${
                                 item.status === 'In progress' ? 'bg-blue-900/50 text-blue-200' :
@@ -177,14 +181,68 @@ export default async function Home() {
                                 ))}
                               </div>
                             )}
-                          </div>
+                          </>
                         )}
 
-                        {/* Generic fields */}
-                        {!item.temperature && !item.content && item.summary && (
-                          <p className="text-gray-400 text-sm">
-                            {item.summary}
-                          </p>
+                        {/* AI News items */}
+                        {item.title && item.source && (
+                          <>
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
+                              {item.title}
+                            </a>
+                            {item.why_it_matters && (
+                              <p className="text-gray-400 text-sm mb-2">
+                                {item.why_it_matters}
+                              </p>
+                            )}
+                            {item.tags && item.tags.length > 0 && (
+                              <div className="flex gap-2 mb-2">
+                                {item.tags.map((tag: string) => (
+                                  <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                            <div className="flex justify-between text-xs text-gray-500">
+                              <span>{item.source}</span>
+                              {item.published_at && <span>{item.published_at.split('T')[0]}</span>}
+                            </div>
+                          </>
+                        )}
+
+                        {/* YouTube items */}
+                        {item.title && item.channel && (
+                          <>
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-red-400 hover:text-red-300 mb-2 block hover:underline">
+                              {item.title}
+                            </a>
+                            <div className="text-sm text-gray-500">
+                              <span>{item.channel}</span>
+                              {item.published_at && <span className="ml-4">{item.published_at.split('T')[0]}</span>}
+                            </div>
+                          </>
+                        )}
+
+                        {/* Reddit AI Trending items */}
+                        {item.title && item.subreddit && (
+                          <>
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-orange-400 hover:text-orange-300 mb-2 block hover:underline">
+                              {item.title}
+                            </a>
+                            <div className="flex gap-3 flex-wrap items-center">
+                              <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>
+                              {item.matched_terms && item.matched_terms.length > 0 && (
+                                <div className="flex gap-1">
+                                  {item.matched_terms.slice(0, 3).map((term: string) => (
+                                    <span key={term} className="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">
+                                      {term}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </>
                         )}
                       </div>
                     ))}
