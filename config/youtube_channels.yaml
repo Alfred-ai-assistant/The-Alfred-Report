@@ -1,0 +1,51 @@
+# YouTube AI Daily Digest — Source Channels
+# -----------------------------------------------------------------------------
+# Managed by Sean. Alfred reads this file before each daily run.
+# Add or remove channels here and commit — changes take effect the next morning.
+#
+# Fields:
+#   name:   (required) Display name of the channel
+#   handle: (optional) YouTube handle without @  — speeds up channel lookup
+# -----------------------------------------------------------------------------
+
+channels:
+  - name: Alex Finn
+
+  - name: This Week in Startups
+    handle: ThisWeekInStartups
+
+  - name: Matthew Berman
+    handle: matthew_berman
+
+  - name: AI News & Strategy Daily
+
+  - name: Matt Wolfe
+    handle: mreflow
+
+  - name: Avi unlocks AI
+
+  - name: This Week in AI
+
+  - name: OpenClaw
+
+  - name: David Ondrej
+    handle: DavidOndrej
+
+  - name: All About AI
+    handle: AllAboutAI
+
+  - name: Prompt Engineering
+
+  - name: The AI Advantage
+    handle: AIAdvantage
+
+  - name: Corbin Brown
+
+  - name: Wes Roth
+    handle: WesRoth
+
+  - name: AI Explained
+    handle: aiexplained
+
+  - name: Latent Space
+    handle: LatentSpaceAI
