@@ -50,7 +50,8 @@ def get_youtube_updates() -> Dict:
         today = datetime.now(timezone.utc).date()
         today_videos = []
         
-        for video_id, added_at_str in state.get("added_video_ids", {}).items():
+        # youtube-digest uses "videos" key, not "added_video_ids"
+        for video_id, added_at_str in state.get("videos", {}).items():
             # Parse timestamp
             try:
                 added_at = datetime.fromisoformat(added_at_str.replace('Z', '+00:00'))
