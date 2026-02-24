@@ -1,23 +1,58 @@
 {
   "ai_daily_sources": [
     {
+      "subreddit": "openclaw",
+      "weight": 1.4,
+      "enabled": true
+    },
+    {
+      "subreddit": "clawdbot",
+      "weight": 1.4,
+      "enabled": true
+    },
+    {
       "subreddit": "MachineLearning",
       "weight": 1.2,
       "enabled": true
     },
     {
-      "subreddit": "artificial",
+      "subreddit": "ArtificialIntelligence",
       "weight": 1.0,
       "enabled": true
     },
     {
-      "subreddit": "LocalLLaMA",
-      "weight": 1.1,
+      "subreddit": "AI_Agents",
+      "weight": 1.2,
+      "enabled": true
+    },
+    {
+      "subreddit": "AI_Automation",
+      "weight": 1.0,
       "enabled": true
     },
     {
       "subreddit": "OpenAI",
-      "weight": 1.0,
+      "weight": 1.1,
+      "enabled": true
+    },
+      {
+      "subreddit": "ChatGPT",
+      "weight": 1.1,
+      "enabled": true
+    },
+      {
+      "subreddit": "AiAssisted",
+      "weight": 1.1,
+      "enabled": true
+    },
+      {
+      "subreddit": "AiCuriosity",
+      "weight": 1.1,
+      "enabled": true
+    },
+      {
+      "subreddit": "GenerativeAI",
+      "weight": 1.1,
       "enabled": true
     },
     {
