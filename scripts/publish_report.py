@@ -2,6 +2,8 @@
 import json
 import os
 import sys
+import urllib.request
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
@@ -13,6 +15,7 @@ from kanban_skill import get_kanban_status as get_kanban
 from ai_news_skill import get_ai_news
 from youtube_skill import get_youtube_updates
 from reddit_skill import get_reddit_sections
+from cost_tracker import init_tracker, save_log, get_telegram_message
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
@@ -40,12 +43,38 @@ def save_json(path: Path, obj):
         f.write("\n")
     tmp.replace(path)
 
+def send_telegram_message(text: str):
+    """Send a message to Telegram."""
+    TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+    
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("[TELEGRAM] Skipping: no credentials")
+        return
+    
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+        data = urllib.parse.urlencode({
+            "chat_id": TELEGRAM_CHAT_ID,
+            "text": text,
+            "parse_mode": "Markdown"
+        }).encode()
+        req = urllib.request.Request(url, data=data)
+        with urllib.request.urlopen(req, timeout=10) as r:
+            r.read()
+        print("[TELEGRAM] Message sent")
+    except Exception as e:
+        print(f"[TELEGRAM] Failed to send: {e}")
+
 def main():
     ensure_dirs()
 
     report_date = os.environ.get("ALFRED_REPORT_DATE")
     if not report_date:
         report_date = datetime.now().astimezone().date().isoformat()
+    
+    # Initialize cost tracker
+    init_tracker(report_date)
 
     # Build sections
     sections = {}
@@ -100,6 +129,11 @@ def main():
 
     print(f"Wrote {daily_path}")
     print("Updated latest.json and index.json")
+    
+    # Save cost log and send Telegram summary
+    save_log()
+    telegram_msg = get_telegram_message()
+    send_telegram_message(telegram_msg)
 
 if __name__ == "__main__":
     main()

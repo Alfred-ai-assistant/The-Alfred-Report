@@ -1,0 +1,21 @@
+{
+  "date": "2026-02-24",
+  "total_calls": 1,
+  "cache_hits": 0,
+  "total_input_tokens": 102,
+  "total_output_tokens": 184,
+  "estimated_cost_usd": 0.0008,
+  "calls": [
+    {
+      "timestamp": "2026-02-24T20:38:20.977954+00:00",
+      "section": "reddit",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 102,
+      "output_tokens": 184,
+      "cache_hit": false,
+      "input_cost": 8.16e-05,
+      "output_cost": 0.000736,
+      "total_cost": 0.0008176
+    }
+  ]
+}

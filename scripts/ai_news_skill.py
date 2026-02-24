@@ -31,6 +31,7 @@ from pathlib import Path
 # Add scripts dir to path
 sys.path.insert(0, str(Path(__file__).parent))
 from cache_util import get_cached, save_cache, hash_data
+from cost_tracker import record as record_cost
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
@@ -334,6 +335,7 @@ def generate_summary_with_llm(stories: List[Dict]) -> tuple[List[Dict], str]:
     Returns (enriched_stories, narrative).
     Uses cache to avoid re-running on same data.
     """
+    print(f"[AI_NEWS] generate_summary_with_llm() called with {len(stories)} stories")
     if not ANTHROPIC_KEY:
         # Fallback: no LLM enrichment
         for s in stories:
@@ -405,6 +407,7 @@ Return ONLY valid JSON. No markdown. No commentary outside the JSON object."""
     )
 
     try:
+        print(f"[AI_NEWS] Making Anthropic API call with {len(story_list)} chars of story data")
         with urllib.request.urlopen(req, timeout=30) as r:
             raw = r.read()
             if not raw:
@@ -416,6 +419,12 @@ Return ONLY valid JSON. No markdown. No commentary outside the JSON object."""
         
         if "error" in resp:
             raise ValueError(f"API error: {resp['error']}")
+        
+        # Record token usage
+        usage = resp.get("usage", {})
+        input_tokens = usage.get("input_tokens", 0)
+        output_tokens = usage.get("output_tokens", 0)
+        record_cost("ai_news", input_tokens, output_tokens, cache_hit=False)
         
         raw_text = resp["content"][0]["text"]
         

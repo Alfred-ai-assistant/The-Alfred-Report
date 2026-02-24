@@ -25,6 +25,7 @@ from collections import defaultdict
 # Add scripts dir to path
 sys.path.insert(0, str(Path(__file__).parent))
 from cache_util import get_cached, save_cache, hash_data
+from cost_tracker import record as record_cost
 
 BRAVE_API_KEY = os.environ.get("BRAVE_API_KEY", "")
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
@@ -290,6 +291,7 @@ def add_summaries(ai_trending: Dict, company_watch: Dict) -> tuple:
     """One bounded haiku call to generate summaries for both sections.
     Uses cache to avoid re-running on same data."""
     
+    print(f"[REDDIT] add_summaries() called")
     if not ANTHROPIC_KEY:
         return ai_trending, company_watch
     
@@ -331,6 +333,7 @@ Return ONLY the JSON object. No markdown."""
     }).encode()
 
     try:
+        print(f"[REDDIT] Making Anthropic API call for summaries")
         req = urllib.request.Request(
             "https://api.anthropic.com/v1/messages",
             data=body,
@@ -344,6 +347,12 @@ Return ONLY the JSON object. No markdown."""
         )
         with urllib.request.urlopen(req, timeout=20) as r:
             resp = json.loads(r.read())
+        
+        # Record token usage
+        usage = resp.get("usage", {})
+        input_tokens = usage.get("input_tokens", 0)
+        output_tokens = usage.get("output_tokens", 0)
+        record_cost("reddit", input_tokens, output_tokens, cache_hit=False)
         
         raw_text = resp["content"][0]["text"]
         
