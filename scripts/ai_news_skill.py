@@ -343,7 +343,7 @@ def generate_summary_with_llm(stories: List[Dict]) -> tuple[List[Dict], str]:
     
     # Check cache first
     today = datetime.now(timezone.utc).date().isoformat()
-    source_data = [s["url"] for s in stories]  # Hash based on URLs only
+    source_data = sorted([s["url"] for s in stories])  # Sort URLs for consistent hashing
     
     cached = get_cached("ai_news", today, source_data)
     if cached:
@@ -438,7 +438,7 @@ Return ONLY valid JSON. No markdown. No commentary outside the JSON object."""
             s["why_it_matters"] = meta.get("why_it_matters", "")
             s["tags"]           = meta.get("tags", [])
 
-        # Save to cache for future runs
+        # Save to cache for future runs (source_data is already sorted)
         cache_data = {
             "narrative": narrative,
             "enriched": enriched_meta

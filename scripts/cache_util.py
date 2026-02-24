@@ -36,6 +36,7 @@ def get_cached(section_name: str, date: str, source_data: Any) -> Optional[Dict]
     cache_path = get_cache_path(section_name, date)
     
     if not cache_path.exists():
+        print(f"[CACHE] {section_name}: miss (file not found)")
         return None
     
     try:
@@ -43,10 +44,15 @@ def get_cached(section_name: str, date: str, source_data: Any) -> Optional[Dict]
             cached = json.load(f)
         
         current_hash = hash_data(source_data)
-        if cached.get("_hash") == current_hash:
+        cached_hash = cached.get("_hash")
+        
+        if cached_hash == current_hash:
+            print(f"[CACHE] {section_name}: HIT (hash {current_hash[:8]}...)")
             return cached.get("data")
-    except Exception:
-        pass
+        else:
+            print(f"[CACHE] {section_name}: miss (hash mismatch: {cached_hash[:8]}... vs {current_hash[:8]}...)")
+    except Exception as e:
+        print(f"[CACHE] {section_name}: error reading cache: {e}")
     
     return None
 

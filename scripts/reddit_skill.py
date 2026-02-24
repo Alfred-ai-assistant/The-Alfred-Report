@@ -295,10 +295,16 @@ def add_summaries(ai_trending: Dict, company_watch: Dict) -> tuple:
     
     # Check cache first
     today = datetime.now(timezone.utc).date().isoformat()
+    
+    ai_urls = sorted([item["url"] for item in ai_trending.get("items", [])])
+    company_urls = sorted([item["url"] for c in company_watch.get("companies", []) for item in c.get("items", [])])
+    
     source_data = {
-        "ai_urls": [item["url"] for item in ai_trending.get("items", [])],
-        "company_urls": [item["url"] for c in company_watch.get("companies", []) for item in c.get("items", [])]
+        "ai_urls": ai_urls,
+        "company_urls": company_urls
     }
+    
+    print(f"[REDDIT] AI Reddit has {len(ai_urls)} URLs, Company Watch has {len(company_urls)} URLs")
     
     cached = get_cached("reddit_summaries", today, source_data)
     if cached:
