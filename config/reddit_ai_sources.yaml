@@ -21,7 +21,7 @@ ai_daily_sources:
     weight: 1.2
     enabled: true
 
-  - subreddit: ArtificialIntelligence
+  - subreddit: artificial
     weight: 1.0
     enabled: true
 
