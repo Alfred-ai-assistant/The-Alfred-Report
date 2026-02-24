@@ -1,267 +1,188 @@
-Reddit Integration Skill Specification
+REDDIT_SKILL_SPEC.md
 
-The Alfred Report
+Reddit (via Brave Search) Skill Specification
+For The Alfred Report
 
 Overview
+Reddit Data API access is gated and unreliable for external non-Devvit apps. For The Alfred Report, Alfred will discover Reddit posts using the Brave Web Search API and produce two report sections:
+	1.	AI Reddit Trending: generic daily trending AI-related posts
+	2.	Company Reddit Watch: daily company-specific monitoring using a configurable “company table” with keywords/topics
 
-This document defines the Reddit integration for The Alfred Report.
+This design requires no Reddit API keys.
 
-The Reddit skill has two core capabilities:
-	1.	AI Reddit Trending — Daily trending AI-related posts
-	2.	Company Reddit Watch — Daily company-specific post monitoring with topic tagging
+Inputs and Config Files (YAML)
+Alfred must read these config files on every run:
 
-This integration must be deterministic, API-driven, and safe.
-No scraping. Official Reddit API only. Read-only access.
+A) config/reddit_ai_sources.yaml
+Contains ai_daily_sources, a list of subreddits to scan for AI trending content. Each entry includes: subreddit, weight, enabled.
 
-Infrastructure must not change when expanding logic.
+B) config/reddit_company_watch.yaml
+Contains companies, a list of tracked companies. Each entry includes: company_name, ticker, aliases, keywords, topics, subreddit_scopes, enabled.
 
-⸻
+These YAML files are the single source of truth. Alfred does not “remember” companies or sources in memory. It reads YAML every run.
 
-Authentication
+General Retrieval Rule
+All Reddit discovery is done via Brave Search queries constrained to reddit.com URLs. Alfred must not scrape at scale. Alfred may optionally enrich only the final selected posts later.
 
-Use official Reddit OAuth (script-type app).
+Time Window
+Default window is the last 24 hours, rolling. If Brave returns an item slightly older but clearly still dominating current discussion, Alfred may include it only if it is strongly relevant and there are not enough high-quality fresh items.
 
-Required credentials:
-	•	client_id
-	•	client_secret
-	•	username
-	•	password
-	•	user_agent
-
-Scopes:
-	•	read only
-
-No write permissions.
-No moderation permissions.
-No voting or posting.
-
-Credentials must be stored in AWS Secrets Manager.
-Never log secrets.
-
-⸻
+Canonical URL Rule
+Alfred must normalize Reddit URLs to a canonical post URL (permalink form) for deduplication and stable output. Prefer the actual post URL, not just a search result redirect.
 
 Capability 1: AI Reddit Trending
-
 Objective
+Create a daily list of the best AI-related Reddit posts from the last 24 hours using the subreddits defined in config/reddit_ai_sources.yaml.
 
-Generate a daily list of the most relevant AI-related Reddit posts from the last 24 hours.
-
-This feeds:
-
+Report Section Key
 sections.ai_reddit_trending
 
-Subreddit Sources
+Retrieval
+For each enabled subreddit in ai_daily_sources:
 
-A configurable list in a file for specifics:
+Run Brave Search queries that target that subreddit path. Conceptually:
+	•	site:reddit.com/r/SUBREDDIT (AI OR LLM OR “machine learning” OR model OR inference OR training OR agent OR OpenAI OR Anthropic OR Claude OR Gemini OR Llama OR NVIDIA)
 
-config/reddit_ai_sources.yaml
+Alfred should keep the number of queries bounded per subreddit (small), and cache results within the run.
 
-These should include AI-focused subreddits and related high-signal communities.
+Filtering
+Keep candidates that:
+	•	Are Reddit post URLs within that subreddit path
+	•	Are likely within the last 24 hours (best available signal)
+	•	Match AI intent based on title/snippet keyword rules
 
-The list must be configurable and versioned in Git.
+Exclude candidates that are clearly:
+	•	Weekly megathreads / stickies (when identifiable)
+	•	Off-topic based on title/snippet
+	•	Duplicate URLs
 
-Data Retrieval
-
-For each subreddit:
-	•	Pull listings from new
-	•	Optionally pull from hot
-	•	Limit candidate size (for example 50–200 posts)
-	•	Filter to posts created in last 24 hours
-
-Exclude:
-	•	Stickied posts
-	•	Removed/deleted posts
-	•	NSFW (optional rule)
-	•	Off-topic posts
-
-Relevance Filter
-
-Post must match AI-related keywords such as:
-AI, artificial intelligence, LLM, transformer, inference, training, fine-tune, agent, model release, OpenAI, Anthropic, Claude, Gemini, Llama, NVIDIA, CUDA, GPU.
-
-Filtering should be deterministic.
-
-Optional lightweight classifier only when ambiguous.
+Deduplication
+Deduplicate by:
+	•	Canonical URL (exact match)
+	•	If necessary: near-duplicate title similarity within same subreddit
 
 Ranking
+Rank candidates with a deterministic score using:
+	•	Recency (strong weight)
+	•	Keyword match strength (medium)
+	•	Subreddit weight from YAML (multiplier)
+Optional later: engagement enrichment if you add it.
 
-Score posts using:
-	•	Engagement score (score + comments, log-scaled)
-	•	Recency boost (within 24 hours)
-	•	Subreddit quality weight (optional)
-	•	Authority boost if linking to primary source
+Select top N (default 15; allow fewer if not enough quality posts).
 
-Deduplicate by:
-	•	Canonical external URL
-	•	Title similarity
-
-Select top 15
-
-Output Structure
-
+Output
 sections.ai_reddit_trending must include:
-	•	title
-	•	summary (optional narrative)
-	•	items (ranked array)
+	•	title: “AI on Reddit” (or similar)
+	•	summary: short narrative (optional initially)
+	•	items: ranked array
 
-Each item includes:
+Each item includes at minimum:
 	•	title
-	•	url
-	•	permalink
+	•	url (canonical post URL)
 	•	subreddit
-	•	score
-	•	num_comments
-	•	created_utc
-	•	tags (optional)
+	•	created_at: ISO or null if unknown
+	•	source: “reddit”
+	•	matched_terms: optional list of matched keywords
+	•	weight: optional (subreddit weight used)
 
-Optional:
-	•	One short narrative paragraph grounded only in selected posts.
-
-⸻
+Engagement fields (score/comments) are optional until enrichment exists.
 
 Capability 2: Company Reddit Watch
-
 Objective
+For each enabled company in config/reddit_company_watch.yaml, discover and return posts from the last 24 hours that match the company plus company-specific keywords/topics. Alfred also tags each post with topics based on configured interest areas.
 
-For each configured company, run a daily query and return relevant Reddit posts from the last 24 hours, tagged with metadata.
-
-This feeds:
-
+Report Section Key
 sections.company_reddit_watch
 
-Source of Truth
-
-Companies are defined in:
-
-config/reddit_company_watch.yaml
-
-This file acts as the “table Alfred remembers.”
-
-Each company record contains:
-	•	company_name
-	•	ticker (optional)
-	•	aliases
-	•	keywords
-	•	topics
-	•	subreddit_scopes
-	•	enabled
-
-Alfred must read this file every run.
-No hardcoding of companies in logic.
-
-Retrieval Logic
-
+Retrieval
 For each enabled company:
 
-Construct a query using:
+Build a query using:
 	•	company_name
-	•	ticker (if non-ambiguous)
 	•	aliases
 	•	keywords
+	•	ticker only if it’s safe (tickers can be ambiguous; if used, require confirming terms)
 
-Search within:
-	•	subreddit_scopes if provided
-	•	otherwise default finance/tech subreddits
+Scope:
+	•	If subreddit_scopes is provided, constrain queries to those subreddits first.
+	•	If subreddit_scopes is empty/missing, fall back to a default list (tech + finance subs).
 
-Filter to last 24 hours.
+Conceptual query pattern:
+	•	site:reddit.com/r/SUBREDDIT (“CompanyName” OR alias1 OR alias2) (keyword1 OR keyword2 OR keyword3)
 
-Exclude low-signal or removed posts.
+Filtering
+A post is relevant if:
+	•	company_name or an alias appears in title/snippet, OR
+	•	ticker appears AND at least one confirming keyword/alias appears
+
+Filter to last 24 hours using best available signal.
 
 Topic Tagging
+Alfred must apply topic tagging based on the company’s configured topics and keywords.
 
-Each matched post must include:
-	•	matched_terms (which keywords matched)
-	•	topics (array of topic labels)
-	•	topic_confidence (high, medium, low)
+Required outputs per post:
+	•	matched_terms: which aliases/keywords matched
+	•	topics: list of topic tags (from the configured topics list; derived deterministically)
+	•	topic_confidence: high/medium/low
 
-Topic taxonomy examples:
-	•	ipo_private_markets
-	•	earnings_financials
-	•	partnership
-	•	acquisition_mna
-	•	regulation_policy
-	•	security_privacy
-	•	competitive_landscape
-	•	hardware_infra
-	•	product_release
-	•	rumors_speculation
+Topic tagging rules:
+	•	First pass must be deterministic keyword mapping (stable and explainable).
+	•	Optional later: a small LLM classification call only for ambiguous items, restricted to choosing from the allowed topics for that company. No freeform.
 
-Tagging method:
-	1.	Deterministic keyword rules first
-	2.	Optional small LLM classification call for ambiguous posts
+Ranking per Company
+Sort by:
+	1.	match strength (more/stronger matched terms)
+	2.	recency
+	3.	optional engagement if added later
 
-Do not use LLM to search Reddit.
+Cap results per company (default 10).
 
-Output Structure
-
+Output
 sections.company_reddit_watch must include:
-	•	title
-	•	summary (optional cross-company overview)
-	•	generated_from
-	•	companies (array)
-	•	meta
+	•	title: “Company Reddit Watch”
+	•	summary: optional cross-company overview
+	•	generated_from:
+	•	timeframe_hours: 24
+	•	run_at: ISO timestamp
+	•	source: “brave_search”
+	•	companies: array
+	•	meta: counts
 
 Each company entry must include:
 	•	company_name
 	•	ticker
-	•	keywords
-	•	topics_of_interest
-	•	subreddit_scopes
-	•	query
-	•	items (array of posts)
-	•	company_summary (optional)
-	•	meta
+	•	keywords (echo from YAML)
+	•	topics_of_interest (echo from YAML topics)
+	•	subreddit_scopes (actual used)
+	•	query (final assembled query string)
+	•	items: array
+	•	company_summary: optional, else null
+	•	meta:
+	•	posts_found
+	•	posts_included
+	•	top_topics
 
 Each post item must include:
 	•	title
-	•	url
-	•	permalink
-	•	subreddit
-	•	created_utc
-	•	score
-	•	num_comments
-	•	domain
-	•	matched_terms
-	•	topics
-	•	topic_confidence
+	•	url (canonical post URL)
+	•	subreddit: string or null
+	•	created_at: ISO or null
+	•	matched_terms: array
+	•	topics: array
+	•	topic_confidence: high/medium/low
+Optional later: score/num_comments if enriched.
 
-If no posts found:
-	•	items must be empty array
-	•	company_summary must be null
+Failure Behavior
+If Brave returns too few results:
+	•	AI trending: output fewer items (minimum acceptable 5–8)
+	•	Company watch: output empty items for that company; company_summary null
 
-Select top 10 scoring posts.
+If Brave fails entirely:
+	•	Sections exist but items arrays are empty and summary explains “Unable to retrieve Reddit results today.”
 
-No hallucinated data.
+Cost Control
+Do not use LLM to search. Do not fetch full pages for all candidates.
+Bound Brave queries and optionally enrich only final selected posts.
+LLM usage is optional and should be small and bounded.
 
-⸻
-
-Cost Control Rules
-
-Do NOT:
-	•	Use LLM for searching
-	•	Use LLM for ranking
-	•	Pull entire comment trees
-	•	Scrape HTML
-
-Use LLM only for:
-	•	Optional summary paragraphs
-	•	Optional ambiguous topic classification
-
-One bounded LLM call per section maximum.
-
-⸻
-
-Operational Flow (Daily)
-
-At 07:00 EST:
-	1.	Read company config file
-	2.	Pull Reddit data
-	3.	Normalize posts
-	4.	Rank and dedupe
-	5.	Tag topics
-	6.	Construct sections.ai_reddit_trending
-	7.	Construct sections.company_reddit_watch
-	8.	Write JSON into report payload
-	9.	Publisher commits and pushes
-
-Infrastructure remains unchanged.
+End of Spec
