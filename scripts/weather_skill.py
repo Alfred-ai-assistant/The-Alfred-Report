@@ -54,9 +54,9 @@ def get_forecast(location: str = "22207") -> Dict:
         
         periods = forecast_data.get("properties", {}).get("periods", [])
         
-        # Collect today + next 3 days (up to 8 periods: today afternoon/night, next day day/night, etc.)
+        # Collect today + next 2 days (up to 6 periods: today afternoon/night, next day day/night, next day day/night)
         items = []
-        for period in periods[:8]:
+        for period in periods[:6]:
             item = {
                 "name": period.get("name"),
                 "temperature": f"{period.get('temperature')}°{period.get('temperatureUnit', 'F')}",

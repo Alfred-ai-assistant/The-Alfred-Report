@@ -82,7 +82,7 @@ def get_ai_reddit_trending() -> Dict:
         weight = source.get("weight", 1.0)
 
         query = f"site:reddit.com/r/{subreddit} (AI OR LLM OR 'machine learning' OR model OR inference OR training)"
-        results = brave_search(query, count=10)
+        results = brave_search(query, count=20)  # Request more to account for filtering
 
         for r in results:
             url = r.get("url", "")
