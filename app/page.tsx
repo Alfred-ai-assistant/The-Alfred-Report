@@ -263,17 +263,50 @@ export default async function Home({ searchParams }: PageProps) {
                   </p>
                 )}
                 {report.sections.youtube.items && report.sections.youtube.items.length > 0 && (
-                  <div className="space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {report.sections.youtube.items.map((item: any, idx: number) => (
-                      <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                        <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-red-400 hover:text-red-300 mb-2 block hover:underline">
-                          {item.title}
-                        </a>
-                        <div className="text-sm text-gray-500">
-                          <span>{item.channel}</span>
-                          {item.published_at && <span className="ml-4">{item.published_at.split('T')[0]}</span>}
+                      <a
+                        key={idx}
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block bg-slate-900/60 rounded-lg overflow-hidden border border-slate-700/50 hover:border-red-500/60 transition-all duration-200 hover:shadow-lg hover:shadow-red-900/20"
+                      >
+                        {/* Thumbnail with play button overlay */}
+                        <div className="relative aspect-video bg-black overflow-hidden">
+                          {item.thumbnail ? (
+                            <img
+                              src={item.thumbnail}
+                              alt={item.title}
+                              className="w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-200"
+                            />
+                          ) : (
+                            <div className="w-full h-full bg-slate-800 flex items-center justify-center">
+                              <span className="text-gray-600 text-sm">No thumbnail</span>
+                            </div>
+                          )}
+                          {/* Play button */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shadow-xl opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-200">
+                              <svg className="w-5 h-5 text-white ml-1" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                          </div>
                         </div>
-                      </div>
+                        {/* Info */}
+                        <div className="p-3">
+                          <p className="font-semibold text-gray-100 text-sm leading-snug mb-2 line-clamp-2 group-hover:text-red-300 transition-colors duration-200">
+                            {item.title}
+                          </p>
+                          <div className="flex items-center justify-between text-xs text-gray-500">
+                            <span className="truncate mr-2">{item.channel}</span>
+                            {item.published_at && (
+                              <span className="shrink-0">{item.published_at.split('T')[0]}</span>
+                            )}
+                          </div>
+                        </div>
+                      </a>
                     ))}
                   </div>
                 )}
