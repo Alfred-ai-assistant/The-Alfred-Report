@@ -17,6 +17,8 @@ from youtube_skill import get_youtube_updates
 from reddit_skill import get_reddit_sections
 from cost_tracker import init_tracker, save_log, get_telegram_message
 
+import re as _re
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIR = REPO_ROOT / "public" / "alfred-report"
 DAILY_DIR = PUBLIC_DIR / "daily"
@@ -66,6 +68,80 @@ def send_telegram_message(text: str):
     except Exception as e:
         print(f"[TELEGRAM] Failed to send: {e}")
 
+def _title_words(title: str) -> set:
+    """Return a set of significant lowercase words from a title."""
+    stopwords = {"the", "a", "an", "of", "in", "on", "at", "to", "for", "and", "or",
+                 "is", "are", "with", "by", "from", "that", "this", "it", "its", "as"}
+    words = set(_re.findall(r'\w+', title.lower()))
+    return words - stopwords
+
+
+def _titles_overlap(t1: str, t2: str, threshold: float = 0.55) -> bool:
+    """Return True if two titles share enough significant words to be the same story."""
+    w1 = _title_words(t1)
+    w2 = _title_words(t2)
+    if not w1 or not w2:
+        return False
+    overlap = len(w1 & w2) / min(len(w1), len(w2))
+    return overlap >= threshold
+
+
+def cross_section_deduplicate(sections: dict) -> dict:
+    """
+    Remove repeated items across sections so the same story never appears twice.
+
+    Rules (applied in order):
+      1. Strip Reddit URLs from ai_news — Reddit has its own dedicated section.
+      2. Strip ai_reddit_trending items whose URL OR title already appears in ai_news.
+      3. Strip company_reddit_watch items whose URL already appears in ai_reddit_trending
+         or ai_news.
+    """
+    # ── Step 1: remove Reddit links from ai_news ──────────────────────────────
+    if "ai_news" in sections:
+        before = len(sections["ai_news"].get("items", []))
+        sections["ai_news"]["items"] = [
+            item for item in sections["ai_news"].get("items", [])
+            if "reddit.com" not in item.get("url", "")
+        ]
+        removed = before - len(sections["ai_news"]["items"])
+        if removed:
+            print(f"[DEDUP] Removed {removed} Reddit URL(s) from ai_news")
+
+    # ── Step 2: remove ai_reddit_trending items already covered by ai_news ───
+    ai_news_urls   = {item["url"] for item in sections.get("ai_news", {}).get("items", [])}
+    ai_news_titles = [item.get("title", "") for item in sections.get("ai_news", {}).get("items", [])]
+
+    if "ai_reddit_trending" in sections:
+        kept = []
+        for item in sections["ai_reddit_trending"].get("items", []):
+            url   = item.get("url", "")
+            title = item.get("title", "")
+            if url in ai_news_urls:
+                print(f"[DEDUP] Dropped reddit item (URL match): {title[:60]}")
+                continue
+            if any(_titles_overlap(title, t) for t in ai_news_titles):
+                print(f"[DEDUP] Dropped reddit item (title overlap): {title[:60]}")
+                continue
+            kept.append(item)
+        sections["ai_reddit_trending"]["items"] = kept
+
+    # ── Step 3: remove company_reddit_watch items already in reddit/ai_news ──
+    seen_urls = ai_news_urls | {item["url"] for item in sections.get("ai_reddit_trending", {}).get("items", [])}
+
+    if "company_reddit_watch" in sections:
+        for company in sections["company_reddit_watch"].get("companies", []):
+            before = len(company.get("items", []))
+            company["items"] = [
+                item for item in company.get("items", [])
+                if item.get("url", "") not in seen_urls
+            ]
+            removed = before - len(company["items"])
+            if removed:
+                print(f"[DEDUP] Removed {removed} duplicate(s) from company watch: {company.get('company_name')}")
+
+    return sections
+
+
 def main():
     ensure_dirs()
 
@@ -98,7 +174,11 @@ def main():
     ai_reddit, company_reddit = get_reddit_sections()
     sections["ai_reddit_trending"] = ai_reddit
     sections["company_reddit_watch"] = company_reddit
-    
+
+    # ── Cross-section deduplication ──────────────────────────────────────────
+    # Remove the same story from appearing in multiple sections.
+    sections = cross_section_deduplicate(sections)
+
     payload = {
         "schema_version": 1,
         "report_date": report_date,
