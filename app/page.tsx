@@ -91,7 +91,7 @@ export default async function Home({ searchParams }: PageProps) {
            * so the browser places them in the right cell regardless of document order.
            * Document order matches the iPhone "as-is" layout.
            */
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 items-start grid-auto-rows-max">
 
             {/* ── WEATHER ─────────────────────────────────────────────────────────
                 Mobile: position 1 (doc order)
@@ -207,7 +207,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-kanban"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-1 md:row-start-1
-                           xl:col-start-2 xl:row-start-1"
+                           xl:col-start-3 xl:row-start-3"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.kanban.title}
@@ -311,7 +311,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-youtube"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-1 md:row-start-3
-                           xl:col-start-1 xl:row-start-2"
+                           xl:col-start-2 xl:row-start-1"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.youtube.title}
@@ -382,7 +382,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div
                 className="space-y-6
                            md:col-start-1 md:row-start-4
-                           xl:col-start-2 xl:row-start-2"
+                           xl:col-start-1 xl:row-start-2"
               >
                 <section id="section-ai_reddit_trending" className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
@@ -472,7 +472,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-company_reddit_watch"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-1 md:row-start-4
-                           xl:col-start-2 xl:row-start-2"
+                           xl:col-start-1 xl:row-start-2"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.company_reddit_watch.title}
