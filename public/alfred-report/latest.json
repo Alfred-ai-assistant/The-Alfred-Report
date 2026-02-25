@@ -66,21 +66,61 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-02-25T07:00:10.238060"
+        "updated_at": "2026-02-25T07:54:09.753701"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 503: \n",
-      "items": [],
+      "summary": "6 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g2cpfmq4X9vHQv9",
+          "content": "Amazon returns to Whole Foods",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g2cpjm82pGC887h",
+          "content": "Clean bedroom",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g3hwPFvcQgmFvgh",
+          "content": "Amazon return to UPS - Lee Hwy",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4QjQH9p9V9Ccjh",
+          "content": "Complete tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4gHcXr9c2HFc2h",
+          "content": "do mother's tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4j6r6hM6f4f6Ph",
+          "content": "Buy birthday card",
+          "due": "No due date",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 503: \n"
+        "updated_at": "2026-02-25T07:54:10.491365",
+        "task_count": 6,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
       "title": "Alfred's Tech Build Out",
-      "summary": "46 cards total • 0 in progress • 2 ready • 6 backlog • 38 done",
+      "summary": "47 cards total • 0 in progress • 2 ready • 7 backlog • 38 done",
       "items": [
         {
           "status": "In progress",
@@ -97,7 +137,7 @@
         },
         {
           "status": "Backlog",
-          "count": 6,
+          "count": 7,
           "cards": [
             "Set up weekly goals tracking",
             "Add Stock Portfolio News to The Alfred Report",
@@ -120,26 +160,26 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-02-25T07:00:11.954904",
-        "total_cards": 46,
+        "updated_at": "2026-02-25T07:54:11.090627",
+        "total_cards": 47,
         "in_progress": 0,
         "ready": 2,
-        "backlog": 6,
+        "backlog": 7,
         "done": 38
       }
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "Anthropic faces unprecedented pressure from US military leadership over Claude's safety guardrails. Defense Secretary Hegseth has given the company until Friday to reconsider restrictions on military applications, with the Pentagon threatening to declare Anthropic a pariah if it refuses. Reuters reports Anthropic maintains its position against easing military usage restrictions, escalating the standoff. This conflict reflects broader tensions between government defense interests and AI safety principles.\n\nElsewhere in the industry, OpenAI significantly reduced capital spending projections from $1.4 trillion to $600 billion, signaling recalibrated infrastructure expectations. Meanwhile, technical development continues: Cloudflare completed a Next.js rebuild using AI assistance, and researchers at Inception Labs introduced Mercury 2, a diffusion-powered reasoning LLM. Hugging Face expanded its ecosystem through Skills platform, and optimization work by Claude Code demonstrated substantial context compression gains.\n\nUser-facing AI integration remains contested. Firefox 148 launched an AI kill switch feature, giving users direct control over AI functionality. Separately, spam from AI-generated social media replies has become widespread, highlighting deployment externalities. Federal Reserve officials acknowledged AI's potential to trigger significant labor displacement and economic changes, while reporting indicates coordination between OpenAI, the US government, and Persona on identity surveillance applications raises additional governance questions.",
+      "summary": "The AI industry faces intensifying tensions between safety commitments and government pressure. Anthropic has dropped its flagship safety pledge and maintains resistance to military usage restrictions despite Pentagon threats of isolation, while US Military leaders directly argue for removing Claude safeguards. This reflects broader friction between AI safety practices and institutional demands.\n\nMeanwhile, competitive pressures shape infrastructure decisions. OpenAI revised capital spending expectations downward from $1.4T to $600B, indicating recalibrated investment strategies. Geopolitically, DeepSeek's use of Nvidia's Blackwell chip despite US export controls demonstrates the limited effectiveness of semiconductor restrictions in AI competition between nations.\n\nEnterprise adoption continues accelerating. Cloudflare rebuilt Next.js with AI in one week, while Hugging Face expanded its platform with Skills and Claude Code Remote Control broadens enterprise automation. Firefox 148's AI Kill Switch feature reflects growing user demand for explicit control over AI integration.\n\nBroader concerns persist. AI-generated replies proliferate across platforms, raising authenticity questions. The Federal Reserve acknowledged AI's labor market disruption potential. A reported identity surveillance system involving OpenAI, the US government, and Persona raises oversight questions about AI infrastructure deployment.",
       "items": [
         {
           "title": "Firefox 148 Launches with AI Kill Switch Feature and More Enhancements",
           "url": "https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/",
           "source": "serverhost.com",
-          "why_it_matters": "Firefox's AI kill switch provides users with direct control over AI features in their browser, addressing growing concerns about default AI integration in web tools.",
+          "why_it_matters": "Firefox's AI Kill Switch feature provides users with explicit control over AI integration in their browser, addressing growing concerns about mandatory AI features.",
           "tags": [
-            "policy",
-            "enterprise"
+            "enterprise",
+            "policy"
           ],
           "published_at": "2026-02-24T05:47:23Z",
           "hn_score": 454
@@ -148,116 +188,126 @@
           "title": "OpenAI, the US government and Persona built an identity surveillance machine",
           "url": "https://vmfunc.re/blog/persona/",
           "source": "vmfunc.re",
-          "why_it_matters": "A collaboration between OpenAI, the US government, and Persona on identity surveillance raises questions about AI system deployment in sensitive government applications and potential privacy implications.",
+          "why_it_matters": "The collaboration between OpenAI, the US government, and Persona on identity surveillance infrastructure raises significant questions about surveillance capabilities and oversight.",
           "tags": [
             "policy",
             "safety"
           ],
           "published_at": "2026-02-24T18:23:03Z",
-          "hn_score": 586
+          "hn_score": 591
         },
         {
           "title": "How we rebuilt Next.js with AI in one week",
           "url": "https://blog.cloudflare.com/vinext/",
           "source": "blog.cloudflare.com",
-          "why_it_matters": "Cloudflare's rapid Next.js rebuild using AI demonstrates enterprise adoption of AI-assisted development workflows and potential productivity gains in infrastructure engineering.",
+          "why_it_matters": "Cloudflare's rapid rebuilding of Next.js using AI demonstrates enterprise adoption of AI for development acceleration and workflow modernization.",
           "tags": [
             "enterprise",
             "research"
           ],
           "published_at": "2026-02-24T20:07:00Z",
-          "hn_score": 461
+          "hn_score": 464
         },
         {
           "title": "Anthropic Drops Flagship Safety Pledge",
           "url": "https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/",
           "source": "time.com",
-          "why_it_matters": "Anthropic's abandonment of its flagship safety pledge signals a significant policy shift that may affect how the company positions its competitive stance relative to other AI labs.",
+          "why_it_matters": "Anthropic's abandonment of its flagship safety pledge signals a major shift in the company's positioning on AI safety commitments.",
           "tags": [
             "safety",
             "policy"
           ],
           "published_at": "2026-02-25T01:08:46Z",
-          "hn_score": 365
+          "hn_score": 394
         },
         {
           "title": "Mercury 2: Fast reasoning LLM powered by diffusion",
           "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2",
           "source": "inceptionlabs.ai",
-          "why_it_matters": "Mercury 2's diffusion-based reasoning approach represents a novel technical architecture for LLM inference, potentially offering alternative optimization paths for model performance.",
+          "why_it_matters": "Mercury 2's diffusion-based approach to fast reasoning represents a potentially significant advancement in LLM architecture and reasoning capabilities.",
           "tags": [
             "models",
             "research"
           ],
           "published_at": "2026-02-24T22:46:23Z",
-          "hn_score": 247
+          "hn_score": 255
         },
         {
           "title": "OpenAI resets spending expectations, from $1.4T to $600B",
           "url": "https://www.cnbc.com/2026/02/20/openai-resets-spend-expectations-targets-around-600-billion-by-2030.html",
           "source": "cnbc.com",
-          "why_it_matters": "OpenAI's reduction of projected spending from $1.4 trillion to $600 billion reflects significant recalibration of infrastructure investment expectations in the AI industry.",
+          "why_it_matters": "OpenAI's substantial reduction in capital spending expectations from $1.4T to $600B indicates recalibrated investment strategy and infrastructure plans.",
           "tags": [
             "funding",
-            "hardware"
+            "enterprise"
           ],
           "published_at": "2026-02-24T18:22:31Z",
-          "hn_score": 208
+          "hn_score": 209
         },
         {
           "title": "Hugging Face Skills",
           "url": "https://github.com/huggingface/skills",
           "source": "github.com",
-          "why_it_matters": "Hugging Face's Skills platform expands the ecosystem for model development and deployment, potentially democratizing access to AI capabilities.",
+          "why_it_matters": "Hugging Face Skills release expands the platform's capabilities for AI model development and deployment.",
           "tags": [
             "open-source",
             "enterprise"
           ],
           "published_at": "2026-02-24T17:30:19Z",
-          "hn_score": 175
+          "hn_score": 177
         },
         {
           "title": "US Military leaders meet with Anthropic to argue against Claude safeguards",
           "url": "https://www.theguardian.com/us-news/2026/feb/24/anthropic-claude-military-ai",
           "source": "theguardian.com",
-          "why_it_matters": "US military leadership directly engaging Anthropic to modify Claude's safeguards indicates high-stakes tension between defense interests and AI safety constraints.",
+          "why_it_matters": "US Military leadership's engagement with Anthropic to remove Claude safeguards demonstrates direct institutional pressure on AI safety policies.",
           "tags": [
             "policy",
             "safety"
           ],
           "published_at": "2026-02-25T00:20:50Z",
-          "hn_score": 166
+          "hn_score": 168
         },
         {
           "title": "Pentagon threatens to make Anthropic a pariah",
           "url": "https://www.cnn.com/2026/02/24/tech/hegseth-anthropic-ai-military-amodei",
           "source": "cnn.com",
-          "why_it_matters": "The Pentagon's threat to isolate Anthropic escalates pressure on the company's safety positioning and represents potential government leverage in AI governance.",
+          "why_it_matters": "Pentagon's threat to isolate Anthropic escalates government pressure on AI company safety practices and represents potential consequences for safety commitments.",
           "tags": [
             "policy",
             "safety"
           ],
           "published_at": "2026-02-24T20:35:41Z",
-          "hn_score": 129
+          "hn_score": 130
         },
         {
           "title": "LLM=True",
           "url": "https://blog.codemine.be/posts/2026/20260222-be-quiet/",
           "source": "blog.codemine.be",
-          "why_it_matters": "This appears to be a placeholder or metadata entry rather than substantive news content.",
+          "why_it_matters": "This story title alone provides insufficient context for analysis.",
           "tags": [
             "research"
           ],
           "published_at": "2026-02-25T09:05:40Z",
-          "hn_score": 106
+          "hn_score": 127
+        },
+        {
+          "title": "Exclusive: China's DeepSeek trained AI model on Nvidia's best chip despite US ban, official says | Reuters",
+          "url": "https://www.reuters.com/world/china/chinas-deepseek-trained-ai-model-nvidias-best-chip-despite-us-ban-official-says-2026-02-24/",
+          "source": "reuters.com",
+          "why_it_matters": "DeepSeek's use of Nvidia's Blackwell chip despite US export controls demonstrates the limitations of semiconductor restrictions and ongoing geopolitical AI competition.",
+          "tags": [
+            "hardware",
+            "policy"
+          ]
         },
         {
           "title": "AI-generated replies are a scourge these days",
           "url": "https://twitter.com/simonw/status/2025909963445707171",
           "source": "twitter.com",
-          "why_it_matters": "AI-generated spam replies have become a user experience problem on social platforms, highlighting deployment externalities of unrestricted AI systems.",
+          "why_it_matters": "Growing prevalence of AI-generated replies indicates quality and authenticity concerns across social platforms.",
           "tags": [
-            "safety",
+            "enterprise",
             "policy"
           ],
           "published_at": "2026-02-24T09:37:19Z",
@@ -267,51 +317,39 @@
           "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
           "url": "https://www.reuters.com/technology/artificial-intelligence/",
           "source": "reuters.com",
-          "why_it_matters": "Reuters aggregates AI development news and policy updates, serving as a reference source for industry tracking.",
+          "why_it_matters": "Anthropic's continued resistance to easing military usage restrictions affirms the company's stance despite government pressure.",
           "tags": [
             "policy",
-            "research"
+            "safety"
           ]
+        },
+        {
+          "title": "Claude Code Remote Control",
+          "url": "https://code.claude.com/docs/en/remote-control",
+          "source": "code.claude.com",
+          "why_it_matters": "Claude Code Remote Control expansion broadens Claude's deployment capabilities for enterprise automation and integration scenarios.",
+          "tags": [
+            "enterprise",
+            "models"
+          ],
+          "published_at": "2026-02-25T07:22:56Z",
+          "hn_score": 86
         },
         {
           "title": "Fed's Cook says AI triggering big changes, sees possible unemployment rise",
           "url": "https://www.reuters.com/business/feds-cook-says-ai-triggering-big-changes-sees-possible-short-term-unemployment-2026-02-24/",
           "source": "reuters.com",
-          "why_it_matters": "Federal Reserve acknowledgment of AI-driven labor displacement suggests policymakers are monitoring employment impacts of AI adoption.",
+          "why_it_matters": "Federal Reserve acknowledgment of AI-driven labor market disruption signals official concern about employment impacts from AI deployment.",
           "tags": [
             "policy"
           ],
           "published_at": "2026-02-24T23:34:26Z",
           "hn_score": 62
-        },
-        {
-          "title": "Show HN: Context Mode – 315 KB of MCP output becomes 5.4 KB in Claude Code",
-          "url": "https://github.com/mksglu/claude-context-mode",
-          "source": "github.com",
-          "why_it_matters": "Context Mode's compression of Claude Code outputs demonstrates practical efficiency gains in AI-assisted development workflows.",
-          "tags": [
-            "models",
-            "enterprise"
-          ],
-          "published_at": "2026-02-25T06:23:30Z",
-          "hn_score": 61
-        },
-        {
-          "title": "Hegseth gives Anthropic until Friday to back down on AI safeguards",
-          "url": "https://www.axios.com/2026/02/24/anthropic-pentagon-claude-hegseth-dario",
-          "source": "axios.com",
-          "why_it_matters": "Defense Secretary Hegseth's ultimatum to Anthropic represents direct political pressure on the company's safety policies, with a concrete deadline.",
-          "tags": [
-            "policy",
-            "safety"
-          ],
-          "published_at": "2026-02-24T18:31:14Z",
-          "hn_score": 79
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-02-25T12:00:04.418177+00:00",
+        "updated_at": "2026-02-25T12:54:09.593184+00:00",
         "story_count": 15,
         "lanes_used": [
           "tier1",
@@ -321,12 +359,157 @@
     },
     "youtube": {
       "title": "Today's AI Daily Digest",
-      "summary": "No new videos added today.",
-      "items": [],
+      "summary": "18 new videos added across your AI channels",
+      "items": [
+        {
+          "video_id": "fVFVfO48CQc",
+          "title": "The Easiest Way To Host OpenClaw #Sponsored",
+          "channel": "Matt Wolfe",
+          "published_at": "2026-02-24T14:00:00Z",
+          "thumbnail": "https://i.ytimg.com/vi/fVFVfO48CQc/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=fVFVfO48CQc"
+        },
+        {
+          "video_id": "-cipJRQP37k",
+          "title": "Anthropic Killed Your AI Startup.",
+          "channel": "corbin",
+          "published_at": "2026-02-24T15:00:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/-cipJRQP37k/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=-cipJRQP37k"
+        },
+        {
+          "video_id": "QWzLPn164w0",
+          "title": "Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.",
+          "channel": "AI News & Strategy Daily | Nate B Jones",
+          "published_at": "2026-02-24T15:00:45Z",
+          "thumbnail": "https://i.ytimg.com/vi/QWzLPn164w0/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=QWzLPn164w0"
+        },
+        {
+          "video_id": "crJI8hrhypM",
+          "title": "Is OpenClaw Safe? (The Risks Nobody Talks About)",
+          "channel": "OpenClaw Tutorials",
+          "published_at": "2026-02-24T15:08:10Z",
+          "thumbnail": "https://i.ytimg.com/vi/crJI8hrhypM/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=crJI8hrhypM"
+        },
+        {
+          "video_id": "JvCI9iK4qEQ",
+          "title": "Is OpenClaw Safe? (The Risks Nobody Talks About) part 2",
+          "channel": "OpenClaw Tutorials",
+          "published_at": "2026-02-24T15:09:41Z",
+          "thumbnail": "https://i.ytimg.com/vi/JvCI9iK4qEQ/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=JvCI9iK4qEQ"
+        },
+        {
+          "video_id": "mI1d1WqIQWQ",
+          "title": "ways to use ai",
+          "channel": "Matthew Berman",
+          "published_at": "2026-02-24T16:18:02Z",
+          "thumbnail": "https://i.ytimg.com/vi/mI1d1WqIQWQ/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=mI1d1WqIQWQ"
+        },
+        {
+          "video_id": "HNgb-K54Ge0",
+          "title": "Is OpenClaw Safe? (The Risks Nobody Talks About) Part 3",
+          "channel": "OpenClaw Tutorials",
+          "published_at": "2026-02-24T18:00:23Z",
+          "thumbnail": "https://i.ytimg.com/vi/HNgb-K54Ge0/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=HNgb-K54Ge0"
+        },
+        {
+          "video_id": "Bqdf6Um_8OE",
+          "title": "Mercury 2: The First Diffusion Model That 'Thinks'\"",
+          "channel": "Prompt Engineering",
+          "published_at": "2026-02-24T18:05:00Z",
+          "thumbnail": "https://i.ytimg.com/vi/Bqdf6Um_8OE/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Bqdf6Um_8OE"
+        },
+        {
+          "video_id": "9v5lScN_Bps",
+          "title": "Turn OpenClaw into a WhatsApp AI Assistant",
+          "channel": "OpenClaw Tutorials",
+          "published_at": "2026-02-24T18:08:17Z",
+          "thumbnail": "https://i.ytimg.com/vi/9v5lScN_Bps/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=9v5lScN_Bps"
+        },
+        {
+          "video_id": "8UE1a3sQKTc",
+          "title": "AI Tools Won’t Save Your Business. This Will.",
+          "channel": "Avi Unlocks AI",
+          "published_at": "2026-02-24T19:09:57Z",
+          "thumbnail": "https://i.ytimg.com/vi/8UE1a3sQKTc/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=8UE1a3sQKTc"
+        },
+        {
+          "video_id": "mAwJYUJib1I",
+          "title": "Gemini 3.1 Pro just made Antigravity 10x more powerful… (it’s wild)",
+          "channel": "David Ondrej",
+          "published_at": "2026-02-24T20:02:22Z",
+          "thumbnail": "https://i.ytimg.com/vi/mAwJYUJib1I/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=mAwJYUJib1I"
+        },
+        {
+          "video_id": "x9rWFiIubmc",
+          "title": "Claude Code, the Finance Junior Analyst + The Global Memory Shortage: Doug O'Laughlin, SemiAnalysis",
+          "channel": "Latent Space",
+          "published_at": "2026-02-24T20:30:38Z",
+          "thumbnail": "https://i.ytimg.com/vi/x9rWFiIubmc/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=x9rWFiIubmc"
+        },
+        {
+          "video_id": "uFiB9gsptCo",
+          "title": "AI that runs locally, that is what Ollama is all about!",
+          "channel": "Avi Unlocks AI",
+          "published_at": "2026-02-24T21:38:43Z",
+          "thumbnail": "https://i.ytimg.com/vi/uFiB9gsptCo/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=uFiB9gsptCo"
+        },
+        {
+          "video_id": "vxpuLIA17q4",
+          "title": "Set up a multi-agent team using OpenClaw in Discord",
+          "channel": "Alex Finn",
+          "published_at": "2026-02-24T22:33:59Z",
+          "thumbnail": "https://i.ytimg.com/vi/vxpuLIA17q4/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=vxpuLIA17q4"
+        },
+        {
+          "video_id": "3110hx3ygp0",
+          "title": "25 ADVANCED Use Cases For OpenClaw...",
+          "channel": "Matthew Berman",
+          "published_at": "2026-02-24T23:59:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/3110hx3ygp0/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=3110hx3ygp0"
+        },
+        {
+          "video_id": "sNCPV-Og9A8",
+          "title": "China’s Attack on Anthropic Explained",
+          "channel": "Matt Wolfe",
+          "published_at": "2026-02-25T00:35:33Z",
+          "thumbnail": "https://i.ytimg.com/vi/sNCPV-Og9A8/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=sNCPV-Og9A8"
+        },
+        {
+          "video_id": "Qvz2t-hUlRI",
+          "title": "$1 Trillion Gone",
+          "channel": "Wes Roth",
+          "published_at": "2026-02-25T01:07:12Z",
+          "thumbnail": "https://i.ytimg.com/vi/Qvz2t-hUlRI/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Qvz2t-hUlRI"
+        },
+        {
+          "video_id": "v0SoXncLr1Q",
+          "title": "Open source is the ultimate check on the AI giants. It forces top labs to ship better. #ai #openclaw",
+          "channel": "This Week in AI",
+          "published_at": "2026-02-25T04:23:25Z",
+          "thumbnail": "https://i.ytimg.com/vi/v0SoXncLr1Q/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=v0SoXncLr1Q"
+        }
+      ],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-02-25T12:00:42.512931+00:00",
-        "video_count": 0
+        "updated_at": "2026-02-25T12:54:39.698983+00:00",
+        "video_count": 18
       }
     },
     "ai_reddit_trending": {
@@ -756,8 +939,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "OpenClaw",
               "AI Agents",
+              "OpenClaw",
               "Agents"
             ]
           }
@@ -766,7 +949,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-02-25T12:00:45.542399+00:00"
+        "run_at": "2026-02-25T12:54:42.689006+00:00"
       },
       "meta": {
         "companies_tracked": 3,
