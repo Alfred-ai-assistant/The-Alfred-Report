@@ -103,7 +103,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-weather"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-2 md:row-start-1
-                           xl:col-start-3 xl:row-start-1"
+                           xl:col-start-3 xl:row-start-1 xl:-mt-4"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.weather.title}
@@ -166,7 +166,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-todoist"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-2 md:row-start-2
-                           xl:col-start-3 xl:row-start-2"
+                           xl:col-start-3 xl:row-start-2 xl:-mt-4"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.todoist.title}
@@ -207,7 +207,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-kanban"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-1 md:row-start-1
-                           xl:col-start-3 xl:row-start-3"
+                           xl:col-start-3 xl:row-start-3 xl:-mt-4"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.kanban.title}
@@ -311,7 +311,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-youtube"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-1 md:row-start-3
-                           xl:col-start-2 xl:row-start-1"
+                           xl:col-start-2 xl:row-start-1 xl:-mt-4"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.youtube.title}
@@ -382,7 +382,7 @@ export default async function Home({ searchParams }: PageProps) {
               <div
                 className="space-y-6
                            md:col-start-1 md:row-start-4
-                           xl:col-start-1 xl:row-start-2"
+                           xl:col-start-1 xl:row-start-2 xl:-mt-4"
               >
                 <section id="section-ai_reddit_trending" className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8">
                   <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
@@ -472,7 +472,7 @@ export default async function Home({ searchParams }: PageProps) {
                 id="section-company_reddit_watch"
                 className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
                            md:col-start-1 md:row-start-4
-                           xl:col-start-1 xl:row-start-2"
+                           xl:col-start-1 xl:row-start-2 xl:-mt-4"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.company_reddit_watch.title}
