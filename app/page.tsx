@@ -35,7 +35,7 @@ export default async function Home({ searchParams }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 to-black text-white p-4 md:p-8">
       {/* Widen container for larger screens */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full mx-4 md:mx-8">
         <header className="mb-8 md:mb-12">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-3xl md:text-5xl font-bold">The Alfred Report</h1>
