@@ -75,6 +75,8 @@ companies:
       - stocks
       - investing
       - wallstreetbets
+      - EquityZen
+      - NVDA_Stock
     enabled: true
 
   - company_name: OpenAI
@@ -93,4 +95,5 @@ companies:
     subreddit_scopes:
       - technology
       - wallstreetbets
+      - EquityZen
     enabled: true
