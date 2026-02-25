@@ -91,7 +91,7 @@ export default async function Home({ searchParams }: PageProps) {
            * so the browser places them in the right cell regardless of document order.
            * Document order matches the iPhone "as-is" layout.
            */
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 items-start grid-auto-rows-max">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-0 items-start grid-auto-rows-auto">
 
             {/* ── WEATHER ─────────────────────────────────────────────────────────
                 Mobile: position 1 (doc order)
