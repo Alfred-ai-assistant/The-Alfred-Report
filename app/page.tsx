@@ -33,11 +33,12 @@ export default async function Home({ searchParams }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 to-black text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <header className="mb-12">
+    <main className="min-h-screen bg-gradient-to-br from-slate-900 to-black text-white p-4 md:p-8">
+      {/* Widen container for larger screens */}
+      <div className="max-w-7xl mx-auto">
+        <header className="mb-8 md:mb-12">
           <div className="flex items-center justify-between mb-4">
-            <h1 className="text-5xl font-bold">The Alfred Report</h1>
+            <h1 className="text-3xl md:text-5xl font-bold">The Alfred Report</h1>
             <a href="/archive" className="text-cyan-400 hover:text-cyan-300 text-sm font-medium">
               View Archives →
             </a>
@@ -57,9 +58,9 @@ export default async function Home({ searchParams }: PageProps) {
 
         {/* Table of Contents */}
         {report && report.sections && (
-          <nav className="mb-12 bg-slate-800/30 border border-slate-700 rounded-lg p-6">
+          <nav className="mb-8 md:mb-12 bg-slate-800/30 border border-slate-700 rounded-lg p-6">
             <h2 className="text-lg font-semibold text-gray-200 mb-3">Contents</h2>
-            <ul className="grid grid-cols-1 gap-2 text-sm">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2 text-sm">
               {Object.entries(report.sections)
                 .filter(([key]) => key !== 'company_reddit_watch')
                 .map(([key, section]: [string, any]) => (
@@ -80,11 +81,31 @@ export default async function Home({ searchParams }: PageProps) {
         ) : !report ? (
           <div className="text-gray-400">Report not available</div>
         ) : (
-          <div className="space-y-8">
-            {/* Render sections in TOC order */}
+          /*
+           * Responsive grid layout:
+           *   Mobile  (<768px):  1 column  — stacks in document order
+           *   iPad    (md, 768–1279px): 2 columns — Left: AI News, Kanban, YouTube, Reddit | Right: Weather, Todoist
+           *   iMac    (xl, 1280px+):   3 columns — Left: AI News, YouTube | Mid: Kanban, Reddit | Right: Weather, Todoist
+           *
+           * Each section has explicit md:col-start / md:row-start and xl:col-start / xl:row-start
+           * so the browser places them in the right cell regardless of document order.
+           * Document order matches the iPhone "as-is" layout.
+           */
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 items-start">
+
+            {/* ── WEATHER ─────────────────────────────────────────────────────────
+                Mobile: position 1 (doc order)
+                iPad:   col 2, row 1  (top-right)
+                iMac:   col 3, row 1  (top-right)
+            ─────────────────────────────────────────────────────────────────── */}
             {report.sections?.weather && (
-              <section id="section-weather" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <section
+                id="section-weather"
+                className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
+                           md:col-start-2 md:row-start-1
+                           xl:col-start-3 xl:row-start-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.weather.title}
                 </h2>
                 {report.sections.weather.summary && (
@@ -135,9 +156,19 @@ export default async function Home({ searchParams }: PageProps) {
               </section>
             )}
 
+            {/* ── TODOIST ─────────────────────────────────────────────────────────
+                Mobile: position 2 (doc order)
+                iPad:   col 2, row 2  (below weather)
+                iMac:   col 3, row 2  (below weather)
+            ─────────────────────────────────────────────────────────────────── */}
             {report.sections?.todoist && (
-              <section id="section-todoist" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <section
+                id="section-todoist"
+                className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
+                           md:col-start-2 md:row-start-2
+                           xl:col-start-3 xl:row-start-2"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.todoist.title}
                 </h2>
                 {report.sections.todoist.summary && (
@@ -166,9 +197,19 @@ export default async function Home({ searchParams }: PageProps) {
               </section>
             )}
 
+            {/* ── KANBAN ──────────────────────────────────────────────────────────
+                Mobile: position 3 (doc order)
+                iPad:   col 1, row 1  (top-left)
+                iMac:   col 2, row 1  (top-middle)
+            ─────────────────────────────────────────────────────────────────── */}
             {report.sections?.kanban && (
-              <section id="section-kanban" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <section
+                id="section-kanban"
+                className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
+                           md:col-start-1 md:row-start-1
+                           xl:col-start-2 xl:row-start-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.kanban.title}
                 </h2>
                 {report.sections.kanban.summary && (
@@ -208,9 +249,19 @@ export default async function Home({ searchParams }: PageProps) {
               </section>
             )}
 
+            {/* ── AI NEWS ─────────────────────────────────────────────────────────
+                Mobile: position 4 (doc order)
+                iPad:   col 1, row 2  (below kanban on left)
+                iMac:   col 1, row 1  (top-left)
+            ─────────────────────────────────────────────────────────────────── */}
             {report.sections?.ai_news && (
-              <section id="section-ai_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <section
+                id="section-ai_news"
+                className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
+                           md:col-start-1 md:row-start-2
+                           xl:col-start-1 xl:row-start-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.ai_news.title}
                 </h2>
                 {report.sections.ai_news.summary && (
@@ -231,7 +282,7 @@ export default async function Home({ searchParams }: PageProps) {
                           </p>
                         )}
                         {item.tags && item.tags.length > 0 && (
-                          <div className="flex gap-2 mb-2">
+                          <div className="flex gap-2 mb-2 flex-wrap">
                             {item.tags.map((tag: string) => (
                               <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
                                 {tag}
@@ -250,9 +301,19 @@ export default async function Home({ searchParams }: PageProps) {
               </section>
             )}
 
+            {/* ── YOUTUBE ─────────────────────────────────────────────────────────
+                Mobile: position 5 (doc order)
+                iPad:   col 1, row 3  (below ai_news)
+                iMac:   col 1, row 2  (below ai_news)
+            ─────────────────────────────────────────────────────────────────── */}
             {report.sections?.youtube && (
-              <section id="section-youtube" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <section
+                id="section-youtube"
+                className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
+                           md:col-start-1 md:row-start-3
+                           xl:col-start-1 xl:row-start-2"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.youtube.title}
                 </h2>
                 {report.sections.youtube.summary && (
@@ -261,7 +322,7 @@ export default async function Home({ searchParams }: PageProps) {
                   </p>
                 )}
                 {report.sections.youtube.items && report.sections.youtube.items.length > 0 && (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {report.sections.youtube.items.map((item: any, idx: number) => (
                       <a
                         key={idx}
@@ -311,11 +372,20 @@ export default async function Home({ searchParams }: PageProps) {
               </section>
             )}
 
-            {/* AI Reddit Trending + Company Watch (nested) */}
+            {/* ── REDDIT (AI Trending + Company Watch) ────────────────────────────
+                Mobile: position 6 (doc order)
+                iPad:   col 1, row 4  (below youtube)
+                iMac:   col 2, row 2  (below kanban)
+                Wrapped in a single div so both sections share the same grid cell.
+            ─────────────────────────────────────────────────────────────────── */}
             {report.sections?.ai_reddit_trending && (
-              <>
-                <section id="section-ai_reddit_trending" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                  <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <div
+                className="space-y-6
+                           md:col-start-1 md:row-start-4
+                           xl:col-start-2 xl:row-start-2"
+              >
+                <section id="section-ai_reddit_trending" className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                     {report.sections.ai_reddit_trending.title}
                   </h2>
                   {report.sections.ai_reddit_trending.summary && (
@@ -333,7 +403,7 @@ export default async function Home({ searchParams }: PageProps) {
                           <div className="flex gap-3 flex-wrap items-center">
                             <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>
                             {item.matched_terms && item.matched_terms.length > 0 && (
-                              <div className="flex gap-1">
+                              <div className="flex gap-1 flex-wrap">
                                 {item.matched_terms.slice(0, 3).map((term: string) => (
                                   <span key={term} className="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">
                                     {term}
@@ -348,10 +418,10 @@ export default async function Home({ searchParams }: PageProps) {
                   )}
                 </section>
 
-                {/* Company Reddit Watch nested under AI Reddit */}
+                {/* Company Reddit Watch — nested under AI Reddit */}
                 {report.sections?.company_reddit_watch && (
-                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8 ml-4">
-                    <h3 className="text-2xl font-bold mb-3 text-purple-400">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8 ml-0 md:ml-4 xl:ml-0">
+                    <h3 className="text-xl md:text-2xl font-bold mb-3 text-purple-400">
                       {report.sections.company_reddit_watch.title}
                     </h3>
                     {report.sections.company_reddit_watch.summary && (
@@ -393,13 +463,18 @@ export default async function Home({ searchParams }: PageProps) {
                     </div>
                   </section>
                 )}
-              </>
+              </div>
             )}
 
-            {/* Company Reddit Watch (special nested structure) -- OLD FALLBACK, REMOVE LATER */}
+            {/* Company Reddit Watch fallback (when no ai_reddit_trending) — OLD FALLBACK */}
             {report.sections?.company_reddit_watch && !report.sections?.ai_reddit_trending && (
-              <section id="section-company_reddit_watch" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+              <section
+                id="section-company_reddit_watch"
+                className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8
+                           md:col-start-1 md:row-start-4
+                           xl:col-start-2 xl:row-start-2"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
                   {report.sections.company_reddit_watch.title}
                 </h2>
                 {report.sections.company_reddit_watch.summary && (
@@ -441,6 +516,7 @@ export default async function Home({ searchParams }: PageProps) {
                 </div>
               </section>
             )}
+
           </div>
         )}
 
