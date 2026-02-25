@@ -56,9 +56,9 @@ export default async function Home({ searchParams }: PageProps) {
           )}
         </header>
 
-        {/* Table of Contents */}
+        {/* Table of Contents - hidden on iMac (xl) */}
         {report && report.sections && (
-          <nav className="mb-8 md:mb-12 bg-slate-800/30 border border-slate-700 rounded-lg p-6">
+          <nav className="mb-8 md:mb-12 bg-slate-800/30 border border-slate-700 rounded-lg p-6 xl:hidden">
             <h2 className="text-lg font-semibold text-gray-200 mb-3">Contents</h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2 text-sm">
               {Object.entries(report.sections)
