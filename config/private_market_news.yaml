@@ -30,10 +30,12 @@ private_market_news:
         capital_events:
           - '"Cerebras" AND funding'
           - '"Cerebras" AND IPO'
+          - '"Cerebras" AND valuation'
 
         strategic:
           - '"Cerebras" AND partnership'
           - '"Cerebras" AND contract'
+          - '"Cerebras" AND government'
 
         product:
           - '"Cerebras" AND chip'

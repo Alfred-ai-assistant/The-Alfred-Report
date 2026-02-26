@@ -119,6 +119,10 @@ def fetch_brave_news(query: str, count: int = 10) -> List[Dict]:
         print(f"[PRIVATE_MARKET] BRAVE_API_KEY not set, skipping: {query[:50]}...")
         return []
     
+    # Add a small delay between requests to avoid rate limiting
+    import time
+    time.sleep(0.5)
+    
     try:
         encoded_query = urllib.parse.quote(query)
         url = f"https://api.search.brave.com/res/v1/news/search?q={encoded_query}&count={count}&freshness=day"
