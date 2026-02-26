@@ -1,0 +1,30 @@
+# List of stock tickers for watchlist news section.
+# These are supplementary holdings (different from portfolio).
+
+tickers:
+  - symbol: CRM
+    enabled: true
+
+  - symbol: TSM
+    enabled: true
+
+  - symbol: GLW
+    enabled: true
+
+  - symbol: AMAT
+    enabled: true
+
+  - symbol: ASML
+    enabled: true
+
+  - symbol: MU
+    enabled: true
+
+  - symbol: LRCX
+    enabled: true
+
+  - symbol: GEV
+    enabled: true
+
+  - symbol: BMY
+    enabled: true

@@ -497,15 +497,36 @@ def process_ticker(
     return result, included_urls
 
 
-def get_portfolio_news() -> Dict:
-    """Main entry point for the stock news section."""
+def get_stock_news_section(
+    config_file: str,
+    section_name: str,
+    section_title: str,
+    state_key: str,
+    log_prefix: str
+) -> Dict:
+    """
+    Generic stock news fetcher.
+    
+    Args:
+        config_file: YAML filename in config/ (e.g., "stocks.tickers.yaml")
+        section_name: JSON section key (e.g., "portfolio_news")
+        section_title: Display title (e.g., "Stock Portfolio News")
+        state_key: Key in state file for Fresh-Only tracking
+        log_prefix: Log prefix (e.g., "[STOCK_NEWS]")
+    """
     now = datetime.now(timezone.utc)
     report_date = now.strftime("%Y-%m-%d")
     
-    print(f"[STOCK_NEWS] Starting portfolio news fetch for {report_date}")
+    print(f"{log_prefix} Starting {section_name} fetch for {report_date}")
     
     # Load configs
-    tickers_config, ranker_config = load_config()
+    tickers_path = CONFIG_DIR / config_file
+    ranker_path = CONFIG_DIR / "stocks.news_ranker.yaml"
+    
+    with open(tickers_path) as f:
+        tickers_config = yaml.safe_load(f)
+    with open(ranker_path) as f:
+        ranker_config = yaml.safe_load(f)
     
     # Load seen state
     seen_state = load_seen_state()
@@ -533,7 +554,7 @@ def get_portfolio_news() -> Dict:
                 all_included_urls.extend(urls)
                 debug["tickers_processed"] += 1
         except Exception as e:
-            print(f"[STOCK_NEWS] Error processing {ticker.get('symbol', '?')}: {e}")
+            print(f"{log_prefix} Error processing {ticker.get('symbol', '?')}: {e}")
             continue
     
     # Update state with today's URLs
@@ -552,17 +573,28 @@ def get_portfolio_news() -> Dict:
         
         save_seen_state(seen_state)
         debug["state_written"] = True
-        print(f"[STOCK_NEWS] Saved {len(new_urls)} new URLs to state")
+        print(f"{log_prefix} Saved {len(new_urls)} new URLs to state")
     
-    print(f"[STOCK_NEWS] Complete: {len(results)} tickers with stories")
+    print(f"{log_prefix} Complete: {len(results)} tickers with stories")
     
     return {
-        "section": "portfolio_news",
-        "title": "Stock Portfolio News",
+        "section": section_name,
+        "title": section_title,
         "generated_at": now.isoformat(),
         "tickers": results,
         "debug": debug,
     }
+
+
+def get_portfolio_news() -> Dict:
+    """Entry point for portfolio news section."""
+    return get_stock_news_section(
+        config_file="stocks.tickers.yaml",
+        section_name="portfolio_news",
+        section_title="Stock Portfolio News",
+        state_key="portfolio",
+        log_prefix="[STOCK_NEWS]"
+    )
 
 
 if __name__ == "__main__":
