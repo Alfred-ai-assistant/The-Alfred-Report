@@ -1,0 +1,98 @@
+# Scoring + freshness rules for stock news ranking.
+# Primary requirement: do NOT repeat links that appeared on yesterday's report.
+
+fresh_only:
+  # Number of prior reports to exclude links from.
+  # 1 = exclude anything shown yesterday.
+  exclude_if_seen_in_last_reports: 1
+
+  # If true, a URL that changes slightly (e.g., tracking params) could reappear.
+  # Keep false to enforce strict "no repeats".
+  allow_repeat_if_url_changed: false
+
+freshness:
+  # Exponential decay half-life for story freshness.
+  half_life_minutes: 720
+
+  # Prevent older-but-important stories from going to zero.
+  floor: 0.15
+
+thresholds:
+  # Minimum score to be included in Top Stories.
+  top_min_score: 55
+
+  # Always include if above this score (still must pass Fresh-Only).
+  must_include_score: 80
+
+  # Optional "Worth a glance" score band.
+  glance_range: [45, 54]
+
+  # Max items per ticker.
+  max_top: 5
+  max_glance: 3
+
+sources:
+  # trust/speed: 0-100, tier: 1 (best) .. 4 (lowest)
+  reuters: { trust: 95, speed: 90, tier: 1 }
+  bloomberg: { trust: 95, speed: 90, tier: 1 }
+  wsj: { trust: 92, speed: 75, tier: 1 }
+  ft: { trust: 90, speed: 70, tier: 1 }
+
+  cnbc: { trust: 80, speed: 90, tier: 2 }
+  marketwatch: { trust: 75, speed: 80, tier: 2 }
+  barrons: { trust: 85, speed: 65, tier: 2 }
+
+  seekingalpha: { trust: 70, speed: 60, tier: 3 }
+  benzinga: { trust: 72, speed: 88, tier: 3 }
+
+  reddit: { trust: 35, speed: 85, tier: 4 }
+  x: { trust: 35, speed: 90, tier: 4 }
+
+event_weights:
+  guidance: 95
+  sec_filing: 90
+  earnings: 85
+  m_and_a_confirmed: 90
+  m_and_a_rumor: 70
+  regulatory_action: 90
+  probe_or_investigation: 80
+  lawsuit: 75
+  contract_win: 70
+  product_launch_major: 60
+  analyst_change_major: 55
+  analyst_reiterate: 25
+  macro: 35
+  other: 20
+
+dedupe:
+  # Remove tracking params so "same story" doesn't sneak back in.
+  strip_query_params:
+    - utm_source
+    - utm_medium
+    - utm_campaign
+    - utm_term
+    - utm_content
+    - ref
+    - cmpid
+
+novelty:
+  same_tag_penalty_6h: 0.25
+  same_tag_penalty_24h: 0.45
+  similar_title_penalty_48h: 0.60
+
+syndication:
+  confirm_boost_per_extra_source: 0.15
+  confirm_boost_cap: 1.0
+  tier1_boost: 0.25
+
+scoring:
+  # Weights for the 0-100 blended score before boosts/penalties.
+  source_weight: 0.45
+  event_weight: 0.40
+  freshness_weight: 0.15
+
+  # Optional extra multipliers (keep mild).
+  sentiment_nudge_max: 0.08
+  magnitude_default: 1.0
+  magnitude_strong: 1.2
+  magnitude_extreme: 1.35
