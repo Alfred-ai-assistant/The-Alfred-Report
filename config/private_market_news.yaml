@@ -26,6 +26,7 @@ private_market_news:
       queries:
         primary:
           - '"Cerebras"'
+          - 'Cerebras news'
 
         capital_events:
           - '"Cerebras" AND funding'
@@ -36,10 +37,15 @@ private_market_news:
           - '"Cerebras" AND partnership'
           - '"Cerebras" AND contract'
           - '"Cerebras" AND government'
+          - '"Cerebras" AND strategy'
+          - '"Cerebras" AND event'
+          - '"Cerebras" AND summit'
 
         product:
           - '"Cerebras" AND chip'
           - '"Cerebras" AND AI accelerator'
+          - '"Cerebras" AND inference'
+          - '"Cerebras" AND wafer'
 
 
     - name: "Groq"

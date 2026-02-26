@@ -238,12 +238,13 @@ def compute_score(
         event_boost = 1.05
     
     # Freshness decay (older = lower score)
+    # 12-hour half-life with much lower floor (0.05) to heavily penalize old news
     now = datetime.now(timezone.utc)
     published = story.get("published_at", now)
     if isinstance(published, str):
         published = datetime.fromisoformat(published.replace('Z', '+00:00'))
     hours_ago = (now - published).total_seconds() / 3600
-    freshness = max(0.5, math.exp(-hours_ago / 24))  # 24hr half-life
+    freshness = max(0.05, math.exp(-hours_ago / 12))  # 12hr half-life, 0.05 floor
     
     # Final score (0-100 scale)
     raw_score = base * group_weight * source_weight * event_boost * freshness
