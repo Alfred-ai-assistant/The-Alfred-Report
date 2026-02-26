@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Ensure anchor links work properly on mobile Safari */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll margin to sections so they're not cut off when navigated to */
+[id^="section-"] {
+  scroll-margin-top: 1rem;
+}
