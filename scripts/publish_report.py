@@ -17,7 +17,7 @@ from youtube_skill import get_youtube_updates
 from reddit_skill import get_reddit_sections
 from stock_news_skill import get_portfolio_news
 from stock_watchlist_skill import get_watchlist_news
-from private_market_skill import get_private_market_news
+from company_news_links import get_company_news_links
 from cost_tracker import init_tracker, save_log, get_telegram_message
 
 import re as _re
@@ -182,8 +182,8 @@ def main():
     sections["portfolio_news"] = get_portfolio_news()
     sections["watchlist_news"] = get_watchlist_news()
     
-    # Private Market News
-    sections["private_market_news"] = get_private_market_news()
+    # Links to Company News (simple hard-coded Google News links)
+    sections["company_news_links"] = get_company_news_links()
 
     # ── Cross-section deduplication ──────────────────────────────────────────
     # Remove the same story from appearing in multiple sections.
