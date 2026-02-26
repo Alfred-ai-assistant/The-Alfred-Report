@@ -92,7 +92,7 @@ export default async function Home({ searchParams }: PageProps) {
               {/* LEFT COLUMN */}
               <div className="flex-1 flex flex-col gap-0">
                 {report.sections?.ai_news && (
-                  <section id="section-ai_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.ai_news.title}
                     </h2>
@@ -135,7 +135,7 @@ export default async function Home({ searchParams }: PageProps) {
 
                 {report.sections?.ai_reddit_trending && (
                   <>
-                    <section id="section-ai_reddit_trending" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                       <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                         {report.sections.ai_reddit_trending.title}
                       </h2>
@@ -217,7 +217,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.company_reddit_watch && !report.sections?.ai_reddit_trending && (
-                  <section id="section-company_reddit_watch" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.company_reddit_watch.title}
                     </h2>
@@ -265,7 +265,7 @@ export default async function Home({ searchParams }: PageProps) {
               {/* MIDDLE COLUMN */}
               <div className="flex-1 flex flex-col gap-0">
                 {report.sections?.youtube && (
-                  <section id="section-youtube" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.youtube.title}
                     </h2>
@@ -323,7 +323,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.portfolio_news && (
-                  <section id="section-portfolio_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.portfolio_news.title}
                     </h2>
@@ -377,7 +377,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.watchlist_news && (
-                  <section id="section-watchlist_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.watchlist_news.title}
                     </h2>
@@ -431,7 +431,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.private_market_news && (
-                  <section id="section-private_market_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.private_market_news.title}
                     </h2>
@@ -476,7 +476,7 @@ export default async function Home({ searchParams }: PageProps) {
               {/* RIGHT COLUMN */}
               <div className="flex-1 flex flex-col gap-0">
                 {report.sections?.weather && (
-                  <section id="section-weather" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.weather.title}
                     </h2>
@@ -529,7 +529,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.todoist && (
-                  <section id="section-todoist" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.todoist.title}
                     </h2>
@@ -560,7 +560,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.kanban && (
-                  <section id="section-kanban" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.kanban.title}
                     </h2>
