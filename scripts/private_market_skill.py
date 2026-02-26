@@ -2,14 +2,9 @@
 """
 Private Market News Skill for The Alfred Report
 
-Fetches news per private company via Brave Search, scores using config-based ranker,
-applies Fresh-Only filter (no repeats from yesterday), and returns ranked stories.
-
-Key decisions per Sean:
-- Uses Brave Search API (not Google/Yahoo as news sources)
-- No AI summaries (cost control)
-- Config from private_companies.yaml and stocks.news_ranker.yaml (shared ranker)
-- State persisted to state/private_market_news_seen.json
+Fetches news per private company via Brave Search using the structured
+query groups defined in private_market_news.yaml. Applies query group weights,
+source type weights, per-company limits, and Fresh-Only deduplication.
 """
 
 import json
@@ -25,57 +20,51 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Set
 from collections import defaultdict
 
-# Add scripts dir to path
 sys.path.insert(0, str(Path(__file__).parent))
-from cache_util import get_cached, save_cache, hash_data
 from cost_tracker import record as record_cost
 
 BRAVE_API_KEY = os.environ.get("BRAVE_API_KEY", "")
 
-# Repo paths
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_DIR = REPO_ROOT / "config"
 STATE_DIR = REPO_ROOT / "state"
 STATE_FILE = STATE_DIR / "private_market_news_seen.json"
 
-# Source domain mapping (maps known domains to config source keys)
-DOMAIN_TO_SOURCE = {
-    "reuters.com": "reuters",
-    "reuters.co.uk": "reuters",
-    "bloomberg.com": "bloomberg",
-    "bloomberg.co.uk": "bloomberg",
-    "wsj.com": "wsj",
-    "ft.com": "ft",
-    "cnbc.com": "cnbc",
-    "marketwatch.com": "marketwatch",
-    "barrons.com": "barrons",
-    "seekingalpha.com": "seekingalpha",
-    "benzinga.com": "benzinga",
-    "techcrunch.com": "techcrunch",
-    "theinformation.com": "theinformation",
-    "axios.com": "axios",
-    "businessinsider.com": "businessinsider",
-    "forbes.com": "forbes",
-    "fortune.com": "fortune",
-    "reddit.com": "reddit",
-    "x.com": "x",
-    "twitter.com": "x",
-    "finance.yahoo.com": "yahoo",
-    "news.google.com": "google",
+# Source domain to type mapping
+DOMAIN_TO_SOURCE_TYPE = {
+    # News outlets
+    "reuters.com": "news",
+    "reuters.co.uk": "news",
+    "bloomberg.com": "news",
+    "bloomberg.co.uk": "news",
+    "wsj.com": "news",
+    "ft.com": "news",
+    "cnbc.com": "news",
+    "marketwatch.com": "news",
+    "barrons.com": "news",
+    "axios.com": "news",
+    "techcrunch.com": "news",
+    "theinformation.com": "news",
+    "businessinsider.com": "news",
+    "forbes.com": "news",
+    "fortune.com": "news",
+    "venturebeat.com": "news",
+    "calcalistech.com": "news",
+    # Blogs (lower weight)
+    "medium.com": "blog",
+    "substack.com": "blog",
+    "reddit.com": "blog",
+    "x.com": "blog",
+    "twitter.com": "blog",
 }
 
 
-def load_config() -> Tuple[Dict, Dict]:
-    """Load company list and ranker config from YAML."""
-    companies_path = CONFIG_DIR / "private_companies.yaml"
-    ranker_path = CONFIG_DIR / "stocks.news_ranker.yaml"
-    
-    with open(companies_path) as f:
-        companies_config = yaml.safe_load(f)
-    with open(ranker_path) as f:
-        ranker_config = yaml.safe_load(f)
-    
-    return companies_config, ranker_config
+def load_config() -> Dict:
+    """Load private market news config from YAML."""
+    config_path = CONFIG_DIR / "private_market_news.yaml"
+    with open(config_path) as f:
+        data = yaml.safe_load(f)
+    return data.get("private_market_news", {})
 
 
 def load_seen_state() -> Dict:
@@ -99,37 +88,27 @@ def save_seen_state(state: Dict):
     tmp.replace(STATE_FILE)
 
 
-def map_domain_to_source(url: str) -> str:
-    """Map a URL to a source key from config."""
+def get_source_type(url: str) -> str:
+    """Determine source type (news, web, blog) from URL."""
     try:
         from urllib.parse import urlparse
         parsed = urlparse(url)
         hostname = parsed.hostname or ""
         hostname = hostname.lower().lstrip("www.")
-        return DOMAIN_TO_SOURCE.get(hostname, "unknown")
+        return DOMAIN_TO_SOURCE_TYPE.get(hostname, "web")
     except Exception:
-        return "unknown"
+        return "web"
 
 
-def canonicalize_url(url: str, strip_params: List[str]) -> str:
-    """Create a canonical URL for deduplication/freshness checks."""
+def canonicalize_url(url: str) -> str:
+    """Create a canonical URL for deduplication."""
     try:
-        from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
+        from urllib.parse import urlparse, urlunparse
         parsed = urlparse(url)
         hostname = (parsed.hostname or "").lower()
         path = parsed.path.rstrip("/") if parsed.path else ""
-        
-        # Strip query params
-        if parsed.query:
-            qs = parse_qs(parsed.query)
-            for param in strip_params:
-                qs.pop(param, None)
-            query = urlencode(qs, doseq=True)
-        else:
-            query = ""
-        
-        # Rebuild without fragment
-        return urlunparse(("https", hostname, path, "", query, ""))
+        # Strip query params and fragment
+        return urlunparse(("https", hostname, path, "", "", ""))
     except Exception:
         return url.lower().rstrip("/")
 
@@ -137,7 +116,7 @@ def canonicalize_url(url: str, strip_params: List[str]) -> str:
 def fetch_brave_news(query: str, count: int = 10) -> List[Dict]:
     """Fetch news results via Brave Search API."""
     if not BRAVE_API_KEY:
-        print(f"[PRIVATE_MARKET] BRAVE_API_KEY not set, skipping query: {query}")
+        print(f"[PRIVATE_MARKET] BRAVE_API_KEY not set, skipping: {query[:50]}...")
         return []
     
     try:
@@ -161,17 +140,17 @@ def fetch_brave_news(query: str, count: int = 10) -> List[Dict]:
                 "title": item.get("title", ""),
                 "url": item.get("url", ""),
                 "description": item.get("description", ""),
-                "published": item.get("age", ""),  # Brave returns age string
+                "published": item.get("age", ""),
             })
         
         return results
     except Exception as e:
-        print(f"[PRIVATE_MARKET] Brave Search failed for '{query}': {e}")
+        print(f"[PRIVATE_MARKET] Brave Search failed: {e}")
         return []
 
 
 def parse_brave_age(age_str: str) -> datetime:
-    """Parse Brave's age string to datetime (approximate)."""
+    """Parse Brave's age string to datetime."""
     now = datetime.now(timezone.utc)
     if not age_str:
         return now
@@ -190,32 +169,26 @@ def parse_brave_age(age_str: str) -> datetime:
             m = re.search(r'(\d+)', age_str)
             if m:
                 return now - timedelta(days=int(m.group(1)))
-        elif "week" in age_str:
-            m = re.search(r'(\d+)', age_str)
-            if m:
-                return now - timedelta(weeks=int(m.group(1)))
     except Exception:
         pass
     
     return now
 
 
-def tag_story(title: str, snippet: str, event_weights: Dict) -> List[str]:
-    """Apply event tags based on headline + snippet keywords."""
-    text = f"{title} {snippet}".lower()
+def tag_story(title: str, description: str) -> List[str]:
+    """Apply event tags based on headline + description."""
+    text = f"{title} {description}".lower()
     tags = []
     
-    # Keyword patterns for each event type (private market specific)
     patterns = {
-        "funding": ["raises", "funding", "series", "valuation", "unicorn", "investment", "investors", "led by", "backed by"],
-        "ipo_rumor": ["ipo", "going public", "public offering", "spac", "listing", "debut"],
-        "m_and_a_confirmed": ["acquires", "merger completed", "deal closed", "to acquire", "acquisition", "buys"],
-        "m_and_a_rumor": ["in talks", "considering sale", "exploring options", "potential deal", "shopping for buyer"],
+        "funding": ["raises", "funding", "series", "valuation", "unicorn", "investment", "investors", "led by", "backed by", "million", "billion"],
+        "ipo": ["ipo", "going public", "public offering", "spac", "listing", "debut", "files to go public"],
+        "mna_confirmed": ["acquires", "acquired", "merger completed", "deal closed", "to acquire", "acquisition", "buys"],
+        "mna_rumor": ["in talks", "considering sale", "exploring options", "potential deal", "shopping for buyer"],
         "layoffs": ["layoffs", "cuts jobs", "workforce reduction", "firing", "staff reduction"],
-        "product_launch_major": ["launches", "new product", "unveils", "announces", "releases"],
-        "partnership": ["partnership", "collaboration", "teams up with", "joins forces", "strategic alliance"],
-        "regulatory_action": ["doj", "ftc", "investigation", "regulators", "lawsuit", "sued", "fine"],
-        "leadership": ["ceo", "cto", "cfo", "president", "executive", "hires", "departing", "resigns"],
+        "product": ["launches", "new product", "unveils", "announces", "releases", "chip", "accelerator"],
+        "partnership": ["partnership", "collaboration", "teams up with", "joins forces", "strategic alliance", "contract"],
+        "regulatory": ["fda", "investigation", "regulators", "lawsuit", "sued", "fine", "trial"],
         "other": [],
     }
     
@@ -229,293 +202,154 @@ def tag_story(title: str, snippet: str, event_weights: Dict) -> List[str]:
     return tags
 
 
-def score_story(
+def compute_score(
     story: Dict,
-    source_key: str,
-    event_tags: List[str],
-    ranker_config: Dict,
-    seen_tags_this_company: Set[str]
+    query_group: str,
+    config: Dict
 ) -> Tuple[float, str]:
-    """Score a story using the ranker config. Returns (score, why_ranked)."""
-    sources = ranker_config.get("sources", {})
-    event_weights = ranker_config.get("event_weights", {})
-    freshness_config = ranker_config.get("freshness", {})
-    thresholds = ranker_config.get("thresholds", {})
-    scoring_weights = ranker_config.get("scoring", {})
-    novelty_config = ranker_config.get("novelty", {})
-    syndication = ranker_config.get("syndication", {})
+    """Compute weighted score for a story."""
+    settings = config.get("settings", {})
+    query_weights = settings.get("query_group_weights", {})
+    source_weights = settings.get("source_type_weights", {})
+    min_score = settings.get("min_score", 0.55)
     
-    # Source score (trust/speed)
-    if source_key in sources:
-        src = sources[source_key]
-        trust = src.get("trust", 40)
-        speed = src.get("speed", 50)
-        tier = src.get("tier", 3)
-    else:
-        trust, speed, tier = 40, 50, 3
+    # Base score from position (higher = better)
+    base = 0.7
     
-    source_score = 0.7 * trust + 0.3 * speed
+    # Query group weight
+    group_weight = query_weights.get(query_group, 1.0)
     
-    # Event score - private market uses different weights
-    # Map private market tags to ranker weights
-    private_event_weights = {
-        "funding": 95,
-        "ipo_rumor": 90,
-        "m_and_a_confirmed": 90,
-        "m_and_a_rumor": 70,
-        "layoffs": 75,
-        "product_launch_major": 60,
-        "partnership": 65,
-        "regulatory_action": 85,
-        "leadership": 55,
-        "other": 20,
-    }
+    # Source type weight
+    source_type = get_source_type(story.get("url", ""))
+    source_weight = source_weights.get(source_type, 1.0)
     
-    max_event = 20  # default "other"
-    tag_weights = []
-    for tag in event_tags:
-        w = private_event_weights.get(tag, event_weights.get(tag, 20))
-        tag_weights.append((tag, w))
-        if w > max_event:
-            max_event = w
+    # Event tags boost
+    tags = story.get("tags", [])
+    event_boost = 1.0
+    if "funding" in tags:
+        event_boost = 1.3
+    elif "ipo" in tags:
+        event_boost = 1.25
+    elif "mna_confirmed" in tags:
+        event_boost = 1.2
+    elif "mna_rumor" in tags:
+        event_boost = 1.1
+    elif "partnership" in tags:
+        event_boost = 1.05
     
-    # Bonus for additional tags (capped)
-    other_tags_sum = sum(w for _, w in sorted(tag_weights, key=lambda x: -x[1])[1:])
-    other_tags_capped = min(60, other_tags_sum)
-    event_score = max_event + 0.15 * other_tags_capped
-    
-    # Freshness
+    # Freshness decay (older = lower score)
     now = datetime.now(timezone.utc)
     published = story.get("published_at", now)
     if isinstance(published, str):
         published = datetime.fromisoformat(published.replace('Z', '+00:00'))
+    hours_ago = (now - published).total_seconds() / 3600
+    freshness = max(0.5, math.exp(-hours_ago / 24))  # 24hr half-life
     
-    minutes_ago = (now - published).total_seconds() / 60
-    half_life = freshness_config.get("half_life_minutes", 720)
-    floor = freshness_config.get("floor", 0.15)
-    freshness = max(floor, math.exp(-minutes_ago / half_life))
+    # Final score (0-100 scale)
+    raw_score = base * group_weight * source_weight * event_boost * freshness
+    final_score = min(100, raw_score * 100)
     
-    # Base score
-    sw = scoring_weights.get("source_weight", 0.45)
-    ew = scoring_weights.get("event_weight", 0.40)
-    fw = scoring_weights.get("freshness_weight", 0.15)
-    
-    base_score = sw * source_score + ew * event_score + fw * freshness * 100
-    
-    # Syndication boost
-    unique_sources = story.get("unique_sources", 1)
-    confirm_boost = min(
-        syndication.get("confirm_boost_cap", 1.0),
-        syndication.get("confirm_boost_per_extra_source", 0.15) * (unique_sources - 1)
-    ) * 100
-    
-    tier1_boost = syndication.get("tier1_boost", 0.25) * 100 if tier == 1 else 0
-    
-    # Novelty penalty
-    novelty_penalty = 0
-    primary_tag = event_tags[0] if event_tags else "other"
-    if primary_tag in seen_tags_this_company:
-        # Penalize if same tag already seen for this company
-        novelty_penalty = novelty_config.get("same_tag_penalty_6h", 0.25) * 100
-    
-    final_score = base_score + confirm_boost + tier1_boost - novelty_penalty
-    final_score = max(0, min(100, final_score))
-    
-    why = f"Event={primary_tag}({max_event}) Source={source_key}({int(source_score)}) Fresh={freshness:.2f}"
-    if confirm_boost > 0:
-        why += f" Confirm={unique_sources}src"
-    if tier1_boost > 0:
-        why += " Tier1+"
-    if novelty_penalty > 0:
-        why += f" Novelty-{int(novelty_penalty)}"
+    why = f"group={query_group}({group_weight}) src={source_type}({source_weight}) event={tags[0] if tags else 'other'}({event_boost:.2f}) fresh={freshness:.2f}"
     
     return final_score, why
 
 
 def process_company(
     company: Dict,
-    ranker_config: Dict,
-    seen_state: Dict,
-    report_date: str,
-    debug: Dict
-) -> Optional[Tuple[Dict, List[str]]]:
+    config: Dict,
+    seen_urls: Set[str]
+) -> Optional[Dict]:
     """Process a single company and return its stories."""
     name = company.get("name", "")
     if not company.get("enabled", True):
         return None
     
+    limit = company.get("limit", 5)
+    queries = company.get("queries", {})
+    
     print(f"[PRIVATE_MARKET] Processing {name}...")
     
-    # Fetch news via Brave Search
-    queries = [
-        f'"{name}" company news',
-        f'"{name}" funding OR investment',
-        f'"{name}" startup news'
-    ]
-    raw_results = []
-    for query in queries:
-        results = fetch_brave_news(query, count=8)
-        raw_results.extend(results)
-        debug["total_candidates"] += len(results)
+    # Collect results from all query groups
+    all_results = []
     
-    if not raw_results:
+    for group_name, group_queries in queries.items():
+        if not isinstance(group_queries, list):
+            continue
+        for query in group_queries:
+            results = fetch_brave_news(query, count=10)
+            for r in results:
+                r["_query_group"] = group_name
+                r["_source_query"] = query
+            all_results.extend(results)
+    
+    if not all_results:
         return None
     
-    # Config values
-    strip_params = ranker_config.get("dedupe", {}).get("strip_query_params", [])
-    freshness_config = ranker_config.get("freshness", {})
-    
-    # Normalize and cluster
-    clusters = defaultdict(lambda: {
-        "titles": [],
-        "urls": [],
-        "sources": set(),
-        "earliest": None,
-        "best_url": None,
-        "title": ""
-    })
-    
-    for r in raw_results:
+    # Deduplicate by canonical URL
+    seen_canonical = set()
+    unique_results = []
+    for r in all_results:
         if not r.get("url") or not r.get("title"):
             continue
-        
-        source_key = map_domain_to_source(r["url"])
-        canonical = canonicalize_url(r["url"], strip_params)
-        
-        # Normalize title for dedupe
-        norm_title = re.sub(r'[^\w\s]', '', r["title"].lower())
-        norm_title = re.sub(r'\s+', ' ', norm_title).strip()
-        
-        # Use domain + normalized title as cluster key
-        cluster_key = f"{source_key}:{norm_title[:50]}"
-        
-        published = parse_brave_age(r.get("published", ""))
-        
-        clusters[cluster_key]["titles"].append(r["title"])
-        clusters[cluster_key]["urls"].append((canonical, r["url"]))
-        clusters[cluster_key]["sources"].add(source_key)
-        clusters[cluster_key]["title"] = r["title"]
-        
-        if clusters[cluster_key]["earliest"] is None or published < clusters[cluster_key]["earliest"]:
-            clusters[cluster_key]["earliest"] = published
-    
-    # Build final story list from clusters
-    stories = []
-    for key, cluster in clusters.items():
-        # Pick best URL (prefer tier 1 sources, else shortest canonical)
-        tier = ranker_config.get("sources", {}).get(list(cluster["sources"])[0] if cluster["sources"] else "unknown", {}).get("tier", 3)
-        best_url = cluster["urls"][0][1]  # Default to first
-        for canonical, original in cluster["urls"]:
-            this_source = map_domain_to_source(original)
-            this_tier = ranker_config.get("sources", {}).get(this_source, {}).get("tier", 3)
-            if this_tier == 1:
-                best_url = original
-                break
-        
-        # Event tagging
-        snippet = ""
-        tags = tag_story(cluster["title"], snippet, ranker_config.get("event_weights", {}))
-        
-        stories.append({
-            "title": cluster["title"],
-            "url": best_url,
-            "canonical_url": cluster["urls"][0][0],  # First canonical for freshness check
-            "published_at": cluster["earliest"].isoformat() if cluster["earliest"] else datetime.now(timezone.utc).isoformat(),
-            "sources": list(cluster["sources"]),
-            "unique_sources": len(cluster["sources"]),
-            "tags": tags,
-        })
+        canonical = canonicalize_url(r["url"])
+        if canonical not in seen_canonical:
+            seen_canonical.add(canonical)
+            r["_canonical_url"] = canonical
+            unique_results.append(r)
     
     # Fresh-Only filter
-    fresh_only_config = ranker_config.get("fresh_only", {})
-    exclude_count = fresh_only_config.get("exclude_if_seen_in_last_reports", 1)
+    fresh_results = [r for r in unique_results if r["_canonical_url"] not in seen_urls]
     
-    fresh_stories = []
-    seen_urls = set()
-    for date_key, date_data in seen_state.items():
-        if isinstance(date_data, dict):
-            seen_urls.update(date_data.get("urls", []))
-    
-    for s in stories:
-        if s["canonical_url"] not in seen_urls:
-            fresh_stories.append(s)
-        else:
-            debug["removed_fresh_only"] += 1
-    
-    if not fresh_stories:
+    if not fresh_results:
         print(f"[PRIVATE_MARKET] {name}: all stories filtered by Fresh-Only")
         return None
     
-    # Score stories
-    seen_tags = set()
-    scored = []
-    for s in fresh_stories:
-        source_key = s["sources"][0] if s["sources"] else "unknown"
-        score, why = score_story(s, source_key, s["tags"], ranker_config, seen_tags)
-        s["score"] = round(score, 1)
-        s["why_ranked"] = why
-        scored.append(s)
-        if s["tags"]:
-            seen_tags.add(s["tags"][0])
+    # Normalize and score
+    stories = []
+    for r in fresh_results:
+        published = parse_brave_age(r.get("published", ""))
+        tags = tag_story(r["title"], r.get("description", ""))
+        
+        story = {
+            "title": r["title"],
+            "url": r["url"],
+            "canonical_url": r["_canonical_url"],
+            "published_at": published.isoformat(),
+            "description": r.get("description", ""),
+            "tags": tags,
+            "_query_group": r["_query_group"],
+        }
+        
+        score, why = compute_score(story, r["_query_group"], config)
+        story["score"] = round(score, 1)
+        story["why_ranked"] = why
+        stories.append(story)
     
-    # Sort by score
-    scored.sort(key=lambda x: -x["score"])
+    # Sort by score descending
+    stories.sort(key=lambda x: -x["score"])
     
-    # Select top and glance
-    thresholds = ranker_config.get("thresholds", {})
-    top_min = thresholds.get("top_min_score", 55)
-    must_include = thresholds.get("must_include_score", 80)
-    glance_range = thresholds.get("glance_range", [45, 54])
-    max_top = thresholds.get("max_top", 5)
-    max_glance = thresholds.get("max_glance", 3)
+    # Apply per-company limit
+    top_stories = stories[:limit]
     
-    top_stories = []
-    glance_stories = []
-    included_urls = []
-    
-    for s in scored:
-        if s["score"] >= must_include:
-            top_stories.append(s)
-            included_urls.append(s["canonical_url"])
-        elif s["score"] >= top_min and len(top_stories) < max_top:
-            top_stories.append(s)
-            included_urls.append(s["canonical_url"])
-        elif glance_range[0] <= s["score"] <= glance_range[1] and len(glance_stories) < max_glance:
-            if s["tags"] and s["tags"][0] not in {t["tags"][0] if t["tags"] else "" for t in top_stories}:
-                glance_stories.append(s)
-                included_urls.append(s["canonical_url"])
-    
-    if not top_stories and not glance_stories:
+    if not top_stories:
         return None
     
-    # Build output
-    result = {
+    return {
         "company": name,
-        "top_stories": [
+        "stories": [
             {
                 "score": s["score"],
                 "tags": s["tags"],
                 "headline": s["title"],
-                "source": s["sources"][0] if s["sources"] else "unknown",
+                "source": get_source_type(s["url"]),
                 "url": s["url"],
                 "published_at": s["published_at"],
                 "why_ranked": s["why_ranked"],
             }
             for s in top_stories
         ],
-        "glance": [
-            {
-                "score": s["score"],
-                "tags": s["tags"],
-                "headline": s["title"],
-                "why_ranked": s["why_ranked"],
-            }
-            for s in glance_stories
-        ]
+        "_included_urls": [s["canonical_url"] for s in top_stories]
     }
-    
-    # Return included URLs for state update
-    return result, included_urls
 
 
 def get_private_market_news() -> Dict:
@@ -525,40 +359,32 @@ def get_private_market_news() -> Dict:
     
     print(f"[PRIVATE_MARKET] Starting private market news fetch for {report_date}")
     
-    # Load configs
-    companies_path = CONFIG_DIR / "private_companies.yaml"
-    ranker_path = CONFIG_DIR / "stocks.news_ranker.yaml"
-    
-    with open(companies_path) as f:
-        companies_config = yaml.safe_load(f)
-    with open(ranker_path) as f:
-        ranker_config = yaml.safe_load(f)
+    config = load_config()
+    settings = config.get("settings", {})
+    companies = config.get("companies", [])
     
     # Load seen state
     seen_state = load_seen_state()
+    dedupe_days = settings.get("dedupe_days", 1)
     
-    # Debug tracking
-    debug = {
-        "companies_processed": 0,
-        "total_candidates": 0,
-        "removed_fresh_only": 0,
-        "state_written": False,
-        "report_date": report_date,
-    }
+    # Build set of seen URLs from recent days
+    seen_urls = set()
+    cutoff = (now - timedelta(days=dedupe_days)).strftime("%Y-%m-%d")
+    for date_key, date_data in seen_state.items():
+        if date_key >= cutoff and isinstance(date_data, dict):
+            seen_urls.update(date_data.get("urls", []))
     
     # Process each company
-    companies = companies_config.get("companies", [])
     results = []
     all_included_urls = []
     
     for company in companies:
         try:
-            result = process_company(company, ranker_config, seen_state, report_date, debug)
+            result = process_company(company, config, seen_urls)
             if result:
-                company_data, urls = result
-                results.append(company_data)
+                urls = result.pop("_included_urls", [])
+                results.append(result)
                 all_included_urls.extend(urls)
-                debug["companies_processed"] += 1
         except Exception as e:
             print(f"[PRIVATE_MARKET] Error processing {company.get('name', '?')}: {e}")
             continue
@@ -566,19 +392,17 @@ def get_private_market_news() -> Dict:
     # Update state with today's URLs
     if all_included_urls:
         if report_date not in seen_state:
-            seen_state[report_date] = {"urls": [], "by_company": {}}
+            seen_state[report_date] = {"urls": []}
         
-        # Deduplicate
         existing = set(seen_state[report_date].get("urls", []))
         new_urls = [u for u in all_included_urls if u not in existing]
         seen_state[report_date]["urls"].extend(new_urls)
         
         # Cleanup old entries (keep last 30 days)
-        cutoff = (now - timedelta(days=30)).strftime("%Y-%m-%d")
-        seen_state = {k: v for k, v in seen_state.items() if k >= cutoff}
+        cutoff_30 = (now - timedelta(days=30)).strftime("%Y-%m-%d")
+        seen_state = {k: v for k, v in seen_state.items() if k >= cutoff_30}
         
         save_seen_state(seen_state)
-        debug["state_written"] = True
         print(f"[PRIVATE_MARKET] Saved {len(new_urls)} new URLs to state")
     
     print(f"[PRIVATE_MARKET] Complete: {len(results)} companies with stories")
@@ -589,12 +413,12 @@ def get_private_market_news() -> Dict:
         "companies": results,
         "meta": {
             "generated_at": now.isoformat(),
-            "debug": debug,
+            "companies_count": len(companies),
+            "with_stories": len(results),
         }
     }
 
 
 if __name__ == "__main__":
-    # Test run
     result = get_private_market_news()
     print(json.dumps(result, indent=2))
