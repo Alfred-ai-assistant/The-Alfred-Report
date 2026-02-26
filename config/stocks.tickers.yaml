@@ -1,0 +1,42 @@
+# List of stock tickers to include in the Alfred Report "Stock News" module.
+# Keep this file simple; per-ticker overrides are optional.
+
+tickers:
+  - symbol: NVDA
+    enabled: true
+
+  - symbol: GOOGL
+    enabled: true
+
+  - symbol: AMZN
+    enabled: true
+
+  - symbol: AAPL
+    enabled: true
+
+  - symbol: LLY
+    enabled: true
+    
+  - symbol: MRK
+    enabled: true
+
+  - symbol: NTSK
+    enabled: true
+
+  - symbol: TSLA
+    enabled: true
+
+  - symbol: AVGO
+    enabled: true
+
+  - symbol: NET
+    enabled: true
+
+  - symbol: CMG
+    enabled: true
+
+  - symbol: RXRX
+    enabled: true
+
+  - symbol: XIACY
+    enabled: true
