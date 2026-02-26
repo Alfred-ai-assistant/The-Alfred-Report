@@ -15,6 +15,7 @@ from kanban_skill import get_kanban_status as get_kanban
 from ai_news_skill import get_ai_news
 from youtube_skill import get_youtube_updates
 from reddit_skill import get_reddit_sections
+from stock_news_skill import get_portfolio_news
 from cost_tracker import init_tracker, save_log, get_telegram_message
 
 import re as _re
@@ -174,6 +175,9 @@ def main():
     ai_reddit, company_reddit = get_reddit_sections()
     sections["ai_reddit_trending"] = ai_reddit
     sections["company_reddit_watch"] = company_reddit
+    
+    # Stock Portfolio News
+    sections["portfolio_news"] = get_portfolio_news()
 
     # ── Cross-section deduplication ──────────────────────────────────────────
     # Remove the same story from appearing in multiple sections.
