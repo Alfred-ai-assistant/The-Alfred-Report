@@ -321,6 +321,114 @@ export default async function Home({ searchParams }: PageProps) {
                     )}
                   </section>
                 )}
+
+                {report.sections?.portfolio_news && (
+                  <section id="section-portfolio_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                      {report.sections.portfolio_news.title}
+                    </h2>
+                    {report.sections.portfolio_news.tickers && report.sections.portfolio_news.tickers.length > 0 && (
+                      <div className="space-y-6">
+                        {report.sections.portfolio_news.tickers.map((ticker: any, tidx: number) => (
+                          <div key={tidx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                            <h3 className="font-bold text-green-400 mb-3">
+                              {ticker.symbol}
+                            </h3>
+                            {ticker.top_stories && ticker.top_stories.length > 0 && (
+                              <div className="space-y-3 mb-3">
+                                {ticker.top_stories.map((story: any, sidx: number) => (
+                                  <div key={sidx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
+                                    <a href={story.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
+                                      [{story.score.toFixed(1)}] {story.headline}
+                                    </a>
+                                    {story.tags && story.tags.length > 0 && (
+                                      <div className="flex gap-2 mb-2 flex-wrap">
+                                        {story.tags.map((tag: string) => (
+                                          <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                                            {tag}
+                                          </span>
+                                        ))}
+                                      </div>
+                                    )}
+                                    <p className="text-gray-400 text-xs">
+                                      {story.why_ranked} • {story.source}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                            {ticker.glance && ticker.glance.length > 0 && (
+                              <div className="bg-slate-700/30 rounded p-3 border border-slate-700/50 text-sm">
+                                <p className="text-gray-400 font-semibold mb-2">Worth a glance:</p>
+                                <div className="space-y-1">
+                                  {ticker.glance.map((item: any, gidx: number) => (
+                                    <p key={gidx} className="text-gray-400 text-xs">
+                                      [{item.score.toFixed(1)}] {item.headline}
+                                    </p>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </section>
+                )}
+
+                {report.sections?.watchlist_news && (
+                  <section id="section-watchlist_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                      {report.sections.watchlist_news.title}
+                    </h2>
+                    {report.sections.watchlist_news.tickers && report.sections.watchlist_news.tickers.length > 0 && (
+                      <div className="space-y-6">
+                        {report.sections.watchlist_news.tickers.map((ticker: any, tidx: number) => (
+                          <div key={tidx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                            <h3 className="font-bold text-green-400 mb-3">
+                              {ticker.symbol}
+                            </h3>
+                            {ticker.top_stories && ticker.top_stories.length > 0 && (
+                              <div className="space-y-3 mb-3">
+                                {ticker.top_stories.map((story: any, sidx: number) => (
+                                  <div key={sidx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
+                                    <a href={story.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
+                                      [{story.score.toFixed(1)}] {story.headline}
+                                    </a>
+                                    {story.tags && story.tags.length > 0 && (
+                                      <div className="flex gap-2 mb-2 flex-wrap">
+                                        {story.tags.map((tag: string) => (
+                                          <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                                            {tag}
+                                          </span>
+                                        ))}
+                                      </div>
+                                    )}
+                                    <p className="text-gray-400 text-xs">
+                                      {story.why_ranked} • {story.source}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                            {ticker.glance && ticker.glance.length > 0 && (
+                              <div className="bg-slate-700/30 rounded p-3 border border-slate-700/50 text-sm">
+                                <p className="text-gray-400 font-semibold mb-2">Worth a glance:</p>
+                                <div className="space-y-1">
+                                  {ticker.glance.map((item: any, gidx: number) => (
+                                    <p key={gidx} className="text-gray-400 text-xs">
+                                      [{item.score.toFixed(1)}] {item.headline}
+                                    </p>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </section>
+                )}
               </div>
 
               {/* RIGHT COLUMN */}
@@ -442,114 +550,6 @@ export default async function Home({ searchParams }: PageProps) {
                                     {card}
                                   </div>
                                 ))}
-                              </div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </section>
-                )}
-
-                {report.sections?.portfolio_news && (
-                  <section id="section-portfolio_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                    <h2 className="text-3xl font-bold mb-3 text-cyan-400">
-                      {report.sections.portfolio_news.title}
-                    </h2>
-                    {report.sections.portfolio_news.tickers && report.sections.portfolio_news.tickers.length > 0 && (
-                      <div className="space-y-6">
-                        {report.sections.portfolio_news.tickers.map((ticker: any, tidx: number) => (
-                          <div key={tidx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                            <h3 className="font-bold text-green-400 mb-3">
-                              {ticker.symbol}
-                            </h3>
-                            {ticker.top_stories && ticker.top_stories.length > 0 && (
-                              <div className="space-y-3 mb-3">
-                                {ticker.top_stories.map((story: any, sidx: number) => (
-                                  <div key={sidx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
-                                    <a href={story.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
-                                      [{story.score.toFixed(1)}] {story.headline}
-                                    </a>
-                                    {story.tags && story.tags.length > 0 && (
-                                      <div className="flex gap-2 mb-2 flex-wrap">
-                                        {story.tags.map((tag: string) => (
-                                          <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
-                                            {tag}
-                                          </span>
-                                        ))}
-                                      </div>
-                                    )}
-                                    <p className="text-gray-400 text-xs">
-                                      {story.why_ranked} • {story.source}
-                                    </p>
-                                  </div>
-                                ))}
-                              </div>
-                            )}
-                            {ticker.glance && ticker.glance.length > 0 && (
-                              <div className="bg-slate-700/30 rounded p-3 border border-slate-700/50 text-sm">
-                                <p className="text-gray-400 font-semibold mb-2">Worth a glance:</p>
-                                <div className="space-y-1">
-                                  {ticker.glance.map((item: any, gidx: number) => (
-                                    <p key={gidx} className="text-gray-400 text-xs">
-                                      [{item.score.toFixed(1)}] {item.headline}
-                                    </p>
-                                  ))}
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </section>
-                )}
-
-                {report.sections?.watchlist_news && (
-                  <section id="section-watchlist_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                    <h2 className="text-3xl font-bold mb-3 text-cyan-400">
-                      {report.sections.watchlist_news.title}
-                    </h2>
-                    {report.sections.watchlist_news.tickers && report.sections.watchlist_news.tickers.length > 0 && (
-                      <div className="space-y-6">
-                        {report.sections.watchlist_news.tickers.map((ticker: any, tidx: number) => (
-                          <div key={tidx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                            <h3 className="font-bold text-green-400 mb-3">
-                              {ticker.symbol}
-                            </h3>
-                            {ticker.top_stories && ticker.top_stories.length > 0 && (
-                              <div className="space-y-3 mb-3">
-                                {ticker.top_stories.map((story: any, sidx: number) => (
-                                  <div key={sidx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
-                                    <a href={story.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
-                                      [{story.score.toFixed(1)}] {story.headline}
-                                    </a>
-                                    {story.tags && story.tags.length > 0 && (
-                                      <div className="flex gap-2 mb-2 flex-wrap">
-                                        {story.tags.map((tag: string) => (
-                                          <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
-                                            {tag}
-                                          </span>
-                                        ))}
-                                      </div>
-                                    )}
-                                    <p className="text-gray-400 text-xs">
-                                      {story.why_ranked} • {story.source}
-                                    </p>
-                                  </div>
-                                ))}
-                              </div>
-                            )}
-                            {ticker.glance && ticker.glance.length > 0 && (
-                              <div className="bg-slate-700/30 rounded p-3 border border-slate-700/50 text-sm">
-                                <p className="text-gray-400 font-semibold mb-2">Worth a glance:</p>
-                                <div className="space-y-1">
-                                  {ticker.glance.map((item: any, gidx: number) => (
-                                    <p key={gidx} className="text-gray-400 text-xs">
-                                      [{item.score.toFixed(1)}] {item.headline}
-                                    </p>
-                                  ))}
-                                </div>
                               </div>
                             )}
                           </div>
