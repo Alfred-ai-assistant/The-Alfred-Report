@@ -48,7 +48,11 @@ def get_company_news_links():
         },
         {
             "name": "Mythic AI",
-            "url": "https://www.google.com/search?q=mythic+ai&rlz=1C9BKJA_enUS592US592&hl=en-US&biw=1194&bih=715&tbs=qdr%3Ad&tbm=nws&sxsrf=ALeKk02yHvwilTchfbEKGcabCjuz1sfHbQ%3A1625102983686&ei=hxrdYL6jKe2E9PwPjMmQqAE&oq=mythic+ai&gs_lcp=Cg9tb2JpbGUtZ3dzLXNlcnAQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOggIABCxAxCDAToFCAAQsQM6CAgAELEDEJECOgQIABAKUMtyWKaFAWDPiAFoAHAAeACAAT6IAd4DkgEBOJgBAKABAaoBGW1vYmlsZS1nd3Mtd2l6LXNlcnAtbW9kZXOwAQDAAQE&sclient=mobile-gws-serp"
+            "url": "https://www.google.com/search?q=mythic+ai&rlz=1C9BKJA_enUS592US592&hl=en-US&biw=1194&bih=715&tbs=qdr%3Ad&tbm=nws&sxsrf=ALeKk02yHvwilTchfbEKGcabCjuz1sfHbQ%3A1625102983686&ei=hxrdYL6jKe2E9PwPjMmQqAE&oq=mythic+ai&gs_lcp=Cg9tb2JpbGUtZ3dzLXNlcnAQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOggIABCxAxCDAToFCAAQsQM6CAgAULEDEJECOgQIABAKUMtyWKaFAWDPiAFoAHAAeACAAT6IAd4DkgEBOJgBAKABAaoBGW1vYmlsZS1nd3Mtd2l6LXNlcnAtbW9kZXOwAQDAAQE&sclient=mobile-gws-serp"
+        },
+        {
+            "name": "Dialpad",
+            "url": "https://www.google.com/search?q=dialpad&sca_esv=4794ee3134a61051&biw=440&bih=766&tbs=qdr%3Ad&tbm=nws&sxsrf=ANbL-n7y6SCfyIv2g1GFhg-bCNPKK8xZqQ%3A1772149008138&ei=ENmgaZiJCLnm5NoP1rXTuAo&oq=dialpad&gs_lp=Eg9tb2JpbGUtZ3dzLXNlcnAiB2RpYWxwYWQyCBAAGIAEGLEDMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi4MlDLCljnKnAAeACQAQGYAeEBoAHPDaoBBjE3LjIuMbgBA8gBAPgBAYoCGW1vYmlsZS1nd3Mtd2l6LXNlcnAtbW9kZXOYAhOgApgMqAIAwgIQEAAYgAQYsQMYgwEYigUYCsICBBAAGAPCAg0QABiABBixAxhDGIoFwgIOEAAYgAQYsQMYgwEYigXCAgoQABiABBhDGIoFmAMBiAYBkgcEMTcuMqAHjVSyBwQxNy4yuAeYDMIHCDEuMTUuMi4xyAcogAgA&sclient=mobile-gws-serp"
         },
     ]
     
