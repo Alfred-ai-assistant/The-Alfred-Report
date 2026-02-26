@@ -5,17 +5,7 @@ private_market_news:
     dedupe_days: 1
     max_candidates_per_company: 40
     min_score: 0.55
-
-    query_group_weights:
-      primary: 1.0
-      capital_events: 1.3
-      strategic: 1.1
-      product: 1.05
-
-    source_type_weights:
-      news: 1.2
-      web: 1.0
-      blog: 0.9
+    max_story_age_hours: 48  # Only stories from last 2 days
 
   companies:
 
@@ -23,152 +13,42 @@ private_market_news:
       limit: 5
       enabled: true
 
-      queries:
-        primary:
-          - '"Cerebras"'
-
-        capital_events:
-          - '"Cerebras" AND funding'
-          - '"Cerebras" AND IPO'
-          - '"Cerebras" AND valuation'
-
-        strategic:
-          - '"Cerebras" AND partnership'
-          - '"Cerebras" AND contract'
-          - '"Cerebras" AND government'
-
-        product:
-          - '"Cerebras" AND chip'
-          - '"Cerebras" AND AI accelerator'
-
-
     - name: "Groq"
       limit: 5
       enabled: true
-
-      queries:
-        primary:
-          - '"Groq"'
-
-        capital_events:
-          - '"Groq" AND funding'
-          - '"Groq" AND valuation'
-
-        strategic:
-          - '"Groq" AND data center'
-          - '"Groq" AND partnership'
-
 
     - name: "SambaNova Systems"
       limit: 5
       enabled: true
 
-      queries:
-        primary:
-          - '"SambaNova"'
-          - '"SambaNova Systems"'
-
-        capital_events:
-          - '"SambaNova" AND funding'
-          - '"SambaNova" AND IPO'
-
-
     - name: "Liquid Death"
       limit: 5
       enabled: true
-
-      queries:
-        primary:
-          - '"Liquid Death"'
-
-        capital_events:
-          - '"Liquid Death" AND funding'
-
-        strategic:
-          - '"Liquid Death" AND distribution'
-          - '"Liquid Death" AND retail'
-
 
     - name: "Neuralink"
       limit: 5
       enabled: true
 
-      queries:
-        primary:
-          - '"Neuralink"'
-
-        capital_events:
-          - '"Neuralink" AND funding'
-          - '"Neuralink" AND valuation'
-
-        strategic:
-          - '"Neuralink" AND FDA'
-          - '"Neuralink" AND trial'
-
-
     - name: "Automation Anywhere"
       limit: 3
       enabled: true
-
-      queries:
-        primary:
-          - '"Automation Anywhere"'
-
-        strategic:
-          - '"Automation Anywhere" AND RPA'
-          - '"Automation Anywhere" AND AI'
-
 
     - name: "Dialpad"
       limit: 3
       enabled: true
 
-      queries:
-        primary:
-          - '"Dialpad"'
-
-        strategic:
-          - '"Dialpad" AND AI'
-          - '"Dialpad" AND partnership'
-
-
     - name: "Impossible Foods"
       limit: 3
       enabled: true
-
-      queries:
-        primary:
-          - '"Impossible Foods"'
-
-        capital_events:
-          - '"Impossible Foods" AND funding'
-
 
     - name: "Dataminr"
       limit: 3
       enabled: true
 
-      queries:
-        primary:
-          - '"Dataminr"'
-
-        capital_events:
-          - '"Dataminr" AND funding'
-
-
     - name: "BitPay"
       limit: 3
       enabled: true
 
-      queries:
-        primary:
-          - '"BitPay"'
-
-
     - name: "Mythic AI"
       limit: 3
       enabled: true
-
-      queries:
-        primary:
-          - '"Mythic AI"'

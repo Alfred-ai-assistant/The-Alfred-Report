@@ -2,9 +2,8 @@
 """
 Private Market News Skill for The Alfred Report
 
-Fetches news per private company via Brave Search using the structured
-query groups defined in private_market_news.yaml. Applies query group weights,
-source type weights, per-company limits, and Fresh-Only deduplication.
+Simplified version: just company names, 2-day recency cutoff, minimal scoring.
+Focus: fresh news about private companies, nothing older than 48 hours.
 """
 
 import json
@@ -15,48 +14,19 @@ import math
 import yaml
 import urllib.request
 import urllib.parse
+import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Set
-from collections import defaultdict
 
 sys.path.insert(0, str(Path(__file__).parent))
 from cost_tracker import record as record_cost
 
 BRAVE_API_KEY = os.environ.get("BRAVE_API_KEY", "")
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_DIR = REPO_ROOT / "config"
 STATE_DIR = REPO_ROOT / "state"
 STATE_FILE = STATE_DIR / "private_market_news_seen.json"
-
-# Source domain to type mapping
-DOMAIN_TO_SOURCE_TYPE = {
-    # News outlets
-    "reuters.com": "news",
-    "reuters.co.uk": "news",
-    "bloomberg.com": "news",
-    "bloomberg.co.uk": "news",
-    "wsj.com": "news",
-    "ft.com": "news",
-    "cnbc.com": "news",
-    "marketwatch.com": "news",
-    "barrons.com": "news",
-    "axios.com": "news",
-    "techcrunch.com": "news",
-    "theinformation.com": "news",
-    "businessinsider.com": "news",
-    "forbes.com": "news",
-    "fortune.com": "news",
-    "venturebeat.com": "news",
-    "calcalistech.com": "news",
-    # Blogs (lower weight)
-    "medium.com": "blog",
-    "substack.com": "blog",
-    "reddit.com": "blog",
-    "x.com": "blog",
-    "twitter.com": "blog",
-}
 
 
 def load_config() -> Dict:
@@ -88,18 +58,6 @@ def save_seen_state(state: Dict):
     tmp.replace(STATE_FILE)
 
 
-def get_source_type(url: str) -> str:
-    """Determine source type (news, web, blog) from URL."""
-    try:
-        from urllib.parse import urlparse
-        parsed = urlparse(url)
-        hostname = parsed.hostname or ""
-        hostname = hostname.lower().lstrip("www.")
-        return DOMAIN_TO_SOURCE_TYPE.get(hostname, "web")
-    except Exception:
-        return "web"
-
-
 def canonicalize_url(url: str) -> str:
     """Create a canonical URL for deduplication."""
     try:
@@ -107,20 +65,18 @@ def canonicalize_url(url: str) -> str:
         parsed = urlparse(url)
         hostname = (parsed.hostname or "").lower()
         path = parsed.path.rstrip("/") if parsed.path else ""
-        # Strip query params and fragment
         return urlunparse(("https", hostname, path, "", "", ""))
     except Exception:
         return url.lower().rstrip("/")
 
 
-def fetch_brave_news(query: str, count: int = 10) -> List[Dict]:
+def fetch_brave_news(query: str, count: int = 20) -> List[Dict]:
     """Fetch news results via Brave Search API."""
     if not BRAVE_API_KEY:
-        print(f"[PRIVATE_MARKET] BRAVE_API_KEY not set, skipping: {query[:50]}...")
+        print(f"[PRIVATE_MARKET] BRAVE_API_KEY not set")
         return []
     
-    # Add a small delay between requests to avoid rate limiting
-    import time
+    # Throttle to avoid rate limiting
     time.sleep(0.5)
     
     try:
@@ -173,6 +129,10 @@ def parse_brave_age(age_str: str) -> datetime:
             m = re.search(r'(\d+)', age_str)
             if m:
                 return now - timedelta(days=int(m.group(1)))
+        elif "week" in age_str:
+            m = re.search(r'(\d+)', age_str)
+            if m:
+                return now - timedelta(weeks=int(m.group(1)))
     except Exception:
         pass
     
@@ -187,12 +147,9 @@ def tag_story(title: str, description: str) -> List[str]:
     patterns = {
         "funding": ["raises", "funding", "series", "valuation", "unicorn", "investment", "investors", "led by", "backed by", "million", "billion"],
         "ipo": ["ipo", "going public", "public offering", "spac", "listing", "debut", "files to go public"],
-        "mna_confirmed": ["acquires", "acquired", "merger completed", "deal closed", "to acquire", "acquisition", "buys"],
-        "mna_rumor": ["in talks", "considering sale", "exploring options", "potential deal", "shopping for buyer"],
-        "layoffs": ["layoffs", "cuts jobs", "workforce reduction", "firing", "staff reduction"],
-        "product": ["launches", "new product", "unveils", "announces", "releases", "chip", "accelerator"],
-        "partnership": ["partnership", "collaboration", "teams up with", "joins forces", "strategic alliance", "contract"],
-        "regulatory": ["fda", "investigation", "regulators", "lawsuit", "sued", "fine", "trial"],
+        "mna": ["acquires", "acquired", "merger", "deal closed", "to acquire", "acquisition", "buys"],
+        "partnership": ["partnership", "collaboration", "teams up", "joins forces", "strategic", "contract"],
+        "product": ["launches", "new product", "unveils", "announces", "releases", "chip", "inference"],
         "other": [],
     }
     
@@ -206,63 +163,11 @@ def tag_story(title: str, description: str) -> List[str]:
     return tags
 
 
-def compute_score(
-    story: Dict,
-    query_group: str,
-    config: Dict
-) -> Tuple[float, str]:
-    """Compute weighted score for a story."""
-    settings = config.get("settings", {})
-    query_weights = settings.get("query_group_weights", {})
-    source_weights = settings.get("source_type_weights", {})
-    min_score = settings.get("min_score", 0.55)
-    
-    # Base score from position (higher = better)
-    base = 0.7
-    
-    # Query group weight
-    group_weight = query_weights.get(query_group, 1.0)
-    
-    # Source type weight
-    source_type = get_source_type(story.get("url", ""))
-    source_weight = source_weights.get(source_type, 1.0)
-    
-    # Event tags boost
-    tags = story.get("tags", [])
-    event_boost = 1.0
-    if "funding" in tags:
-        event_boost = 1.3
-    elif "ipo" in tags:
-        event_boost = 1.25
-    elif "mna_confirmed" in tags:
-        event_boost = 1.2
-    elif "mna_rumor" in tags:
-        event_boost = 1.1
-    elif "partnership" in tags:
-        event_boost = 1.05
-    
-    # Freshness decay (older = lower score)
-    # 12-hour half-life with much lower floor (0.05) to heavily penalize old news
-    now = datetime.now(timezone.utc)
-    published = story.get("published_at", now)
-    if isinstance(published, str):
-        published = datetime.fromisoformat(published.replace('Z', '+00:00'))
-    hours_ago = (now - published).total_seconds() / 3600
-    freshness = max(0.05, math.exp(-hours_ago / 12))  # 12hr half-life, 0.05 floor
-    
-    # Final score (0-100 scale)
-    raw_score = base * group_weight * source_weight * event_boost * freshness
-    final_score = min(100, raw_score * 100)
-    
-    why = f"group={query_group}({group_weight}) src={source_type}({source_weight}) event={tags[0] if tags else 'other'}({event_boost:.2f}) fresh={freshness:.2f}"
-    
-    return final_score, why
-
-
 def process_company(
     company: Dict,
     config: Dict,
-    seen_urls: Set[str]
+    seen_urls: Set[str],
+    max_age_hours: int
 ) -> Optional[Dict]:
     """Process a single company and return its stories."""
     name = company.get("name", "")
@@ -270,30 +175,19 @@ def process_company(
         return None
     
     limit = company.get("limit", 5)
-    queries = company.get("queries", {})
     
     print(f"[PRIVATE_MARKET] Processing {name}...")
     
-    # Collect results from all query groups
-    all_results = []
+    # Simple search: just the company name
+    results = fetch_brave_news(f'"{name}"', count=20)
     
-    for group_name, group_queries in queries.items():
-        if not isinstance(group_queries, list):
-            continue
-        for query in group_queries:
-            results = fetch_brave_news(query, count=10)
-            for r in results:
-                r["_query_group"] = group_name
-                r["_source_query"] = query
-            all_results.extend(results)
-    
-    if not all_results:
+    if not results:
         return None
     
     # Deduplicate by canonical URL
     seen_canonical = set()
     unique_results = []
-    for r in all_results:
+    for r in results:
         if not r.get("url") or not r.get("title"):
             continue
         canonical = canonicalize_url(r["url"])
@@ -302,38 +196,60 @@ def process_company(
             r["_canonical_url"] = canonical
             unique_results.append(r)
     
-    # Fresh-Only filter
-    fresh_results = [r for r in unique_results if r["_canonical_url"] not in seen_urls]
+    # Filter by recency (last 48 hours)
+    now = datetime.now(timezone.utc)
+    fresh_results = []
+    for r in unique_results:
+        published = parse_brave_age(r.get("published", ""))
+        hours_old = (now - published).total_seconds() / 3600
+        
+        # Only include stories from last 2 days
+        if hours_old <= max_age_hours:
+            r["_published"] = published
+            r["_hours_old"] = hours_old
+            fresh_results.append(r)
     
     if not fresh_results:
-        print(f"[PRIVATE_MARKET] {name}: all stories filtered by Fresh-Only")
+        print(f"[PRIVATE_MARKET] {name}: no stories from last {max_age_hours} hours")
         return None
     
-    # Normalize and score
+    # Fresh-Only filter (don't repeat yesterday's stories)
+    deduped_results = [r for r in fresh_results if r["_canonical_url"] not in seen_urls]
+    
+    if not deduped_results:
+        print(f"[PRIVATE_MARKET] {name}: all recent stories already shown yesterday")
+        return None
+    
+    # Score and tag
     stories = []
-    for r in fresh_results:
-        published = parse_brave_age(r.get("published", ""))
+    for r in deduped_results:
         tags = tag_story(r["title"], r.get("description", ""))
         
-        story = {
-            "title": r["title"],
-            "url": r["url"],
-            "canonical_url": r["_canonical_url"],
-            "published_at": published.isoformat(),
-            "description": r.get("description", ""),
-            "tags": tags,
-            "_query_group": r["_query_group"],
-        }
+        # Simple score: heavy recency weight
+        hours_old = r["_hours_old"]
+        freshness = max(0.1, math.exp(-hours_old / 6))  # 6hr half-life
+        base_score = 70 * freshness
         
-        score, why = compute_score(story, r["_query_group"], config)
-        story["score"] = round(score, 1)
-        story["why_ranked"] = why
+        # Tiny boost for high-value events
+        event_boost = 1.0
+        if "funding" in tags or "ipo" in tags:
+            event_boost = 1.15
+        
+        final_score = min(100, base_score * event_boost)
+        
+        story = {
+            "score": round(final_score, 1),
+            "headline": r["title"],
+            "url": r["url"],
+            "published_at": r["_published"].isoformat(),
+            "tags": tags,
+            "hours_old": round(hours_old, 1),
+            "canonical_url": r["_canonical_url"],
+        }
         stories.append(story)
     
-    # Sort by score descending
+    # Sort by score, take top N
     stories.sort(key=lambda x: -x["score"])
-    
-    # Apply per-company limit
     top_stories = stories[:limit]
     
     if not top_stories:
@@ -344,12 +260,10 @@ def process_company(
         "stories": [
             {
                 "score": s["score"],
-                "tags": s["tags"],
-                "headline": s["title"],
-                "source": get_source_type(s["url"]),
+                "headline": s["headline"],
                 "url": s["url"],
                 "published_at": s["published_at"],
-                "why_ranked": s["why_ranked"],
+                "tags": s["tags"],
             }
             for s in top_stories
         ],
@@ -367,6 +281,7 @@ def get_private_market_news() -> Dict:
     config = load_config()
     settings = config.get("settings", {})
     companies = config.get("companies", [])
+    max_age_hours = settings.get("max_story_age_hours", 48)
     
     # Load seen state
     seen_state = load_seen_state()
@@ -385,7 +300,7 @@ def get_private_market_news() -> Dict:
     
     for company in companies:
         try:
-            result = process_company(company, config, seen_urls)
+            result = process_company(company, config, seen_urls, max_age_hours)
             if result:
                 urls = result.pop("_included_urls", [])
                 results.append(result)
@@ -410,16 +325,16 @@ def get_private_market_news() -> Dict:
         save_seen_state(seen_state)
         print(f"[PRIVATE_MARKET] Saved {len(new_urls)} new URLs to state")
     
-    print(f"[PRIVATE_MARKET] Complete: {len(results)} companies with stories")
+    print(f"[PRIVATE_MARKET] Complete: {len(results)} companies with recent stories")
     
     return {
         "title": "Private Market News",
-        "summary": f"News from {len(results)} private companies" if results else "No significant private market news today",
+        "summary": f"News from {len(results)} private companies (last 48 hours)" if results else "No private market news in last 48 hours",
         "companies": results,
         "meta": {
             "generated_at": now.isoformat(),
-            "companies_count": len(companies),
-            "with_stories": len(results),
+            "companies_tracked": len(companies),
+            "with_recent_stories": len(results),
         }
     }
 
