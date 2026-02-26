@@ -1,0 +1,48 @@
+# List of private companies to track for Private Market News section.
+# These are non-public companies where news may indicate funding, M&A, or IPO activity.
+
+companies:
+  - name: Anthropic
+    enabled: true
+
+  - name: Databricks
+    enabled: true
+
+  - name: OpenAI
+    enabled: true
+
+  - name: SpaceX
+    enabled: true
+
+  - name: Stripe
+    enabled: true
+
+  - name: Anduril
+    enabled: true
+
+  - name: Perplexity
+    enabled: true
+
+  - name: xAI
+    enabled: true
+
+  - name: Figure AI
+    enabled: true
+
+  - name: Safe Superintelligence
+    enabled: true
+
+  - name: Mistral AI
+    enabled: true
+
+  - name: Cohere
+    enabled: true
+
+  - name: Scale AI
+    enabled: true
+
+  - name: Groq
+    enabled: true
+
+  - name: Anysphere
+    enabled: true
