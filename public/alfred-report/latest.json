@@ -6,109 +6,81 @@
   "sections": {
     "weather": {
       "title": "Weather — Arlington, VA",
-      "summary": "Today: Light Rain Likely, high 47°F. Next 3 days show variable conditions with possible precipitation mid-week.",
+      "summary": "Today: Light Rain, high 53°F. Next 3 days show variable conditions with possible precipitation mid-week.",
       "items": [
         {
-          "name": "Today",
-          "temperature": "47°F",
-          "forecast": "Light Rain Likely",
-          "wind": "6 mph",
+          "name": "This Afternoon",
+          "temperature": "53°F",
+          "forecast": "Light Rain",
+          "wind": "2 to 6 mph",
           "wind_direction": "NE",
-          "precipitation_chance": "66%",
-          "details": "Rain likely between 11am and 5pm. Mostly cloudy, with a high near 47. Northeast wind around 6 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible."
+          "precipitation_chance": "100%",
+          "details": "Rain. Cloudy. High near 53, with temperatures falling to around 46 in the afternoon. Northeast wind 2 to 6 mph. Chance of precipitation is 100%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
           "name": "Tonight",
-          "temperature": "31°F",
-          "forecast": "Patchy Fog",
-          "wind": "3 mph",
-          "wind_direction": "NE",
-          "precipitation_chance": "8%",
-          "details": "Patchy fog after 11pm. Partly cloudy, with a low around 31. Northeast wind around 3 mph. New rainfall amounts less than a tenth of an inch possible."
+          "temperature": "36°F",
+          "forecast": "Mostly Cloudy",
+          "wind": "2 mph",
+          "wind_direction": "N",
+          "precipitation_chance": "13%",
+          "details": "Mostly cloudy, with a low around 36. North wind around 2 mph. New rainfall amounts less than a tenth of an inch possible."
         },
         {
           "name": "Friday",
-          "temperature": "52°F",
+          "temperature": "53°F",
           "forecast": "Mostly Sunny",
-          "wind": "1 to 6 mph",
+          "wind": "1 to 5 mph",
           "wind_direction": "S",
-          "precipitation_chance": "6%",
-          "details": "Mostly sunny, with a high near 52. South wind 1 to 6 mph."
+          "precipitation_chance": "4%",
+          "details": "Mostly sunny, with a high near 53. South wind 1 to 5 mph."
         },
         {
           "name": "Friday Night",
-          "temperature": "35°F",
+          "temperature": "38°F",
           "forecast": "Mostly Clear",
-          "wind": "5 mph",
+          "wind": "3 mph",
           "wind_direction": "S",
-          "precipitation_chance": "7%",
-          "details": "Mostly clear, with a low around 35. South wind around 5 mph."
+          "precipitation_chance": "4%",
+          "details": "Mostly clear, with a low around 38. South wind around 3 mph."
         },
         {
           "name": "Saturday",
-          "temperature": "62°F",
+          "temperature": "61°F",
           "forecast": "Sunny",
           "wind": "5 mph",
           "wind_direction": "SW",
-          "precipitation_chance": "3%",
-          "details": "Sunny, with a high near 62. Southwest wind around 5 mph."
+          "precipitation_chance": "4%",
+          "details": "Sunny, with a high near 61. Southwest wind around 5 mph."
         },
         {
           "name": "Saturday Night",
           "temperature": "40°F",
-          "forecast": "Mostly Clear",
+          "forecast": "Partly Cloudy",
           "wind": "5 mph",
-          "wind_direction": "S",
-          "precipitation_chance": "6%",
-          "details": "Mostly clear, with a low around 40."
+          "wind_direction": "SE",
+          "precipitation_chance": "3%",
+          "details": "Partly cloudy, with a low around 40."
         }
       ],
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-02-26T08:32:48.238798"
+        "updated_at": "2026-02-26T16:22:38.113936"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "4 outstanding • 0 completed today",
-      "items": [
-        {
-          "id": "6g2cpjm82pGC887h",
-          "content": "Clean bedroom",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g3hwPFvcQgmFvgh",
-          "content": "Amazon return to UPS - Lee Hwy",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g4QjQH9p9V9Ccjh",
-          "content": "Complete tax return",
-          "due": "No due date",
-          "overdue": false
-        },
-        {
-          "id": "6g4gHcXr9c2HFc2h",
-          "content": "do mother's tax return",
-          "due": "No due date",
-          "overdue": false
-        }
-      ],
+      "summary": "Error fetching tasks: bash: line 1: /home/alfred/.openclaw/secrets.env: No such file or directory\n",
+      "items": [],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-02-26T08:32:48.625631",
-        "task_count": 4,
-        "overdue_count": 0,
-        "completed_today": 0
+        "error": "bash: line 1: /home/alfred/.openclaw/secrets.env: No such file or directory\n"
       }
     },
     "kanban": {
       "title": "Alfred's Tech Build Out",
-      "summary": "47 cards total • 0 in progress • 0 ready • 4 backlog • 43 done",
+      "summary": "48 cards total • 0 in progress • 0 ready • 4 backlog • 44 done",
       "items": [
         {
           "status": "In progress",
@@ -132,7 +104,7 @@
         },
         {
           "status": "Done",
-          "count": 43,
+          "count": 44,
           "cards": [
             "Add Stock Portfolio News to The Alfred Report",
             "Re-Incorporate Kimi-K2.5 and Update Thin Router Config",
@@ -144,213 +116,384 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-02-26T08:32:49.192002",
-        "total_cards": 47,
+        "updated_at": "2026-02-26T16:22:38.652287",
+        "total_cards": 48,
         "in_progress": 0,
         "ready": 0,
         "backlog": 4,
-        "done": 43
+        "done": 44
       }
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI sector is experiencing simultaneous innovation and scrutiny across multiple dimensions. On the technical front, Claude's remote control capabilities and context compression techniques demonstrate advancing engineering maturity, while real-time strategy games establish new benchmarks for AI agent evaluation. Nvidia's strong financial results underscore sustained infrastructure investment from major technology companies. However, tensions are mounting around governance and responsibility. The Pentagon's pressure on Anthropic signals heightened government oversight of AI safety practices, while Amazon's deflection of AI-related errors to human engineers reflects broader questions about accountability in AI deployment. Technical issues are emerging as systems scale: GPT-5.2 deployment problems, Claude's biased name generation patterns, and quality limitations in AI-generated 3D content reveal real-world limitations. API security practices are evolving as LLM capabilities shift the threat landscape. Meanwhile, philosophical questions persist—exemplified by claims of AI consciousness from technical creators—alongside skepticism directed at industry analysis and messaging. The sector demonstrates rapid capability expansion paired with unresolved questions about safety, governance, and honest attribution of failures.",
+      "summary": "The AI landscape shows continued product innovation alongside emerging challenges around safety, compliance, and capability reliability. Google's Nano Banana 2 and OpenAI's GPT 5.2 updates indicate active model development, though GPT 5.2 users report missing features. Anthropic faces dual pressure—abandoning safety commitments while facing Pentagon scrutiny—suggesting tension between competitive demands and regulatory expectations. Developer adoption patterns favor Claude over competitors, as evidenced by usage data and preference studies, though technical issues persist including output bias toward specific names. Enterprise deployment accelerates across sectors: Burger King uses AI for employee monitoring, TeamOut targets retreat planning, and Nvidia continues benefiting from Big Tech infrastructure spending. Security concerns emerged around Google API key handling in Gemini integration. Infrastructure hardware remains robust, with Nvidia posting strong results. The sector exhibits both maturation in deployment and ongoing technical limitations in generation quality, particularly evident in 3D content evaluation.",
       "items": [
+        {
+          "title": "Nano Banana 2: Google's latest AI image generation model",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+          "source": "blog.google",
+          "why_it_matters": "Google released Nano Banana 2, its latest image generation model, continuing the competitive race in multimodal AI capabilities.",
+          "tags": [
+            "models"
+          ],
+          "published_at": "2026-02-26T16:02:37Z",
+          "hn_score": 392
+        },
         {
           "title": "Google API keys weren't secrets, but then Gemini changed the rules",
           "url": "https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules",
           "source": "trufflesecurity.com",
-          "why_it_matters": "API key security practices are evolving as LLM capabilities change, affecting how developers should handle authentication credentials.",
+          "why_it_matters": "Gemini's security model reportedly changed how API keys function, raising questions about credential management practices across AI platforms.",
           "tags": [
-            "safety",
-            "enterprise"
+            "policy",
+            "safety"
           ],
           "published_at": "2026-02-25T19:54:14Z",
-          "hn_score": 844
+          "hn_score": 1175
         },
         {
-          "title": "Claude Code Remote Control",
-          "url": "https://code.claude.com/docs/en/remote-control",
-          "source": "code.claude.com",
-          "why_it_matters": "Claude's code execution capabilities now include remote control features, expanding the practical applications of AI coding assistants.",
+          "title": "Anthropic ditches its core safety promise",
+          "url": "https://www.cnn.com/2026/02/25/tech/anthropic-safety-policy-change",
+          "source": "cnn.com",
+          "why_it_matters": "Anthropic reportedly abandoned a core safety commitment, signaling potential shifts in the company's approach to responsible AI development.",
           "tags": [
-            "models",
-            "enterprise"
+            "safety",
+            "policy"
           ],
-          "published_at": "2026-02-25T07:22:56Z",
-          "hn_score": 523
+          "published_at": "2026-02-26T12:52:50Z",
+          "hn_score": 542
         },
         {
           "title": "How will OpenAI compete?",
           "url": "https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x",
           "source": "ben-evans.com",
-          "why_it_matters": "Analysis of OpenAI's competitive positioning provides insight into market dynamics in the rapidly evolving AI sector.",
+          "why_it_matters": "Analysis of OpenAI's competitive positioning suggests challenges in maintaining market differentiation amid broader AI model proliferation.",
           "tags": [
             "models",
             "enterprise"
           ],
           "published_at": "2026-02-25T22:29:25Z",
-          "hn_score": 310
-        },
-        {
-          "title": "LLM=True",
-          "url": "https://blog.codemine.be/posts/2026/20260222-be-quiet/",
-          "source": "blog.codemine.be",
-          "why_it_matters": "This appears to be a conceptual statement about the relationship between LLMs and truthfulness or capability assessment.",
-          "tags": [
-            "research"
-          ],
-          "published_at": "2026-02-25T09:05:40Z",
-          "hn_score": 242
+          "hn_score": 451
         },
         {
           "title": "Show HN: A real-time strategy game that AI agents can play",
           "url": "https://llmskirmish.com/",
           "source": "llmskirmish.com",
-          "why_it_matters": "Real-time strategy games designed for AI agents represent a new benchmark category for testing AI decision-making and planning abilities.",
+          "why_it_matters": "A real-time strategy game enabling AI agent participation demonstrates practical applications for autonomous AI systems in complex environments.",
           "tags": [
-            "research"
+            "research",
+            "open-source"
           ],
           "published_at": "2026-02-25T10:02:45Z",
-          "hn_score": 208
+          "hn_score": 212
         },
         {
           "title": "The Pentagon threatens Anthropic",
           "url": "https://www.astralcodexten.com/p/the-pentagon-threatens-anthropic",
           "source": "astralcodexten.com",
-          "why_it_matters": "Pentagon pressure on Anthropic indicates growing government scrutiny of AI safety and governance practices at major AI labs.",
+          "why_it_matters": "Pentagon pressure on Anthropic highlights growing government scrutiny of large AI companies and safety practices.",
           "tags": [
             "policy",
             "safety"
           ],
           "published_at": "2026-02-25T17:49:27Z",
-          "hn_score": 176
+          "hn_score": 183
         },
         {
           "title": "Instant Model Enforcement is missing with GPT 5.2 - Bugs - OpenAI Developer Community",
           "url": "https://community.openai.com/t/instant-model-enforcement-is-missing-with-gpt-5-2/1375041",
           "source": "community.openai.com",
-          "why_it_matters": "Missing model enforcement in GPT-5.2 suggests deployment or versioning issues affecting user access to specific model capabilities.",
+          "why_it_matters": "GPT 5.2 users report missing the Instant model selection option, indicating potential feature regression or rollout issues.",
           "tags": [
             "models"
-          ]
-        },
-        {
-          "title": "Bcachefs creator insists his custom LLM is female and 'fully conscious'",
-          "url": "https://www.theregister.com/2026/02/25/bcachefs_creator_ai/",
-          "source": "theregister.com",
-          "why_it_matters": "Claims about AI consciousness from technical creators highlight the philosophical tensions surrounding AI attribution and sentience discussions.",
-          "tags": [
-            "safety",
-            "research"
-          ],
-          "published_at": "2026-02-25T17:21:29Z",
-          "hn_score": 89
-        },
-        {
-          "title": "Launch HN: TeamOut (YC W22) – AI agent for planning company retreats",
-          "url": "https://app.teamout.com/ai",
-          "source": "app.teamout.com",
-          "why_it_matters": "AI-powered agents for enterprise logistics demonstrate expansion of AI applications beyond traditional software development into business operations.",
-          "tags": [
-            "enterprise"
-          ],
-          "published_at": "2026-02-25T14:02:02Z",
-          "hn_score": 54
-        },
-        {
-          "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
-          "url": "https://www.reuters.com/technology/artificial-intelligence/",
-          "source": "reuters.com",
-          "why_it_matters": "Nvidia's strong quarterly results and revenue guidance reflect sustained investment demand from major technology companies for AI infrastructure.",
-          "tags": [
-            "hardware",
-            "funding"
           ]
         },
         {
           "title": "An autopsy of AI-generated 3D slop",
           "url": "https://aircada.com/blog/ai-vs-human-3d-ecommerce",
           "source": "aircada.com",
-          "why_it_matters": "Analysis of AI-generated 3D content quality issues identifies practical limitations in current generative models for visual media.",
+          "why_it_matters": "Critical examination of AI-generated 3D content quality reveals limitations in current generative capabilities for visual media.",
           "tags": [
             "research"
           ],
           "published_at": "2026-02-25T21:05:15Z",
-          "hn_score": 90
+          "hn_score": 129
         },
         {
-          "title": "Ed Zitron loses his mind annotating an AI doomer macro memo",
-          "url": "https://www.dropbox.com/scl/fi/1p1n0y1ip48ianok9dvbp/Annotation-The-Global-Intelligence-Crisis.pdf?dl=0&e=1&noscript=1&rlkey=qaar8ea6l5hh6jqls4x6g8q4b",
-          "source": "dropbox.com",
-          "why_it_matters": "Critical examination of AI industry analysis suggests debate over accuracy and methodology in prominent industry commentary.",
+          "title": "Bcachefs creator insists his custom LLM is female and 'fully conscious'",
+          "url": "https://www.theregister.com/2026/02/25/bcachefs_creator_ai/",
+          "source": "theregister.com",
+          "why_it_matters": "A custom LLM creator's claims about consciousness raise ongoing questions about anthropomorphization and meaningful AI capability assessment.",
           "tags": [
-            "enterprise"
+            "research"
           ],
-          "published_at": "2026-02-25T06:45:24Z",
-          "hn_score": 56
+          "published_at": "2026-02-25T17:21:29Z",
+          "hn_score": 93
+        },
+        {
+          "title": "Launch HN: TeamOut (YC W22) – AI agent for planning company retreats",
+          "url": "https://app.teamout.com/ai",
+          "source": "app.teamout.com",
+          "why_it_matters": "TeamOut's AI-powered retreat planning tool targets enterprise adoption, expanding AI agent applications into HR and operations.",
+          "tags": [
+            "enterprise",
+            "funding"
+          ],
+          "published_at": "2026-02-25T14:02:02Z",
+          "hn_score": 54
         },
         {
           "title": "I asked Claude for 37,500 random names, and it can't stop saying Marcus",
           "url": "https://github.com/benjismith/ai-randomness",
           "source": "github.com",
-          "why_it_matters": "Repetitive output patterns in Claude's responses raise questions about bias or structural limitations in name generation tasks.",
+          "why_it_matters": "Claude demonstrates reproducible output bias toward specific names, exposing potential training data issues affecting generation quality.",
           "tags": [
             "research",
             "safety"
           ],
           "published_at": "2026-02-25T16:23:52Z",
-          "hn_score": 76
+          "hn_score": 85
         },
         {
-          "title": "Show HN: Context Mode – 315 KB of MCP output becomes 5.4 KB in Claude Code",
-          "url": "https://github.com/mksglu/claude-context-mode",
-          "source": "github.com",
-          "why_it_matters": "Context compression techniques for Claude Code represent efficiency improvements that reduce token consumption for development workflows.",
+          "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/",
+          "source": "reuters.com",
+          "why_it_matters": "Nvidia's stronger-than-expected results and positive guidance reflect continued Big Tech investment in AI infrastructure and chips.",
+          "tags": [
+            "hardware",
+            "enterprise"
+          ]
+        },
+        {
+          "title": "Burger King will use AI to check if employees say 'please' and 'thank you'",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/884911/burger-king-ai-assistant-patty",
+          "source": "theverge.com",
+          "why_it_matters": "Burger King's employee monitoring via AI audio analysis exemplifies enterprise deployment of AI in customer-facing operations.",
+          "tags": [
+            "enterprise",
+            "policy"
+          ],
+          "published_at": "2026-02-26T13:12:54Z",
+          "hn_score": 61
+        },
+        {
+          "title": "What Claude Code Chooses",
+          "url": "https://amplifying.ai/research/claude-code-picks",
+          "source": "amplifying.ai",
+          "why_it_matters": "Analysis of Claude's code choices highlights developer preferences and real-world model selection patterns in software development.",
           "tags": [
             "models",
             "enterprise"
           ],
-          "published_at": "2026-02-25T06:23:30Z",
-          "hn_score": 76
+          "published_at": "2026-02-26T18:12:26Z",
+          "hn_score": 75
         },
         {
-          "title": "Amazon would rather blame its own engineers than its AI",
-          "url": "https://www.theregister.com/2026/02/24/amazon_blame_human_not_ai/",
-          "source": "theregister.com",
-          "why_it_matters": "Amazon's attribution of errors to engineering rather than AI systems reflects organizational messaging about responsibility for AI deployment failures.",
+          "title": "Why Developers Keep Choosing Claude over Every Other AI",
+          "url": "https://www.bhusalmanish.com.np/blog/posts/why-claude-wins-coding.html",
+          "source": "bhusalmanish.com.np",
+          "why_it_matters": "Developer preference data shows Claude gaining traction over competitors, indicating market shifts in AI tool adoption.",
           "tags": [
-            "enterprise",
-            "safety"
+            "models",
+            "enterprise"
           ],
-          "published_at": "2026-02-25T08:08:12Z",
-          "hn_score": 76
+          "published_at": "2026-02-26T15:53:30Z",
+          "hn_score": 52
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-02-26T13:32:46.921193+00:00",
+        "updated_at": "2026-02-26T21:22:37.930013+00:00",
         "story_count": 15,
         "lanes_used": [
           "primary",
-          "tier1",
-          "hn"
+          "hn",
+          "tier1"
         ]
       }
     },
     "youtube": {
       "title": "Today's AI Daily Digest",
-      "summary": "No new videos added today.",
-      "items": [],
+      "summary": "21 new videos added across your AI channels",
+      "items": [
+        {
+          "video_id": "LZ3NkHbd5VU",
+          "title": "You are wrong about Open Claw",
+          "channel": "David Ondrej",
+          "published_at": "2026-02-25T13:00:42Z",
+          "thumbnail": "https://i.ytimg.com/vi/LZ3NkHbd5VU/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=LZ3NkHbd5VU"
+        },
+        {
+          "video_id": "5wPI9wSCL3A",
+          "title": "no one felt sorry for them",
+          "channel": "Matthew Berman",
+          "published_at": "2026-02-25T14:44:03Z",
+          "thumbnail": "https://i.ytimg.com/vi/5wPI9wSCL3A/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=5wPI9wSCL3A"
+        },
+        {
+          "video_id": "0v9ixCWNhPo",
+          "title": "Three Labs Just Stole Claude's Brain. Here's What It Broke (And Why You Should Care)",
+          "channel": "AI News & Strategy Daily | Nate B Jones",
+          "published_at": "2026-02-25T15:00:02Z",
+          "thumbnail": "https://i.ytimg.com/vi/0v9ixCWNhPo/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=0v9ixCWNhPo"
+        },
+        {
+          "video_id": "of473UZ-A4Q",
+          "title": "Chinese AI Companies Are Using This Trick To Steal Model Data",
+          "channel": "Matt Wolfe",
+          "published_at": "2026-02-25T15:15:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/of473UZ-A4Q/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=of473UZ-A4Q"
+        },
+        {
+          "video_id": "aHTm1cHld3Y",
+          "title": "From CEO to AI Builder: Why I Stay Hands On",
+          "channel": "Avi Unlocks AI",
+          "published_at": "2026-02-25T16:04:49Z",
+          "thumbnail": "https://i.ytimg.com/vi/aHTm1cHld3Y/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=aHTm1cHld3Y"
+        },
+        {
+          "video_id": "L0EDnV2AOJ4",
+          "title": "The Citrini doom article crashed markets this week: \"The prediction is ridiculous.\" #ai #citrini",
+          "channel": "This Week in AI",
+          "published_at": "2026-02-25T16:34:55Z",
+          "thumbnail": "https://i.ytimg.com/vi/L0EDnV2AOJ4/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=L0EDnV2AOJ4"
+        },
+        {
+          "video_id": "kjchlQKgcts",
+          "title": "How I Automated My Daily Tasks Using OpenClaw",
+          "channel": "OpenClaw Tutorials",
+          "published_at": "2026-02-25T16:44:41Z",
+          "thumbnail": "https://i.ytimg.com/vi/kjchlQKgcts/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=kjchlQKgcts"
+        },
+        {
+          "video_id": "V7_Ec2WFAWs",
+          "title": "🔬Max Welling: Materials Underlie Everything",
+          "channel": "Latent Space",
+          "published_at": "2026-02-25T17:19:37Z",
+          "thumbnail": "https://i.ytimg.com/vi/V7_Ec2WFAWs/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=V7_Ec2WFAWs"
+        },
+        {
+          "video_id": "aJt6B3RMJaE",
+          "title": "New rules for hiring, building, & betting on AI w/ Tanay Kothari & Richard Socher|This Week in AI E2",
+          "channel": "This Week in AI",
+          "published_at": "2026-02-25T17:42:43Z",
+          "thumbnail": "https://i.ytimg.com/vi/aJt6B3RMJaE/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=aJt6B3RMJaE"
+        },
+        {
+          "video_id": "VmEa3fVvZDw",
+          "title": "They Got Caught...",
+          "channel": "Matthew Berman",
+          "published_at": "2026-02-25T17:58:17Z",
+          "thumbnail": "https://i.ytimg.com/vi/VmEa3fVvZDw/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=VmEa3fVvZDw"
+        },
+        {
+          "video_id": "O_5vugzgoik",
+          "title": "I Let My AI Agent Run for 504 Hours Straight — Here's What Happened",
+          "channel": "All About AI",
+          "published_at": "2026-02-25T18:00:35Z",
+          "thumbnail": "https://i.ytimg.com/vi/O_5vugzgoik/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=O_5vugzgoik"
+        },
+        {
+          "video_id": "bi4aavMOoGM",
+          "title": "LIVE: My OpenClaw just built Cursor. Software is dead.",
+          "channel": "Alex Finn",
+          "published_at": "2026-02-25T21:11:52Z",
+          "thumbnail": "https://i.ytimg.com/vi/bi4aavMOoGM/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=bi4aavMOoGM"
+        },
+        {
+          "video_id": "KVSdEJyQc9M",
+          "title": "secret cameras in your house",
+          "channel": "Matthew Berman",
+          "published_at": "2026-02-25T21:12:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/KVSdEJyQc9M/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=KVSdEJyQc9M"
+        },
+        {
+          "video_id": "YScY1-Dtq-A",
+          "title": "How to adapt with AI",
+          "channel": "David Ondrej",
+          "published_at": "2026-02-25T23:00:51Z",
+          "thumbnail": "https://i.ytimg.com/vi/YScY1-Dtq-A/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=YScY1-Dtq-A"
+        },
+        {
+          "video_id": "Q2cSlv98CZg",
+          "title": "Claude Code Remote Control",
+          "channel": "Avi Unlocks AI",
+          "published_at": "2026-02-26T02:11:46Z",
+          "thumbnail": "https://i.ytimg.com/vi/Q2cSlv98CZg/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Q2cSlv98CZg"
+        },
+        {
+          "video_id": "qMWeIXdyE2Y",
+          "title": "Anthropic might be DONE (48 hours left)",
+          "channel": "Wes Roth",
+          "published_at": "2026-02-26T02:52:36Z",
+          "thumbnail": "https://i.ytimg.com/vi/qMWeIXdyE2Y/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=qMWeIXdyE2Y"
+        },
+        {
+          "video_id": "RZPRivY5lVw",
+          "title": "Cursor Just Killed Every AI Coding Tool",
+          "channel": "corbin",
+          "published_at": "2026-02-26T15:00:56Z",
+          "thumbnail": "https://i.ytimg.com/vi/RZPRivY5lVw/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=RZPRivY5lVw"
+        },
+        {
+          "video_id": "q6pbQ5li5Cg",
+          "title": "Don't Fall For the Stock Market Hype. The $7,000 Raise AI Is Giving You (That Nobody Mentions)",
+          "channel": "AI News & Strategy Daily | Nate B Jones",
+          "published_at": "2026-02-26T15:01:05Z",
+          "thumbnail": "https://i.ytimg.com/vi/q6pbQ5li5Cg/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=q6pbQ5li5Cg"
+        },
+        {
+          "video_id": "iMDibaO4dXw",
+          "title": "Breaking: Google Upgraded Nano Banana Again!",
+          "channel": "Matt Wolfe",
+          "published_at": "2026-02-26T16:00:00Z",
+          "thumbnail": "https://i.ytimg.com/vi/iMDibaO4dXw/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=iMDibaO4dXw"
+        },
+        {
+          "video_id": "oHhzGXL8mcA",
+          "title": "Nano Banana 2 is Here - Faster and Cheaper",
+          "channel": "Prompt Engineering",
+          "published_at": "2026-02-26T16:05:02Z",
+          "thumbnail": "https://i.ytimg.com/vi/oHhzGXL8mcA/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=oHhzGXL8mcA"
+        },
+        {
+          "video_id": "073eow4GB5I",
+          "title": "AI Security is a 'Green Field': Major Risks Ahead!",
+          "channel": "Avi Unlocks AI",
+          "published_at": "2026-02-26T18:07:47Z",
+          "thumbnail": "https://i.ytimg.com/vi/073eow4GB5I/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=073eow4GB5I"
+        }
+      ],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-02-26T13:33:19.004415+00:00",
-        "video_count": 0
+        "updated_at": "2026-02-26T21:23:09.867794+00:00",
+        "video_count": 21
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions center on large language models, with significant focus on ChatGPT capabilities and limitations. Trending topics include AI ethics, job displacement concerns, and practical applications in coding and content creation. Communities like r/MachineLearning and r/OpenAI lead conversations, alongside broader subreddits discussing AI regulation and advancement timelines.",
+      "summary": "Top AI discussions centered on generative models, with ChatGPT and Claude dominating conversations about capabilities and limitations. Communities like r/MachineLearning and r/OpenAI showed strong engagement. Trending topics included AI job displacement concerns, new model releases, and ethical implications. Users debated AI regulation and real-world applications across healthcare and creative fields.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Things I wish someone told me before I almost gave up on OpenClaw",
@@ -402,6 +545,20 @@
           ]
         },
         {
+          "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
+          "url": "https://www.reddit.com/r/artificial/comments/1qv4yyr/why_world_models_will_bring_us_to_agi_not_llms/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "inference",
+            "agent",
+            "Claude"
+          ]
+        },
+        {
           "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
           "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
           "subreddit": "openclaw",
@@ -446,70 +603,82 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: openclaw - w/its own m365 account skill ms365",
-          "url": "https://www.reddit.com/r/openclaw/comments/1qykqza/openclaw_wits_own_m365_account_skill_ms365/",
-          "subreddit": "openclaw",
+          "title": "r/artificial on Reddit: How does a LLM understand your question?",
+          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "LLM"
+            "LLM",
+            "model",
+            "training",
+            "neural"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Most efficient setup to run OpenClaw",
-          "url": "https://www.reddit.com/r/openclaw/comments/1qxid5x/most_efficient_setup_to_run_openclaw/",
-          "subreddit": "openclaw",
+          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
+          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "training"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: The Evomap evolves independently",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r9sggi/the_evomap_evolves_independently/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
+            "LLM",
+            "model",
+            "training",
             "agent"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Can openclaw watch videos?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3pbi4/can_openclaw_watch_videos/",
-          "subreddit": "openclaw",
+          "title": "r/artificial on Reddit: Seeking guidance in understanding how LLMs work",
+          "url": "https://www.reddit.com/r/artificial/comments/1b1fo4l/seeking_guidance_in_understanding_how_llms_work/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "model"
+            "LLM",
+            "machine learning",
+            "model",
+            "training"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: What’s the best cheap model for OpenClaw?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1qqyrhd/whats_the_best_cheap_model_for_openclaw/",
-          "subreddit": "openclaw",
+          "title": "r/artificial on Reddit: Why is everyone so focused on generative AI when neural networks exist",
+          "url": "https://www.reddit.com/r/artificial/comments/1pfmyfz/why_is_everyone_so_focused_on_generative_ai_when/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
-            "model"
+            "AI",
+            "LLM",
+            "inference",
+            "training",
+            "neural"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Bot won’t switch models",
-          "url": "https://www.reddit.com/r/openclaw/comments/1qwbqn1/bot_wont_switch_models/",
-          "subreddit": "openclaw",
+          "title": "r/artificial on Reddit: If you are interested in studying model/agent psychology/behavior, lmk. I work with a small research team (4 of us atm) and we are working on some strange things :)",
+          "url": "https://www.reddit.com/r/artificial/comments/1pxb27o/if_you_are_interested_in_studying_modelagent/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
-            "model"
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "agent"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Here's How I Got OpenClaw to Use X and LinkedIn on Its Own",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r7m1oq/heres_how_i_got_openclaw_to_use_x_and_linkedin_on/",
-          "subreddit": "openclaw",
+          "title": "r/technology on Reddit: OpenAI’s research on AI models deliberately lying is wild",
+          "url": "https://www.reddit.com/r/technology/comments/1nkorpc/openais_research_on_ai_models_deliberately_lying/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
-            "AI"
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "OpenAI",
+            "neural"
           ]
         }
       ],
@@ -522,7 +691,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "Tech giants dominate mentions: OpenAI, Google, and Microsoft lead discussions around AI products and competition. Apple and Meta appear in conversations about AI integration strategies. Primary topics include product updates, competitive positioning in generative AI, market valuations, and concerns about corporate AI practices and data privacy implications.",
+      "summary": "Tech giants dominated mentions with OpenAI, Google, and Microsoft leading discussions. Primary topics included new AI product releases, corporate AI investments, and competitive developments. Amazon and Meta received attention for AI infrastructure announcements. Sentiment mixed, with enthusiasm for innovations balanced against concerns about market consolidation and fair competition in the AI space.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -778,9 +947,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "OpenClaw",
               "AI Agents",
-              "Agents",
-              "OpenClaw"
+              "Agents"
             ]
           }
         }
@@ -788,7 +957,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-02-26T13:33:22.012013+00:00"
+        "run_at": "2026-02-26T21:23:13.894225+00:00"
       },
       "meta": {
         "companies_tracked": 3,
@@ -798,109 +967,45 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-02-26T13:33:25.603598+00:00",
+      "generated_at": "2026-02-26T21:23:17.424083+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
           "top_stories": [
             {
-              "score": 80.0,
+              "score": 76.9,
               "tags": [
                 "earnings"
               ],
-              "headline": "Nvidia (NVDA) Revenue Forecast Shows the AI Boom Remains Strong - Bloomberg",
-              "source": "bloomberg",
-              "url": "https://bloomberg.com/news/articles/2026-02-25/nvidia-s-rosy-revenue-forecast-shows-the-ai-boom-remains-strong",
-              "published_at": "2026-02-25T21:33:26.366315+00:00",
-              "why_ranked": "Event=earnings(85) Source=bloomberg(93) Fresh=0.26 Tier1+ Novelty-25"
-            },
+              "headline": "Nvidia's blowout earnings report disappoints Wall Street as stock sinks 5%",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/02/26/nvidia-nvda-stock-price-q4-earnings.html",
+              "published_at": "2026-02-26T09:23:18.188960+00:00",
+              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.37"
+            }
+          ],
+          "glance": [
             {
-              "score": 78.3,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Nvidia Earnings Loom as Risk Factor for AI-Obsessed Stock Market",
-              "source": "bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-02-25/nvidia-earnings-loom-as-risk-factor-for-ai-obsessed-stock-market",
-              "published_at": "2026-02-25T13:33:26.366399+00:00",
-              "why_ranked": "Event=earnings(85) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 77.3,
+              "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Stock Market Today: Dow, S&P Live Updates for February 25 - Bloomberg",
-              "source": "bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-02-24/stock-market-today-dow-s-p-live-updates-",
-              "published_at": "2026-02-24T13:33:26.366023+00:00",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+"
-            },
-            {
-              "score": 75.4,
-              "tags": [
-                "guidance",
-                "earnings"
-              ],
-              "headline": "Nvidia earnings live: Nvidia stock pops as earnings beat, guidance stifles some AI concerns",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/live/nvidia-earnings-live-nvidia-stock-pops-as-earnings-beat-guidance-stifles-some-ai-concerns-215022927.html",
-              "published_at": "2026-02-26T13:06:26.365347+00:00",
-              "why_ranked": "Event=guidance(95) Source=yahoo(43) Fresh=0.96"
-            },
-            {
-              "score": 73.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Nvidia (NVDA) earnings report Q4 2026",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html",
-              "published_at": "2026-02-25T13:33:26.365658+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+              "headline": "Stock Market Today: Dow, S&P Live Updates for February 26 - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
             }
-          ],
-          "glance": []
+          ]
         },
         {
-          "symbol": "AMZN",
-          "top_stories": [
-            {
-              "score": 59.3,
-              "tags": [
-                "regulatory_action"
-              ],
-              "headline": "Amazon stock price today: AMZN ends higher as AI trade steadies, antitrust and exec exits linger",
-              "source": "unknown",
-              "url": "https://ts2.tech/en/amazon-stock-price-today-amzn-ends-higher-as-ai-trade-steadies-antitrust-and-exec-exits-linger/",
-              "published_at": "2026-02-25T21:33:27.467610+00:00",
-              "why_ranked": "Event=regulatory_action(90) Source=unknown(43) Fresh=0.26"
-            },
-            {
-              "score": 57.0,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Amazon Is Now the No. 1 Company in the World by Revenue. Does That Make AMZN Stock a Buy Here?",
-              "source": "unknown",
-              "url": "https://www.barchart.com/story/news/423565/amazon-is-now-the-no-1-company-in-the-world-by-revenue-does-that-make-amzn-stock-a-buy-here",
-              "published_at": "2026-02-25T20:33:27.467246+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.24"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "NTSK",
+          "symbol": "LLY",
           "top_stories": [],
           "glance": [
             {
-              "score": 45.6,
+              "score": 52.3,
               "tags": [
-                "product_launch_major"
+                "other"
               ],
-              "headline": "Netskope launches NewEdge AI Fast Path for AI traffic | NTSK Stock News",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
+              "headline": "Novo hoped its next obesity drug would close the gap. Instead, it may have widened Eli Lilly’s lead. | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
@@ -908,15 +1013,15 @@
           "symbol": "AVGO",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 66.4,
               "tags": [
                 "earnings"
               ],
-              "headline": "AVGO Stock Earnings Preview: Q1 2026 Revenue, EPS, and Margins",
-              "source": "unknown",
-              "url": "https://www.marketbeat.com/originals/avgo-earnings-are-just-around-the-cornerheres-what-to-watch/",
-              "published_at": "2026-02-24T13:33:30.784766+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Broadcom: Set For Another Double-Beat Next Week (Earnings Preview) (NASDAQ:AVGO) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4873792-broadcom-set-for-another-double-beat-next-week-earnings-preview",
+              "published_at": "2026-02-24T21:23:22.682040+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
@@ -925,52 +1030,33 @@
           "symbol": "CMG",
           "top_stories": [
             {
-              "score": 70.8,
+              "score": 77.6,
               "tags": [
-                "earnings"
+                "guidance"
               ],
-              "headline": "A Look Into Chipotle Mexican Grill Inc's Price Over Earnings - Chipotle Mexican Grill (NYSE:CMG) - Benzinga",
-              "source": "benzinga",
-              "url": "https://www.benzinga.com/insights/news/26/02/50728681/a-look-into-chipotle-mexican-grill-incs-price-over-earnings",
-              "published_at": "2026-02-19T13:33:31.919069+00:00",
-              "why_ranked": "Event=earnings(85) Source=benzinga(76) Fresh=0.15"
-            },
-            {
-              "score": 65.2,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Montrusco Bolton Investments Inc. Acquires 1,336,978 Shares of Chipotle Mexican Grill, Inc. $CMG - Ticker Report",
-              "source": "unknown",
-              "url": "https://www.tickerreport.com/banking-finance/13359189/montrusco-bolton-investments-inc-acquires-1336978-shares-of-chipotle-mexican-grill-inc-cmg.html",
-              "published_at": "2026-02-26T08:33:31.918549+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.66"
+              "headline": "Chipotle stock sinks as restaurant chain reports falling traffic, weak guidance",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/02/03/chipotle-cmg-q4-2025-earnings.html",
+              "published_at": "2026-02-05T21:23:23.823371+00:00",
+              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
             }
           ],
-          "glance": []
-        },
-        {
-          "symbol": "XIACY",
-          "top_stories": [
+          "glance": [
             {
-              "score": 90.1,
+              "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Xiaomi (XIACY) Turns Worst China Tech Stock on Smartphone, EV Doubts - Bloomberg",
-              "source": "bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2025-11-17/xiaomi-turns-worst-china-tech-stock-on-smartphone-ev-doubts",
-              "published_at": "2026-02-26T13:33:33.037659+00:00",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=1.00 Tier1+"
+              "headline": "CME Group reopens Globex metals, natural gas trading after brief technical halt | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
-          ],
-          "glance": []
+          ]
         }
       ],
       "debug": {
-        "tickers_processed": 6,
+        "tickers_processed": 4,
         "total_candidates": 70,
-        "removed_fresh_only": 0,
+        "removed_fresh_only": 8,
         "state_written": true,
         "report_date": "2026-02-26"
       }
@@ -978,66 +1064,457 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-02-26T13:33:33.041401+00:00",
+      "generated_at": "2026-02-26T21:23:24.904062+00:00",
       "tickers": [
         {
           "symbol": "TSM",
           "top_stories": [
             {
-              "score": 57.3,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "TSMC Stock (TSM) Hits 52-Week High on AMD-Meta Deal, Nvidia Earnings Excitement - TipRanks.com",
-              "source": "unknown",
-              "url": "https://www.tipranks.com/news/tsmc-stock-tsm-hits-a-new-52-week-high-whats-driving-the-rally",
-              "published_at": "2026-02-25T21:33:34.148363+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.26"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "AMAT",
-          "top_stories": [
-            {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Applied Materials (AMAT) Valuation Check After Strong Q1 Earnings And AI Infrastructure Growth Outlook - Simply Wall St News",
+              "headline": "TSMC Raises Dividend 28% While 38% Revenue Growth Reframes the Geopolitical Risk - 24/7 Wall St.",
               "source": "unknown",
-              "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-amat/applied-materials/news/applied-materials-amat-valuation-check-after-strong-q1-earni",
-              "published_at": "2026-02-25T13:33:35.272639+00:00",
+              "url": "https://247wallst.com/investing/2026/02/25/tsmc-raises-dividend-28-while-38-revenue-growth-reframes-the-geopolitical-risk/",
+              "published_at": "2026-02-25T21:23:26.127865+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MU",
+          "symbol": "LRCX",
+          "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "sec_filing"
+              ],
+              "headline": "Lam Research CEO gifts 7,080 company shares | LRCX SEC Filing - Form 4",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/LRCX/form-4-lam-research-corp-insider-trading-activity-17aa06d80f41.html",
+              "published_at": "2026-02-25T21:23:29.271165+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Can Foundry Strength Keep Lam Research's $5B+ Revenue Streak Alive?",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/news/foundry-strength-keep-lam-researchs-130800221.html",
+              "published_at": "2026-02-25T21:23:29.270940+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "BMY",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Micron (MU) stock climbs as Nvidia earnings loom and Micron sets March 18 update",
+              "headline": "BMO Kicks Off 2026 With Double-Digit Earnings Growth and Record Revenue - TipRanks.com",
               "source": "unknown",
-              "url": "https://ts2.tech/en/micron-mu-stock-climbs-as-nvidia-earnings-loom-and-micron-sets-march-18-update/",
-              "published_at": "2026-02-25T13:33:36.407947+00:00",
+              "url": "https://tipranks.com/news/company-announcements/bmo-kicks-off-2026-with-double-digit-earnings-growth-and-record-revenue",
+              "published_at": "2026-02-25T21:23:30.440152+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
-          "glance": []
+          "glance": [
+            {
+              "score": 46.2,
+              "tags": [
+                "product_launch_major"
+              ],
+              "headline": "BMC unveils record ₹80,952 crore budget | Mumbai news",
+              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.19"
+            }
+          ]
         }
       ],
       "debug": {
         "tickers_processed": 3,
-        "total_candidates": 40,
-        "removed_fresh_only": 0,
+        "total_candidates": 50,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-02-26"
+      }
+    },
+    "private_market_news": {
+      "title": "Private Market News",
+      "summary": "News from 8 private companies",
+      "companies": [
+        {
+          "company": "Cerebras Systems",
+          "stories": [
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Cerebras Systems raises $1bn at $23bn valuation - DCD",
+              "source": "web",
+              "url": "https://www.datacenterdynamics.com/en/news/cerebras-systems-raises-1bn-at-23bn-valuation/",
+              "published_at": "2026-02-26T21:23:32.947310+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Cerebras Systems Closes $1B in Funding at $23B Valuation to Expand AI Chip and Compute Infrastructure",
+              "source": "web",
+              "url": "https://theaiinsider.tech/2026/02/09/cerebras-systems-closes-1b-in-funding-at-23b-valuation-to-expand-ai-chip-and-compute-infrastructure/",
+              "published_at": "2026-02-26T21:23:32.947691+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Nvidia Rival Cerebras Raises $1 Billion in Funding at $23 Billion Valuation - Bloomberg",
+              "source": "news",
+              "url": "https://www.bloomberg.com/news/articles/2026-02-04/cerebras-raises-1-billion-in-funding-at-23-billion-valuation",
+              "published_at": "2026-02-26T21:23:32.947824+00:00",
+              "why_ranked": "group=capital_events(1.3) src=news(1.2) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "ipo"
+              ],
+              "headline": "Private Markets: Cerebras hits $23B valuation with $1B Series H raise - TipRanks.com",
+              "source": "web",
+              "url": "https://www.tipranks.com/news/the-fly/private-markets-cerebras-hits-23b-valuation-with-1b-series-h-raise-thefly",
+              "published_at": "2026-02-26T21:23:32.947946+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Nvidia challenger Cerebras rakes in $1B at a $23B valuation",
+              "source": "web",
+              "url": "https://amp.axios.com/nvidia-cerebras-1-billion-23-billion-50175b69-6e5e-403f-b961-1218075a4961.html",
+              "published_at": "2026-02-26T21:23:32.948066+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            }
+          ]
+        },
+        {
+          "company": "Groq",
+          "stories": [
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Nvidia AI chip challenger Groq raises even more than expected, hits $6.9B valuation | TechCrunch",
+              "source": "news",
+              "url": "https://techcrunch.com/2025/09/17/nvidia-ai-chip-challenger-groq-raises-even-more-than-expected-hits-6-9b-valuation/",
+              "published_at": "2026-02-26T21:23:34.319706+00:00",
+              "why_ranked": "group=capital_events(1.3) src=news(1.2) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Groq more than doubles valuation to $6.9 billion as investors bet on AI chips | Reuters",
+              "source": "news",
+              "url": "https://www.reuters.com/business/groq-more-than-doubles-valuation-69-billion-investors-bet-ai-chips-2025-09-17/",
+              "published_at": "2026-02-26T21:23:34.319856+00:00",
+              "why_ranked": "group=capital_events(1.3) src=news(1.2) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "AI Chip Startup Groq Raises $750 Million at $6.9 Billion Valuation - Bloomberg",
+              "source": "news",
+              "url": "https://www.bloomberg.com/news/articles/2025-09-17/ai-chip-startup-groq-raises-750-million-at-6-9-billion-valuation",
+              "published_at": "2026-02-26T21:23:34.319933+00:00",
+              "why_ranked": "group=capital_events(1.3) src=news(1.2) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "mna_confirmed"
+              ],
+              "headline": "Nvidia: $20B Groq Deal, Valuation, And More (Rating Upgrade) (NASDAQ:NVDA) | Seeking Alpha",
+              "source": "web",
+              "url": "https://seekingalpha.com/article/4856786-nvidia-20b-groq-deal-valuation-and-more-rating-upgrade",
+              "published_at": "2026-02-26T21:23:34.319996+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Nvidia Will Pay Groq Backers and Staff at Deal’s $20 Billion Valuation",
+              "source": "news",
+              "url": "https://www.theinformation.com/briefings/nvidia-will-pay-groq-backers-staff-deals-20-billion-valuation",
+              "published_at": "2026-02-26T21:23:34.320062+00:00",
+              "why_ranked": "group=capital_events(1.3) src=news(1.2) event=funding(1.30) fresh=1.00"
+            }
+          ]
+        },
+        {
+          "company": "SambaNova Systems",
+          "stories": [
+            {
+              "score": 35.9,
+              "tags": [
+                "product"
+              ],
+              "headline": "Intel Forges Strategic AI Alliance with SambaNova Systems",
+              "source": "web",
+              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/intel-forges-strategic-ai-alliance-with-sambanova-systems/68613165",
+              "published_at": "2026-02-26T05:23:35.431195+00:00",
+              "why_ranked": "group=primary(1.0) src=web(1.0) event=product(1.00) fresh=0.51"
+            }
+          ]
+        },
+        {
+          "company": "Liquid Death",
+          "stories": [
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Liquid Death - 2026 Funding Rounds & List of Investors - Tracxn",
+              "source": "web",
+              "url": "https://tracxn.com/d/companies/liquid-death/__d1DQa73B4lbDATSD8ykdNGMVacSrf5Vz1R0v00egFMc/funding-and-investors",
+              "published_at": "2026-02-26T21:23:36.578645+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Liquid Death closes funding round valuing business at $1.4B | Retail Dive",
+              "source": "web",
+              "url": "https://www.retaildive.com/news/liquid-death-funding-investment/709928/",
+              "published_at": "2026-02-26T21:23:36.578884+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Liquid Death - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+              "source": "web",
+              "url": "https://tracxn.com/d/companies/liquid-death/__d1DQa73B4lbDATSD8ykdNGMVacSrf5Vz1R0v00egFMc",
+              "published_at": "2026-02-26T21:23:36.579143+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            }
+          ]
+        },
+        {
+          "company": "Neuralink",
+          "stories": [
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Neuralink - 2026 Company Profile, Team, Funding & Competitors - Tracxn",
+              "source": "web",
+              "url": "https://tracxn.com/d/companies/neuralink/__oUVI98zbdmLZga1LgBRb3oGJJBxjbzTc7bMWUfAOLws",
+              "published_at": "2026-02-26T21:23:37.917313+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "product"
+              ],
+              "headline": "Neuralink secures $650M series E funding to expand patient access to brain chip technology",
+              "source": "web",
+              "url": "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology",
+              "published_at": "2026-02-26T21:23:37.917524+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding",
+                "regulatory"
+              ],
+              "headline": "Musk's Neuralink raises $650 million in latest funding as clinical trials begin | Reuters",
+              "source": "news",
+              "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/musks-neuralink-raises-650-million-latest-funding-round-2025-06-02/",
+              "published_at": "2026-02-26T21:23:37.917795+00:00",
+              "why_ranked": "group=capital_events(1.3) src=news(1.2) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Mind Over Money: Braintech Funding Booms As Musk’s Neuralink Closes Record Round",
+              "source": "web",
+              "url": "https://news.crunchbase.com/health-wellness-biotech/braintech-funding-semiconductors-neuralink/",
+              "published_at": "2026-02-26T21:23:37.918061+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 100,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Elon Musk's Neuralink raises $205M in funding - Becker’s Spine Review",
+              "source": "web",
+              "url": "https://www.beckersspine.com/robotics/elon-musk-s-neuralink-raises-205m-in-funding/",
+              "published_at": "2026-02-26T21:23:37.918255+00:00",
+              "why_ranked": "group=capital_events(1.3) src=web(1.0) event=funding(1.30) fresh=1.00"
+            }
+          ]
+        },
+        {
+          "company": "Automation Anywhere",
+          "stories": [
+            {
+              "score": 92.4,
+              "tags": [
+                "mna_rumor"
+              ],
+              "headline": "C3.AI in talks to merge with software company Automation Anywhere, The Information reports | Reuters",
+              "source": "news",
+              "url": "https://www.reuters.com/business/c3ai-talks-merge-with-startup-automation-anywhere-information-reports-2026-01-28/",
+              "published_at": "2026-02-26T21:23:38.838476+00:00",
+              "why_ranked": "group=primary(1.0) src=news(1.2) event=mna_rumor(1.10) fresh=1.00"
+            },
+            {
+              "score": 91.0,
+              "tags": [
+                "funding",
+                "partnership"
+              ],
+              "headline": "Automation Anywhere and AI Kiran Launch Partnership to Train 1 Million for AI Careers | IndianWeb2.com",
+              "source": "web",
+              "url": "https://www.indianweb2.com/2026/02/automation-anywhere-and-ai-kiran-launch.html",
+              "published_at": "2026-02-26T21:23:38.838879+00:00",
+              "why_ranked": "group=primary(1.0) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 70.0,
+              "tags": [
+                "other"
+              ],
+              "headline": "Automation Anywhere Reports Strong Q3 With Record Bookings as Enterprises Accelerate Adoption of Agentic Process Automation and Agentic Solutions",
+              "source": "web",
+              "url": "https://www.prnewswire.com/news-releases/automation-anywhere-reports-strong-q3-with-record-bookings-as-enterprises-accelerate-adoption-of-agentic-process-automation-and-agentic-solutions-302645418.html",
+              "published_at": "2026-02-26T21:23:38.838947+00:00",
+              "why_ranked": "group=primary(1.0) src=web(1.0) event=other(1.00) fresh=1.00"
+            }
+          ]
+        },
+        {
+          "company": "Dialpad",
+          "stories": [
+            {
+              "score": 77.0,
+              "tags": [
+                "other"
+              ],
+              "headline": "Dialpad AI",
+              "source": "web",
+              "url": "https://help.dialpad.com/docs/dialpad-ai",
+              "published_at": "2026-02-26T21:23:39.795433+00:00",
+              "why_ranked": "group=strategic(1.1) src=web(1.0) event=other(1.00) fresh=1.00"
+            },
+            {
+              "score": 77.0,
+              "tags": [
+                "other"
+              ],
+              "headline": "Dialpad Expands Into Autonomous CX With Agentic AI Platform Launch",
+              "source": "web",
+              "url": "https://www.softwarereviews.com/research/dialpad-expands-into-autonomous-cx-with-agentic-ai-platform-launch",
+              "published_at": "2026-02-26T21:23:39.795648+00:00",
+              "why_ranked": "group=strategic(1.1) src=web(1.0) event=other(1.00) fresh=1.00"
+            },
+            {
+              "score": 77.0,
+              "tags": [
+                "product"
+              ],
+              "headline": "Dialpad Launches Real-Time AI in Japan",
+              "source": "web",
+              "url": "https://finance.yahoo.com/news/dialpad-launches-real-time-ai-232200877.html",
+              "published_at": "2026-02-26T21:23:39.795938+00:00",
+              "why_ranked": "group=strategic(1.1) src=web(1.0) event=product(1.00) fresh=1.00"
+            }
+          ]
+        },
+        {
+          "company": "Dataminr",
+          "stories": [
+            {
+              "score": 91.0,
+              "tags": [
+                "funding"
+              ],
+              "headline": "Dataminr report: Cyber risk shifted in 2025 with increased threat actor activity and mega-loss events | SC Media",
+              "source": "web",
+              "url": "https://www.scworld.com/brief/dataminr-report-cyber-risk-shifted-in-2025-with-increased-threat-actor-activity-and-mega-loss-events",
+              "published_at": "2026-02-26T21:23:40.898766+00:00",
+              "why_ranked": "group=primary(1.0) src=web(1.0) event=funding(1.30) fresh=1.00"
+            },
+            {
+              "score": 73.5,
+              "tags": [
+                "partnership"
+              ],
+              "headline": "Carahsoft to Distribute Dataminr's Threat Intelligence Tools",
+              "source": "web",
+              "url": "https://www.executivebiz.com/articles/carahsoft-dataminr-ai-threat-intelligence",
+              "published_at": "2026-02-26T21:23:40.899118+00:00",
+              "why_ranked": "group=primary(1.0) src=web(1.0) event=partnership(1.05) fresh=1.00"
+            },
+            {
+              "score": 70.0,
+              "tags": [
+                "other"
+              ],
+              "headline": "Dataminr warns cyber 'mega-loss' era has arrived as threat actor alerts jump 225% - SiliconANGLE",
+              "source": "web",
+              "url": "https://siliconangle.com/2026/02/18/dataminr-warns-cyber-mega-loss-era-arrived-threat-actor-alerts-jump-225/",
+              "published_at": "2026-02-26T21:23:40.898070+00:00",
+              "why_ranked": "group=primary(1.0) src=web(1.0) event=other(1.00) fresh=1.00"
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "generated_at": "2026-02-26T21:23:30.443784+00:00",
+        "companies_count": 11,
+        "with_stories": 8
       }
     }
   }
