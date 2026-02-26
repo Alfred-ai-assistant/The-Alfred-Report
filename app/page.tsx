@@ -429,6 +429,48 @@ export default async function Home({ searchParams }: PageProps) {
                     )}
                   </section>
                 )}
+
+                {report.sections?.private_market_news && (
+                  <section id="section-private_market_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <h2 className="text-3xl font-bold mb-3 text-cyan-400">
+                      {report.sections.private_market_news.title}
+                    </h2>
+                    {report.sections.private_market_news.companies && report.sections.private_market_news.companies.length > 0 && (
+                      <div className="space-y-6">
+                        {report.sections.private_market_news.companies.map((company: any, cidx: number) => (
+                          <div key={cidx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                            <h3 className="font-bold text-purple-400 mb-3">
+                              {company.company}
+                            </h3>
+                            {company.stories && company.stories.length > 0 && (
+                              <div className="space-y-3 mb-3">
+                                {company.stories.map((story: any, sidx: number) => (
+                                  <div key={sidx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
+                                    <a href={story.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-300 hover:text-cyan-200 mb-2 block hover:underline">
+                                      [{story.score.toFixed(1)}] {story.headline}
+                                    </a>
+                                    {story.tags && story.tags.length > 0 && (
+                                      <div className="flex gap-2 mb-2 flex-wrap">
+                                        {story.tags.map((tag: string) => (
+                                          <span key={tag} className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">
+                                            {tag}
+                                          </span>
+                                        ))}
+                                      </div>
+                                    )}
+                                    <p className="text-gray-400 text-xs">
+                                      {story.why_ranked}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </section>
+                )}
               </div>
 
               {/* RIGHT COLUMN */}
@@ -968,6 +1010,38 @@ export default async function Home({ searchParams }: PageProps) {
                           {ticker.top_stories && ticker.top_stories.length > 0 && (
                             <div className="space-y-2 mb-2">
                               {ticker.top_stories.slice(0, 2).map((story: any, sidx: number) => (
+                                <div key={sidx} className="text-xs">
+                                  <a href={story.url} target="_blank" rel="noopener noreferrer" className="text-cyan-300 hover:text-cyan-200 hover:underline block mb-1">
+                                    [{story.score.toFixed(1)}] {story.headline}
+                                  </a>
+                                  <p className="text-gray-500 text-xs">{story.why_ranked}</p>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              )}
+
+              {/* Private Market News */}
+              {report.sections?.private_market_news && (
+                <section id="section-private_market_news" className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 md:p-8 md:col-start-1 md:row-start-7">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3 text-cyan-400">
+                    {report.sections.private_market_news.title}
+                  </h2>
+                  {report.sections.private_market_news.companies && report.sections.private_market_news.companies.length > 0 && (
+                    <div className="space-y-4">
+                      {report.sections.private_market_news.companies.map((company: any, cidx: number) => (
+                        <div key={cidx} className="bg-slate-900/50 rounded p-3 border border-slate-700/50">
+                          <h3 className="font-bold text-purple-400 mb-2 text-sm">
+                            {company.company}
+                          </h3>
+                          {company.stories && company.stories.length > 0 && (
+                            <div className="space-y-2 mb-2">
+                              {company.stories.slice(0, 2).map((story: any, sidx: number) => (
                                 <div key={sidx} className="text-xs">
                                   <a href={story.url} target="_blank" rel="noopener noreferrer" className="text-cyan-300 hover:text-cyan-200 hover:underline block mb-1">
                                     [{story.score.toFixed(1)}] {story.headline}
