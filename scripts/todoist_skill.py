@@ -29,11 +29,14 @@ def get_tasks() -> Dict:
     
     try:
         # Fetch active tasks
+        # TODOIST_API_KEY is already injected by systemd, no need to source
+        todoist_script = os.path.expanduser("~/.openclaw/workspace/skills/todoist/todoist.py")
         result = subprocess.run(
-            ["bash", "-c", "source ~/.openclaw/secrets.env && python3 ~/.openclaw/workspace/skills/todoist/todoist.py list-tasks"],
+            ["python3", todoist_script, "list-tasks"],
             capture_output=True,
             text=True,
-            timeout=10
+            timeout=10,
+            env=os.environ.copy()
         )
         
         if result.returncode != 0:
