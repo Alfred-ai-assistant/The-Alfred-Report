@@ -153,10 +153,12 @@ def main():
         report_date = datetime.now().astimezone().date().isoformat()
     
     # Check if today's report already exists — skip regeneration to save costs
+    # (unless FORCE_REGENERATE is set, e.g., for backup validator re-runs)
     daily_path = DAILY_DIR / f"{report_date}.json"
-    if daily_path.exists():
+    if daily_path.exists() and not os.environ.get("FORCE_REGENERATE"):
         print(f"[PUBLISH] Report for {report_date} already exists. Skipping regeneration to save API costs.")
         print(f"[PUBLISH] Existing report: {daily_path}")
+        print(f"[PUBLISH] (To force regeneration, set FORCE_REGENERATE=true)")
         return
     
     # Initialize cost tracker

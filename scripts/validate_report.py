@@ -6,6 +6,7 @@ If YouTube has no videos, re-runs digest and regenerates report
 """
 
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -103,12 +104,15 @@ def retry_youtube_digest():
 def regenerate_report():
     """Re-generate The Alfred Report"""
     print("\n[BACKUP] Regenerating Alfred Report...")
+    env = dict(os.environ)
+    env["FORCE_REGENERATE"] = "true"
     result = subprocess.run(
         ["bash", "scripts/run_daily_publish.sh"],
         cwd="/home/alfred/repos/The-Alfred-Report",
         capture_output=True,
         text=True,
-        timeout=300
+        timeout=300,
+        env=env
     )
     
     if result.returncode == 0:
