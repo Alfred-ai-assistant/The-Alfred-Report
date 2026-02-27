@@ -431,7 +431,7 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.company_news_links && (
-                  <section id="section-company_news_links" className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
                       {report.sections.company_news_links.title}
                     </h2>
