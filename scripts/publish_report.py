@@ -152,6 +152,13 @@ def main():
     if not report_date:
         report_date = datetime.now().astimezone().date().isoformat()
     
+    # Check if today's report already exists — skip regeneration to save costs
+    daily_path = DAILY_DIR / f"{report_date}.json"
+    if daily_path.exists():
+        print(f"[PUBLISH] Report for {report_date} already exists. Skipping regeneration to save API costs.")
+        print(f"[PUBLISH] Existing report: {daily_path}")
+        return
+    
     # Initialize cost tracker
     init_tracker(report_date)
 
@@ -197,7 +204,6 @@ def main():
         "sections": sections
     }
 
-    daily_path = DAILY_DIR / f"{report_date}.json"
     latest_path = PUBLIC_DIR / "latest.json"
     index_path = PUBLIC_DIR / "index.json"
 
@@ -217,7 +223,7 @@ def main():
     index["reports"] = reports[:60]
     save_json(index_path, index)
 
-    print(f"Wrote {daily_path}")
+    print(f"[PUBLISH] Wrote {daily_path}")
     print("Updated latest.json and index.json")
     
     # Save cost log and send Telegram summary
