@@ -28,9 +28,6 @@ channels:
 
   - name: OpenClaw
 
-  - name: David Ondrej
-    handle: DavidOndrej
-
   - name: All About AI
     handle: AllAboutAI
 
