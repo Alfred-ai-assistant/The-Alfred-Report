@@ -12,10 +12,10 @@
           "name": "Today",
           "temperature": "45°F",
           "forecast": "Light Rain",
-          "wind": "2 to 6 mph",
+          "wind": "1 to 6 mph",
           "wind_direction": "SE",
-          "precipitation_chance": "85%",
-          "details": "Rain. Cloudy, with a high near 45. Southeast wind 2 to 6 mph. Chance of precipitation is 90%. Little or no ice accumulation expected."
+          "precipitation_chance": "92%",
+          "details": "Rain and patchy fog before 2pm, then a chance of rain and patchy fog. Cloudy, with a high near 45. Southeast wind 1 to 6 mph. Chance of precipitation is 90%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
           "name": "Tonight",
@@ -24,7 +24,7 @@
           "wind": "6 mph",
           "wind_direction": "SW",
           "precipitation_chance": "82%",
-          "details": "Rain. Cloudy. Low around 44, with temperatures rising to around 50 overnight. Southwest wind around 6 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible."
+          "details": "Rain likely before 7pm, then rain and patchy fog. Cloudy. Low around 44, with temperatures rising to around 51 overnight. Southwest wind around 6 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible."
         },
         {
           "name": "Wednesday",
@@ -33,7 +33,7 @@
           "wind": "3 mph",
           "wind_direction": "N",
           "precipitation_chance": "46%",
-          "details": "A chance of rain before 8am, then a chance of rain and patchy fog. Cloudy, with a high near 60. North wind around 3 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
+          "details": "A chance of rain. Cloudy, with a high near 60. North wind around 3 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
         },
         {
           "name": "Wednesday Night",
@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-03T07:00:03.288345"
+        "updated_at": "2026-03-03T08:43:10.241963"
       }
     },
     "todoist": {
@@ -106,7 +106,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-03T07:00:06.115374",
+        "updated_at": "2026-03-03T08:43:10.756433",
         "task_count": 5,
         "overdue_count": 0,
         "completed_today": 0
@@ -151,7 +151,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-03T07:00:06.775872",
+        "updated_at": "2026-03-03T08:43:11.471726",
         "total_cards": 52,
         "in_progress": 0,
         "ready": 0,
@@ -161,37 +161,37 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI sector faced significant scrutiny this week across multiple dimensions. Military deployment concerns emerged prominently, with reports that Anthropic's Claude was used by the U.S. in strikes against Iran, while OpenAI amended its Pentagon agreement to include additional protections following public criticism. These developments underscore growing tensions between AI capabilities and defense applications.\n\nMarket dynamics showed mixed signals. Anthropic achieved top App Store ranking, indicating strong consumer momentum, while Apple's substantial server investments in Apple Intelligence generated disappointing returns due to weak adoption. Separately, Claude.ai experienced elevated errors affecting platform reliability.\n\nTransparency and safety issues surfaced across multiple platforms. Anthropic's Cowork feature created large VM bundles without user notification, and Ars Technica terminated a reporter over AI-fabricated quotes, highlighting credibility risks. Technical discussions emerged around optimal implementation practices, including whether AI-assisted coding sessions should appear in commits and Go's potential advantages for agent systems.\n\nDevelopment continues at grassroots levels, with independent developers creating games using AI tools despite broader industry skepticism. Commentary from researchers emphasized AI systems' fundamental limitations and risks, framing an emerging 'clownpocalypse' narrative around unreliable AI deployment. Meta's smart glasses expansion raised privacy concerns as hardware-based AI collection accelerates.",
+      "summary": "AI infrastructure and security faced significant scrutiny this period. A stolen Gemini API key generated $82,000 in charges within 48 hours, while Anthropic's Cowork feature created unexpected 10GB bundles on macOS—both highlighting deployment risks. Claude's surge to #1 on the App Store demonstrates market confidence in Anthropic, though elevated errors on Claude.ai revealed service reliability concerns. Apple's underutilized AI server capacity suggests slower Apple Intelligence adoption than anticipated. Data privacy and judicial integrity emerged as critical policy issues: Meta's smart glasses prompted privacy concerns, while India's courts discovered a judge citing fabricated AI-generated legal orders—mirroring an Ars Technica incident where a reporter fabricated AI-related quotes. Military applications became visible, with Claude reportedly used in US targeting decisions, raising questions about autonomous decision-making speed. The sector grapples with systemic risks: commentary warns of dangerous failures as deployment accelerates, while experts emphasize AI's fundamental lack of true understanding despite its societal impact. Developer communities continue expanding AI tools for games and programming, using Go and Claude Code LSP, indicating sustained enterprise and open-source momentum despite broader concerns about safety and governance.",
       "items": [
         {
           "title": "Meta’s AI smart glasses and data privacy concerns",
           "url": "https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything",
           "source": "svd.se",
-          "why_it_matters": "Meta's AI-enabled smart glasses raise questions about data collection and user privacy as the company expands its AI hardware ecosystem.",
+          "why_it_matters": "Meta's AI-enabled smart glasses raise questions about how user data is collected and protected during everyday interactions.",
           "tags": [
             "hardware",
             "policy"
           ],
           "published_at": "2026-03-02T22:32:35Z",
-          "hn_score": 1154
+          "hn_score": 1208
         },
         {
-          "title": "If AI writes code, should the session be part of the commit?",
-          "url": "https://github.com/mandel-macaque/memento",
-          "source": "github.com",
-          "why_it_matters": "The integration of AI code generation into development workflows creates ambiguity around attribution and version control practices.",
+          "title": "Ars Technica fires reporter after AI controversy involving fabricated quotes",
+          "url": "https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes",
+          "source": "futurism.com",
+          "why_it_matters": "A major tech publication's credibility was damaged when a reporter fabricated quotes in an AI-related story, highlighting risks of journalistic integrity in AI coverage.",
           "tags": [
-            "enterprise",
-            "open-source"
+            "safety",
+            "policy"
           ],
-          "published_at": "2026-03-02T00:27:52Z",
-          "hn_score": 478
+          "published_at": "2026-03-03T01:12:30Z",
+          "hn_score": 394
         },
         {
           "title": "Anthropic Cowork feature creates 10GB VM bundle on macOS without warning",
           "url": "https://github.com/anthropics/claude-code/issues/22543",
           "source": "github.com",
-          "why_it_matters": "Anthropic's Cowork feature creates large system files without user notification, raising concerns about transparency and system resource management.",
+          "why_it_matters": "Anthropic's Cowork feature created a 10GB virtual machine bundle on macOS without explicit user consent, raising concerns about unexpected resource usage.",
           "tags": [
             "safety",
             "enterprise"
@@ -200,49 +200,36 @@
           "hn_score": 366
         },
         {
-          "title": "Ars Technica fires reporter after AI controversy involving fabricated quotes",
-          "url": "https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes",
-          "source": "futurism.com",
-          "why_it_matters": "Ars Technica's dismissal of a reporter for AI-related quote fabrication underscores emerging credibility challenges in AI-assisted journalism.",
-          "tags": [
-            "policy",
-            "safety"
-          ],
-          "published_at": "2026-03-03T01:12:30Z",
-          "hn_score": 335
-        },
-        {
           "title": "A case for Go as the best language for AI agents",
           "url": "https://getbruin.com/blog/go-is-the-best-language-for-agents/",
           "source": "getbruin.com",
-          "why_it_matters": "Go's potential advantages for AI agents represent an emerging technical discussion about optimal programming languages for agent-based systems.",
+          "why_it_matters": "Go language is being positioned as optimal for AI agent development, reflecting ongoing debate about programming language choices in AI infrastructure.",
           "tags": [
             "research",
             "enterprise"
           ],
           "published_at": "2026-03-02T18:48:36Z",
-          "hn_score": 179
+          "hn_score": 184
         },
         {
           "title": "Elevated Errors in Claude.ai",
           "url": "https://status.claude.com/incidents/yf48hzysrvl5",
           "source": "status.claude.com",
-          "why_it_matters": "Service disruptions on Claude.ai impact user availability and highlight reliability challenges for major AI platforms.",
+          "why_it_matters": "Claude.ai experienced elevated error rates, affecting service reliability for users.",
           "tags": [
-            "models",
             "enterprise"
           ],
           "published_at": "2026-03-03T03:31:07Z",
-          "hn_score": 167
+          "hn_score": 183
         },
         {
           "title": "Apple AI servers unused in warehouses due to low Apple Intelligence usage",
           "url": "https://9to5mac.com/2026/03/02/some-apple-ai-servers-are-reportedly-sitting-unused-on-warehouse-shelves-due-to-low-apple-intelligence-usage/",
           "source": "9to5mac.com",
-          "why_it_matters": "Apple's significant server investment yields minimal returns due to weak adoption of Apple Intelligence, indicating market resistance to device-based AI.",
+          "why_it_matters": "Apple's AI server infrastructure remains underutilized due to low adoption of Apple Intelligence features, suggesting slower-than-expected market uptake.",
           "tags": [
             "hardware",
-            "funding"
+            "enterprise"
           ],
           "published_at": "2026-03-02T17:40:17Z",
           "hn_score": 86
@@ -251,7 +238,7 @@
           "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
           "url": "https://www.reuters.com/technology/artificial-intelligence/",
           "source": "reuters.com",
-          "why_it_matters": "General AI news aggregation from Reuters covering ongoing developments across multiple sectors.",
+          "why_it_matters": "Reuters publishes ongoing AI news coverage across breakthroughs, regulation, and global impact.",
           "tags": [
             "policy",
             "research"
@@ -261,9 +248,9 @@
           "title": "Claude hits #1 on the App Store as users rally behind Anthropic",
           "url": "https://9to5mac.com/2026/03/01/claude-hits-1-on-the-app-store-as-users-rally-behind-anthropics-government-standoff/",
           "source": "9to5mac.com",
-          "why_it_matters": "Claude's top App Store ranking reflects strong consumer preference for Anthropic's model amid broader AI market competition.",
+          "why_it_matters": "Claude reached the top position on Apple's App Store, indicating strong user demand and market confidence in Anthropic's product.",
           "tags": [
-            "models",
+            "enterprise",
             "funding"
           ],
           "published_at": "2026-03-02T02:23:50Z",
@@ -273,31 +260,55 @@
           "title": "Claude Code LSP",
           "url": "https://karanbansal.in/blog/claude-code-lsp/",
           "source": "karanbansal.in",
-          "why_it_matters": "Technical development around Claude's code functionality demonstrates evolving capabilities for AI-assisted software development.",
+          "why_it_matters": "Development tools for Claude, including Code LSP, are expanding the ecosystem for AI-assisted programming.",
           "tags": [
-            "models",
+            "open-source",
             "enterprise"
           ],
           "published_at": "2026-03-02T11:47:16Z",
-          "hn_score": 76
+          "hn_score": 77
+        },
+        {
+          "title": "India's top court angry after junior judge cites fake AI-generated orders",
+          "url": "https://www.bbc.com/news/articles/c178zzw780xo",
+          "source": "bbc.com",
+          "why_it_matters": "An Indian court discovered a junior judge cited fabricated AI-generated legal orders, exposing risks of AI-generated content in judicial systems.",
+          "tags": [
+            "safety",
+            "policy"
+          ],
+          "published_at": "2026-03-03T12:13:40Z",
+          "hn_score": 79
         },
         {
           "title": "The Excommunicated Devs Making Games with AI",
           "url": "https://www.tyleo.com/blog/the-excommunicated-devs-making-games-with-ai",
           "source": "tyleo.com",
-          "why_it_matters": "Independent developers are creating games using AI tools despite industry skepticism, indicating grassroots adoption patterns.",
+          "why_it_matters": "Independent game developers are using AI tools to create games despite community skepticism, reflecting diversifying use cases.",
           "tags": [
             "enterprise",
-            "open-source"
+            "research"
           ],
           "published_at": "2026-03-03T02:16:52Z",
-          "hn_score": 53
+          "hn_score": 54
+        },
+        {
+          "title": "Stolen Gemini API key racks up $82,000 in 48 hours",
+          "url": "https://llmhorrors.com/all/gemini-stolen-api-key-82k/",
+          "source": "llmhorrors.com",
+          "why_it_matters": "A stolen Gemini API key generated $82,000 in unauthorized charges within 48 hours, demonstrating critical security vulnerabilities in API infrastructure.",
+          "tags": [
+            "safety",
+            "policy"
+          ],
+          "published_at": "2026-03-03T12:41:17Z",
+          "hn_score": 62
         },
         {
           "title": "The Looming AI Clownpocalypse",
           "url": "https://honnibal.dev/blog/clownpocalypse",
           "source": "honnibal.dev",
-          "why_it_matters": "Commentary on AI reliability and deployment risks reflects growing concerns about AI systems operating without adequate oversight.",
+          "why_it_matters": "Commentary warns of systematic failures in AI systems becoming increasingly dangerous as deployment accelerates.",
           "tags": [
             "safety",
             "research"
@@ -306,39 +317,29 @@
           "hn_score": 54
         },
         {
-          "title": "Iran war heralds era of AI-powered bombing quicker than ‘speed of thought’ | AI (artificial intelligence) | The Guardian",
-          "url": "https://www.theguardian.com/technology/2026/mar/03/iran-war-heralds-era-of-ai-powered-bombing-quicker-than-speed-of-thought",
-          "source": "theguardian.com",
-          "why_it_matters": "Anthropic's Claude was reportedly used in military operations, raising significant questions about AI deployment in weapons systems and accountability.",
-          "tags": [
-            "policy",
-            "safety"
-          ]
-        },
-        {
           "title": "Artificial Intelligence News -- ScienceDaily",
           "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
           "source": "sciencedaily.com",
-          "why_it_matters": "Academic coverage of AI limitations and societal risks highlights ongoing ethical concerns about AI capabilities and transparency.",
-          "tags": [
-            "safety",
-            "research"
-          ]
-        },
-        {
-          "title": "OpenAI Amends A.I. Deal With the Pentagon - The New York Times",
-          "url": "https://www.nytimes.com/2026/03/02/technology/openai-pentagon-deal-amended-surveillance.html",
-          "source": "nytimes.com",
-          "why_it_matters": "OpenAI's amended Pentagon agreement now includes additional safeguards, reflecting policy adjustments in response to public scrutiny of defense AI partnerships.",
+          "why_it_matters": "Claude was reportedly used by the US military for targeting decisions, raising questions about AI deployment in military operations and decision speed.",
           "tags": [
             "policy",
             "safety"
+          ]
+        },
+        {
+          "title": "Iran war heralds era of AI-powered bombing quicker than ‘speed of thought’ | AI (artificial intelligence) | The Guardian",
+          "url": "https://www.theguardian.com/technology/2026/mar/03/iran-war-heralds-era-of-ai-powered-bombing-quicker-than-speed-of-thought",
+          "source": "theguardian.com",
+          "why_it_matters": "AI systems lack true understanding yet pose existential threats to human dignity and societal structures.",
+          "tags": [
+            "safety",
+            "policy"
           ]
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-03T12:00:03.134891+00:00",
+        "updated_at": "2026-03-03T13:43:09.974777+00:00",
         "story_count": 15,
         "lanes_used": [
           "tier1",
@@ -348,12 +349,101 @@
     },
     "youtube": {
       "title": "Today's AI Daily Digest",
-      "summary": "No new videos added today.",
-      "items": [],
+      "summary": "11 new videos added across your AI channels",
+      "items": [
+        {
+          "video_id": "uUutLHhfMVU",
+          "title": "Nano Banana Pro closed a gap — and unlocked billions #nanobananapro #ai #futureofwork",
+          "channel": "AI News & Strategy Daily | Nate B Jones",
+          "published_at": "2026-03-01T22:00:48Z",
+          "thumbnail": "https://i.ytimg.com/vi/uUutLHhfMVU/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=uUutLHhfMVU"
+        },
+        {
+          "video_id": "BlyJKhhbzwA",
+          "title": "Super Nested Claude Code Is Vibecoding On STEROIDS",
+          "channel": "All About AI",
+          "published_at": "2026-03-02T14:00:20Z",
+          "thumbnail": "https://i.ytimg.com/vi/BlyJKhhbzwA/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=BlyJKhhbzwA"
+        },
+        {
+          "video_id": "2JiMmye2ezg",
+          "title": "You Don't Need SaaS. The $0.10 System That Replaced My AI Workflow (45 Min No-Code Build)",
+          "channel": "AI News & Strategy Daily | Nate B Jones",
+          "published_at": "2026-03-02T15:00:06Z",
+          "thumbnail": "https://i.ytimg.com/vi/2JiMmye2ezg/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=2JiMmye2ezg"
+        },
+        {
+          "video_id": "x80OWtNjuFQ",
+          "title": "Gemini Can Make Songs Now, But...",
+          "channel": "The AI Advantage",
+          "published_at": "2026-03-02T15:26:53Z",
+          "thumbnail": "https://i.ytimg.com/vi/x80OWtNjuFQ/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=x80OWtNjuFQ"
+        },
+        {
+          "video_id": "7R3ZIVF-c1I",
+          "title": "How to Switch from ChatGPT to Claude (Without Losing Anything!)",
+          "channel": "The AI Advantage",
+          "published_at": "2026-03-02T16:46:26Z",
+          "thumbnail": "https://i.ytimg.com/vi/7R3ZIVF-c1I/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=7R3ZIVF-c1I"
+        },
+        {
+          "video_id": "YPLNjxMLDDA",
+          "title": "you can just do things!!",
+          "channel": "Matthew Berman",
+          "published_at": "2026-03-02T17:02:34Z",
+          "thumbnail": "https://i.ytimg.com/vi/YPLNjxMLDDA/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=YPLNjxMLDDA"
+        },
+        {
+          "video_id": "YmUNXNNTApg",
+          "title": "🫠 oh nooo",
+          "channel": "Matthew Berman",
+          "published_at": "2026-03-02T18:28:31Z",
+          "thumbnail": "https://i.ytimg.com/vi/YmUNXNNTApg/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=YmUNXNNTApg"
+        },
+        {
+          "video_id": "Hzm3D7i3NFk",
+          "title": "Claude kill count going up",
+          "channel": "Wes Roth",
+          "published_at": "2026-03-02T20:18:36Z",
+          "thumbnail": "https://i.ytimg.com/vi/Hzm3D7i3NFk/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=Hzm3D7i3NFk"
+        },
+        {
+          "video_id": "RhLpV6QDBFE",
+          "title": "OpenClaw is 100x better with this tool (Mission Control)",
+          "channel": "Alex Finn",
+          "published_at": "2026-03-03T00:27:55Z",
+          "thumbnail": "https://i.ytimg.com/vi/RhLpV6QDBFE/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=RhLpV6QDBFE"
+        },
+        {
+          "video_id": "deEri629Nnw",
+          "title": "They spent MILLIONS on this...",
+          "channel": "Matthew Berman",
+          "published_at": "2026-03-03T02:17:31Z",
+          "thumbnail": "https://i.ytimg.com/vi/deEri629Nnw/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=deEri629Nnw"
+        },
+        {
+          "video_id": "AMwNQlkyBrc",
+          "title": "One AI breakthrough just unlocked a new storytelling medium #nanobananapro #futureofwork #ai",
+          "channel": "AI News & Strategy Daily | Nate B Jones",
+          "published_at": "2026-03-03T04:00:06Z",
+          "thumbnail": "https://i.ytimg.com/vi/AMwNQlkyBrc/maxresdefault.jpg",
+          "url": "https://www.youtube.com/watch?v=AMwNQlkyBrc"
+        }
+      ],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-03T12:00:36.830435+00:00",
-        "video_count": 0
+        "updated_at": "2026-03-03T13:43:41.415266+00:00",
+        "video_count": 11
       }
     },
     "ai_reddit_trending": {
@@ -498,17 +588,6 @@
           ]
         },
         {
-          "title": "r/openclawpirates on Reddit: OpenClaw Full Tutorial: Installation to First Chat (safely)",
-          "url": "https://www.reddit.com/r/openclawpirates/comments/1qt83hd/openclaw_full_tutorial_installation_to_first_chat/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "model",
-            "Gemini"
-          ]
-        },
-        {
           "title": "r/openclaw on Reddit: How to get human web browsing working?",
           "url": "https://www.reddit.com/r/openclaw/comments/1qsy6dp/how_to_get_human_web_browsing_working/",
           "subreddit": "openclaw",
@@ -517,6 +596,17 @@
             "AI",
             "model",
             "agent"
+          ]
+        },
+        {
+          "title": "r/openclawpirates on Reddit: OpenClaw Full Tutorial: Installation to First Chat (safely)",
+          "url": "https://www.reddit.com/r/openclawpirates/comments/1qt83hd/openclaw_full_tutorial_installation_to_first_chat/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "Gemini"
           ]
         },
         {
@@ -656,7 +746,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-03T12:00:41.020125+00:00"
+        "run_at": "2026-03-03T13:43:45.685323+00:00"
       },
       "meta": {
         "companies_tracked": 3,
@@ -666,7 +756,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-03T12:00:44.704317+00:00",
+      "generated_at": "2026-03-03T13:43:46.772035+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
@@ -679,65 +769,105 @@
               "headline": "Nvidia Stock: Goldman Raises Forecast After Earnings | NVDA - TheStreet",
               "source": "unknown",
               "url": "https://www.thestreet.com/investing/stocks/goldman-sachs-resets-nvidia-stock-forecast-after-earnings",
-              "published_at": "2026-03-02T12:00:45.527225+00:00",
+              "published_at": "2026-03-02T13:43:47.688502+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "AAPL",
+          "symbol": "AMZN",
+          "top_stories": [
+            {
+              "score": 77.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Amazon’s (AMZN) Extreme AI Spending Sends Stock to Worst Month in Years - Bloomberg",
+              "source": "bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-03-02/amazon-s-extreme-ai-spending-sends-stock-to-worst-month-in-years",
+              "published_at": "2026-03-02T13:43:48.826387+00:00",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "LLY",
           "top_stories": [],
           "glance": [
             {
-              "score": 45.6,
+              "score": 47.6,
               "tags": [
-                "product_launch_major"
+                "other"
               ],
-              "headline": "Apple unveils M4 iPad Air with 30% faster chip | AAPL Stock News",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
+              "headline": "Why Novo Nordisk's Ireland expansion is key to fighting off Eli Lilly",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
             }
           ]
         },
         {
-          "symbol": "AVGO",
+          "symbol": "TSLA",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Is Broadcom Stock (AVGO) a Buy Ahead of Earnings? - TipRanks.com",
+              "headline": "Why Tesla stock keeps falling: here's top 3 reasons — TradingView News",
               "source": "unknown",
-              "url": "https://www.tipranks.com/news/is-broadcom-stock-a-avgo-buy-ahead-of-earnings",
-              "published_at": "2026-03-02T12:00:50.703000+00:00",
+              "url": "https://www.tradingview.com/news/invezz:5046bc153094b:0-why-tesla-stock-keeps-falling-here-s-top-3-reasons/",
+              "published_at": "2026-02-27T13:43:52.051937+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
-          "glance": []
+          "glance": [
+            {
+              "score": 52.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Tesla regains some market share around Europe in February, a sign of stabilising sales | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            }
+          ]
         },
         {
-          "symbol": "CMG",
+          "symbol": "NET",
+          "top_stories": [],
+          "glance": [
+            {
+              "score": 47.6,
+              "tags": [
+                "other"
+              ],
+              "headline": "Stock market news for March 2, 2026",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
+            }
+          ]
+        },
+        {
+          "symbol": "XIACY",
           "top_stories": [
             {
-              "score": 57.6,
+              "score": 55.3,
               "tags": [
-                "m_and_a_confirmed"
+                "other"
               ],
-              "headline": "US Bancorp DE Acquires 378,496 Shares of Chipotle Mexican Grill, Inc. $CMG",
-              "source": "unknown",
-              "url": "https://www.marketbeat.com/instant-alerts/filing-us-bancorp-de-acquires-378496-shares-of-chipotle-mexican-grill-inc-cmg-2026-02-28/",
-              "published_at": "2026-02-28T12:00:51.931786+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "headline": "What's Going On With Qualcomm Stock Tuesday? - Qualcomm (NASDAQ:QCOM) - Benzinga",
+              "source": "benzinga",
+              "url": "https://www.benzinga.com/markets/tech/26/03/50993659/qualcomm-ceo-bets-big-on-robotics-as-next-billion-dollar-growth-engine",
+              "published_at": "2026-03-03T11:43:55.279472+00:00",
+              "why_ranked": "Event=other(20) Source=benzinga(76) Fresh=0.85"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 4,
+        "tickers_processed": 6,
         "total_candidates": 80,
-        "removed_fresh_only": 3,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-03"
       }
@@ -745,75 +875,58 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-03T12:00:53.124604+00:00",
+      "generated_at": "2026-03-03T13:43:55.283312+00:00",
       "tickers": [
         {
-          "symbol": "CRM",
+          "symbol": "LRCX",
           "top_stories": [
             {
-              "score": 58.2,
+              "score": 59.6,
               "tags": [
-                "m_and_a_confirmed"
+                "sec_filing"
               ],
-              "headline": "Faye Acquires CRM Science, Award Winning Salesforce Partner",
+              "headline": "Lam Research EVP shares withheld for taxes | LRCX SEC Filing - Form 4",
               "source": "unknown",
-              "url": "https://www.prnewswire.com/news-releases/faye-acquires-crm-science-award-winning-salesforce-partner-302700917.html",
-              "published_at": "2026-03-02T16:00:53.960378+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.19"
+              "url": "https://www.stocktitan.net/sec-filings/LRCX/form-4-lam-research-corp-insider-trading-activity-fa63762be549.html",
+              "published_at": "2026-03-02T22:43:59.732721+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.29"
             },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Investing in Salesforce (CRM)? Don't Miss Assessing Its International Revenue Trends | Nasdaq",
-              "source": "unknown",
-              "url": "https://nasdaq.com/articles/investing-salesforce-crm-dont-miss-assessing-its-international-revenue-trends",
-              "published_at": "2026-03-02T12:00:53.960265+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Lam Research (LRCX) Down 3.7% Since Last Earnings Report: Can It Rebound?",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/news/lam-research-lrcx-down-3-163007888.html",
+              "published_at": "2026-02-27T13:43:59.733572+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MU",
+          "symbol": "BMY",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 57.3,
               "tags": [
                 "earnings"
               ],
-              "headline": "Micron Technology Stock (MU) Opinions on Upcoming Earnings | MU Stock News",
+              "headline": "Bristol-Myers Squibb Keeps Quarterly Dividend at $0.63 a Share, Payable May 1 to Shareholders of Record on April 2 | MarketScreener",
               "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Micron+Technology+Stock+%28MU%29+Opinions+on+Upcoming+Earnings",
-              "published_at": "2026-02-28T12:00:57.236982+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "GEV",
-          "top_stories": [
-            {
-              "score": 59.0,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "GEV files Form 144 to sell 10,000 shares | GEV SEC Filing - Form 144",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/GEV/144-ge-vernova-inc-sec-filing-d9cd21eb45db.html",
-              "published_at": "2026-03-02T19:00:58.504499+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.24"
+              "url": "https://www.marketscreener.com/news/bristol-myers-squibb-keeps-quarterly-dividend-at-0-63-a-share-payable-may-1-to-shareholders-of-rec-ce7e5cdddd8df627",
+              "published_at": "2026-03-02T21:44:00.899987+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.26"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 3,
-        "total_candidates": 60,
-        "removed_fresh_only": 1,
+        "tickers_processed": 2,
+        "total_candidates": 50,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-03"
       }
@@ -868,7 +981,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-03T12:00:59.353878+00:00",
+        "generated_at": "2026-03-03T13:44:00.904139+00:00",
         "count": 11
       }
     }
