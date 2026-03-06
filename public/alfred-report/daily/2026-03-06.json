@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-06T07:30:07.887863"
+        "updated_at": "2026-03-06T07:30:40.613798"
       }
     },
     "todoist": {
@@ -106,7 +106,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-06T07:30:08.208632",
+        "updated_at": "2026-03-06T07:30:41.036113",
         "task_count": 5,
         "overdue_count": 0,
         "completed_today": 0
@@ -151,7 +151,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-06T07:30:08.897978",
+        "updated_at": "2026-03-06T07:30:41.768266",
         "total_cards": 55,
         "in_progress": 0,
         "ready": 0,
@@ -331,11 +331,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-06T12:30:07.740335+00:00",
+        "updated_at": "2026-03-06T12:30:40.426433+00:00",
         "story_count": 15,
         "lanes_used": [
-          "tier1",
-          "hn"
+          "hn",
+          "tier1"
         ]
       }
     },
@@ -345,13 +345,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-06T12:30:30.839727+00:00",
+        "updated_at": "2026-03-06T12:31:05.318228+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions focus on generative models, ChatGPT updates, and open-source alternatives. Key themes include AI ethics, job displacement concerns, and practical applications in coding and content creation. Communities like r/MachineLearning, r/OpenAI, and r/ChatGPT dominate conversations. Notable trending topics: multimodal AI capabilities, fine-tuning techniques, and regulatory developments. Users increasingly debate AI safety and responsible deployment across industries.",
+      "summary": "Top AI discussions on Reddit focused on generative models, ChatGPT capabilities, and machine learning tutorials. Key communities included r/MachineLearning, r/OpenAI, and r/artificial. Trending topics encompassed prompt engineering techniques, AI ethics concerns, and comparisons between AI tools. Users debated practical applications in coding and content creation, with growing interest in open-source alternatives and fine-tuning methods.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
@@ -456,20 +456,6 @@
           ]
         },
         {
-          "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
-          "url": "https://www.reddit.com/r/artificial/comments/1qv4yyr/why_world_models_will_bring_us_to_agi_not_llms/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
           "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
           "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
           "subreddit": "openclaw",
@@ -514,29 +500,34 @@
           ]
         },
         {
-          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
-          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
-          "subreddit": "artificial",
+          "title": "r/openclaw on Reddit: OpenClaw 102: Updates from my 101 on how to get the most from your OpenClaw bot",
+          "url": "https://www.reddit.com/r/openclaw/comments/1riiglv/openclaw_102_updates_from_my_101_on_how_to_get/",
+          "subreddit": "openclaw",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "LLM",
             "model",
-            "training",
             "agent"
           ]
         },
         {
-          "title": "r/artificial on Reddit: How does a LLM understand your question?",
-          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
-          "subreddit": "artificial",
+          "title": "r/openclaw on Reddit: OpenClaw – What’s your real weekly/monthly cost and model setup",
+          "url": "https://www.reddit.com/r/openclaw/comments/1r3tvn7/openclaw_whats_your_real_weeklymonthly_cost_and/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "LLM",
+            "model"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: openclaw - w/its own m365 account skill ms365",
+          "url": "https://www.reddit.com/r/openclaw/comments/1qykqza/openclaw_wits_own_m365_account_skill_ms365/",
+          "subreddit": "openclaw",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "LLM",
-            "model",
-            "training",
-            "neural"
+            "LLM"
           ]
         }
       ],
@@ -549,7 +540,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI, Google, and Microsoft generate most mentions regarding AI products and partnerships. Key discussion topics: ChatGPT updates, Gemini capabilities, and Copilot integration. Meta and Apple receive mentions for AI research initiatives. Tech sector dominates discourse with focus on product releases, API improvements, and competitive positioning. Sentiment mixed, with enthusiasm for features balanced against privacy and pricing concerns.",
+      "summary": "No posts were identified across monitored companies during this reporting period. This suggests minimal social media discussion of major tech firms on Reddit today. Consider expanding monitoring parameters, adjusting community filters, or checking if discussions have shifted to other platforms. Companies may experience lower mention rates during off-peak news cycles.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -638,250 +629,32 @@
             "EquityZen"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/wallstreetbets OR site:reddit.com/r/EquityZen) (\"OpenAI\" OR \"OpenAI\" OR \"OpenClaw\")",
-          "items": [
-            {
-              "title": "r/technology on Reddit: OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
-              "url": "https://www.reddit.com/r/technology/comments/1r69t1o/openclaw_founder_steinberger_joins_openai/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
-              "url": "https://www.reddit.com/r/technology/comments/1rdba67/a_meta_ai_security_researcher_said_an_openclaw/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: OpenClaw’s AI assistants are now building their own social network",
-              "url": "https://www.reddit.com/r/technology/comments/1qrmxzh/openclaws_ai_assistants_are_now_building_their/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: DIY AI bot farm OpenClaw is a security 'dumpster fire'",
-              "url": "https://www.reddit.com/r/technology/comments/1qvk8qm/diy_ai_bot_farm_openclaw_is_a_security_dumpster/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: OpenClaw: The AI agent that’s got humans taking orders from bots",
-              "url": "https://www.reddit.com/r/technology/comments/1qxmfqm/openclaw_the_ai_agent_thats_got_humans_taking/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: After all the hype, some AI experts don't think OpenClaw is all that exciting",
-              "url": "https://www.reddit.com/r/technology/comments/1r6ecsm/after_all_the_hype_some_ai_experts_dont_think/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
-              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: An AI Agent Published a Hit Piece on Me",
-              "url": "https://www.reddit.com/r/technology/comments/1r3ichh/an_ai_agent_published_a_hit_piece_on_me/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: Elon Musk sues OpenAI and Sam Altman over 'betrayal' of non-profit AI mission | TechCrunch",
-              "url": "https://www.reddit.com/r/technology/comments/1b3rawn/elon_musk_sues_openai_and_sam_altman_over/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenAI"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: This Is What Convinced Me OpenAI Will Run Out of Money",
-              "url": "https://www.reddit.com/r/technology/comments/1qbxs4l/this_is_what_convinced_me_openai_will_run_out_of/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "AI Agents",
-              "Agents",
-              "OpenClaw"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         }
       ],
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-06T12:30:34.954571+00:00"
+        "run_at": "2026-03-06T12:31:08.438865+00:00"
       },
       "meta": {
         "companies_tracked": 3,
-        "total_posts": 10
+        "total_posts": 0
       }
     },
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-06T12:30:38.946726+00:00",
+      "generated_at": "2026-03-06T12:31:12.049917+00:00",
       "tickers": [
         {
-          "symbol": "LLY",
-          "top_stories": [
-            {
-              "score": 63.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Eli Lilly launches program to help boost employer coverage of obesity drugs in U.S.",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/03/05/eli-lilly-launches-program-to-boost-employer-coverage-of-obesity-drugs.html",
-              "published_at": "2026-03-05T12:30:42.020399+00:00",
-              "why_ranked": "Event=product_launch_major(60) Source=cnbc(83) Fresh=0.15"
-            },
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Stonebridge Capital Advisors LLC Acquires 8,003 Shares of Eli Lilly and Company $LLY",
-              "source": "unknown",
-              "url": "https://www.marketbeat.com/instant-alerts/filing-stonebridge-capital-advisors-llc-acquires-8003-shares-of-eli-lilly-and-company-lly-2026-03-05/",
-              "published_at": "2026-03-05T12:30:42.021509+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "MRK",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Marimekko has completed the acquisition of the company’s own shares",
-              "source": "unknown",
-              "url": "https://globenewswire.com/news-release/2026/03/04/3249639/0/en/Marimekko-has-completed-the-acquisition-of-the-company-s-own-shares.html",
-              "published_at": "2026-03-04T12:30:42.807685+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 56.2,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Merck (MRK) Up 1.7% Since Last Earnings Report: Can It Continue?",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/merck-mrk-1-7-since-163012055.html",
-              "published_at": "2026-03-05T16:30:42.807092+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.19"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "TSLA",
+          "symbol": "AMZN",
           "top_stories": [],
           "glance": [
             {
@@ -889,49 +662,107 @@
               "tags": [
                 "other"
               ],
-              "headline": "Billionaire Leo KoGuan Says He Bought 1 Million Nvidia Shares for $180 Million - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
-            }
-          ]
-        },
-        {
-          "symbol": "AVGO",
-          "top_stories": [
-            {
-              "score": 73.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Broadcom (AVGO) Q1 earnings report 2026",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/03/04/broadcom-avgo-q1-earnings-report-2026.html",
-              "published_at": "2026-03-04T12:30:44.906271+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
-            }
-          ],
-          "glance": [
+              "headline": "Amazon to invest additional $21 billion in Spain for data centres and AI | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
             {
               "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Broadcom Sales Outlook Falls Short Amid High AI Expectations (AVGO) - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
+              "headline": "Amazon cuts more jobs; this time in robotics unit | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 47.6,
+              "tags": [
+                "other"
+              ],
+              "headline": "Nvidia, Amazon temporarily close Dubai offices, Google employees stranded amid U.S.-Iran war",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
             }
           ]
         },
         {
-          "symbol": "RXRX",
+          "symbol": "AAPL",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings Report | RXRX Stock News",
+              "headline": "Is Apple (AAPL) Still Fairly Priced After Recent Services Revenue Strength?",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/news/apple-aapl-still-fairly-priced-080809890.html",
+              "published_at": "2026-03-02T12:31:14.849906+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "AVGO",
+          "top_stories": [
+            {
+              "score": 63.2,
+              "tags": [
+                "guidance",
+                "earnings"
+              ],
+              "headline": "Broadcom Q2 revenue guidance beats, sees $10.7 billion in AI semiconductor sales By Investing.com",
               "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+Report",
-              "published_at": "2026-02-20T12:30:47.275697+00:00",
+              "url": "https://www.investing.com/news/earnings/broadcoms-quarterly-revenue-guidance-tops-estimates-stock-seesaws-after-hours-4542036",
+              "published_at": "2026-03-04T12:31:18.082978+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 56.4,
+              "tags": [
+                "product_launch_major"
+              ],
+              "headline": "Broadcom ticks up as Q1 results, outlook top Wall Street's forecast; unveils $10B buyback (AVGO:NASDAQ) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4560729-broadcom-ticks-up-as-q1-results-outlook-top-wall-streets-forecast-unveils-10b-buyback",
+              "published_at": "2026-03-04T12:31:18.082337+00:00",
+              "why_ranked": "Event=product_launch_major(60) Source=seekingalpha(67) Fresh=0.15"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Here's How Much Traders Expect Broadcom Stock To Move After Earnings",
+              "source": "unknown",
+              "url": "https://www.investopedia.com/here-is-how-much-traders-expect-broadcom-stock-to-move-after-earnings-avgo-q1-fy2026-11917822",
+              "published_at": "2026-03-04T12:31:18.081913+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "CMG",
+          "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "US Bancorp DE Acquires 378,496 Shares of Chipotle Mexican Grill, Inc. $CMG",
+              "source": "unknown",
+              "url": "https://www.marketbeat.com/instant-alerts/filing-us-bancorp-de-acquires-378496-shares-of-chipotle-mexican-grill-inc-cmg-2026-02-28/",
+              "published_at": "2026-02-27T12:31:19.302485+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Earnings call transcript: MMG Ltd Reports Record 2025 Earnings Amid Stock Decline in H2 2026 By Investing.com",
+              "source": "unknown",
+              "url": "https://investing.com/news/transcripts/earnings-call-transcript-mmg-ltd-reports-record-2025-earnings-amid-stock-decline-in-h2-2026-93CH-4539669",
+              "published_at": "2026-03-04T12:31:19.303152+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -939,9 +770,9 @@
         }
       ],
       "debug": {
-        "tickers_processed": 5,
+        "tickers_processed": 4,
         "total_candidates": 80,
-        "removed_fresh_only": 1,
+        "removed_fresh_only": 5,
         "state_written": true,
         "report_date": "2026-03-06"
       }
@@ -949,95 +780,58 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-06T12:30:47.672745+00:00",
+      "generated_at": "2026-03-06T12:31:20.499440+00:00",
       "tickers": [
         {
-          "symbol": "CRM",
-          "top_stories": [
-            {
-              "score": 58.9,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Salesforce Earnings Call Highlights AI-Fueled Growth - TipRanks.com",
-              "source": "unknown",
-              "url": "https://www.tipranks.com/news/company-announcements/salesforce-earnings-call-highlights-ai-fueled-growth",
-              "published_at": "2026-03-06T00:30:48.452479+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.37"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "GLW",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 48.7,
-              "tags": [
-                "other"
-              ],
-              "headline": "Broadcom CEO's copper commitment tanks Corning shares — but sellers are mistaken",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.22"
-            }
-          ]
-        },
-        {
-          "symbol": "AMAT",
+          "symbol": "ASML",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Applied Materials Stock (AMAT) Opinions on Q1 Earnings Beat | AMAT Stock News",
+              "headline": "ASML's Revenue Mix is Changing: What are the Latest Growth Drivers? | Nasdaq",
               "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Applied+Materials+Stock+%28AMAT%29+Opinions+on+Q1+Earnings+Beat",
-              "published_at": "2026-02-28T12:30:50.531926+00:00",
+              "url": "https://nasdaq.com/articles/asmls-revenue-mix-changing-what-are-latest-growth-drivers",
+              "published_at": "2026-03-05T12:31:23.424795+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MU",
+          "symbol": "GEV",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 62.4,
               "tags": [
-                "earnings"
+                "m_and_a_confirmed"
               ],
-              "headline": "Micron Stock (MU) Wins a New ‘Street-High’ Price Target Ahead of Earnings - TipRanks.com",
+              "headline": "Orion Porfolio Solutions LLC Acquires 3,358 Shares of GE Vernova Inc. $GEV - Daily Political",
               "source": "unknown",
-              "url": "https://www.tipranks.com/news/micron-stock-mu-wins-a-new-street-high-price-target-ahead-of-earnings",
-              "published_at": "2026-03-02T12:30:51.841723+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "BMY",
-          "top_stories": [
+              "url": "https://www.dailypolitical.com/2026/03/06/orion-porfolio-solutions-llc-acquires-3358-shares-of-ge-vernova-inc-gev.html",
+              "published_at": "2026-03-06T03:31:25.475602+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.47"
+            },
             {
-              "score": 55.6,
+              "score": 57.6,
               "tags": [
-                "earnings"
+                "sec_filing"
               ],
-              "headline": "Q4 Earnings Outperformers: Bristol-Myers Squibb (NYSE:BMY) And The Rest Of The Branded Pharmaceuticals Stocks",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/q4-earnings-outperformers-bristol-myers-124526476.html",
-              "published_at": "2026-03-05T12:30:53.908493+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+              "headline": "GE Vernova officer reports equity awards, tax shares | GEV SEC Filing - Form 4",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/GEV/form-4-ge-vernova-inc-insider-trading-activity-0a9851236c49.html",
+              "published_at": "2026-03-03T12:31:25.474602+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 5,
-        "total_candidates": 60,
-        "removed_fresh_only": 0,
+        "tickers_processed": 2,
+        "total_candidates": 50,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-06"
       }
@@ -1092,7 +886,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-06T12:30:53.912185+00:00",
+        "generated_at": "2026-03-06T12:31:25.926435+00:00",
         "count": 11
       }
     }
