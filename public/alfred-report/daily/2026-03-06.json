@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-06T07:00:09.230186"
+        "updated_at": "2026-03-06T07:30:07.887863"
       }
     },
     "todoist": {
@@ -106,7 +106,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-06T07:00:10.578131",
+        "updated_at": "2026-03-06T07:30:08.208632",
         "task_count": 5,
         "overdue_count": 0,
         "completed_today": 0
@@ -151,7 +151,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-06T07:00:11.446030",
+        "updated_at": "2026-03-06T07:30:08.897978",
         "total_cards": 55,
         "in_progress": 0,
         "ready": 0,
@@ -172,7 +172,7 @@
             "models"
           ],
           "published_at": "2026-03-05T18:08:10Z",
-          "hn_score": 866
+          "hn_score": 874
         },
         {
           "title": "The L in \"LLM\" Stands for Lying",
@@ -184,7 +184,7 @@
             "research"
           ],
           "published_at": "2026-03-05T04:02:32Z",
-          "hn_score": 639
+          "hn_score": 641
         },
         {
           "title": "Pentagon formally labels Anthropic supply-chain risk",
@@ -195,7 +195,7 @@
             "policy"
           ],
           "published_at": "2026-03-05T19:24:35Z",
-          "hn_score": 408
+          "hn_score": 410
         },
         {
           "title": "Relicensing with AI-Assisted Rewrite",
@@ -219,7 +219,7 @@
             "enterprise"
           ],
           "published_at": "2026-03-05T22:55:01Z",
-          "hn_score": 222
+          "hn_score": 230
         },
         {
           "title": "Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic",
@@ -243,7 +243,7 @@
             "enterprise"
           ],
           "published_at": "2026-03-05T22:04:59Z",
-          "hn_score": 206
+          "hn_score": 213
         },
         {
           "title": "AI and the Ship of Theseus",
@@ -254,7 +254,7 @@
             "research"
           ],
           "published_at": "2026-03-05T15:49:45Z",
-          "hn_score": 118
+          "hn_score": 122
         },
         {
           "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
@@ -331,11 +331,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-06T12:00:03.379911+00:00",
+        "updated_at": "2026-03-06T12:30:07.740335+00:00",
         "story_count": 15,
         "lanes_used": [
-          "hn",
-          "tier1"
+          "tier1",
+          "hn"
         ]
       }
     },
@@ -345,13 +345,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-06T12:00:41.346562+00:00",
+        "updated_at": "2026-03-06T12:30:30.839727+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions center on generative models, particularly ChatGPT advancements and open-source alternatives. Key themes include AI safety concerns, job displacement anxieties, and practical applications in coding and content creation. r/MachineLearning, r/LanguageModels, and r/OpenAI dominate conversations. Notable trending topics: multimodal AI capabilities, regulatory discussions, and ethical implications of large language models.",
+      "summary": "Top AI discussions focus on generative models, ChatGPT updates, and open-source alternatives. Key themes include AI ethics, job displacement concerns, and practical applications in coding and content creation. Communities like r/MachineLearning, r/OpenAI, and r/ChatGPT dominate conversations. Notable trending topics: multimodal AI capabilities, fine-tuning techniques, and regulatory developments. Users increasingly debate AI safety and responsible deployment across industries.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
@@ -525,6 +525,19 @@
             "training",
             "agent"
           ]
+        },
+        {
+          "title": "r/artificial on Reddit: How does a LLM understand your question?",
+          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "neural"
+          ]
         }
       ],
       "meta": {
@@ -536,7 +549,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI and Google lead mention counts across subreddits. OpenAI discussions focus on API pricing and model updates; Google faces scrutiny over Bard's competitive positioning. Tesla, Meta, and Microsoft also prominent. Dominant topics: product comparisons, API access concerns, pricing transparency, and concerns about corporate AI monopolies. Sentiment mixed, with enthusiasm for innovation balanced against competitive anxieties.",
+      "summary": "OpenAI, Google, and Microsoft generate most mentions regarding AI products and partnerships. Key discussion topics: ChatGPT updates, Gemini capabilities, and Copilot integration. Meta and Apple receive mentions for AI research initiatives. Tech sector dominates discourse with focus on product releases, API improvements, and competitive positioning. Sentiment mixed, with enthusiasm for features balanced against privacy and pricing concerns.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -708,21 +721,6 @@
               "topic_confidence": "medium"
             },
             {
-              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
-              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
               "title": "r/technology on Reddit: After all the hype, some AI experts don't think OpenClaw is all that exciting",
               "url": "https://www.reddit.com/r/technology/comments/1r6ecsm/after_all_the_hype_some_ai_experts_dont_think/",
               "subreddit": "technology",
@@ -740,6 +738,21 @@
               "topic_confidence": "high"
             },
             {
+              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
+              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
               "title": "r/technology on Reddit: An AI Agent Published a Hit Piece on Me",
               "url": "https://www.reddit.com/r/technology/comments/1r3ichh/an_ai_agent_published_a_hit_piece_on_me/",
               "subreddit": "technology",
@@ -753,6 +766,18 @@
                 "AI Agents"
               ],
               "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: Elon Musk sues OpenAI and Sam Altman over 'betrayal' of non-profit AI mission | TechCrunch",
+              "url": "https://www.reddit.com/r/technology/comments/1b3rawn/elon_musk_sues_openai_and_sam_altman_over/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenAI"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
             },
             {
               "title": "r/technology on Reddit: This Is What Convinced Me OpenAI Will Run Out of Money",
@@ -770,18 +795,6 @@
                 "AI Agents"
               ],
               "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: A New York Times copyright lawsuit could kill OpenAI",
-              "url": "https://www.reddit.com/r/technology/comments/19ahg9y/a_new_york_times_copyright_lawsuit_could_kill/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenAI"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
             }
           ],
           "company_summary": null,
@@ -789,9 +802,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "OpenClaw",
               "AI Agents",
-              "Agents"
+              "Agents",
+              "OpenClaw"
             ]
           }
         }
@@ -799,7 +812,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-06T12:00:45.477109+00:00"
+        "run_at": "2026-03-06T12:30:34.954571+00:00"
       },
       "meta": {
         "companies_tracked": 3,
@@ -809,7 +822,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-06T12:00:49.257525+00:00",
+      "generated_at": "2026-03-06T12:30:38.946726+00:00",
       "tickers": [
         {
           "symbol": "LLY",
@@ -822,7 +835,7 @@
               "headline": "Eli Lilly launches program to help boost employer coverage of obesity drugs in U.S.",
               "source": "cnbc",
               "url": "https://www.cnbc.com/2026/03/05/eli-lilly-launches-program-to-boost-employer-coverage-of-obesity-drugs.html",
-              "published_at": "2026-03-05T12:00:52.322176+00:00",
+              "published_at": "2026-03-05T12:30:42.020399+00:00",
               "why_ranked": "Event=product_launch_major(60) Source=cnbc(83) Fresh=0.15"
             },
             {
@@ -833,7 +846,7 @@
               "headline": "Stonebridge Capital Advisors LLC Acquires 8,003 Shares of Eli Lilly and Company $LLY",
               "source": "unknown",
               "url": "https://www.marketbeat.com/instant-alerts/filing-stonebridge-capital-advisors-llc-acquires-8003-shares-of-eli-lilly-and-company-lly-2026-03-05/",
-              "published_at": "2026-03-05T12:00:52.323318+00:00",
+              "published_at": "2026-03-05T12:30:42.021509+00:00",
               "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -850,7 +863,7 @@
               "headline": "Marimekko has completed the acquisition of the company’s own shares",
               "source": "unknown",
               "url": "https://globenewswire.com/news-release/2026/03/04/3249639/0/en/Marimekko-has-completed-the-acquisition-of-the-company-s-own-shares.html",
-              "published_at": "2026-03-04T12:00:53.097754+00:00",
+              "published_at": "2026-03-04T12:30:42.807685+00:00",
               "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             },
             {
@@ -861,7 +874,7 @@
               "headline": "Merck (MRK) Up 1.7% Since Last Earnings Report: Can It Continue?",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/news/merck-mrk-1-7-since-163012055.html",
-              "published_at": "2026-03-05T16:00:53.097151+00:00",
+              "published_at": "2026-03-05T16:30:42.807092+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.19"
             }
           ],
@@ -869,16 +882,30 @@
         },
         {
           "symbol": "TSLA",
+          "top_stories": [],
+          "glance": [
+            {
+              "score": 52.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Billionaire Leo KoGuan Says He Bought 1 Million Nvidia Shares for $180 Million - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
+            }
+          ]
+        },
+        {
+          "symbol": "AVGO",
           "top_stories": [
             {
               "score": 73.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Tesla car sales: Elon Musk's Europe problem keeps getting worse",
+              "headline": "Broadcom (AVGO) Q1 earnings report 2026",
               "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/02/24/tesla-car-sales-elon-musk-europe-autos-trump-evs.html",
-              "published_at": "2026-02-27T12:00:54.301911+00:00",
+              "url": "https://www.cnbc.com/2026/03/04/broadcom-avgo-q1-earnings-report-2026.html",
+              "published_at": "2026-03-04T12:30:44.906271+00:00",
               "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
             }
           ],
@@ -888,65 +915,31 @@
               "tags": [
                 "other"
               ],
-              "headline": "Tesla regains some market share around Europe in February, a sign of stabilising sales | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+              "headline": "Broadcom Sales Outlook Falls Short Amid High AI Expectations (AVGO) - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
         {
-          "symbol": "NET",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Cloudflare director sells 133 shares in plan trade | NET SEC Filing - Form 4",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NET/form-4-cloudflare-inc-insider-trading-activity-581a7b355f48.html",
-              "published_at": "2026-03-03T12:00:55.638495+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "CMG",
+          "symbol": "RXRX",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "CUMBERLAND PHARMACEUTICALS REPORTS 31% FOURTH QUARTER 2025 REVENUE GROWTH",
+              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings Report | RXRX Stock News",
               "source": "unknown",
-              "url": "https://prnewswire.com/news-releases/cumberland-pharmaceuticals-reports-31-fourth-quarter-2025-revenue-growth-302703089.html",
-              "published_at": "2026-03-03T12:00:56.476379+00:00",
+              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+Report",
+              "published_at": "2026-02-20T12:30:47.275697+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "XIACY",
-          "top_stories": [
-            {
-              "score": 68.3,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Xiaomi launches safety advisory committee after EV accidents in China | Reuters",
-              "source": "reuters",
-              "url": "https://reuters.com/world/asia-pacific/xiaomi-launches-safety-advisory-committee-after-ev-accidents-china-2026-02-27",
-              "published_at": "2026-02-27T12:00:57.663044+00:00",
-              "why_ranked": "Event=product_launch_major(60) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 6,
+        "tickers_processed": 5,
         "total_candidates": 80,
         "removed_fresh_only": 1,
         "state_written": true,
@@ -956,37 +949,68 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-06T12:00:57.666030+00:00",
+      "generated_at": "2026-03-06T12:30:47.672745+00:00",
       "tickers": [
         {
-          "symbol": "TSM",
+          "symbol": "CRM",
           "top_stories": [
             {
-              "score": 57.6,
+              "score": 58.9,
               "tags": [
-                "m_and_a_confirmed"
+                "earnings"
               ],
-              "headline": "Tsme unit tsmc global acquires fixed-income securities for $67.7 million | MarketScreener",
+              "headline": "Salesforce Earnings Call Highlights AI-Fueled Growth - TipRanks.com",
               "source": "unknown",
-              "url": "https://www.marketscreener.com/news/tsme-unit-tsmc-global-acquires-fixed-income-securities-for-67-7-million-ce7e5cd2d889ff27",
-              "published_at": "2026-03-03T12:00:58.864306+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.tipranks.com/news/company-announcements/salesforce-earnings-call-highlights-ai-fueled-growth",
+              "published_at": "2026-03-06T00:30:48.452479+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.37"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "ASML",
+          "symbol": "GLW",
+          "top_stories": [],
+          "glance": [
+            {
+              "score": 48.7,
+              "tags": [
+                "other"
+              ],
+              "headline": "Broadcom CEO's copper commitment tanks Corning shares — but sellers are mistaken",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.22"
+            }
+          ]
+        },
+        {
+          "symbol": "AMAT",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "ASML's Revenue Mix is Changing: What are the Latest Growth Drivers? | Nasdaq",
+              "headline": "Applied Materials Stock (AMAT) Opinions on Q1 Earnings Beat | AMAT Stock News",
               "source": "unknown",
-              "url": "https://nasdaq.com/articles/asmls-revenue-mix-changing-what-are-latest-growth-drivers",
-              "published_at": "2026-03-05T12:01:00.831992+00:00",
+              "url": "https://www.quiverquant.com/news/Applied+Materials+Stock+%28AMAT%29+Opinions+on+Q1+Earnings+Beat",
+              "published_at": "2026-02-28T12:30:50.531926+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "MU",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Micron Stock (MU) Wins a New ‘Street-High’ Price Target Ahead of Earnings - TipRanks.com",
+              "source": "unknown",
+              "url": "https://www.tipranks.com/news/micron-stock-mu-wins-a-new-street-high-price-target-ahead-of-earnings",
+              "published_at": "2026-03-02T12:30:51.841723+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1003,7 +1027,7 @@
               "headline": "Q4 Earnings Outperformers: Bristol-Myers Squibb (NYSE:BMY) And The Rest Of The Branded Pharmaceuticals Stocks",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/news/q4-earnings-outperformers-bristol-myers-124526476.html",
-              "published_at": "2026-03-05T12:01:03.127326+00:00",
+              "published_at": "2026-03-05T12:30:53.908493+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -1011,9 +1035,9 @@
         }
       ],
       "debug": {
-        "tickers_processed": 3,
-        "total_candidates": 50,
-        "removed_fresh_only": 1,
+        "tickers_processed": 5,
+        "total_candidates": 60,
+        "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-06"
       }
@@ -1068,7 +1092,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-06T12:01:03.131037+00:00",
+        "generated_at": "2026-03-06T12:30:53.912185+00:00",
         "count": 11
       }
     }
