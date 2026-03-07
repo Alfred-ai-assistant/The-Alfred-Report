@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-07T07:00:03.167102"
+        "updated_at": "2026-03-07T07:30:14.433354"
       }
     },
     "todoist": {
@@ -106,7 +106,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-07T07:00:06.171785",
+        "updated_at": "2026-03-07T07:30:14.814549",
         "task_count": 5,
         "overdue_count": 0,
         "completed_today": 0
@@ -151,7 +151,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-07T07:00:06.839906",
+        "updated_at": "2026-03-07T07:30:15.559537",
         "total_cards": 56,
         "in_progress": 0,
         "ready": 0,
@@ -161,47 +161,48 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI industry landscape reveals significant tensions between rapid commercialization and safety governance. OpenAI's $110 billion funding round demonstrates investor appetite, while Anthropic faces unprecedented regulatory scrutiny following Pentagon's supply chain risk designation. Netflix's acquisition of AI filmmaking technology and enterprise tool integrations show mainstream adoption momentum, though operational risks are surfacing—Claude Code inadvertently destroyed production databases through autonomous Terraform execution.\n\nRegulatory pressure is intensifying. California's AI data disclosure law prevailed against xAI's legal challenge, signaling regulatory permanence. Most critically, allegations that Claude AI contributed to an Iranian school bombing represent the first documented lethal harm case, creating accountability demands at the policy level.\n\nTechnical development continues diversifying globally. Sarvam AI's competitive open-source Indian LLM challenges Western dominance, while developer tooling improvements enable better AI code auditability. Research validates AI tutoring effectiveness in educational contexts and questions whether productivity gains translate to reduced workload.\n\nThe narrative arc shows simultaneous expansion and contraction: explosive funding and adoption alongside safety incidents, regulatory tightening, and existential questions about AI's societal role. The next 24 months will likely determine whether governance frameworks can match commercialization velocity.",
+      "summary": "The AI sector shows divergent momentum across investment, safety, and policy dimensions. OpenAI's $110 billion funding round and Netflix's acquisition of InterPositive filmmaking technology signal aggressive capital deployment, yet Oracle and OpenAI's collapsed Texas data center partnership suggests infrastructure plans face practical constraints. Security efforts continue with Anthropic's Firefox hardening work, while adoption questions linger around whether AI boosts productivity or workload. Critical safety incidents emerged: Claude Code's database deletion demonstrates operational risks in production environments, and alleged AI involvement in Iranian bombing raises dual-use concerns. Regulatory pressure intensified as xAI faced setbacks on California's AI data disclosure law. Open-source development progressed with Sarvam's 105B model expanding non-Western competition. Research contributions include evidence that AI tutors improve learning through reasoning prompts paired with peer discussion. Developer tooling advanced with Claude-replay enabling session analysis. Amid this activity, questions persist: whether workers will genuinely benefit from AI expansion, and why AI systems themselves express pessimism about their future trajectory.",
       "items": [
         {
           "title": "Hardening Firefox with Anthropic's Red Team",
           "url": "https://www.anthropic.com/news/mozilla-firefox-security",
           "source": "anthropic.com",
-          "why_it_matters": "Security hardening of widely-used browser Firefox through AI red-teaming demonstrates practical applications of adversarial AI testing in production systems.",
+          "why_it_matters": "Security hardening of widely-used browsers is critical infrastructure work that affects billions of users.",
           "tags": [
             "safety",
             "enterprise"
           ],
           "published_at": "2026-03-06T11:53:18Z",
-          "hn_score": 576
+          "hn_score": 577
         },
         {
           "title": "Anthropic, please make a new Slack",
           "url": "https://www.fivetran.com/blog/anthropic-please-make-a-new-slack",
           "source": "fivetran.com",
-          "why_it_matters": "Enterprise integration challenges between AI platforms and workplace tools highlight adoption friction in business environments.",
+          "why_it_matters": "Integration requests indicate demand for AI tools to expand into workplace communication platforms.",
           "tags": [
             "enterprise"
           ],
           "published_at": "2026-03-06T19:52:08Z",
-          "hn_score": 247
+          "hn_score": 248
         },
         {
           "title": "We might all be AI engineers now",
           "url": "https://yasint.dev/we-might-all-be-ai-engineers-now/",
           "source": "yasint.dev",
-          "why_it_matters": "The blurring line between AI engineers and general developers suggests significant shifts in workforce skill requirements and job categorization.",
+          "why_it_matters": "Democratization of AI engineering capabilities could reshape workforce skill requirements and hiring.",
           "tags": [
+            "models",
             "research"
           ],
           "published_at": "2026-03-06T09:13:30Z",
-          "hn_score": 201
+          "hn_score": 202
         },
         {
           "title": "Claude Code wiped our production database with a Terraform command",
           "url": "https://twitter.com/Al_Grigor/status/2029889772181934425",
           "source": "twitter.com",
-          "why_it_matters": "Autonomous AI systems causing production outages illustrates critical safety and operational risks in automated infrastructure management.",
+          "why_it_matters": "Automated code systems causing production outages highlights critical safety and operational risk concerns.",
           "tags": [
             "safety",
             "enterprise"
@@ -213,18 +214,28 @@
           "title": "Reuters AI News | Latest Headlines and Developments | Reuters",
           "url": "https://www.reuters.com/technology/artificial-intelligence/",
           "source": "reuters.com",
-          "why_it_matters": "Netflix's acquisition of AI-powered filmmaking tools signals major media companies' commitment to integrating generative AI into creative workflows.",
+          "why_it_matters": "Major streaming platform acquisition of AI filmmaking technology signals consolidation in generative media tools.",
           "tags": [
             "enterprise",
-            "models"
+            "funding"
           ]
         },
         {
           "title": "Reuters OpenAI News | Today's Latest Stories | Reuters",
           "url": "https://www.reuters.com/technology/openai/",
           "source": "reuters.com",
-          "why_it_matters": "OpenAI's $110 billion funding round at $840 billion valuation reflects explosive investor confidence in large language model commercialization.",
+          "why_it_matters": "Record-scale funding round at unprecedented valuation reflects investor confidence in AI market growth despite macroeconomic uncertainty.",
           "tags": [
+            "funding"
+          ]
+        },
+        {
+          "title": "Oracle and OpenAI End Plans to Expand Flagship Data Center - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center",
+          "source": "bloomberg.com",
+          "why_it_matters": "Collapsed infrastructure partnership suggests practical challenges and misaligned incentives in large-scale AI deployment.",
+          "tags": [
+            "hardware",
             "funding"
           ]
         },
@@ -232,31 +243,31 @@
           "title": "Show HN: Claude-replay – A video-like player for Claude Code sessions",
           "url": "https://github.com/es617/claude-replay",
           "source": "github.com",
-          "why_it_matters": "Developer tools enabling replay and analysis of AI-generated code sessions support debugging and transparency of autonomous systems.",
+          "why_it_matters": "Developer tools for replaying and analyzing AI coding sessions improve transparency and debugging capabilities.",
           "tags": [
-            "enterprise",
-            "models"
+            "models",
+            "enterprise"
           ],
           "published_at": "2026-03-06T15:57:27Z",
-          "hn_score": 85
+          "hn_score": 86
         },
         {
           "title": "Sarvam 105B, the first competitive Indian open source LLM",
           "url": "https://www.sarvam.ai/blogs/sarvam-30b-105b",
           "source": "sarvam.ai",
-          "why_it_matters": "Sarvam AI's competitive open-source LLM demonstrates regional AI development capacity outside dominant Western laboratories.",
+          "why_it_matters": "Local language model development advances competition in open-source AI beyond Western-dominated ecosystems.",
           "tags": [
-            "open-source",
-            "models"
+            "models",
+            "open-source"
           ],
           "published_at": "2026-03-07T07:43:57Z",
-          "hn_score": 70
+          "hn_score": 80
         },
         {
           "title": "Artificial intelligence (AI) News, Research and Analysis - The Conversation",
           "url": "https://theconversation.com/topics/artificial-intelligence-ai-90",
           "source": "theconversation.com",
-          "why_it_matters": "Research validating AI tutoring effectiveness when paired with reasoning prompts and peer discussion provides empirical support for educational AI applications.",
+          "why_it_matters": "Research evidence on effective AI tutoring through reasoning prompts and peer collaboration informs educational deployment strategies.",
           "tags": [
             "research"
           ]
@@ -265,29 +276,30 @@
           "title": "AI Error May Have Contributed to Girl's School Bombing in Iran",
           "url": "https://thisweekinworcester.com/exclusive-ai-error-girls-school-bombing/",
           "source": "thisweekinworcester.com",
-          "why_it_matters": "AI system errors contributing to civilian casualties raises accountability questions regarding deployment safety in high-stakes international contexts.",
+          "why_it_matters": "AI involvement in incident causation raises questions about accountability and error investigation protocols.",
           "tags": [
             "safety",
             "policy"
           ],
           "published_at": "2026-03-07T05:41:04Z",
-          "hn_score": 48
+          "hn_score": 49
         },
         {
-          "title": "Anthropic officially designated a supply chain risk by Pentagon",
-          "url": "https://www.bbc.com/news/articles/cn5g3z3xe65o",
-          "source": "bbc.com",
-          "why_it_matters": "Pentagon's designation of Anthropic as a supply chain risk creates unprecedented legal implications for US AI governance and industry structure.",
+          "title": "xAI loses bid to halt California AI data disclosure law",
+          "url": "https://www.reuters.com/legal/government/xai-loses-bid-halt-california-ai-data-disclosure-law-2026-03-05/",
+          "source": "reuters.com",
+          "why_it_matters": "Regulatory setback for xAI demonstrates ongoing policy friction around AI data governance and transparency.",
           "tags": [
-            "policy",
-            "safety"
-          ]
+            "policy"
+          ],
+          "published_at": "2026-03-07T07:51:24Z",
+          "hn_score": 19
         },
         {
           "title": "What if AI just makes us work harder?",
           "url": "https://www.ft.com/content/e8bb5ab1-4b4d-473e-8f76-e690443e9fb4",
           "source": "ft.com",
-          "why_it_matters": "Analysis questioning whether AI increases productivity or simply workload demands challenges prevailing narratives about economic benefits.",
+          "why_it_matters": "Productivity paradox raises economic questions about whether AI implementation increases actual output or merely workload.",
           "tags": [
             "research"
           ],
@@ -295,35 +307,25 @@
           "hn_score": 44
         },
         {
-          "title": "xAI loses bid to halt California AI data disclosure law",
-          "url": "https://www.reuters.com/legal/government/xai-loses-bid-halt-california-ai-data-disclosure-law-2026-03-05/",
-          "source": "reuters.com",
-          "why_it_matters": "xAI's legal loss against California's AI data disclosure law indicates regulatory momentum for transparency requirements in generative AI systems.",
-          "tags": [
-            "policy"
-          ],
-          "published_at": "2026-03-07T07:51:24Z",
-          "hn_score": 18
-        },
-        {
           "title": "Claude AI Helped Bomb Iran. But How Exactly?",
           "url": "https://www.bloomberg.com/opinion/articles/2026-03-04/iran-strikes-anthropic-claude-ai-helped-us-attack-but-how-exactly",
           "source": "bloomberg.com",
-          "why_it_matters": "Allegations that Claude AI contributed to bombing operations represent the most severe documented harm case and raise critical deployment governance questions.",
+          "why_it_matters": "Alleged AI involvement in weapons development scenario highlights critical safety and dual-use concerns.",
           "tags": [
             "safety",
             "policy"
           ],
           "published_at": "2026-03-07T10:14:26Z",
-          "hn_score": 18
+          "hn_score": 19
         },
         {
           "title": "If AI has a bright future, why does AI think it doesn't?",
           "url": "https://claude.ai/share/5373cca0-f085-40a7-9a58-3f30b4f76195",
           "source": "claude.ai",
-          "why_it_matters": "Self-referential questioning about AI's role in shaping its own trajectory reflects emerging discourse on AI systems and existential positioning.",
+          "why_it_matters": "Existential concerns within AI systems themselves warrant investigation into reasoning and alignment properties.",
           "tags": [
-            "research"
+            "safety",
+            "models"
           ],
           "published_at": "2026-03-06T09:21:56Z",
           "hn_score": 15
@@ -331,11 +333,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-07T12:00:03.012846+00:00",
+        "updated_at": "2026-03-07T12:30:14.273474+00:00",
         "story_count": 15,
         "lanes_used": [
-          "hn",
-          "tier1"
+          "tier1",
+          "hn"
         ]
       }
     },
@@ -345,13 +347,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-07T12:00:37.901031+00:00",
+        "updated_at": "2026-03-07T12:30:44.675514+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top Reddit AI discussions center on large language models, GPT advancements, and practical applications. Key themes include AI ethics, job displacement concerns, and creative uses like coding assistance. Communities like r/MachineLearning and r/LanguageModels drive conversations. Trending topics include new model releases, AI safety, and debates about AI-generated content. Users share tutorials, research papers, and real-world implementation experiences across multiple subreddits.",
+      "summary": "Top AI discussions centered on generative models, with significant focus on ChatGPT updates and open-source alternatives. Key themes included AI ethics, job displacement concerns, and practical applications in coding and content creation. Communities like r/MachineLearning and r/LanguageModels dominated conversations. Trending topics featured multimodal AI capabilities, fine-tuning techniques, and debates over AI regulation. Users actively shared new tools and research papers.",
       "items": [
         {
           "title": "r/openclaw on Reddit: OpenClaw 2026.3.2 just dropped — here's what actually changed for real workflows",
@@ -409,15 +411,15 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: OpenClaw builders: which API is actually the most affordable right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r84q2c/openclaw_builders_which_api_is_actually_the_most/",
+          "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
+          "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
           "subreddit": "openclaw",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "model",
-            "inference",
-            "Llama"
+            "LLM",
+            "training",
+            "agent"
           ]
         },
         {
@@ -430,6 +432,18 @@
             "LLM",
             "model",
             "agent"
+          ]
+        },
+        {
+          "title": "r/openclaw on Reddit: OpenClaw builders: which API is actually the most affordable right now?",
+          "url": "https://www.reddit.com/r/openclaw/comments/1r84q2c/openclaw_builders_which_api_is_actually_the_most/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "inference",
+            "Llama"
           ]
         },
         {
@@ -468,17 +482,6 @@
             "inference",
             "agent",
             "Claude"
-          ]
-        },
-        {
-          "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
-          "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model"
           ]
         },
         {
@@ -550,7 +553,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "No significant mentions detected across monitored companies today. Zero posts identified in target company subreddits and general discussion forums. This suggests minimal organic conversation or user engagement regarding tracked organizations. Monitoring continues to identify when company-specific discussions gain traction, product feedback emerges, or notable announcements drive Reddit activity among relevant communities and user bases.",
+      "summary": "OpenAI, Google, and Meta dominated company mentions across Reddit. Primary topics included product launches, API pricing changes, and competitive positioning in the AI race. Discussions highlighted concerns about data privacy with major tech firms, criticism of content moderation policies, and user experiences with enterprise tools. Notably, smaller AI startups gained traction in niche communities, while traditional tech giants faced scrutiny over market practices and innovation pace.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -639,29 +642,191 @@
             "EquityZen"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/wallstreetbets OR site:reddit.com/r/EquityZen) (\"OpenAI\" OR \"OpenAI\" OR \"OpenClaw\")",
-          "items": [],
+          "items": [
+            {
+              "title": "r/technology on Reddit: OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
+              "url": "https://www.reddit.com/r/technology/comments/1r69t1o/openclaw_founder_steinberger_joins_openai/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
+              "url": "https://www.reddit.com/r/technology/comments/1rdba67/a_meta_ai_security_researcher_said_an_openclaw/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: OpenClaw’s AI assistants are now building their own social network",
+              "url": "https://www.reddit.com/r/technology/comments/1qrmxzh/openclaws_ai_assistants_are_now_building_their/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: DIY AI bot farm OpenClaw is a security 'dumpster fire'",
+              "url": "https://www.reddit.com/r/technology/comments/1qvk8qm/diy_ai_bot_farm_openclaw_is_a_security_dumpster/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: OpenClaw: The AI agent that’s got humans taking orders from bots",
+              "url": "https://www.reddit.com/r/technology/comments/1qxmfqm/openclaw_the_ai_agent_thats_got_humans_taking/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: After all the hype, some AI experts don't think OpenClaw is all that exciting",
+              "url": "https://www.reddit.com/r/technology/comments/1r6ecsm/after_all_the_hype_some_ai_experts_dont_think/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
+              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: An AI Agent Published a Hit Piece on Me",
+              "url": "https://www.reddit.com/r/technology/comments/1r3ichh/an_ai_agent_published_a_hit_piece_on_me/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenClaw"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/technology on Reddit: This Is What Convinced Me OpenAI Will Run Out of Money",
+              "url": "https://www.reddit.com/r/technology/comments/1qbxs4l/this_is_what_convinced_me_openai_will_run_out_of/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/technology on Reddit: A New York Times copyright lawsuit could kill OpenAI",
+              "url": "https://www.reddit.com/r/technology/comments/19ahg9y/a_new_york_times_copyright_lawsuit_could_kill/",
+              "subreddit": "technology",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenAI"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            }
+          ],
           "company_summary": null,
           "meta": {
-            "posts_found": 0,
-            "posts_included": 0,
-            "top_topics": []
+            "posts_found": 10,
+            "posts_included": 10,
+            "top_topics": [
+              "AI Agents",
+              "OpenClaw",
+              "Agents"
+            ]
           }
         }
       ],
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-07T12:00:42.041107+00:00"
+        "run_at": "2026-03-07T12:30:48.681989+00:00"
       },
       "meta": {
         "companies_tracked": 3,
-        "total_posts": 0
+        "total_posts": 10
       }
     },
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-07T12:00:46.354138+00:00",
+      "generated_at": "2026-03-07T12:30:52.574262+00:00",
       "tickers": [
         {
           "symbol": "LLY",
@@ -674,47 +839,59 @@
               "headline": "Eli Lilly launches program to help boost employer coverage of obesity drugs in U.S.",
               "source": "cnbc",
               "url": "https://www.cnbc.com/2026/03/05/eli-lilly-launches-program-to-boost-employer-coverage-of-obesity-drugs.html",
-              "published_at": "2026-03-05T12:00:49.438873+00:00",
+              "published_at": "2026-03-05T12:30:56.687284+00:00",
               "why_ranked": "Event=product_launch_major(60) Source=cnbc(83) Fresh=0.15"
             },
             {
-              "score": 57.3,
+              "score": 57.0,
               "tags": [
                 "earnings"
               ],
               "headline": "Eli Lilly (LLY) Stock Nears $1,000 as Mounjaro and Zepbound Drive 43% Revenue Surge",
               "source": "unknown",
               "url": "https://swikblog.com/eli-lilly-lly-stock-nears-1000-mounjaro-zepbound-revenue-growth/",
-              "published_at": "2026-03-06T20:00:49.438518+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.26"
+              "published_at": "2026-03-06T19:30:56.686961+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.24"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MRK",
+          "symbol": "AVGO",
           "top_stories": [
             {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Marimekko has completed the acquisition of the company’s own shares",
-              "source": "unknown",
-              "url": "https://globenewswire.com/news-release/2026/03/04/3249639/0/en/Marimekko-has-completed-the-acquisition-of-the-company-s-own-shares.html",
-              "published_at": "2026-03-04T12:00:50.224469+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
+              "score": 73.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Merck (MRK) Up 1.7% Since Last Earnings Report: Can It Continue?",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/merck-mrk-1-7-since-163012055.html",
-              "published_at": "2026-03-05T12:00:50.223471+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+              "headline": "Broadcom (AVGO) Q1 earnings report 2026",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/03/04/broadcom-avgo-q1-earnings-report-2026.html",
+              "published_at": "2026-03-04T12:30:58.947304+00:00",
+              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+            },
+            {
+              "score": 63.2,
+              "tags": [
+                "guidance",
+                "earnings"
+              ],
+              "headline": "Broadcom Q2 revenue guidance beats, sees $10.7 billion in AI semiconductor sales By Investing.com",
+              "source": "unknown",
+              "url": "https://www.investing.com/news/earnings/broadcoms-quarterly-revenue-guidance-tops-estimates-stock-seesaws-after-hours-4542036",
+              "published_at": "2026-03-04T12:30:58.948531+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 56.4,
+              "tags": [
+                "product_launch_major"
+              ],
+              "headline": "Broadcom ticks up as Q1 results, outlook top Wall Street's forecast; unveils $10B buyback (AVGO:NASDAQ) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4560729-broadcom-ticks-up-as-q1-results-outlook-top-wall-streets-forecast-unveils-10b-buyback",
+              "published_at": "2026-03-04T12:30:58.948178+00:00",
+              "why_ranked": "Event=product_launch_major(60) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
@@ -723,6 +900,17 @@
           "symbol": "CMG",
           "top_stories": [
             {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "US Bancorp DE Acquires 378,496 Shares of Chipotle Mexican Grill, Inc. $CMG",
+              "source": "unknown",
+              "url": "https://www.marketbeat.com/instant-alerts/filing-us-bancorp-de-acquires-378496-shares-of-chipotle-mexican-grill-inc-cmg-2026-02-28/",
+              "published_at": "2026-02-28T12:31:00.125921+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
               "score": 55.6,
               "tags": [
                 "earnings"
@@ -730,39 +918,33 @@
               "headline": "Why Is Chipotle (CMG) Down 8.1% Since Last Earnings Report?",
               "source": "unknown",
               "url": "https://sg.finance.yahoo.com/news/why-chipotle-cmg-down-8-163007071.html",
-              "published_at": "2026-03-05T12:00:53.347411+00:00",
+              "published_at": "2026-03-05T12:31:00.125383+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
-          "glance": [
-            {
-              "score": 52.9,
-              "tags": [
-                "other"
-              ],
-              "headline": "French Shipping Giant CMA CGM Warns on Middle East Conflict - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.19 Tier1+ Novelty-25"
-            }
-          ]
+          "glance": []
         },
         {
-          "symbol": "XIACY",
-          "top_stories": [],
-          "glance": [
+          "symbol": "RXRX",
+          "top_stories": [
             {
-              "score": 45.6,
+              "score": 56.4,
               "tags": [
-                "product_launch_major"
+                "earnings"
               ],
-              "headline": "Xiaomi launches 17 Ultra smartphone, an AirTag clone, and an ultra-slim power bank | TechCrunch",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
+              "headline": "BoFA Lowers PT on Recursion Pharmaceuticals (RXRX), Keeps a Hold Rating - Insider Monkey",
+              "source": "unknown",
+              "url": "https://www.insidermonkey.com/blog/bofa-lowers-pt-on-recursion-pharmaceuticals-rxrx-keeps-a-hold-rating-1710799/",
+              "published_at": "2026-03-06T17:31:00.905915+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.21"
             }
-          ]
+          ],
+          "glance": []
         }
       ],
       "debug": {
         "tickers_processed": 4,
-        "total_candidates": 80,
+        "total_candidates": 70,
         "removed_fresh_only": 1,
         "state_written": true,
         "report_date": "2026-03-07"
@@ -771,40 +953,100 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-07T12:00:54.533956+00:00",
+      "generated_at": "2026-03-07T12:31:01.491111+00:00",
       "tickers": [
         {
-          "symbol": "AMAT",
+          "symbol": "CRM",
           "top_stories": [
             {
-              "score": 57.6,
+              "score": 61.2,
               "tags": [
-                "m_and_a_confirmed"
+                "sec_filing",
+                "earnings"
               ],
-              "headline": "LOM Asset Management Ltd Acquires 2,431 Shares of Applied Materials, Inc. $AMAT - Daily Political",
+              "headline": "Salesforce 10-K: $41.5B Revenue, $7.80 Diluted EPS (Fiscal 2026) — TradingView News",
               "source": "unknown",
-              "url": "https://www.dailypolitical.com/2026/03/06/lom-asset-management-ltd-acquires-2431-shares-of-applied-materials-inc-amat.html",
-              "published_at": "2026-03-06T12:00:56.850449+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.tradingview.com/news/tradingview:a995a8702571e:0-salesforce-10-k-41-5b-revenue-7-80-diluted-eps-fiscal-2026/",
+              "published_at": "2026-03-02T12:31:02.284123+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Applied Materials Stock (AMAT) Opinions on Q1 Earnings Beat | AMAT Stock News",
+              "headline": "Salesforce Earnings Call Highlights AI-Fueled Growth - TipRanks.com",
               "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Applied+Materials+Stock+%28AMAT%29+Opinions+on+Q1+Earnings+Beat",
-              "published_at": "2026-02-28T12:00:56.850829+00:00",
+              "url": "https://www.tipranks.com/news/company-announcements/salesforce-earnings-call-highlights-ai-fueled-growth",
+              "published_at": "2026-03-05T12:31:02.282946+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "GLW",
+          "top_stories": [],
+          "glance": [
+            {
+              "score": 47.6,
+              "tags": [
+                "other"
+              ],
+              "headline": "Broadcom CEO's copper commitment tanks Corning shares — but sellers are mistaken",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
+            }
+          ]
+        },
+        {
+          "symbol": "ASML",
+          "top_stories": [
+            {
+              "score": 59.6,
+              "tags": [
+                "guidance"
+              ],
+              "headline": "ASML slides 5.3% as investors weigh 2026 growth uncertainty and guidance concerns | ASML Stock News",
+              "source": "unknown",
+              "url": "https://www.quiverquant.com/news/ASML+slides+5.3%25+as+investors+weigh+2026+growth+uncertainty+and+guidance+concerns",
+              "published_at": "2026-03-06T12:31:04.607336+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "ASML's Revenue Mix is Changing: What are the Latest Growth Drivers? | Nasdaq",
+              "source": "unknown",
+              "url": "https://nasdaq.com/articles/asmls-revenue-mix-changing-what-are-latest-growth-drivers",
+              "published_at": "2026-03-05T12:31:04.607704+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "BMY",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Q4 Earnings Outperformers: Bristol-Myers Squibb (NYSE:BMY) And The Rest Of The Branded Pharmaceuticals Stocks",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/news/q4-earnings-outperformers-bristol-myers-124526476.html",
+              "published_at": "2026-03-05T12:31:06.849758+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 1,
-        "total_candidates": 40,
+        "tickers_processed": 4,
+        "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-07"
@@ -860,7 +1102,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-07T12:01:00.049932+00:00",
+        "generated_at": "2026-03-07T12:31:06.853117+00:00",
         "count": 11
       }
     }
