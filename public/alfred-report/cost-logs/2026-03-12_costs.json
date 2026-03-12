@@ -1,0 +1,32 @@
+{
+  "date": "2026-03-12",
+  "total_calls": 2,
+  "cache_hits": 0,
+  "total_input_tokens": 864,
+  "total_output_tokens": 1188,
+  "estimated_cost_usd": 0.0054,
+  "calls": [
+    {
+      "timestamp": "2026-03-12T11:00:39.834390+00:00",
+      "section": "ai_news",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 762,
+      "output_tokens": 1008,
+      "cache_hit": false,
+      "input_cost": 0.0006096000000000001,
+      "output_cost": 0.004032,
+      "total_cost": 0.0046416
+    },
+    {
+      "timestamp": "2026-03-12T11:00:47.978228+00:00",
+      "section": "reddit",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 102,
+      "output_tokens": 180,
+      "cache_hit": false,
+      "input_cost": 8.16e-05,
+      "output_cost": 0.0007199999999999999,
+      "total_cost": 0.0008016
+    }
+  ]
+}
