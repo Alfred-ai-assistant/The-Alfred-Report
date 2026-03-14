@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-14T07:30:08.873925"
+        "updated_at": "2026-03-14T07:30:43.614983"
       }
     },
     "todoist": {
@@ -100,7 +100,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-14T07:30:09.319868",
+        "updated_at": "2026-03-14T07:30:43.914546",
         "task_count": 4,
         "overdue_count": 0,
         "completed_today": 0
@@ -147,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-14T07:30:10.007539",
+        "updated_at": "2026-03-14T07:30:44.600214",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -331,11 +331,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-14T11:30:08.737858+00:00",
+        "updated_at": "2026-03-14T11:30:43.474122+00:00",
         "story_count": 15,
         "lanes_used": [
-          "tier1",
-          "hn"
+          "hn",
+          "tier1"
         ]
       }
     },
@@ -345,13 +345,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-14T11:30:31.840985+00:00",
+        "updated_at": "2026-03-14T11:31:06.268108+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Reddit's top AI discussions center on GPT-4 capabilities, open-source model developments, and AI job market impacts. Communities like r/MachineLearning and r/OpenAI dominate conversations. Trending topics include prompt engineering techniques, ethical AI concerns, and debates over AI regulation. Users frequently discuss practical applications in coding and content creation, alongside concerns about AI safety and potential economic disruption across industries.",
+      "summary": "Top AI discussions focus on ChatGPT improvements, open-source model releases, and AI safety concerns. Trending topics include multimodal AI capabilities, job automation impacts, and GPU accessibility. Communities like r/MachineLearning, r/OpenAI, and r/LocalLLaMs drive engagement. Users debate ethical implications while sharing tutorials and implementation guides for emerging AI tools and frameworks.",
       "items": [
         {
           "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
@@ -420,48 +420,6 @@
           ]
         },
         {
-          "title": "r/technology on Reddit: OpenAI’s research on AI models deliberately lying is wild",
-          "url": "https://www.reddit.com/r/technology/comments/1nkorpc/openais_research_on_ai_models_deliberately_lying/",
-          "subreddit": "technology",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "training",
-            "OpenAI",
-            "neural"
-          ]
-        },
-        {
-          "title": "r/technology on Reddit: 96% Accuracy: Harvard Scientists Unveil Revolutionary ChatGPT-Like AI for Cancer Diagnosis",
-          "url": "https://www.reddit.com/r/technology/comments/1g6guii/96_accuracy_harvard_scientists_unveil/",
-          "subreddit": "technology",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "machine learning",
-            "model",
-            "training",
-            "neural"
-          ]
-        },
-        {
-          "title": "r/technology on Reddit: AI-generated code contains more bugs and errors than human output",
-          "url": "https://www.reddit.com/r/technology/comments/1ptpc95/aigenerated_code_contains_more_bugs_and_errors/",
-          "subreddit": "technology",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "training",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
           "title": "r/artificial on Reddit: What's the best LLM for writing right now?",
           "url": "https://www.reddit.com/r/artificial/comments/1kypis9/whats_the_best_llm_for_writing_right_now/",
           "subreddit": "artificial",
@@ -522,29 +480,58 @@
           ]
         },
         {
-          "title": "r/technology on Reddit: What Happens When People Don’t Understand How AI Works",
-          "url": "https://www.reddit.com/r/technology/comments/1l4t9d9/what_happens_when_people_dont_understand_how_ai/",
-          "subreddit": "technology",
+          "title": "r/artificial on Reddit: I tried (and failed) to create an AI model to predict the stock market (Deep Reinforcement Learning)",
+          "url": "https://www.reddit.com/r/artificial/comments/1cti6eu/i_tried_and_failed_to_create_an_ai_model_to/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "LLM",
             "model",
-            "training",
-            "OpenAI"
+            "training"
           ]
         },
         {
-          "title": "r/technology on Reddit: AI feedback loop will spell death for future generative models",
-          "url": "https://www.reddit.com/r/technology/comments/1f5wrjy/ai_feedback_loop_will_spell_death_for_future/",
-          "subreddit": "technology",
+          "title": "r/artificial on Reddit: How is it possible that there were no LLM AIs, then there was ChatGPT, now there are dozens of similar products?",
+          "url": "https://www.reddit.com/r/artificial/comments/14w09g1/how_is_it_possible_that_there_were_no_llm_ais/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
+            "machine learning"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Are there any examples of Artificial Intelligence that aren't Machine Learning?",
+          "url": "https://www.reddit.com/r/artificial/comments/15ml1yq/are_there_any_examples_of_artificial_intelligence/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "machine learning",
+            "inference"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: What 3,000 AI Case Studies Actually Tell Us (And What They Don't)",
+          "url": "https://www.reddit.com/r/artificial/comments/1qe5ax3/what_3000_ai_case_studies_actually_tell_us_and/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Single-Stream Text-to-Speech Synthesis Using LLMs and Decoupled Speech Tokens",
+          "url": "https://www.reddit.com/r/artificial/comments/1j41oxz/singlestream_texttospeech_synthesis_using_llms/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "LLM",
             "model",
-            "inference",
-            "training"
+            "inference"
           ]
         }
       ],
@@ -557,7 +544,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "Major tech companies dominate Reddit mentions, with OpenAI, Google, and Microsoft leading discussions around AI products. Apple and Meta receive attention for AI integration announcements. Dominant topics include product launches, pricing concerns, and competitive positioning in the AI race. Users debate which companies lead innovation while discussing privacy implications and corporate AI strategies. General sentiment mixes enthusiasm for new features with skepticism about corporate motives and data practices.",
+      "summary": "OpenAI and Google dominate mentions regarding AI product launches and competition. Meta, Microsoft, and Anthropic receive attention for technical developments. Key discussion themes include product pricing, API changes, competitive positioning, and hiring. Users debate which companies' offerings provide best value. Sentiment mixed across posts, with praise for innovation but concerns about corporate control of AI development.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -584,12 +571,167 @@
             "wallstreetbets"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/cybersecurity OR site:reddit.com/r/stocks OR site:reddit.com/r/investing OR site:reddit.com/r/wallstreetbets) (\"Netskope\" OR \"Netskope IPO\" OR \"Netskope S-1\" OR \"SASE\" OR \"Zero Trust\")",
-          "items": [],
+          "items": [
+            {
+              "title": "r/wallstreetbets on Reddit: Netskope IPO Signals Strong Demand for Cybersecurity Stocks $NTSK",
+              "url": "https://www.reddit.com/r/wallstreetbets/comments/1nkkje2/netskope_ipo_signals_strong_demand_for/",
+              "subreddit": "wallstreetbets",
+              "source": "reddit",
+              "matched_terms": [
+                "Netskope IPO",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: What do you think about Netskope ?",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/vycbsc/what_do_you_think_about_netskope/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "Netskope"
+              ],
+              "topics": [],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Netskope vs Zscaler vs Palo Alto vs Cato",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1koz9gj/netskope_vs_zscaler_vs_palo_alto_vs_cato/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Zero Trust",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/stocks on Reddit: NTSK Netscope IPO and future growth",
+              "url": "https://www.reddit.com/r/stocks/comments/1nla7do/ntsk_netscope_ipo_and_future_growth/",
+              "subreddit": "stocks",
+              "source": "reddit",
+              "matched_terms": [
+                "NTSK"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Tested 5 SASE vendors (Cato Networks, Palo, Fortinet, Zscaler, Netskope) - my results",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1mbhqtn/tested_5_sase_vendors_cato_networks_palo_fortinet/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: what's the best DLP for unified SASE",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1ro0q5p/whats_the_best_dlp_for_unified_sase/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Netskope ZTNA",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1aj63i2/netskope_ztna/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "Netskope"
+              ],
+              "topics": [],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Zscaler vs Netskope?",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/yl3bqu/zscaler_vs_netskope/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "Zero Trust",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurityanz on Reddit: Netskope a leader in the 2024 Gartner Magic Quadrant for Single-Vendor Secure Access Service Edge!",
+              "url": "https://www.reddit.com/r/cybersecurityanz/comments/1e12t59/netskope_a_leader_in_the_2024_gartner_magic/",
+              "subreddit": "cybersecurityanz",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: I'm the only security person at my company and I have to recommend a SASE vendor by Friday",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1rdk5bk/im_the_only_security_person_at_my_company_and_i/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            }
+          ],
           "company_summary": null,
           "meta": {
-            "posts_found": 0,
-            "posts_included": 0,
-            "top_topics": []
+            "posts_found": 10,
+            "posts_included": 10,
+            "top_topics": [
+              "partnership",
+              "ipo_private_markets",
+              "earnings_financials"
+            ]
           }
         },
         {
@@ -646,181 +788,19 @@
             "EquityZen"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/wallstreetbets OR site:reddit.com/r/EquityZen) (\"OpenAI\" OR \"OpenAI\" OR \"OpenClaw\")",
-          "items": [
-            {
-              "title": "r/technology on Reddit: OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
-              "url": "https://www.reddit.com/r/technology/comments/1r69t1o/openclaw_founder_steinberger_joins_openai/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: OpenClaw’s AI assistants are now building their own social network",
-              "url": "https://www.reddit.com/r/technology/comments/1qrmxzh/openclaws_ai_assistants_are_now_building_their/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: DIY AI bot farm OpenClaw is a security 'dumpster fire'",
-              "url": "https://www.reddit.com/r/technology/comments/1qvk8qm/diy_ai_bot_farm_openclaw_is_a_security_dumpster/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
-              "url": "https://www.reddit.com/r/technology/comments/1rdba67/a_meta_ai_security_researcher_said_an_openclaw/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: OpenClaw: The AI agent that’s got humans taking orders from bots",
-              "url": "https://www.reddit.com/r/technology/comments/1qxmfqm/openclaw_the_ai_agent_thats_got_humans_taking/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
-              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: After all the hype, some AI experts don't think OpenClaw is all that exciting",
-              "url": "https://www.reddit.com/r/technology/comments/1r6ecsm/after_all_the_hype_some_ai_experts_dont_think/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: An AI Agent Published a Hit Piece on Me",
-              "url": "https://www.reddit.com/r/technology/comments/1r3ichh/an_ai_agent_published_a_hit_piece_on_me/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: This Is What Convinced Me OpenAI Will Run Out of Money",
-              "url": "https://www.reddit.com/r/technology/comments/1qbxs4l/this_is_what_convinced_me_openai_will_run_out_of/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: A New York Times copyright lawsuit could kill OpenAI",
-              "url": "https://www.reddit.com/r/technology/comments/19ahg9y/a_new_york_times_copyright_lawsuit_could_kill/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenAI"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "Agents",
-              "OpenClaw",
-              "AI Agents"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         }
       ],
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-14T11:30:35.497466+00:00"
+        "run_at": "2026-03-14T11:31:09.069712+00:00"
       },
       "meta": {
         "companies_tracked": 3,
@@ -830,67 +810,37 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-14T11:30:39.252693+00:00",
+      "generated_at": "2026-03-14T11:31:12.659856+00:00",
       "tickers": [
-        {
-          "symbol": "AMZN",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 53.6,
-              "tags": [
-                "probe_or_investigation"
-              ],
-              "headline": "Amazon (AMZN) Stock; Dips Amid AI Spending, Italy Tax Probe - CoinCentral",
-              "why_ranked": "Event=probe_or_investigation(80) Source=unknown(43) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "LLY",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Lilly to Invest $3 Billion in China to Boost Obesity Pill - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Lilly finds impurity in compounded version of its weight-loss drug, warns of health risks | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            }
-          ]
-        },
         {
           "symbol": "NTSK",
           "top_stories": [
-            {
-              "score": 59.6,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "Netskope (NTSK) Is Up 14.5% After Launching AI Security Suite And Issuing 2027 Guidance - Simply Wall St News",
-              "source": "unknown",
-              "url": "https://simplywall.st/stocks/us/software/nasdaq-ntsk/netskope/news/netskope-ntsk-is-up-145-after-launching-ai-security-suite-an",
-              "published_at": "2026-03-12T11:30:43.429431+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
-            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Netskope: Fiscal Q4 Earnings Snapshot | whas11.com",
+              "headline": "Netskope Q4 Earnings Call Highlights",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/news/netskope-q4-earnings-call-highlights-225219912.html",
+              "published_at": "2026-03-11T11:31:16.320560+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "AVGO",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "FinancialContent - The Architect of the AI Era: A Deep Dive into Broadcom Inc. (AVGO) as Revenue Surges to $19.3B",
               "source": "unknown",
-              "url": "https://www.whas11.com/article/syndication/associatedpress/netskope-fiscal-q4-earnings-snapshot/616-acfb7bb9-71c2-4a8d-a269-52e7f66703c1",
-              "published_at": "2026-03-11T11:30:43.429592+00:00",
+              "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-3-13-the-architect-of-the-ai-era-a-deep-dive-into-broadcom-inc-avgo-as-revenue-surges-to-193b",
+              "published_at": "2026-03-13T11:31:17.470662+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -900,33 +850,16 @@
               "tags": [
                 "product_launch_major"
               ],
-              "headline": "Netskope launches Netskope One AI Security suite | NTSK Stock News",
+              "headline": "Broadcom unveils 400G AI optics at OFC 2026 | AVGO Stock News",
               "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
             }
           ]
-        },
-        {
-          "symbol": "XIACY",
-          "top_stories": [
-            {
-              "score": 60.4,
-              "tags": [
-                "m_and_a_rumor"
-              ],
-              "headline": "Stellantis in talks with Xiomi and Xpeng to invest in European business -- Bloomberg (STLA:NYSE) | Seeking Alpha",
-              "source": "seekingalpha",
-              "url": "https://seekingalpha.com/news/4563842-stellantis-in-talks-with-xiomi-and-xpeng-to-invest-in-european-business---bloomberg",
-              "published_at": "2026-03-12T11:30:46.898344+00:00",
-              "why_ranked": "Event=m_and_a_rumor(70) Source=seekingalpha(67) Fresh=0.15"
-            }
-          ],
-          "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 4,
+        "tickers_processed": 2,
         "total_candidates": 70,
-        "removed_fresh_only": 1,
+        "removed_fresh_only": 7,
         "state_written": true,
         "report_date": "2026-03-14"
       }
@@ -934,64 +867,8 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-14T11:30:46.902312+00:00",
+      "generated_at": "2026-03-14T11:31:19.531047+00:00",
       "tickers": [
-        {
-          "symbol": "TSM",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "TSMC's unit TSMC Global acquires fixed-income securities for $53.4 mln | MarketScreener",
-              "source": "unknown",
-              "url": "https://www.marketscreener.com/news/tsmc-s-unit-tsmc-global-acquires-fixed-income-securities-for-53-4-mln-ce7e5fdddf8af127",
-              "published_at": "2026-03-12T11:30:48.014859+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Taiwan Semiconductor Manufacturing (TSM) Reports Feb 2026 Revenue Data",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/taiwan-semiconductor-manufacturing-tsm-reports-175744466.html",
-              "published_at": "2026-03-12T11:30:48.014319+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "AMAT",
-          "top_stories": [
-            {
-              "score": 59.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Applied Materials 2026 shareholder meeting results | AMAT SEC Filing - Form 8-K",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/AMAT/8-k-applied-materials-inc-de-reports-material-event-62d5404e32bf.html",
-              "published_at": "2026-03-13T20:30:49.162751+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.29"
-            },
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "SevenBridge Financial Group LLC Acquires 4,978 Shares of Applied Materials, Inc. $AMAT",
-              "source": "unknown",
-              "url": "https://www.marketbeat.com/instant-alerts/filing-sevenbridge-financial-group-llc-acquires-4978-shares-of-applied-materials-inc-amat-2026-03-12/",
-              "published_at": "2026-03-12T11:30:49.162626+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
         {
           "symbol": "MU",
           "top_stories": [
@@ -1000,10 +877,10 @@
               "tags": [
                 "earnings"
               ],
-              "headline": "Micron (MU) Is About to Report Q2 Earnings, Let’s Look at Who Owns the Chip Stock - TipRanks.com",
+              "headline": "Micron (MU) Stock Rises 5% as Analysts Raise Price Targets Before Earnings Wednesday - CoinCentral",
               "source": "unknown",
-              "url": "https://www.tipranks.com/news/micron-mu-is-about-to-report-q2-earnings-lets-look-at-who-owns-the-chip-stock",
-              "published_at": "2026-03-12T11:30:50.313117+00:00",
+              "url": "https://coincentral.com/micron-mu-stock-rises-5-as-analysts-raise-price-targets-before-earnings-wednesday/",
+              "published_at": "2026-03-13T11:31:23.118588+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1011,9 +888,9 @@
         }
       ],
       "debug": {
-        "tickers_processed": 3,
+        "tickers_processed": 1,
         "total_candidates": 40,
-        "removed_fresh_only": 0,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-14"
       }
@@ -1068,7 +945,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-14T11:30:51.811669+00:00",
+        "generated_at": "2026-03-14T11:31:24.714028+00:00",
         "count": 11
       }
     }
