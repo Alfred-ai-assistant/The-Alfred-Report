@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-16T07:30:08.344336"
+        "updated_at": "2026-03-16T07:30:43.467993"
       }
     },
     "todoist": {
@@ -100,7 +100,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-16T07:30:08.797716",
+        "updated_at": "2026-03-16T07:30:43.738304",
         "task_count": 4,
         "overdue_count": 0,
         "completed_today": 0
@@ -147,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-16T07:30:09.783920",
+        "updated_at": "2026-03-16T07:30:44.769919",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -223,7 +223,7 @@
             "enterprise"
           ],
           "published_at": "2026-03-16T08:59:13Z",
-          "hn_score": 45
+          "hn_score": 46
         },
         {
           "title": "Europe takes first step to banning AI-generated child sexual abuse images",
@@ -331,11 +331,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-16T11:30:08.198872+00:00",
+        "updated_at": "2026-03-16T11:30:43.334670+00:00",
         "story_count": 15,
         "lanes_used": [
-          "hn",
-          "tier1"
+          "tier1",
+          "hn"
         ]
       }
     },
@@ -345,13 +345,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-16T11:30:32.573187+00:00",
+        "updated_at": "2026-03-16T11:31:06.585263+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions centered on large language models, particularly GPT-4 capabilities and limitations. Key themes included AI safety concerns, machine learning career advice, and practical applications in coding and content creation. Communities like r/MachineLearning and r/artificial dominated conversations. Users debated AI ethics, job displacement, and recent breakthroughs in multimodal models. Trending topics included prompt engineering techniques and comparisons between different AI platforms.",
+      "summary": "Top AI discussions center on generative models, ChatGPT capabilities, and AI regulation concerns. Machine learning implementations and ethical implications dominate conversations. Communities like r/MachineLearning, r/OpenAI, and r/artificial show strong engagement. Trending topics include prompt engineering, AI limitations, job displacement fears, and recent breakthroughs in image generation. Users debate AI safety, bias in models, and commercial applications across industries.",
       "items": [
         {
           "title": "r/machinelearningnews on Reddit: Liquid AI Open-Sources LFM2: A New Generation of Edge LLMs",
@@ -482,18 +482,6 @@
           ]
         },
         {
-          "title": "r/aicuriosity on Reddit: Master LLM Fine-Tuning & RLHF: DeepLearning.AI's New Post-Training Course Guide",
-          "url": "https://www.reddit.com/r/aicuriosity/comments/1oih360/master_llm_finetuning_rlhf_deeplearningais_new/",
-          "subreddit": "AiCuriosity",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "training"
-          ]
-        },
-        {
           "title": "r/machinelearningnews on Reddit: Google AI’s New Regression Language Model (RLM) Framework Enables LLMs to Predict Industrial System Performance Directly from Raw Text Data",
           "url": "https://www.reddit.com/r/machinelearningnews/comments/1n1a866/google_ais_new_regression_language_model_rlm/",
           "subreddit": "MachineLearning",
@@ -536,6 +524,17 @@
             "LLM",
             "machine learning"
           ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Meta AI Introduces Multi-SpatialMLLM: A Multi-Frame Spatial Understanding with Multi-modal Large Language Models",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1kwxilk/meta_ai_introduces_multispatialmllm_a_multiframe/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model"
+          ]
         }
       ],
       "meta": {
@@ -547,7 +546,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "No significant company mentions detected across monitored subreddits during this reporting period. Zero posts discussing specific technology companies, startups, or enterprises. This suggests minimal corporate sentiment data available for analysis today. Consider expanding monitoring parameters or reviewing detection criteria to capture emerging discussions. Regular zero-mention days are not uncommon and may indicate lower overall activity in company-focused subreddits.",
+      "summary": "OpenAI and Google lead mention counts with discussions about ChatGPT updates and Bard competition. Meta, Microsoft, and Tesla also appear frequently regarding AI initiatives. Key topics include product launches, company partnerships, job impacts, and competitive positioning. Sentiment varies—enthusiasm for innovations mixed with concerns about corporate control, data privacy, and market consolidation among tech giants.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -574,12 +573,167 @@
             "wallstreetbets"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/cybersecurity OR site:reddit.com/r/stocks OR site:reddit.com/r/investing OR site:reddit.com/r/wallstreetbets) (\"Netskope\" OR \"Netskope IPO\" OR \"Netskope S-1\" OR \"SASE\" OR \"Zero Trust\")",
-          "items": [],
+          "items": [
+            {
+              "title": "r/wallstreetbets on Reddit: Netskope IPO Signals Strong Demand for Cybersecurity Stocks $NTSK",
+              "url": "https://www.reddit.com/r/wallstreetbets/comments/1nkkje2/netskope_ipo_signals_strong_demand_for/",
+              "subreddit": "wallstreetbets",
+              "source": "reddit",
+              "matched_terms": [
+                "Netskope IPO",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/stocks on Reddit: NTSK Netscope IPO and future growth",
+              "url": "https://www.reddit.com/r/stocks/comments/1nla7do/ntsk_netscope_ipo_and_future_growth/",
+              "subreddit": "stocks",
+              "source": "reddit",
+              "matched_terms": [
+                "NTSK"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Netskope vs Zscaler vs Palo Alto vs Cato",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1koz9gj/netskope_vs_zscaler_vs_palo_alto_vs_cato/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Zero Trust",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: What do you think about Netskope ?",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/vycbsc/what_do_you_think_about_netskope/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "Netskope"
+              ],
+              "topics": [],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Tested 5 SASE vendors (Cato Networks, Palo, Fortinet, Zscaler, Netskope) - my results",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1mbhqtn/tested_5_sase_vendors_cato_networks_palo_fortinet/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: what's the best DLP for unified SASE",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1ro0q5p/whats_the_best_dlp_for_unified_sase/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Netskope ZTNA",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1aj63i2/netskope_ztna/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "Netskope"
+              ],
+              "topics": [],
+              "topic_confidence": "medium"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: Zscaler vs Netskope?",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/yl3bqu/zscaler_vs_netskope/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "Zero Trust",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurityanz on Reddit: Netskope a leader in the 2024 Gartner Magic Quadrant for Single-Vendor Secure Access Service Edge!",
+              "url": "https://www.reddit.com/r/cybersecurityanz/comments/1e12t59/netskope_a_leader_in_the_2024_gartner_magic/",
+              "subreddit": "cybersecurityanz",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/cybersecurity on Reddit: I'm the only security person at my company and I have to recommend a SASE vendor by Friday",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1rdk5bk/im_the_only_security_person_at_my_company_and_i/",
+              "subreddit": "cybersecurity",
+              "source": "reddit",
+              "matched_terms": [
+                "SASE",
+                "Netskope"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            }
+          ],
           "company_summary": null,
           "meta": {
-            "posts_found": 0,
-            "posts_included": 0,
-            "top_topics": []
+            "posts_found": 10,
+            "posts_included": 10,
+            "top_topics": [
+              "ipo_private_markets",
+              "earnings_financials",
+              "partnership"
+            ]
           }
         },
         {
@@ -648,100 +802,152 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-16T11:30:35.772496+00:00"
+        "run_at": "2026-03-16T11:31:09.404653+00:00"
       },
       "meta": {
         "companies_tracked": 3,
-        "total_posts": 0
+        "total_posts": 10
       }
     },
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-16T11:30:39.321628+00:00",
+      "generated_at": "2026-03-16T11:31:13.149221+00:00",
       "tickers": [
         {
-          "symbol": "NTSK",
-          "top_stories": [
-            {
-              "score": 59.6,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "Netskope (NTSK) Is Down 17.5% After AI Security Launch And 2027 Guidance Update - What's Changed",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/netskope-ntsk-down-17-5-021233451.html",
-              "published_at": "2026-03-13T11:30:43.801517+00:00",
-              "why_ranked": "Event=guidance(95) Source=yahoo(43) Fresh=0.15"
-            }
-          ],
-          "glance": [
-            {
-              "score": 45.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Netskope launches Netskope One AI Security suite | NTSK Stock News",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "TSLA",
+          "symbol": "AMZN",
           "top_stories": [
             {
               "score": 77.3,
               "tags": [
                 "other"
               ],
-              "headline": "Musk says Tesla's mega AI chip fab project to launch in seven days | Reuters",
+              "headline": "US Senator Warren presses Amazon on contracting, pricing practices for local governments and schools | Reuters",
               "source": "reuters",
-              "url": "https://www.reuters.com/business/autos-transportation/musk-says-teslas-gigantic-chip-fab-project-launch-seven-days-2026-03-14/",
-              "published_at": "2026-03-14T11:30:44.459020+00:00",
+              "url": "https://www.reuters.com/sustainability/society-equity/us-senator-warren-presses-amazon-on-contracting-pricing-practices-local-2026-03-12/",
+              "published_at": "2026-03-12T11:31:14.745639+00:00",
               "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+"
+            },
+            {
+              "score": 63.7,
+              "tags": [
+                "regulatory_action"
+              ],
+              "headline": "Amazon Owes Nearly $10M Unpaid Fines for Idling in New York City - Streetsblog New York City",
+              "source": "unknown",
+              "url": "https://nyc.streetsblog.org/2026/03/16/amazon-owes-nearly-10-million-unpaid-fines-for-idling-in-new-york-city",
+              "published_at": "2026-03-16T04:31:14.746111+00:00",
+              "why_ranked": "Event=regulatory_action(90) Source=unknown(43) Fresh=0.56"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "NET",
+          "symbol": "LLY",
           "top_stories": [
             {
               "score": 57.6,
               "tags": [
-                "sec_filing"
+                "m_and_a_confirmed"
               ],
-              "headline": "Cloudflare CFO granted 142,116 RSUs | NET SEC Filing - Form 4",
+              "headline": "Community Bank N.A. Acquires 940 Shares of Eli Lilly and Company $LLY - Daily Political",
               "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NET/form-4-cloudflare-inc-insider-trading-activity-56f36d28f48b.html",
-              "published_at": "2026-03-13T11:30:46.661625+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.dailypolitical.com/2026/03/15/community-bank-n-a-acquires-940-shares-of-eli-lilly-and-company-lly.html",
+              "published_at": "2026-03-15T11:31:15.923137+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "RXRX",
+          "symbol": "AVGO",
           "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "Alight Capital Management LP Acquires 30,000 Shares of Broadcom Inc. $AVGO",
+              "source": "unknown",
+              "url": "https://www.marketbeat.com/instant-alerts/filing-alight-capital-management-lp-acquires-30000-shares-of-broadcom-inc-avgo-2026-03-15/",
+              "published_at": "2026-03-15T11:31:18.338486+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings Report | RXRX Stock News",
+              "headline": "FinancialContent - The Architect of the AI Era: A Deep Dive into Broadcom Inc. (AVGO) as Revenue Surges to $19.3B",
               "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+Report",
-              "published_at": "2026-02-23T11:30:47.791686+00:00",
+              "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-3-13-the-architect-of-the-ai-era-a-deep-dive-into-broadcom-inc-avgo-as-revenue-surges-to-193b",
+              "published_at": "2026-03-13T11:31:18.338609+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "CMG",
+          "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "Tremblant Capital Group Acquires New Stake in Chipotle Mexican Grill, Inc. $CMG - Markets Daily",
+              "source": "unknown",
+              "url": "https://www.themarketsdaily.com/2026/03/14/tremblant-capital-group-acquires-new-stake-in-chipotle-mexican-grill-inc-cmg.html",
+              "published_at": "2026-03-14T11:31:19.490789+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "XIACY",
+          "top_stories": [
+            {
+              "score": 77.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Xiaomi’s Memory, EV Woes Hand Short Sellers $1.8 Billion Payout - Bloomberg",
+              "source": "bloomberg",
+              "url": "https://bloomberg.com/news/articles/2026-03-12/xiaomi-s-memory-ev-woes-hand-short-sellers-1-8-billion-payout",
+              "published_at": "2026-03-12T11:31:20.682073+00:00",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+"
+            },
+            {
+              "score": 68.3,
+              "tags": [
+                "product_launch_major"
+              ],
+              "headline": "Xiaomi launches safety advisory committee after EV accidents in China | Reuters",
+              "source": "reuters",
+              "url": "https://reuters.com/world/asia-pacific/xiaomi-launches-safety-advisory-committee-after-ev-accidents-china-2026-02-27",
+              "published_at": "2026-03-02T11:31:20.683199+00:00",
+              "why_ranked": "Event=product_launch_major(60) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 60.4,
+              "tags": [
+                "m_and_a_rumor"
+              ],
+              "headline": "Stellantis in talks with Xiomi and Xpeng to invest in European business -- Bloomberg (STLA:NYSE) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4563842-stellantis-in-talks-with-xiomi-and-xpeng-to-invest-in-european-business---bloomberg",
+              "published_at": "2026-03-12T11:31:20.683326+00:00",
+              "why_ranked": "Event=m_and_a_rumor(70) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 4,
+        "tickers_processed": 5,
         "total_candidates": 70,
-        "removed_fresh_only": 1,
+        "removed_fresh_only": 3,
         "state_written": true,
         "report_date": "2026-03-16"
       }
@@ -749,35 +955,60 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-16T11:30:48.183051+00:00",
+      "generated_at": "2026-03-16T11:31:20.685765+00:00",
       "tickers": [
         {
-          "symbol": "CRM",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 45.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Salesforce Launches Massive Debt-Funded Accelerated Share Repurchase - The Globe and Mail",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "GLW",
+          "symbol": "TSM",
           "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "TSMC's unit TSMC Global acquires fixed-income securities for $59.6 mln | MarketScreener",
+              "source": "unknown",
+              "url": "https://www.marketscreener.com/news/tsmc-s-unit-tsmc-global-acquires-fixed-income-securities-for-59-6-mln-ce7e5fd2d18cf123",
+              "published_at": "2026-03-13T11:31:21.845938+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Corning Could Hit $144 by End of 2026 — BofA Sees $10.3B Scale-Out Revenue as the Catalyst - 24/7 Wall St.",
+              "headline": "Taiwan Semiconductor Manufacturing (TSM) Reports Feb 2026 Revenue Data",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/news/taiwan-semiconductor-manufacturing-tsm-reports-175744466.html",
+              "published_at": "2026-03-12T11:31:21.846058+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "AMAT",
+          "top_stories": [
+            {
+              "score": 59.6,
+              "tags": [
+                "guidance"
+              ],
+              "headline": "Applied Materials Inc. Stock (ISIN: US0382221051) Dips 3.9% Amid AI Partnerships and Strong Guidance",
               "source": "unknown",
-              "url": "https://247wallst.com/investing/2026/03/12/corning-could-hit-144-by-end-of-2026-bofa-sees-10-3b-scale-out-revenue-as-the-catalyst/",
-              "published_at": "2026-03-12T11:30:51.507286+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/applied-materials-inc-stock-isin-us0382221051-dips-3-9-percent-amid/68680711",
+              "published_at": "2026-03-14T11:31:22.964791+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 57.6,
+              "tags": [
+                "sec_filing"
+              ],
+              "headline": "Applied Materials 2026 shareholder meeting results | AMAT SEC Filing - Form 8-K",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/AMAT/8-k-applied-materials-inc-de-reports-material-event-62d5404e32bf.html",
+              "published_at": "2026-03-13T11:31:22.965579+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
@@ -786,15 +1017,26 @@
           "symbol": "MU",
           "top_stories": [
             {
-              "score": 67.2,
+              "score": 64.1,
               "tags": [
                 "earnings"
               ],
-              "headline": "Here's How Much Micron Stock Is Expected to Move After Earnings",
+              "headline": "Micron Expands Aggressively in Taiwan — What It Means for MU Stock Ahead of Q2 Earnings - TipRanks.com",
               "source": "unknown",
-              "url": "https://www.investopedia.com/here-is-how-much-micron-stock-is-expected-to-move-after-earnings-mu-q2-fy2026-11922240",
-              "published_at": "2026-03-16T10:30:54.467523+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.92"
+              "url": "https://www.tipranks.com/news/micron-expands-aggressively-in-taiwan-what-it-means-for-mu-stock-ahead-of-q2-earnings",
+              "published_at": "2026-03-16T07:31:24.071185+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.72"
+            },
+            {
+              "score": 60.9,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "Micron completes acquisition of PSMC facility in Taiwan By Investing.com",
+              "source": "unknown",
+              "url": "https://www.investing.com/news/company-news/micron-completes-acquisition-of-psmc-facility-in-taiwan-93CH-4561596",
+              "published_at": "2026-03-15T23:31:24.072423+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.37"
             }
           ],
           "glance": []
@@ -802,7 +1044,7 @@
       ],
       "debug": {
         "tickers_processed": 3,
-        "total_candidates": 60,
+        "total_candidates": 40,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-16"
@@ -858,7 +1100,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-16T11:30:56.090542+00:00",
+        "generated_at": "2026-03-16T11:31:25.581649+00:00",
         "count": 11
       }
     }
