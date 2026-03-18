@@ -71,12 +71,14 @@ companies:
       - enterprise_security
     subreddit_scopes:
       - technology
-      - AI
+      - ArtificialIntelligence
+      - LocalLLaMA
       - stocks
       - investing
       - wallstreetbets
-      - EquityZen
-      - NVDA_Stock
+      - hardware
+      - semiconductors
+      - MachineLearning
     enabled: true
 
   - company_name: OpenAI

@@ -198,12 +198,11 @@ def get_company_reddit_watch() -> Dict:
         topics = company.get("topics", [])
         scopes = company.get("subreddit_scopes", ["technology", "stocks", "investing"])
 
-        # Build search query
+        # Build search query — no site: operators for broader catch
         terms = [name] + aliases
         query_terms = " OR ".join(f'"{t}"' for t in terms)
-        scope_query = " OR ".join(f"site:reddit.com/r/{s}" for s in scopes)
 
-        query = f"({scope_query}) ({query_terms})"
+        query = f"{query_terms} reddit"
         search_results = brave_search(query, count=15)
 
         company_items = []
