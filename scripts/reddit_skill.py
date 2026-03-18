@@ -17,6 +17,7 @@ import urllib.request
 import urllib.parse
 import re
 import sys
+import time
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from typing import Dict, List
@@ -56,8 +57,12 @@ def brave_search(query: str, count: int = 10) -> List[Dict]:
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=15) as r:
             data = json.loads(r.read())
+        # Rate limit: Brave free tier = 1 req/sec
+        time.sleep(1.1)
         return data.get("web", {}).get("results", [])
-    except Exception:
+    except Exception as e:
+        # Even on error, respect rate limit
+        time.sleep(1.1)
         return []
 
 # ── AI Reddit Trending ─────────────────────────────────────────────────────────
@@ -215,13 +220,25 @@ def get_company_reddit_watch() -> Dict:
             if "reddit.com/r/" not in url or "/comments/" not in url:
                 continue
 
-            # Match company/aliases
+            # Match company/aliases — flexible matching
             full_text = (title + " " + snippet).lower()
             matched_terms = []
+            
+            # Check exact aliases first
             for term in aliases + [name]:
                 if term.lower() in full_text:
                     matched_terms.append(term)
-
+            
+            # If no exact match, check for company name substrings
+            # (e.g., "Cerebras" without "Systems")
+            if not matched_terms:
+                # Extract base company name (first word usually)
+                base_name_parts = name.lower().split()
+                if base_name_parts:
+                    base = base_name_parts[0]  # e.g., "cerebras"
+                    if base in full_text:
+                        matched_terms.append(name)
+            
             if not matched_terms and ticker:
                 # Check ticker with confirming keyword
                 if ticker.lower() in full_text:
