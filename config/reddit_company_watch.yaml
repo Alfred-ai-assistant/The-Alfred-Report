@@ -7,41 +7,10 @@
 # topics: internal topic tags for categorization
 # subreddit_scopes: subreddits to search for this company
 # enabled: set to false to temporarily pause without removing
+# Order: Cerebras Systems, Groq, Sambanova Systems, OpenAI, Netskope
 # -----------------------------------------------------------------------------
 
 companies:
-
-  - company_name: Netskope
-    ticker: NTSK
-    aliases:
-      - Netskope IPO
-      - Netskope S-1
-      - SASE
-      - Zero Trust
-    keywords:
-      - IPO
-      - S-1
-      - valuation
-      - pricing
-      - ARR
-      - funding
-      - Zero Trust
-      - SASE
-      - CIO
-      - enterprise security
-    topics:
-      - ipo_private_markets
-      - earnings_financials
-      - partnership
-      - competitive_landscape
-      - enterprise_security
-    subreddit_scopes:
-      - technology
-      - cybersecurity
-      - stocks
-      - investing
-      - wallstreetbets
-    enabled: true
 
   - company_name: Cerebras Systems
     ticker: null
@@ -81,6 +50,77 @@ companies:
       - MachineLearning
     enabled: true
 
+  - company_name: Groq
+    ticker: null
+    aliases:
+      - Groq
+      - GroqCloud
+      - Groq Cloud
+    keywords:
+      - IPO
+      - valuation
+      - funding
+      - Series
+      - LLM
+      - Inference
+      - Tensor
+      - acceleration
+      - chipset
+      - TSP
+    topics:
+      - ipo_private_markets
+      - earnings_financials
+      - partnership
+      - competitive_landscape
+      - inference_acceleration
+    subreddit_scopes:
+      - technology
+      - ArtificialIntelligence
+      - LocalLLaMA
+      - stocks
+      - investing
+      - wallstreetbets
+      - hardware
+      - semiconductors
+      - MachineLearning
+    enabled: true
+
+  - company_name: Sambanova Systems
+    ticker: null
+    aliases:
+      - Sambanova
+      - SambaNova
+      - Sambanova Systems
+      - SambaNova Systems
+    keywords:
+      - IPO
+      - valuation
+      - funding
+      - Series
+      - LLM
+      - Inference
+      - CoRAM
+      - dataflow
+      - RDU
+      - Reconfigurable Dataflow Unit
+    topics:
+      - ipo_private_markets
+      - earnings_financials
+      - partnership
+      - competitive_landscape
+      - inference_acceleration
+    subreddit_scopes:
+      - technology
+      - ArtificialIntelligence
+      - LocalLLaMA
+      - stocks
+      - investing
+      - wallstreetbets
+      - hardware
+      - semiconductors
+      - MachineLearning
+    enabled: true
+
   - company_name: OpenAI
     ticker: null
     aliases:
@@ -98,4 +138,36 @@ companies:
       - technology
       - wallstreetbets
       - EquityZen
+    enabled: true
+
+  - company_name: Netskope
+    ticker: NTSK
+    aliases:
+      - Netskope IPO
+      - Netskope S-1
+      - SASE
+      - Zero Trust
+    keywords:
+      - IPO
+      - S-1
+      - valuation
+      - pricing
+      - ARR
+      - funding
+      - Zero Trust
+      - SASE
+      - CIO
+      - enterprise security
+    topics:
+      - ipo_private_markets
+      - earnings_financials
+      - partnership
+      - competitive_landscape
+      - enterprise_security
+    subreddit_scopes:
+      - technology
+      - cybersecurity
+      - stocks
+      - investing
+      - wallstreetbets
     enabled: true

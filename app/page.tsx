@@ -134,132 +134,42 @@ export default async function Home({ searchParams }: PageProps) {
                 )}
 
                 {report.sections?.ai_reddit_trending && (
-                  <>
-                    <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                      <h2 className="text-3xl font-bold mb-3 text-cyan-400">
-                        {report.sections.ai_reddit_trending.title}
-                      </h2>
-                      {report.sections.ai_reddit_trending.summary && (
-                        <p className="text-gray-300 mb-6 leading-relaxed">
-                          {report.sections.ai_reddit_trending.summary}
-                        </p>
-                      )}
-                      {report.sections.ai_reddit_trending.items && report.sections.ai_reddit_trending.items.length > 0 && (
-                        <div className="space-y-4">
-                          {report.sections.ai_reddit_trending.items.map((item: any, idx: number) => (
-                            <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                              <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-orange-400 hover:text-orange-300 mb-2 block hover:underline">
-                                {item.title}
-                              </a>
-                              <div className="flex gap-3 flex-wrap items-center">
-                                <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>
-                                {item.matched_terms && item.matched_terms.length > 0 && (
-                                  <div className="flex gap-1 flex-wrap">
-                                    {item.matched_terms.slice(0, 3).map((term: string) => (
-                                      <span key={term} className="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">
-                                        {term}
-                                      </span>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </section>
-
-                    {report.sections?.company_reddit_watch && (
-                      <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
-                        <h3 className="text-2xl font-bold mb-3 text-purple-400">
-                          {report.sections.company_reddit_watch.title}
-                        </h3>
-                        {report.sections.company_reddit_watch.summary && (
-                          <p className="text-gray-300 mb-6 leading-relaxed">
-                            {report.sections.company_reddit_watch.summary}
-                          </p>
-                        )}
-                        <div className="space-y-6">
-                          {report.sections.company_reddit_watch.companies?.map((company: any) => (
-                            <div key={company.company_name} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                              <h4 className="font-semibold text-gray-100 mb-2">
-                                {company.company_name}
-                                {company.ticker && <span className="text-gray-500 ml-2">({company.ticker})</span>}
-                              </h4>
-                              {company.items && company.items.length > 0 ? (
-                                <div className="space-y-3">
-                                  {company.items.map((item: any, idx: number) => (
-                                    <div key={idx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
-                                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 hover:underline text-sm font-medium block mb-2">
-                                        {item.title}
-                                      </a>
-                                      <div className="flex gap-2 flex-wrap text-xs">
-                                        {item.subreddit && <span className="bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>}
-                                        {item.matched_terms?.slice(0, 2).map((term: string) => (
-                                          <span key={term} className="bg-blue-900 text-blue-200 px-2 py-1 rounded">{term}</span>
-                                        ))}
-                                        {item.topics?.slice(0, 2).map((topic: string) => (
-                                          <span key={topic} className="bg-purple-900 text-purple-200 px-2 py-1 rounded">{topic}</span>
-                                        ))}
-                                      </div>
-                                    </div>
-                                  ))}
-                                </div>
-                              ) : (
-                                <p className="text-gray-500 text-sm">No posts found today</p>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </section>
-                    )}
-                  </>
-                )}
-
-                {report.sections?.company_reddit_watch && !report.sections?.ai_reddit_trending && (
                   <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
                     <h2 className="text-3xl font-bold mb-3 text-cyan-400">
-                      {report.sections.company_reddit_watch.title}
+                      {report.sections.ai_reddit_trending.title}
                     </h2>
-                    {report.sections.company_reddit_watch.summary && (
+                    {report.sections.ai_reddit_trending.summary && (
                       <p className="text-gray-300 mb-6 leading-relaxed">
-                        {report.sections.company_reddit_watch.summary}
+                        {report.sections.ai_reddit_trending.summary}
                       </p>
                     )}
-                    <div className="space-y-6">
-                      {report.sections.company_reddit_watch.companies?.map((company: any) => (
-                        <div key={company.company_name} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-                          <h3 className="font-semibold text-gray-100 mb-2">
-                            {company.company_name}
-                            {company.ticker && <span className="text-gray-500 ml-2">({company.ticker})</span>}
-                          </h3>
-                          {company.items && company.items.length > 0 ? (
-                            <div className="space-y-3">
-                              {company.items.map((item: any, idx: number) => (
-                                <div key={idx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
-                                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 hover:underline text-sm font-medium block mb-2">
-                                    {item.title}
-                                  </a>
-                                  <div className="flex gap-2 flex-wrap text-xs">
-                                    {item.subreddit && <span className="bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>}
-                                    {item.matched_terms?.slice(0, 2).map((term: string) => (
-                                      <span key={term} className="bg-blue-900 text-blue-200 px-2 py-1 rounded">{term}</span>
-                                    ))}
-                                    {item.topics?.slice(0, 2).map((topic: string) => (
-                                      <span key={topic} className="bg-purple-900 text-purple-200 px-2 py-1 rounded">{topic}</span>
-                                    ))}
-                                  </div>
+                    {report.sections.ai_reddit_trending.items && report.sections.ai_reddit_trending.items.length > 0 && (
+                      <div className="space-y-4">
+                        {report.sections.ai_reddit_trending.items.map((item: any, idx: number) => (
+                          <div key={idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-orange-400 hover:text-orange-300 mb-2 block hover:underline">
+                              {item.title}
+                            </a>
+                            <div className="flex gap-3 flex-wrap items-center">
+                              <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>
+                              {item.matched_terms && item.matched_terms.length > 0 && (
+                                <div className="flex gap-1 flex-wrap">
+                                  {item.matched_terms.slice(0, 3).map((term: string) => (
+                                    <span key={term} className="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">
+                                      {term}
+                                    </span>
+                                  ))}
                                 </div>
-                              ))}
+                              )}
                             </div>
-                          ) : (
-                            <p className="text-gray-500 text-sm">No posts found today</p>
-                          )}
-                        </div>
-                      ))}
-                    </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </section>
                 )}
+
+
               </div>
 
               {/* MIDDLE COLUMN */}
@@ -460,6 +370,51 @@ export default async function Home({ searchParams }: PageProps) {
                         ))}
                       </div>
                     )}
+                  </section>
+                )}
+
+                {report.sections?.company_reddit_watch && (
+                  <section className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+                    <h2 className="text-3xl font-bold mb-3 text-purple-400">
+                      {report.sections.company_reddit_watch.title}
+                    </h2>
+                    {report.sections.company_reddit_watch.summary && (
+                      <p className="text-gray-300 mb-6 leading-relaxed">
+                        {report.sections.company_reddit_watch.summary}
+                      </p>
+                    )}
+                    <div className="space-y-6">
+                      {report.sections.company_reddit_watch.companies?.map((company: any) => (
+                        <div key={company.company_name} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
+                          <h3 className="font-semibold text-gray-100 mb-2">
+                            {company.company_name}
+                            {company.ticker && <span className="text-gray-500 ml-2">({company.ticker})</span>}
+                          </h3>
+                          {company.items && company.items.length > 0 ? (
+                            <div className="space-y-3">
+                              {company.items.map((item: any, idx: number) => (
+                                <div key={idx} className="bg-slate-800/50 rounded p-3 border border-slate-700/50">
+                                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 hover:underline text-sm font-medium block mb-2">
+                                    {item.title}
+                                  </a>
+                                  <div className="flex gap-2 flex-wrap text-xs">
+                                    {item.subreddit && <span className="bg-gray-700 text-gray-300 px-2 py-1 rounded">{item.subreddit}</span>}
+                                    {item.matched_terms?.slice(0, 2).map((term: string) => (
+                                      <span key={term} className="bg-blue-900 text-blue-200 px-2 py-1 rounded">{term}</span>
+                                    ))}
+                                    {item.topics?.slice(0, 2).map((topic: string) => (
+                                      <span key={topic} className="bg-purple-900 text-purple-200 px-2 py-1 rounded">{topic}</span>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          ) : (
+                            <p className="text-gray-500 text-sm">No posts found today</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   </section>
                 )}
               </div>
