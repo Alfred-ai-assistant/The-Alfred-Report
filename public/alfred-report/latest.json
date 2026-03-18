@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-18T07:00:07.227917"
+        "updated_at": "2026-03-18T07:30:43.733596"
       }
     },
     "todoist": {
@@ -106,7 +106,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-18T07:00:09.595385",
+        "updated_at": "2026-03-18T07:30:44.188655",
         "task_count": 5,
         "overdue_count": 0,
         "completed_today": 0
@@ -153,7 +153,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-18T07:00:10.355655",
+        "updated_at": "2026-03-18T07:30:44.939560",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -175,7 +175,7 @@
             "open-source"
           ],
           "published_at": "2026-03-17T21:04:26Z",
-          "hn_score": 482
+          "hn_score": 505
         },
         {
           "title": "GPT‑5.4 Mini and Nano",
@@ -186,7 +186,7 @@
             "models"
           ],
           "published_at": "2026-03-17T17:07:06Z",
-          "hn_score": 227
+          "hn_score": 229
         },
         {
           "title": "Why AI systems don't learn – On autonomous learning from cognitive science",
@@ -198,7 +198,7 @@
             "safety"
           ],
           "published_at": "2026-03-17T21:42:39Z",
-          "hn_score": 124
+          "hn_score": 127
         },
         {
           "title": "Claw Compactor: compress LLM tokens 54% with zero dependencies",
@@ -242,7 +242,7 @@
             "hardware"
           ],
           "published_at": "2026-03-17T18:14:24Z",
-          "hn_score": 67
+          "hn_score": 68
         },
         {
           "title": "Garry Tan's Claude Code Setup",
@@ -253,7 +253,7 @@
             "open-source"
           ],
           "published_at": "2026-03-17T21:28:35Z",
-          "hn_score": 64
+          "hn_score": 66
         },
         {
           "title": "China Is Embracing OpenClaw, a New A.I. Agent, and the Government Is Wary - The New York Times",
@@ -274,7 +274,7 @@
             "open-source"
           ],
           "published_at": "2026-03-18T01:10:19Z",
-          "hn_score": 40
+          "hn_score": 41
         },
         {
           "title": "Show HN: March Madness Bracket Challenge for AI Agents Only",
@@ -285,7 +285,7 @@
             "enterprise"
           ],
           "published_at": "2026-03-17T12:56:24Z",
-          "hn_score": 65
+          "hn_score": 66
         },
         {
           "title": "AI still doesn't work well, businesses are faking it, and a reckoning is coming",
@@ -333,7 +333,7 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-18T11:00:03.460381+00:00",
+        "updated_at": "2026-03-18T11:30:43.567049+00:00",
         "story_count": 15,
         "lanes_used": [
           "tier1",
@@ -347,144 +347,158 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-18T11:00:42.999719+00:00",
+        "updated_at": "2026-03-18T11:31:06.617841+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI Reddit posts reveal strong interest in large language models, ChatGPT developments, and open-source AI tools. Communities like r/MachineLearning and r/OpenAI drive discussions on model capabilities, ethical concerns, and practical applications. Trending topics include AI safety, job market impacts, and breakthrough research announcements. Users actively debate regulation frameworks and sharing personal experiences with new AI products.",
+      "summary": "Top AI discussions on Reddit focus on generative models, ChatGPT capabilities, and machine learning applications. Key communities include r/MachineLearning, r/artificial, and r/ChatGPT. Trending topics include prompt engineering techniques, concerns about AI bias and ethics, new model releases, career guidance for AI professionals, and practical uses of language models in various industries.",
       "items": [
         {
-          "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rds8wk/introducing_smallclaw_openclaw_for_smalllocal_llms/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: Liquid AI Open-Sources LFM2: A New Generation of Edge LLMs",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1lzfocc/liquid_ai_opensources_lfm2_a_new_generation_of/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
+            "machine learning",
             "model",
             "inference",
-            "agent",
+            "training"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "inference",
             "Llama"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: MInference (Milliontokens Inference): A Training-Free Efficient Method for the Pre-Filling Stage of Long-Context LLMs Based on Dynamic Sparse Attention",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dx9wi3/minference_milliontokens_inference_a_trainingfree/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "inference",
+            "training",
+            "Llama"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: OpenLLM offers a breakthrough approach by enabling you to run any open-source LLM as an OpenAI-compatible API endpoint with a single command",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1izw23b/openllm_offers_a_breakthrough_approach_by/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "inference",
+            "OpenAI"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: A Comprehensive Study by BentoML on Benchmarking LLM Inference Backends: Performance Analysis of vLLM, LMDeploy, MLC-LLM, TensorRT-LLM, and TGI",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dccn3c/a_comprehensive_study_by_bentoml_on_benchmarking/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
             "inference",
-            "agent"
+            "Llama"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: Meet Time-LLM: A Reprogramming Machine Learning Framework to Repurpose LLMs for General Time Series Forecasting with the Backbone Language Models Kept Intact",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1ajssnu/meet_timellm_a_reprogramming_machine_learning/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "inference"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Google DeepMind Researchers Propose GenRM: Training Verifiers with Next-Token Prediction to Leverage the Text Generation Capabilities of LLMs",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1f75c32/google_deepmind_researchers_propose_genrm/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Max Planck Researchers Introduce PoseGPT: An Artificial Intelligence Framework Employing Large Language Models (LLMs) to Understand and Reason about 3D Human Poses from Images or Textual Descriptions",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/18bxmhe/max_planck_researchers_introduce_posegpt_an/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: OpenAI Researchers Introduce MLE-bench: A New Benchmark for Measuring How Well AI Agents Perform at Machine Learning Engineering",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1g26th2/openai_researchers_introduce_mlebench_a_new/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "machine learning",
             "agent",
             "OpenAI"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: I built a 7-agent AI trading desk with OpenClaw — here's the full setup",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r1lp3n/i_built_a_7agent_ai_trading_desk_with_openclaw/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: Optimizing Test-Time Compute for LLMs: A Meta-Reinforcement Learning Approach with Cumulative Regret Minimization",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jbcsdg/optimizing_testtime_compute_for_llms_a/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model"
+          ]
+        },
+        {
+          "title": "r/aicuriosity on Reddit: Master LLM Fine-Tuning & RLHF: DeepLearning.AI's New Post-Training Course Guide",
+          "url": "https://www.reddit.com/r/aicuriosity/comments/1oih360/master_llm_finetuning_rlhf_deeplearningais_new/",
+          "subreddit": "AiCuriosity",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
-            "agent"
+            "training"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
-          "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "training",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: OpenClaw builders: which API is actually the most affordable right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r84q2c/openclaw_builders_which_api_is_actually_the_most/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclawsetup on Reddit: How to Run OpenClaw for Free (Before You Get Hit With a $300 API Bill)",
-          "url": "https://www.reddit.com/r/openclawsetup/comments/1rhd6l9/how_to_run_openclaw_for_free_before_you_get_hit/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Free Model Recommendations?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1qxntuf/free_model_recommendations/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
-          "url": "https://www.reddit.com/r/artificial/comments/1qv4yyr/why_world_models_will_bring_us_to_agi_not_llms/",
-          "subreddit": "artificial",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Best local model for Mac Mini M1 (16GB) with OpenClaw? Opus got expensive fast 😅",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rhfk1q/best_local_model_for_mac_mini_m1_16gb_with/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: Google AI’s New Regression Language Model (RLM) Framework Enables LLMs to Predict Industrial System Performance Directly from Raw Text Data",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1n1a866/google_ais_new_regression_language_model_rlm/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -493,9 +507,9 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: What’s the best free local model for OpenClaw right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rrc7wc/whats_the_best_free_local_model_for_openclaw/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: Google AI Announces Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1eulpdz/google_ai_announces_scaling_llm_testtime_compute/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -504,36 +518,25 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: I just ran 143M tokens for $94 with OpenClaw. Check your setup.",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rnudeg/i_just_ran_143m_tokens_for_94_with_openclaw_check/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: xLSTM: Enhancing Long Short-Term Memory LSTM Capabilities for Advanced Language Modeling and Beyond",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1cojazf/xlstm_enhancing_long_shortterm_memory_lstm/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
-            "model",
-            "inference"
+            "machine learning",
+            "model"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: How to setup openclaw in my mac mini with local llm running on same device in ollama 3?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1qzon8z/how_to_setup_openclaw_in_my_mac_mini_with_local/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: tinyBenchmarks: Revolutionizing LLM Evaluation with 100-Example Curated Sets, Reducing Costs by Over 98% While Maintaining High Accuracy [Colab Notebook Included]",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1ej52oc/tinybenchmarks_revolutionizing_llm_evaluation/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Why are Mac Minis in such high demand for OpenClaw? Doesn't a VPS work just as well?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rifnbe/why_are_mac_minis_in_such_high_demand_for/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "LLM",
-            "model",
-            "inference"
+            "machine learning"
           ]
         }
       ],
@@ -546,7 +549,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI dominates company mentions with ChatGPT updates and API discussions. Google, Microsoft, and Meta receive significant attention regarding their AI initiatives and competitive positioning. Key topics include product launches, layoffs, funding rounds, and ethical concerns. Sentiment varies across companies, with users expressing enthusiasm for innovations while criticizing privacy practices and market consolidation strategies.",
+      "summary": "No significant company mentions detected across monitored subreddits during this period. This suggests minimal social media discussion or that company-related conversations are occurring in non-monitored communities. Consider expanding monitoring scope to capture emerging discussions about technology firms and their AI initiatives in broader Reddit communities.",
       "companies": [
         {
           "company_name": "Netskope",
@@ -635,194 +638,29 @@
             "EquityZen"
           ],
           "query": "(site:reddit.com/r/technology OR site:reddit.com/r/wallstreetbets OR site:reddit.com/r/EquityZen) (\"OpenAI\" OR \"OpenAI\" OR \"OpenClaw\")",
-          "items": [
-            {
-              "title": "r/technology on Reddit: OpenClaw founder Steinberger joins OpenAI, open-source bot becomes foundation",
-              "url": "https://www.reddit.com/r/technology/comments/1r69t1o/openclaw_founder_steinberger_joins_openai/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: Nvidia reportedly building its own AI agent to compete with OpenClaw, report claims — ‘NemoClaw’ will supposedly be open source and designed for enterprise use",
-              "url": "https://www.reddit.com/r/technology/comments/1rqdtjo/nvidia_reportedly_building_its_own_ai_agent_to/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
-              "url": "https://www.reddit.com/r/technology/comments/1rdba67/a_meta_ai_security_researcher_said_an_openclaw/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: OpenClaw’s AI assistants are now building their own social network",
-              "url": "https://www.reddit.com/r/technology/comments/1qrmxzh/openclaws_ai_assistants_are_now_building_their/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: Nvidia Is Planning to Launch an Open-Source AI Agent Platform",
-              "url": "https://www.reddit.com/r/technology/comments/1rr0kl7/nvidia_is_planning_to_launch_an_opensource_ai/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: DIY AI bot farm OpenClaw is a security 'dumpster fire'",
-              "url": "https://www.reddit.com/r/technology/comments/1qvk8qm/diy_ai_bot_farm_openclaw_is_a_security_dumpster/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: More than 135,000 OpenClaw instances exposed to internet in latest vibe-coded disaster",
-              "url": "https://www.reddit.com/r/technology/comments/1r0uyci/more_than_135000_openclaw_instances_exposed_to/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: OpenAI is negotiating with the U.S. government, Sam Altman tells staff",
-              "url": "https://www.reddit.com/r/technology/comments/1rgnlu8/openai_is_negotiating_with_the_us_government_sam/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/technology on Reddit: OpenClaw: The AI agent that’s got humans taking orders from bots",
-              "url": "https://www.reddit.com/r/technology/comments/1qxmfqm/openclaw_the_ai_agent_thats_got_humans_taking/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenClaw"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: After all the hype, some AI experts don't think OpenClaw is all that exciting",
-              "url": "https://www.reddit.com/r/technology/comments/1r6ecsm/after_all_the_hype_some_ai_experts_dont_think/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "AI Agents",
-              "OpenClaw",
-              "Agents"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         }
       ],
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-18T11:00:47.211004+00:00"
+        "run_at": "2026-03-18T11:31:09.754294+00:00"
       },
       "meta": {
         "companies_tracked": 3,
-        "total_posts": 10
+        "total_posts": 0
       }
     },
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-18T11:00:51.037466+00:00",
+      "generated_at": "2026-03-18T11:31:13.395467+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
@@ -835,7 +673,7 @@
               "headline": "Nvidia (NVDA) Sees $1 Trillion in AI Chip Revenue by 2027, CEO Says - Bloomberg",
               "source": "bloomberg",
               "url": "https://www.bloomberg.com/news/articles/2026-03-16/nvidia-expects-to-make-1-trillion-from-ai-chips-through-2027",
-              "published_at": "2026-03-16T11:00:51.780653+00:00",
+              "published_at": "2026-03-16T11:31:14.134239+00:00",
               "why_ranked": "Event=earnings(85) Source=bloomberg(93) Fresh=0.15 Tier1+"
             }
           ],
@@ -874,7 +712,7 @@
               "headline": "Netskope (NTSK) Is Down 17.5% After AI Security Launch And 2027 Guidance Update - What's Changed",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/news/netskope-ntsk-down-17-5-021233451.html",
-              "published_at": "2026-03-13T11:00:55.189993+00:00",
+              "published_at": "2026-03-13T11:31:17.521628+00:00",
               "why_ranked": "Event=guidance(95) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -892,7 +730,7 @@
               "headline": "Broadcom (AVGO) AI Chip Revenue Could Exceed $100 Billion by 2027, Rosenblatt Maintains Buy",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/news/broadcom-avgo-ai-chip-revenue-124218654.html",
-              "published_at": "2026-03-17T11:00:56.296850+00:00",
+              "published_at": "2026-03-17T11:31:18.644960+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -909,7 +747,7 @@
               "headline": "China ETF News: Trump Delays China Trip, Tencent Reports Earnings Tomorrow | Seeking Alpha",
               "source": "seekingalpha",
               "url": "https://seekingalpha.com/article/4883435-china-etf-news-trump-delays-china-trip-tencent-reports-earnings-tomorrow",
-              "published_at": "2026-03-18T04:00:58.623288+00:00",
+              "published_at": "2026-03-18T04:31:20.961767+00:00",
               "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.56"
             },
             {
@@ -920,7 +758,7 @@
               "headline": "Stellantis in talks with Xiomi and Xpeng to invest in European business -- Bloomberg (STLA:NYSE) | Seeking Alpha",
               "source": "seekingalpha",
               "url": "https://seekingalpha.com/news/4563842-stellantis-in-talks-with-xiomi-and-xpeng-to-invest-in-european-business---bloomberg",
-              "published_at": "2026-03-12T11:00:58.623334+00:00",
+              "published_at": "2026-03-12T11:31:20.961981+00:00",
               "why_ranked": "Event=m_and_a_rumor(70) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
@@ -938,7 +776,7 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-18T11:00:58.624248+00:00",
+      "generated_at": "2026-03-18T11:31:20.965634+00:00",
       "tickers": [
         {
           "symbol": "TSM",
@@ -951,7 +789,7 @@
               "headline": "TSM: AI Growth to Boost TSMC's Revenue Past 20% by 2026, Says Bernstein",
               "source": "unknown",
               "url": "https://www.gurufocus.com/news/8712528/tsm-ai-growth-to-boost-tsmcs-revenue-past-20-by-2026-says-bernstein",
-              "published_at": "2026-03-16T11:00:59.744567+00:00",
+              "published_at": "2026-03-16T11:31:22.119589+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -961,15 +799,15 @@
           "symbol": "MU",
           "top_stories": [
             {
-              "score": 67.0,
+              "score": 66.4,
               "tags": [
                 "earnings"
               ],
               "headline": "Micron Q2 earnings on deck: What to expect | Seeking Alpha",
               "source": "seekingalpha",
               "url": "https://seekingalpha.com/news/4565350-micron-q2-earnings-on-deck-what-to-expect",
-              "published_at": "2026-03-17T15:01:02.013577+00:00",
-              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.19"
+              "published_at": "2026-03-17T11:31:24.418413+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1033,7 +871,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-18T11:01:03.579062+00:00",
+        "generated_at": "2026-03-18T11:31:25.926699+00:00",
         "count": 11
       }
     }
