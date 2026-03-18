@@ -33,10 +33,17 @@ sys.path.insert(0, str(Path(__file__).parent))
 from cache_util import get_cached, save_cache, hash_data
 from cost_tracker import record as record_cost
 
+# Perplexity Search
+try:
+    import requests
+except ImportError:
+    requests = None
+
 # ── Config ────────────────────────────────────────────────────────────────────
 
-BRAVE_API_KEY   = os.environ.get("BRAVE_API_KEY", "")
-ANTHROPIC_KEY   = os.environ.get("ANTHROPIC_API_KEY", "")
+BRAVE_API_KEY       = os.environ.get("BRAVE_API_KEY", "")
+PERPLEXITY_API_KEY  = os.environ.get("PERPLEXITY_API_KEY", "")
+ANTHROPIC_KEY       = os.environ.get("ANTHROPIC_API_KEY", "")
 
 AI_KEYWORDS = [
     "AI", "artificial intelligence", "LLM", "large language model",
@@ -142,16 +149,52 @@ def collect_hn_stories(max_check: int = 300) -> List[Dict]:
 
     return stories
 
-# ── Brave Search helper ───────────────────────────────────────────────────────
+# ── Perplexity Search helper ──────────────────────────────────────────────────
+
+def perplexity_search(query: str, max_results: int = 8) -> List[Dict]:
+    """Search via Perplexity Search API"""
+    if not PERPLEXITY_API_KEY or not requests:
+        return []
+
+    url = "https://api.perplexity.ai/search"
+    headers = {
+        "Authorization": f"Bearer {PERPLEXITY_API_KEY}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "query": query,
+        "max_results": min(max(max_results, 1), 20),
+        "max_tokens_per_page": 2048,  # Balanced extraction
+    }
+
+    try:
+        resp = requests.post(url, json=payload, headers=headers, timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception:
+        return []
+
+    results = []
+    for r in data.get("results", []):
+        results.append({
+            "title":    r.get("title", ""),
+            "url":      r.get("url", ""),
+            "source":   urllib.parse.urlparse(r.get("url", "")).netloc.replace("www.", ""),
+            "snippet":  r.get("snippet", "")[:300],
+            "pub_raw":  r.get("date", ""),
+        })
+    return results
+
+# ── Brave Search helper (fallback) ────────────────────────────────────────────
 
 def brave_search(query: str, freshness: str = "pd") -> List[Dict]:
-    """freshness: pd=24h, pw=week"""
+    """freshness: pd=24h, pw=week — DEPRECATED in favor of Perplexity"""
     if not BRAVE_API_KEY:
         return []
 
     params = urllib.parse.urlencode({
         "q":         query,
-        "count":     5,
+        "count":     8,
         "freshness": freshness,
     })
     url = f"https://api.search.brave.com/res/v1/web/search?{params}"
@@ -191,7 +234,11 @@ def collect_tier1() -> List[Dict]:
     ]
     candidates = []
     for q in queries:
-        results = brave_search(q, freshness="pd")
+        # Use Perplexity first; fallback to Brave if unavailable
+        results = perplexity_search(q, max_results=8)
+        if not results:
+            results = brave_search(q, freshness="pd")
+        
         for r in results:
             r["lane"] = "tier1"
             r["authority"] = 70
@@ -210,13 +257,19 @@ def collect_tier1() -> List[Dict]:
 
 def collect_primary_sources() -> List[Dict]:
     queries = [
-        "site:openai.com OR site:anthropic.com announcement model release",
-        "site:deepmind.google OR site:ai.meta.com research release",
-        "site:nvidianews.nvidia.com OR site:huggingface.co blog AI",
+        "OpenAI Anthropic announcement model release",
+        "Google DeepMind Meta AI research release",
+        "NVIDIA Hugging Face blog AI announcement",
     ]
     candidates = []
     for q in queries:
-        results = brave_search(q, freshness="pd")
+        # Perplexity first; note: Perplexity doesn't support site: operators,
+        # so we use natural language queries instead
+        results = perplexity_search(q, max_results=8)
+        if not results:
+            # Fallback: Brave with site: operators
+            results = brave_search(q, freshness="pd")
+        
         for r in results:
             r["lane"] = "primary"
             r["authority"] = 95
