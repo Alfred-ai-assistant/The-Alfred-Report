@@ -66,16 +66,44 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-19T07:00:03.750110"
+        "updated_at": "2026-03-19T07:30:10.170792"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 502: \n",
-      "items": [],
+      "summary": "4 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g2cpjm82pGC887h",
+          "content": "Clean bedroom",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4QjQH9p9V9Ccjh",
+          "content": "Complete tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4gHcXr9c2HFc2h",
+          "content": "do mother's tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g5JfcVfvCQ7cx2h",
+          "content": "Move money for mothers rent",
+          "due": "every 1st",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 502: \n"
+        "updated_at": "2026-03-19T07:30:10.692578",
+        "task_count": 4,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
@@ -119,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-19T07:00:05.772835",
+        "updated_at": "2026-03-19T07:30:11.550131",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -190,7 +218,7 @@
             "safety"
           ],
           "published_at": "2026-03-18T17:22:02Z",
-          "hn_score": 330
+          "hn_score": 333
         },
         {
           "title": "Snowflake AI Escapes Sandbox and Executes Malware",
@@ -213,7 +241,7 @@
             "funding"
           ],
           "published_at": "2026-03-18T10:49:19Z",
-          "hn_score": 231
+          "hn_score": 236
         },
         {
           "title": "Cook: A simple CLI for orchestrating Claude Code",
@@ -224,21 +252,23 @@
             "open-source"
           ],
           "published_at": "2026-03-19T02:20:34Z",
-          "hn_score": 209
+          "hn_score": 221
+        },
+        {
+          "title": "What 81,000 people want from AI",
+          "url": "https://www.anthropic.com/features/81k-interviews",
+          "source": "anthropic.com",
+          "why_it_matters": "Anthropic's Claude 4 announcement establishes new benchmarks for coding and reasoning capabilities across its model lineup.",
+          "tags": [
+            "models"
+          ],
+          "published_at": "2026-03-19T05:00:56Z",
+          "hn_score": 148
         },
         {
           "title": "Introducing Claude 4 - Anthropic",
           "url": "https://www.anthropic.com/news/claude-4",
           "source": "anthropic.com",
-          "why_it_matters": "Anthropic's Claude 4 announcement establishes new benchmarks for coding and reasoning capabilities across its model lineup.",
-          "tags": [
-            "models"
-          ]
-        },
-        {
-          "title": "Google DeepMind",
-          "url": "https://deepmind.google",
-          "source": "deepmind.google",
           "why_it_matters": "Google DeepMind released multiple models including Gemini 3 positioned as its most intelligent model, alongside advances in image generation and world modeling.",
           "tags": [
             "models",
@@ -246,18 +276,18 @@
           ]
         },
         {
-          "title": "Meta Poaches Key Google AI Researcher",
-          "url": "https://time.com/7327244/meta-google-ai-researcher-world-models/",
-          "source": "time.com",
+          "title": "Google DeepMind",
+          "url": "https://deepmind.google",
+          "source": "deepmind.google",
           "why_it_matters": "Meta's recruitment of Tim Brooks from OpenAI's Sora team demonstrates intensifying competition for specialized AI research talent.",
           "tags": [
             "funding"
           ]
         },
         {
-          "title": "Leading AI Researchers Warn of Expanding Transparency Gap as ...",
-          "url": "https://www.ainvest.com/news/leading-ai-researchers-warn-expanding-transparency-gap-advanced-models-outpace-interpretability-tools-2507/",
-          "source": "ainvest.com",
+          "title": "Meta Poaches Key Google AI Researcher",
+          "url": "https://time.com/7327244/meta-google-ai-researcher-world-models/",
+          "source": "time.com",
           "why_it_matters": "AI researchers across major labs warn that advancing model complexity threatens interpretability, raising concerns about the ability to understand and audit frontier systems.",
           "tags": [
             "safety",
@@ -265,15 +295,13 @@
           ]
         },
         {
-          "title": "What 81,000 people want from AI",
-          "url": "https://www.anthropic.com/features/81k-interviews",
-          "source": "anthropic.com",
+          "title": "Leading AI Researchers Warn of Expanding Transparency Gap as ...",
+          "url": "https://www.ainvest.com/news/leading-ai-researchers-warn-expanding-transparency-gap-advanced-models-outpace-interpretability-tools-2507/",
+          "source": "ainvest.com",
           "why_it_matters": "Public research on user preferences provides insight into market demands shaping AI development priorities.",
           "tags": [
             "research"
-          ],
-          "published_at": "2026-03-19T05:00:56Z",
-          "hn_score": 137
+          ]
         },
         {
           "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
@@ -288,11 +316,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-19T11:00:03.539311+00:00",
+        "updated_at": "2026-03-19T11:30:09.669575+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -302,7 +330,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-19T11:00:43.424857+00:00",
+        "updated_at": "2026-03-19T11:30:32.934602+00:00",
         "video_count": 0
       }
     },
@@ -707,9 +735,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         },
@@ -880,9 +908,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         },
@@ -975,21 +1003,6 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/singularity on Reddit: SambaNova announces new SN40L chip for AI, node made up of just eight of these chips is capable of supporting models with as many as five trillion parameters(GPT-4 has around 1,8T). “Every company can now have their own GPT model.”",
-              "url": "https://www.reddit.com/r/singularity/comments/16o0hgx/sambanova_announces_new_sn40l_chip_for_ai_node/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
               "title": "r/learnmachinelearning on Reddit: [N] Faster Non-GPU based LLM Inference Platform is available",
               "url": "https://www.reddit.com/r/learnmachinelearning/comments/1f3dnm7/n_faster_nongpu_based_llm_inference_platform_is/",
               "subreddit": "learnmachinelearning",
@@ -1028,9 +1041,9 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/intelstock on Reddit: We should oppose the acquisition of SambaNova Systems",
-              "url": "https://www.reddit.com/r/intelstock/comments/1ooaaa9/we_should_oppose_the_acquisition_of_sambanova/",
-              "subreddit": "intelstock",
+              "title": "r/singularity on Reddit: SambaNova announces new SN40L chip for AI, node made up of just eight of these chips is capable of supporting models with as many as five trillion parameters(GPT-4 has around 1,8T). “Every company can now have their own GPT model.”",
+              "url": "https://www.reddit.com/r/singularity/comments/16o0hgx/sambanova_announces_new_sn40l_chip_for_ai_node/",
+              "subreddit": "singularity",
               "source": "reddit",
               "matched_terms": [
                 "Sambanova",
@@ -1039,17 +1052,13 @@
                 "SambaNova Systems",
                 "Sambanova Systems"
               ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
+              "topics": [],
               "topic_confidence": "high"
             },
             {
-              "title": "r/hardware on Reddit: SambaNova Systems Raises $676M in Series D, Surpasses $5B Valuation and Becomes World’s Best-Funded AI Startup | SambaNova Systems",
-              "url": "https://www.reddit.com/r/hardware/comments/mq3d6h/sambanova_systems_raises_676m_in_series_d/",
-              "subreddit": "hardware",
+              "title": "r/intelstock on Reddit: We should oppose the acquisition of SambaNova Systems",
+              "url": "https://www.reddit.com/r/intelstock/comments/1ooaaa9/we_should_oppose_the_acquisition_of_sambanova/",
+              "subreddit": "intelstock",
               "source": "reddit",
               "matched_terms": [
                 "Sambanova",
@@ -1079,6 +1088,25 @@
               ],
               "topics": [],
               "topic_confidence": "high"
+            },
+            {
+              "title": "r/hardware on Reddit: SambaNova Systems Raises $676M in Series D, Surpasses $5B Valuation and Becomes World’s Best-Funded AI Startup | SambaNova Systems",
+              "url": "https://www.reddit.com/r/hardware/comments/mq3d6h/sambanova_systems_raises_676m_in_series_d/",
+              "subreddit": "hardware",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
             }
           ],
           "company_summary": null,
@@ -1086,9 +1114,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         },
@@ -1288,9 +1316,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "OpenClaw",
+              "Agents",
               "AI Agents",
-              "Agents"
+              "OpenClaw"
             ]
           }
         },
@@ -1488,9 +1516,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         }
@@ -1498,7 +1526,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-19T11:01:02.417294+00:00"
+        "run_at": "2026-03-19T11:30:52.064590+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1508,53 +1536,10 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-19T11:01:14.097924+00:00",
+      "generated_at": "2026-03-19T11:31:01.110752+00:00",
       "tickers": [
         {
-          "symbol": "AAPL",
-          "top_stories": [
-            {
-              "score": 75.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Apple acquires video editing company MotionVFX to boost subscribers",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/03/16/apple-acquires-video-editing-company-motionvfx-to-boost-subscribers.html",
-              "published_at": "2026-03-16T11:01:16.962821+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=cnbc(83) Fresh=0.15"
-            }
-          ],
-          "glance": [
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Tim Cook squashes retirement rumors, says he 'can't imagine life without Apple'",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "MRK",
-          "top_stories": [
-            {
-              "score": 59.6,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "Will Flat 2026 Guidance and a Steady Dividend Change Merck KGaA's (XTRA:MRK) Investment Narrative? - Simply Wall St News",
-              "source": "unknown",
-              "url": "https://simplywall.st/stocks/de/pharmaceuticals-biotech/etr-mrk/merck-kgaa-shares/news/will-flat-2026-guidance-and-a-steady-dividend-change-merck-k",
-              "published_at": "2026-03-18T11:01:18.170701+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "TSLA",
+          "symbol": "AMZN",
           "top_stories": [],
           "glance": [
             {
@@ -1562,94 +1547,41 @@
               "tags": [
                 "other"
               ],
-              "headline": "US government confirms Tesla and LG Energy Solution's $4.3 billion battery deal | Reuters",
+              "headline": "Exclusive: Amazon CEO sees AI doubling prior AWS sales projections to $600 billion by 2036 | Reuters",
               "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 45.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Tesla Stock Rises as Musk Unveils Bold AI Chip Terafab Plan — TradingView News",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
             }
           ]
+        },
+        {
+          "symbol": "TSLA",
+          "top_stories": [
+            {
+              "score": 57.7,
+              "tags": [
+                "lawsuit"
+              ],
+              "headline": "Tesla Is Sued by Survivor of Deadly California Cybertruck Crash",
+              "source": "unknown",
+              "url": "https://www.claimsjournal.com/news/national/2026/03/19/336353.htm",
+              "published_at": "2026-03-19T04:31:06.387499+00:00",
+              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.56"
+            }
+          ],
+          "glance": []
         },
         {
           "symbol": "NET",
           "top_stories": [
             {
-              "score": 57.0,
+              "score": 56.7,
               "tags": [
                 "earnings"
               ],
               "headline": "Cloudflare shares rise as AI/enterprise growth narrative keeps gaining traction | NET Stock News",
               "source": "unknown",
               "url": "https://www.quiverquant.com/news/Cloudflare+shares+rise+as+AI%2Fenterprise+growth+narrative+keeps+gaining+traction",
-              "published_at": "2026-03-18T18:01:20.604025+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.24"
-            }
-          ],
-          "glance": []
-        }
-      ],
-      "debug": {
-        "tickers_processed": 4,
-        "total_candidates": 80,
-        "removed_fresh_only": 3,
-        "state_written": true,
-        "report_date": "2026-03-19"
-      }
-    },
-    "watchlist_news": {
-      "section": "watchlist_news",
-      "title": "Stock Watchlist News",
-      "generated_at": "2026-03-19T11:01:22.609713+00:00",
-      "tickers": [
-        {
-          "symbol": "CRM",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 45.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Salesforce launches largest-ever $25B accelerated buyback | CRM Stock News",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "GLW",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Corning Could Hit $144 by End of 2026 — BofA Sees $10.3B Scale-Out Revenue as the Catalyst - 24/7 Wall St.",
-              "source": "unknown",
-              "url": "https://247wallst.com/investing/2026/03/12/corning-could-hit-144-by-end-of-2026-bofa-sees-10-3b-scale-out-revenue-as-the-catalyst/",
-              "published_at": "2026-03-12T11:01:24.646193+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "LRCX",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Lam Research Stock Surges 3.22% to 32nd in Trading Activity on Earnings Beat and AI-Driven Demand | Bitget News",
-              "source": "unknown",
-              "url": "https://www.bitget.com/news/detail/12560605273725",
-              "published_at": "2026-03-17T11:01:27.150423+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "published_at": "2026-03-18T17:31:07.620019+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
             }
           ],
           "glance": []
@@ -1657,7 +1589,38 @@
       ],
       "debug": {
         "tickers_processed": 3,
-        "total_candidates": 50,
+        "total_candidates": 80,
+        "removed_fresh_only": 4,
+        "state_written": true,
+        "report_date": "2026-03-19"
+      }
+    },
+    "watchlist_news": {
+      "section": "watchlist_news",
+      "title": "Stock Watchlist News",
+      "generated_at": "2026-03-19T11:31:09.689603+00:00",
+      "tickers": [
+        {
+          "symbol": "MU",
+          "top_stories": [
+            {
+              "score": 66.4,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Micron's Stock May Plunge Following Earnings Results (NASDAQ:MU) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4883217-micron-stock-may-plunge-following-earnings-results",
+              "published_at": "2026-03-17T11:31:13.306219+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        }
+      ],
+      "debug": {
+        "tickers_processed": 1,
+        "total_candidates": 40,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-19"
@@ -1713,7 +1676,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-19T11:01:28.376767+00:00",
+        "generated_at": "2026-03-19T11:31:14.921252+00:00",
         "count": 11
       }
     }
