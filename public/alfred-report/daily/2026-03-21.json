@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-21T07:00:03.294756"
+        "updated_at": "2026-03-21T07:30:11.623678"
       }
     },
     "todoist": {
@@ -106,7 +106,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-21T07:00:05.668849",
+        "updated_at": "2026-03-21T07:30:12.107609",
         "task_count": 5,
         "overdue_count": 0,
         "completed_today": 0
@@ -153,7 +153,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-21T07:00:06.247684",
+        "updated_at": "2026-03-21T07:30:13.003492",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -216,7 +216,7 @@
             "models"
           ],
           "published_at": "2026-03-20T21:03:52Z",
-          "hn_score": 833
+          "hn_score": 856
         },
         {
           "title": "MacBook M5 Pro and Qwen3.5 = Local AI Security System",
@@ -325,11 +325,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-21T11:00:03.101389+00:00",
+        "updated_at": "2026-03-21T11:30:09.440944+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -339,7 +339,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-21T11:00:39.361336+00:00",
+        "updated_at": "2026-03-21T11:30:34.477286+00:00",
         "video_count": 0
       }
     },
@@ -742,9 +742,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         },
@@ -915,9 +915,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         },
@@ -1010,9 +1010,24 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/learnmachinelearning on Reddit: [N] Faster Non-GPU based LLM Inference Platform is available",
-              "url": "https://www.reddit.com/r/learnmachinelearning/comments/1f3dnm7/n_faster_nongpu_based_llm_inference_platform_is/",
-              "subreddit": "learnmachinelearning",
+              "title": "r/singularity on Reddit: SambaNova announces new SN40L chip for AI, node made up of just eight of these chips is capable of supporting models with as many as five trillion parameters(GPT-4 has around 1,8T). “Every company can now have their own GPT model.”",
+              "url": "https://www.reddit.com/r/singularity/comments/16o0hgx/sambanova_announces_new_sn40l_chip_for_ai_node/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/intelstock on Reddit: We should oppose the acquisition of SambaNova Systems",
+              "url": "https://www.reddit.com/r/intelstock/comments/1ooaaa9/we_should_oppose_the_acquisition_of_sambanova/",
+              "subreddit": "intelstock",
               "source": "reddit",
               "matched_terms": [
                 "Sambanova",
@@ -1029,9 +1044,9 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/intelstock on Reddit: We should oppose the acquisition of SambaNova Systems",
-              "url": "https://www.reddit.com/r/intelstock/comments/1ooaaa9/we_should_oppose_the_acquisition_of_sambanova/",
-              "subreddit": "intelstock",
+              "title": "r/learnmachinelearning on Reddit: [N] Faster Non-GPU based LLM Inference Platform is available",
+              "url": "https://www.reddit.com/r/learnmachinelearning/comments/1f3dnm7/n_faster_nongpu_based_llm_inference_platform_is/",
+              "subreddit": "learnmachinelearning",
               "source": "reddit",
               "matched_terms": [
                 "Sambanova",
@@ -1064,21 +1079,6 @@
                 "earnings_financials",
                 "partnership"
               ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: SambaNova announces new SN40L chip for AI, node made up of just eight of these chips is capable of supporting models with as many as five trillion parameters(GPT-4 has around 1,8T). “Every company can now have their own GPT model.”",
-              "url": "https://www.reddit.com/r/singularity/comments/16o0hgx/sambanova_announces_new_sn40l_chip_for_ai_node/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [],
               "topic_confidence": "high"
             },
             {
@@ -1121,9 +1121,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         },
@@ -1306,9 +1306,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "Agents",
+              "AI Agents",
               "OpenClaw",
-              "AI Agents"
+              "Agents"
             ]
           }
         },
@@ -1370,11 +1370,12 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/cybersecurity on Reddit: What do you think about Netskope ?",
-              "url": "https://www.reddit.com/r/cybersecurity/comments/vycbsc/what_do_you_think_about_netskope/",
+              "title": "r/cybersecurity on Reddit: Netskope vs Zscaler vs Palo Alto vs Cato",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/1koz9gj/netskope_vs_zscaler_vs_palo_alto_vs_cato/",
               "subreddit": "cybersecurity",
               "source": "reddit",
               "matched_terms": [
+                "SASE",
                 "Zero Trust",
                 "Netskope"
               ],
@@ -1386,12 +1387,11 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/cybersecurity on Reddit: Netskope vs Zscaler vs Palo Alto vs Cato",
-              "url": "https://www.reddit.com/r/cybersecurity/comments/1koz9gj/netskope_vs_zscaler_vs_palo_alto_vs_cato/",
+              "title": "r/cybersecurity on Reddit: What do you think about Netskope ?",
+              "url": "https://www.reddit.com/r/cybersecurity/comments/vycbsc/what_do_you_think_about_netskope/",
               "subreddit": "cybersecurity",
               "source": "reddit",
               "matched_terms": [
-                "SASE",
                 "Zero Trust",
                 "Netskope"
               ],
@@ -1500,9 +1500,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         }
@@ -1510,7 +1510,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-21T11:00:58.832231+00:00"
+        "run_at": "2026-03-21T11:30:52.980723+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1520,7 +1520,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-21T11:01:09.951774+00:00",
+      "generated_at": "2026-03-21T11:31:02.978993+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
@@ -1533,7 +1533,7 @@
               "headline": "Nvidia's CoreWeave Investment & 2026-2027 Revenue Forecast - News and Statistics - IndexBox",
               "source": "unknown",
               "url": "https://www.indexbox.io/blog/nvidias-2b-stake-in-ai-cloud-firm-coreweave-amid-massive-growth/",
-              "published_at": "2026-03-21T02:01:10.716137+00:00",
+              "published_at": "2026-03-21T02:31:03.686225+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.47"
             }
           ],
@@ -1562,22 +1562,18 @@
           ]
         },
         {
-          "symbol": "AAPL",
-          "top_stories": [
+          "symbol": "LLY",
+          "top_stories": [],
+          "glance": [
             {
-              "score": 57.7,
+              "score": 52.3,
               "tags": [
-                "earnings",
-                "macro"
+                "other"
               ],
-              "headline": "Apple stock price slips toward $248 as Fed outlook keeps pressure on tech",
-              "source": "unknown",
-              "url": "https://tradersunion.com/news/financial-news/show/1744915-apple-stock-slips-fed-pressure-tech/",
-              "published_at": "2026-03-19T11:01:12.645325+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Lilly's next-gen drug shows significant blood sugar, weight reduction in diabetes trial | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
-          ],
-          "glance": []
+          ]
         },
         {
           "symbol": "MRK",
@@ -1590,7 +1586,7 @@
               "headline": "Global New Material Flags 2025 Loss on Merck Deal Costs Despite Strong Revenue Growth - TipRanks.com",
               "source": "unknown",
               "url": "https://www.tipranks.com/news/company-announcements/global-new-material-flags-2025-loss-on-merck-deal-costs-despite-strong-revenue-growth",
-              "published_at": "2026-03-19T11:01:13.802140+00:00",
+              "published_at": "2026-03-18T11:31:06.715421+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1607,7 +1603,7 @@
               "headline": "US agency upgrades probe into 3.2 million Tesla vehicles over FSD crashes | Reuters",
               "source": "reuters",
               "url": "https://reuters.com/business/autos-transportation/us-auto-safety-regulator-opens-probe-into-tesla-vehicles-with-fsd-2026-03-19",
-              "published_at": "2026-03-19T11:01:14.959184+00:00",
+              "published_at": "2026-03-19T11:31:07.885895+00:00",
               "why_ranked": "Event=probe_or_investigation(80) Source=reuters(93) Fresh=0.15 Tier1+"
             }
           ],
@@ -1619,6 +1615,14 @@
               ],
               "headline": "US regulator closes defect petition covering over 2 million Tesla vehicles | Reuters",
               "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 49.6,
+              "tags": [
+                "m_and_a_rumor"
+              ],
+              "headline": "Tesla in talks with Chinese firms to buy $2.9 billion worth of solar equipment, sources say By Reuters",
+              "why_ranked": "Event=m_and_a_rumor(70) Source=unknown(43) Fresh=0.15"
             }
           ]
         },
@@ -1633,7 +1637,7 @@
               "headline": "Earnings call transcript: Netcapital’s Q3 2026 sees revenue drop, stock slides By Investing.com",
               "source": "unknown",
               "url": "https://investing.com/news/transcripts/earnings-call-transcript-netcapitals-q3-2026-sees-revenue-drop-stock-slides-93CH-4573213",
-              "published_at": "2026-03-20T11:01:16.095001+00:00",
+              "published_at": "2026-03-20T11:31:09.025113+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1650,7 +1654,7 @@
               "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings Report | RXRX Stock News",
               "source": "unknown",
               "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+(RXRX)+Opinions+on+Upcoming+Earnings+Report",
-              "published_at": "2026-03-21T11:01:17.321486+00:00",
+              "published_at": "2026-03-21T11:31:10.183248+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=1.00"
             }
           ],
@@ -1668,7 +1672,7 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-21T11:01:17.712295+00:00",
+      "generated_at": "2026-03-21T11:31:10.620640+00:00",
       "tickers": [
         {
           "symbol": "CRM",
@@ -1681,7 +1685,7 @@
               "headline": "Insider Buying: Laura Alber Acquires Shares of Salesforce Inc (CRM)",
               "source": "unknown",
               "url": "https://www.gurufocus.com/news/8728237/insider-buying-laura-alber-acquires-shares-of-salesforce-inc-crm",
-              "published_at": "2026-03-20T11:01:18.484764+00:00",
+              "published_at": "2026-03-20T11:31:11.480264+00:00",
               "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             },
             {
@@ -1692,33 +1696,66 @@
               "headline": "The Artificial Intelligence (AI) Stock That Could Redefine Its Industry by the End of 2026 | The Motley Fool",
               "source": "unknown",
               "url": "https://www.fool.com/investing/2026/03/19/the-artificial-intelligence-ai-stock-that-could-re/",
-              "published_at": "2026-03-20T11:01:18.485785+00:00",
+              "published_at": "2026-03-20T11:31:11.481317+00:00",
               "why_ranked": "Event=regulatory_action(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "BMY",
+          "symbol": "TSM",
           "top_stories": [
             {
-              "score": 70.0,
+              "score": 56.7,
               "tags": [
-                "guidance",
                 "earnings"
               ],
-              "headline": "Bristol Myers Squibb stock faces pressure after earnings miss and cautious FY2026 guidance amid pipe",
+              "headline": "TSMC Stock (TSM) Opinions on February Revenue Surge | TSM Stock News",
               "source": "unknown",
-              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bristol-myers-squibb-stock-faces-pressure-after-earnings-miss-and-cautious/68947602",
-              "published_at": "2026-03-21T05:01:23.089745+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.61"
+              "url": "https://www.quiverquant.com/news/TSMC+Stock+%28TSM%29+Opinions+on+February+Revenue+Surge",
+              "published_at": "2026-03-20T17:31:12.244642+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "MU",
+          "top_stories": [
+            {
+              "score": 73.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Micron (MU) Q2 earnings report 2026",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/03/18/micron-mu-q2-earnings-report-2026.html",
+              "published_at": "2026-03-18T11:31:14.624892+00:00",
+              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "GEV",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "GE Vernova 2026-2028 Financial Forecast: Revenue and Margin Growth Analysis - News and Statistics - IndexBox",
+              "source": "unknown",
+              "url": "https://www.indexbox.io/blog/ge-vernovas-2026-outlook-raised-revenue-and-cash-flow-forecasts-signal-strong-growth/",
+              "published_at": "2026-03-19T11:31:15.768311+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 2,
+        "tickers_processed": 4,
         "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
@@ -1775,7 +1812,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-21T11:01:23.093607+00:00",
+        "generated_at": "2026-03-21T11:31:16.154305+00:00",
         "count": 11
       }
     }
