@@ -66,16 +66,44 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-23T07:00:04.921750"
+        "updated_at": "2026-03-23T07:30:11.961039"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 503: \n",
-      "items": [],
+      "summary": "4 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g2cpjm82pGC887h",
+          "content": "Clean bedroom",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4QjQH9p9V9Ccjh",
+          "content": "Complete tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4gHcXr9c2HFc2h",
+          "content": "do mother's tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g5JfcVfvCQ7cx2h",
+          "content": "Move money for mothers rent",
+          "due": "every 1st",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 503: \n"
+        "updated_at": "2026-03-23T07:30:12.386967",
+        "task_count": 4,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
@@ -119,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-23T07:00:07.064093",
+        "updated_at": "2026-03-23T07:30:13.112163",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -129,22 +157,32 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI landscape on March 23, 2026 reflects intensifying competition and infrastructure democratization. Anthropic and OpenAI dominated headlines with simultaneous model releases—Claude Opus 4.6 and GPT-5.3-Codex respectively—highlighting their direct rivalry. Anthropic's latest iteration excels at coding and security vulnerability detection, positioning itself for enterprise adoption. Meanwhile, Google DeepMind released multiple models including Gemini 3, SIMA 2, and Genie 3, demonstrating breadth across image generation, world models, and embodied AI. Talent competition is heating up, with Meta recruiting Tim Brooks from OpenAI's Sora team, signaling high stakes in specialized research areas. Beyond model competition, infrastructure partnerships are reshaping developer access. NVIDIA and Hugging Face announced significant integration bringing DGX Cloud supercomputing to millions of developers through the Hugging Face platform, effectively democratizing enterprise-grade AI training and inference capabilities. NVIDIA further emphasized physical AI with announcements on humanoid robotics models and curated datasets. These developments collectively indicate the AI industry is simultaneously deepening competition at the frontier while broadening accessibility through infrastructure partnerships and open-source initiatives.",
+      "summary": "The AI sector exhibited intense competitive dynamics and infrastructure consolidation over the past 24 hours. Anthropic and OpenAI released competing flagship models—Claude Opus 4.6 and GPT-5.3-Codex respectively—on the same day, underscoring escalating rivalry in frontier model development. Anthropic's latest offering shows particular strength in security vulnerability detection and coding tasks, positioning the company strategically in developer-focused applications. Google DeepMind countered with an expansive portfolio including Nano Banana 2 for image generation, Genie 3 for world modeling, and Gemini 3 as its most capable general model, demonstrating continued rapid iteration across multiple modalities. Talent acquisition intensified as Meta recruited Tim Brooks, co-lead of OpenAI's Sora team, signaling competition for expertise in emerging generative domains. Infrastructure partnerships dominated enterprise announcements, with NVIDIA and Hugging Face significantly expanding their collaboration to democratize AI compute access. The companies announced DGX Cloud integration with the Hugging Face platform and inference-as-a-service capabilities powered by NVIDIA NIM, aiming to connect millions of developers to supercomputing resources. NVIDIA separately unveiled new open models and datasets for physical AI development. These infrastructure investments suggest the ecosystem is transitioning toward broader democratization of training and inference capabilities, even as frontier model competition intensifies.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "The simultaneous release of Claude Opus 4.6 and GPT-5.3-Codex demonstrates intensifying direct competition between Anthropic and OpenAI in the frontier AI model market.",
+          "why_it_matters": "The simultaneous release of Claude Opus 4.6 and GPT-5.3-Codex signals intensifying direct competition between Anthropic and OpenAI in the frontier AI model space.",
           "tags": [
             "models"
+          ]
+        },
+        {
+          "title": "Hugging Face Introduces Inference-as-a-Service with NVIDIA NIM for AI Developers",
+          "url": "https://blockchain.news/news/hugging-face-inference-as-a-service-nvidia-nim",
+          "source": "blockchain.news",
+          "why_it_matters": "Hugging Face's integration of NVIDIA NIM microservices expands developer access to inference infrastructure, potentially democratizing AI deployment across the ecosystem.",
+          "tags": [
+            "enterprise",
+            "hardware"
           ]
         },
         {
           "title": "Research",
           "url": "https://deepmind.google/research/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's SIMA 2 agent represents advancement in AI systems that can learn and reason within virtual 3D environments, expanding AI capabilities beyond text-based tasks.",
+          "why_it_matters": "Google DeepMind's SIMA 2 and Gemini Robotics represent advances in embodied AI agents and world models, expanding AI capabilities beyond language-based tasks.",
           "tags": [
             "research",
             "models"
@@ -154,28 +192,27 @@
           "title": "What young workers are doing to AI-proof themselves",
           "url": "https://www.wsj.com/economy/jobs/ai-jobs-young-people-careers-14282284",
           "source": "wsj.com",
-          "why_it_matters": "This story addresses workforce adaptation strategies as AI capabilities advance, indicating broader labor market implications of AI development.",
+          "why_it_matters": "Career strategies for workers to remain relevant amid AI advancement provide insight into labor market adaptation as AI capabilities evolve.",
           "tags": [
             "policy"
           ],
           "published_at": "2026-03-22T18:18:01Z",
-          "hn_score": 142
+          "hn_score": 145
         },
         {
           "title": "Introducing Claude Opus 4.5 - Anthropic",
           "url": "https://www.anthropic.com/news/claude-opus-4-5",
           "source": "anthropic.com",
-          "why_it_matters": "Claude Opus 4.5's positioning as superior for coding, agents, and computer use reflects Anthropic's strategic focus on practical enterprise applications.",
+          "why_it_matters": "Claude Opus 4.5's positioning as superior for coding and computer use tasks indicates Anthropic's strategic focus on developer-facing applications.",
           "tags": [
-            "models",
-            "enterprise"
+            "models"
           ]
         },
         {
           "title": "Google DeepMind",
           "url": "https://deepmind.google",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's multiple new releases including Gemini 3, Nano Banana 2, and Genie 3 demonstrate the company's broad approach to advancing AI across image generation and world models.",
+          "why_it_matters": "Google DeepMind's portfolio of new models—including Nano Banana 2, Genie 3, and Gemini 3—demonstrates rapid iteration across image generation, world models, and general intelligence.",
           "tags": [
             "models",
             "research"
@@ -185,7 +222,7 @@
           "title": "Meta Poaches Key Google AI Researcher",
           "url": "https://time.com/7327244/meta-google-ai-researcher-world-models/",
           "source": "time.com",
-          "why_it_matters": "Meta's recruitment of Tim Brooks from OpenAI's Sora team signals escalating talent competition in specialized AI research areas.",
+          "why_it_matters": "Meta's recruitment of Tim Brooks from OpenAI's Sora team indicates accelerating talent competition in emerging areas like video and generative modeling.",
           "tags": [
             "funding"
           ]
@@ -194,50 +231,39 @@
           "title": "Anthropic unveils latest AI model as OpenAI rivalry intensifies",
           "url": "https://economictimes.com/tech/artificial-intelligence/anthropic-unveils-latest-ai-model-as-openai-rivalry-intensifies/articleshow/127948207.cms",
           "source": "economictimes.com",
-          "why_it_matters": "Anthropic's latest model release intensifies the competitive race against OpenAI and Google in high-performing AI development.",
-          "tags": [
-            "models"
-          ]
-        },
-        {
-          "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
-          "url": "https://fortune.com/2026/02/06/anthropic-claude-ai-model-cybersecurity-security-vulnerabilities-risks/",
-          "source": "fortune.com",
-          "why_it_matters": "Anthropic's newest model demonstrates capability in identifying security vulnerabilities, indicating frontier models are progressing toward autonomous error detection.",
+          "why_it_matters": "Anthropic's latest model capabilities in security vulnerability detection demonstrate frontier models moving beyond code generation into autonomous reasoning and auditing.",
           "tags": [
             "models",
             "safety"
           ]
         },
         {
+          "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
+          "url": "https://fortune.com/2026/02/06/anthropic-claude-ai-model-cybersecurity-security-vulnerabilities-risks/",
+          "source": "fortune.com",
+          "why_it_matters": "NVIDIA and Hugging Face's expanded partnership connecting developers to supercomputing infrastructure signals infrastructure consolidation in AI development.",
+          "tags": [
+            "enterprise",
+            "hardware"
+          ]
+        },
+        {
           "title": "NVIDIA and Hugging Face to Connect Millions of ...",
           "url": "https://nvidianews.nvidia.com/news/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing",
           "source": "nvidianews.nvidia.com",
-          "why_it_matters": "NVIDIA and Hugging Face's partnership to integrate DGX Cloud into the Hugging Face platform democratizes access to AI supercomputing for millions of developers.",
+          "why_it_matters": "NVIDIA's DGX Cloud integration with Hugging Face simplifies LLM training access, lowering barriers for model development and fine-tuning.",
           "tags": [
-            "hardware",
-            "open-source",
-            "enterprise"
+            "enterprise",
+            "hardware"
           ]
         },
         {
-          "title": "Hugging Face partners with NVIDIA to democratise AI inference",
-          "url": "https://www.developer-tech.com/news/hugging-face-partners-nvidia-democratise-ai-inference/",
-          "source": "developer-tech.com",
-          "why_it_matters": "The NVIDIA-Hugging Face collaboration brings inference-as-a-service capabilities to a major AI community, lowering barriers to deployment.",
+          "title": "Nvidia teams up with Hugging Face to offer cloud-based AI training",
+          "url": "https://techcrunch.com/2023/08/08/nvidia-teams-up-with-hugging-face-to-offer-cloud-based-ai-training/",
+          "source": "techcrunch.com",
+          "why_it_matters": "NVIDIA's GTC announcements of Cosmos Transfer and open humanoid robot models indicate expansion into physical AI development with curated datasets.",
           "tags": [
-            "hardware",
-            "open-source",
-            "enterprise"
-          ]
-        },
-        {
-          "title": "엔비디아, 허깅페이스와 협력하여 수백만 명의 개발자를 생성형 AI ...",
-          "url": "https://blogs.nvidia.co.kr/blog/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing/",
-          "source": "blogs.nvidia.co.kr",
-          "why_it_matters": "This Korean-language announcement reinforces the NVIDIA-Hugging Face partnership's global significance for democratizing generative AI infrastructure.",
-          "tags": [
-            "hardware",
+            "research",
             "open-source"
           ]
         },
@@ -245,9 +271,9 @@
           "title": "Diverse perspectives on AI from Rust contributors and maintainers",
           "url": "https://nikomatsakis.github.io/rust-project-perspectives-on-ai/feb27-summary.html",
           "source": "nikomatsakis.github.io",
-          "why_it_matters": "Developer perspectives on AI from Rust contributors provide technical community insights on AI integration challenges.",
+          "why_it_matters": "Diverse perspectives from Rust contributors on AI reflect community-level engagement with AI implications in systems programming.",
           "tags": [
-            "open-source"
+            "policy"
           ],
           "published_at": "2026-03-22T22:19:03Z",
           "hn_score": 137
@@ -256,18 +282,16 @@
           "title": "NVIDIA's GTC 2025 Announcement for Physical AI Developers",
           "url": "https://huggingface.co/blog/nvidia-physical-ai",
           "source": "huggingface.co",
-          "why_it_matters": "NVIDIA's announcement of Cosmos Transfer and open models for humanoid robotics signals investment in physical AI applications beyond language models.",
+          "why_it_matters": "Examples of Claude applied to practical QA tasks demonstrate real-world adoption of frontier models in software development workflows.",
           "tags": [
-            "models",
-            "research",
-            "open-source"
+            "enterprise"
           ]
         },
         {
           "title": "Teaching Claude to QA a mobile app",
           "url": "https://christophermeiklejohn.com/ai/zabriskie/development/android/ios/2026/03/22/teaching-claude-to-qa-a-mobile-app.html",
           "source": "christophermeiklejohn.com",
-          "why_it_matters": "This tutorial demonstrates practical enterprise application of Claude for mobile app quality assurance workflows.",
+          "why_it_matters": "Emerging AI editor tools for documents represent expanding applications of AI assistants into content creation and document workflow domains.",
           "tags": [
             "enterprise"
           ],
@@ -278,18 +302,15 @@
           "title": "Show HN: Revise – An AI Editor for Documents",
           "url": "https://revise.io",
           "source": "revise.io",
-          "why_it_matters": "Revise represents emerging AI-powered tools for document editing, extending AI applications into productivity software.",
-          "tags": [
-            "models",
-            "enterprise"
-          ],
+          "why_it_matters": "",
+          "tags": [],
           "published_at": "2026-03-22T13:28:45Z",
-          "hn_score": 70
+          "hn_score": 71
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-23T11:00:03.498715+00:00",
+        "updated_at": "2026-03-23T11:30:11.811315+00:00",
         "story_count": 15,
         "lanes_used": [
           "primary",
@@ -303,7 +324,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-23T11:00:37.939493+00:00",
+        "updated_at": "2026-03-23T11:30:44.861253+00:00",
         "video_count": 0
       }
     },
@@ -708,8 +729,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "ipo_private_markets",
+              "partnership",
               "earnings_financials"
             ]
           }
@@ -881,8 +902,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "ipo_private_markets",
+              "partnership",
               "earnings_financials"
             ]
           }
@@ -1087,8 +1108,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "ipo_private_markets",
+              "partnership",
               "earnings_financials"
             ]
           }
@@ -1272,9 +1293,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "OpenClaw",
+              "Agents",
               "AI Agents",
-              "Agents"
+              "OpenClaw"
             ]
           }
         },
@@ -1461,8 +1482,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "ipo_private_markets",
+              "partnership",
               "earnings_financials"
             ]
           }
@@ -1471,7 +1492,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-23T11:00:56.739190+00:00"
+        "run_at": "2026-03-23T11:31:03.689329+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1481,7 +1502,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-23T11:01:09.337105+00:00",
+      "generated_at": "2026-03-23T11:31:12.805850+00:00",
       "tickers": [
         {
           "symbol": "AMZN",
@@ -1508,7 +1529,7 @@
               "headline": "Netskope: CPP Investments Discloses 9.5% Stake | NTSK SEC Filing - Form SCHEDULE 13G",
               "source": "unknown",
               "url": "https://www.stocktitan.net/sec-filings/NTSK/schedule-13g-netskope-inc-passive-investment-disclosure-5-e63a77626490.html",
-              "published_at": "2026-03-18T11:01:13.510024+00:00",
+              "published_at": "2026-03-18T11:31:16.953053+00:00",
               "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1534,7 +1555,7 @@
               "headline": "Broadcom hit with EU antitrust complaint and request for interim measure By Reuters",
               "source": "unknown",
               "url": "https://www.investing.com/news/stock-market-news/cloud-industry-group-calls-for-eu-interim-measure-against-broadcom-over-vmware-4571203",
-              "published_at": "2026-03-19T11:01:14.640275+00:00",
+              "published_at": "2026-03-19T11:31:18.142465+00:00",
               "why_ranked": "Event=regulatory_action(90) Source=unknown(43) Fresh=0.15"
             },
             {
@@ -1545,7 +1566,7 @@
               "headline": "Broadcom Stock (AVGO) Opinions on Q1 Earnings Beat | AVGO Stock News",
               "source": "unknown",
               "url": "https://www.quiverquant.com/news/Broadcom+Stock+%28AVGO%29+Opinions+on+Q1+Earnings+Beat",
-              "published_at": "2026-03-22T11:01:14.639100+00:00",
+              "published_at": "2026-03-22T11:31:18.141240+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1562,34 +1583,17 @@
               "headline": "Chipotle Mexican Grill Stock (ISIN: US1696561059) Eyes Q1 2026 Earnings Amid New Menu Push and Analy",
               "source": "unknown",
               "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/chipotle-mexican-grill-stock-isin-us1696561059-eyes-q1-2026-earnings/68807049",
-              "published_at": "2026-03-18T11:01:15.901029+00:00",
+              "published_at": "2026-03-18T11:31:19.302681+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "RXRX",
-          "top_stories": [
-            {
-              "score": 68.3,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings Report | RXRX Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+(RXRX)+Opinions+on+Upcoming+Earnings+Report",
-              "published_at": "2026-03-23T11:01:16.667098+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=1.00"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 5,
-        "total_candidates": 70,
-        "removed_fresh_only": 1,
+        "tickers_processed": 4,
+        "total_candidates": 60,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-23"
       }
@@ -1597,29 +1601,63 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-23T11:01:17.064043+00:00",
+      "generated_at": "2026-03-23T11:31:20.146539+00:00",
       "tickers": [
         {
-          "symbol": "LRCX",
+          "symbol": "TSM",
           "top_stories": [
             {
-              "score": 57.3,
+              "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Lam Research Corporation stock faces post-earnings reality check amid AI memory boom and cautious gu",
+              "headline": "TSMC Stock (TSM) Opinions on February Revenue Surge | TSM Stock News",
               "source": "unknown",
-              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/lam-research-corporation-stock-faces-post-earnings-reality-check-amid-ai/68961448",
-              "published_at": "2026-03-22T19:01:21.515231+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.26"
+              "url": "https://www.quiverquant.com/news/TSMC+Stock+%28TSM%29+Opinions+on+February+Revenue+Surge",
+              "published_at": "2026-03-20T11:31:21.316068+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "MU",
+          "top_stories": [
+            {
+              "score": 56.2,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Is Micron a Buy as Revenue Explodes Higher? | The Motley Fool",
+              "source": "unknown",
+              "url": "https://www.fool.com/investing/2026/03/22/is-micron-a-buy-as-revenue-explodes-higher/",
+              "published_at": "2026-03-22T15:31:23.708795+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "GEV",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "GE Vernova 2026-2028 Financial Forecast: Revenue and Margin Growth Analysis - News and Statistics - IndexBox",
+              "source": "unknown",
+              "url": "https://www.indexbox.io/blog/ge-vernovas-2026-outlook-raised-revenue-and-cash-flow-forecasts-signal-strong-growth/",
+              "published_at": "2026-03-19T11:31:24.876176+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 1,
-        "total_candidates": 50,
+        "tickers_processed": 3,
+        "total_candidates": 40,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-23"
@@ -1675,7 +1713,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-23T11:01:22.740290+00:00",
+        "generated_at": "2026-03-23T11:31:25.297531+00:00",
         "count": 11
       }
     }
