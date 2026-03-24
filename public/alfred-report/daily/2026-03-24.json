@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-24T07:30:11.062059"
+        "updated_at": "2026-03-24T07:30:43.436302"
       }
     },
     "todoist": {
@@ -100,7 +100,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-24T07:30:11.508124",
+        "updated_at": "2026-03-24T07:30:43.816518",
         "task_count": 4,
         "overdue_count": 0,
         "completed_today": 0
@@ -147,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-24T07:30:12.333529",
+        "updated_at": "2026-03-24T07:30:44.669359",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -157,43 +157,32 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI landscape reflects intensifying competition and infrastructure expansion. OpenAI and Anthropic released reasoning-optimized models simultaneously on March 24, with OpenAI offering open-source variants alongside proprietary releases, signaling divergent go-to-market strategies. Google DeepMind advanced multimodal capabilities with SIMA 2 and Gemini Robotics agents operating in 3D environments. Hardware accessibility expanded with reports of 400B parameter models running on iPhone 17 Pro, while Hugging Face and NVIDIA announced two major collaborations: Inference-as-a-Service optimizing token efficiency and Training Cluster as a Service democratizing GPU access for researchers. In talent competition, Meta poached Tim Brooks, who co-led Sora at OpenAI, indicating heightened acquisition activity in video generation. Commercially, frontier models increasingly perform security vulnerability detection and enable agent-based applications like AI receptionists, with emerging developer tooling supporting agent deployment. These developments suggest the market is transitioning from model capability advances to infrastructure accessibility and practical enterprise applications.",
+      "summary": "The AI landscape continues consolidating around infrastructure partnerships and model competition. Anthropic and OpenAI released competing models—Claude Opus 4.6 and GPT-5.3-Codex—simultaneously, underscoring escalating rivalry in frontier model development. Claude Opus 4.6 demonstrates improved coding capabilities and security vulnerability detection, positioning Anthropic's latest release for enterprise and safety-critical applications.\n\nInfrastructure partnerships are reshaping AI accessibility. NVIDIA collaborated with Hugging Face to launch both inference-as-a-service and Training Cluster as a Service offerings, addressing compute bottlenecks for developers and research organizations. These services directly enable broader participation in AI development.\n\nGoogle DeepMind advanced embodied AI research with SIMA 2 and Gemini Robotics, demonstrating agents reasoning and learning in virtual environments. The field also showed hardware progress, with iPhone 17 Pro running 400B parameter models, indicating on-device deployment maturation.\n\nTalent competition intensified as Meta recruited Tim Brooks from OpenAI's Sora team, reflecting ongoing competition for specialized AI researchers. Developer adoption accelerated across practical domains—from AI receptionists in mechanic shops to AI-assisted pull request generation—suggesting frontier models transitioning beyond engineering productivity into operational business functions.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "OpenAI and Anthropic's simultaneous model releases demonstrate intensifying direct competition in the frontier AI market, with both companies prioritizing reasoning capabilities.",
+          "why_it_matters": "The simultaneous release of Claude Opus 4.6 and GPT-5.3-Codex signals intensifying direct competition between Anthropic and OpenAI in frontier AI model development.",
           "tags": [
-            "models",
-            "enterprise"
-          ]
-        },
-        {
-          "title": "OpenAI, Anthropic release new reasoning-optimized language models",
-          "url": "https://siliconangle.com/2025/08/05/openai-anthropic-release-new-reasoning-optimized-language-models/",
-          "source": "siliconangle.com",
-          "why_it_matters": "Both OpenAI and Anthropic are releasing reasoning-optimized models, with OpenAI offering open-source variants, signaling a shift in how capabilities are distributed across the industry.",
-          "tags": [
-            "models",
-            "open-source"
+            "models"
           ]
         },
         {
           "title": "Hugging Face Introduces Inference-as-a-Service with NVIDIA NIM for AI Developers",
           "url": "https://blockchain.news/news/hugging-face-inference-as-a-service-nvidia-nim",
           "source": "blockchain.news",
-          "why_it_matters": "Hugging Face and NVIDIA's inference partnership aims to improve token efficiency and accessibility for developers, addressing deployment bottlenecks in AI infrastructure.",
+          "why_it_matters": "Hugging Face's partnership with NVIDIA to offer inference services addresses developer efficiency needs and expands accessibility to AI deployment infrastructure.",
           "tags": [
             "enterprise",
-            "hardware"
+            "open-source"
           ]
         },
         {
           "title": "Research — Google DeepMind",
           "url": "https://deepmind.google/research/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's SIMA 2 and Gemini Robotics represent advances in multi-modal agents and world models capable of operating in 3D virtual environments.",
+          "why_it_matters": "Google DeepMind's SIMA 2 and Gemini Robotics represent advances in embodied AI agents capable of reasoning and learning in virtual environments.",
           "tags": [
             "research",
             "models"
@@ -203,7 +192,7 @@
           "title": "iPhone 17 Pro Demonstrated Running a 400B LLM",
           "url": "https://twitter.com/anemll/status/2035901335984611412",
           "source": "twitter.com",
-          "why_it_matters": "Running a 400B parameter model on iPhone 17 Pro demonstrates progress in on-device inference and model compression, potentially expanding AI accessibility.",
+          "why_it_matters": "Demonstrating a 400B parameter model running on iPhone 17 Pro indicates significant progress in on-device AI inference capabilities.",
           "tags": [
             "hardware",
             "models"
@@ -215,9 +204,9 @@
           "title": "Claude Code Cheat Sheet",
           "url": "https://cc.storyfox.cz",
           "source": "cc.storyfox.cz",
-          "why_it_matters": "Claude Code resources indicate developer adoption and practical use cases for AI coding assistants.",
+          "why_it_matters": "Claude Code documentation suggests developer tooling maturation around Anthropic's latest model release.",
           "tags": [
-            "enterprise"
+            "models"
           ],
           "published_at": "2026-03-23T21:44:20Z",
           "hn_score": 442
@@ -226,7 +215,7 @@
           "title": "I built an AI receptionist for a mechanic shop",
           "url": "https://www.itsthatlady.dev/blog/building-an-ai-receptionist-for-my-brother/",
           "source": "itsthatlady.dev",
-          "why_it_matters": "AI receptionists for small businesses demonstrate commercial viability of AI agents in service industries.",
+          "why_it_matters": "Practical AI receptionist deployment demonstrates real-world enterprise applications emerging from accessible AI tools.",
           "tags": [
             "enterprise"
           ],
@@ -237,18 +226,18 @@
           "title": "How I'm Productive with Claude Code",
           "url": "https://neilkakkar.com/productive-with-claude-code.html",
           "source": "neilkakkar.com",
-          "why_it_matters": "Developer productivity tools built on Claude Code show practical enterprise applications of reasoning-capable models.",
+          "why_it_matters": "Developer productivity documentation indicates broader adoption of Claude-powered workflows in technical roles.",
           "tags": [
             "enterprise"
           ],
           "published_at": "2026-03-23T20:49:10Z",
-          "hn_score": 211
+          "hn_score": 212
         },
         {
           "title": "Introducing Claude Opus 4.6 - Anthropic",
           "url": "https://www.anthropic.com/news/claude-opus-4-6",
           "source": "anthropic.com",
-          "why_it_matters": "Claude Opus 4.6's improvements in coding and agentic task execution indicate continued capability advancement in reasoning-optimized models.",
+          "why_it_matters": "Anthropic's Claude Opus 4.6 upgrade emphasizes improvements in coding capabilities and sustained agentic task performance.",
           "tags": [
             "models"
           ]
@@ -257,7 +246,7 @@
           "title": "Meta Poaches Key Google AI Researcher",
           "url": "https://time.com/7327244/meta-google-ai-researcher-world-models/",
           "source": "time.com",
-          "why_it_matters": "Meta's recruitment of Tim Brooks from OpenAI's Sora team signals intensifying talent competition in video generation and multimodal AI research.",
+          "why_it_matters": "Meta's recruitment of Tim Brooks from OpenAI's Sora team reflects intensifying talent competition in specialized AI research areas.",
           "tags": [
             "funding"
           ]
@@ -266,18 +255,17 @@
           "title": "Hugging Face NVIDIA Partner to AI Robotics Research - Times Of AI",
           "url": "https://www.timesofai.com/news/hugging-face-nvidia-collaboration-ai-robotics/",
           "source": "timesofai.com",
-          "why_it_matters": "Hugging Face and NVIDIA's robotics research partnership accelerates open-source development in AI robotics, establishing infrastructure for broader research access.",
+          "why_it_matters": "Hugging Face and NVIDIA's robotics partnership aims to accelerate open-source research in AI-powered robotics.",
           "tags": [
             "research",
-            "open-source",
-            "hardware"
+            "open-source"
           ]
         },
         {
           "title": "Show HN: Cq – Stack Overflow for AI coding agents",
           "url": "https://blog.mozilla.ai/cq-stack-overflow-for-agents/",
           "source": "blog.mozilla.ai",
-          "why_it_matters": "Community-driven tooling for AI agents suggests emerging developer ecosystem needs around agent reliability and debugging.",
+          "why_it_matters": "Developer tools targeting AI coding agents suggest emergence of specialized platforms addressing agent-focused workflows.",
           "tags": [
             "enterprise",
             "open-source"
@@ -289,36 +277,47 @@
           "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
           "url": "https://fortune.com/2026/02/06/anthropic-claude-ai-model-cybersecurity-security-vulnerabilities-risks/",
           "source": "fortune.com",
-          "why_it_matters": "Frontier models now detect security vulnerabilities autonomously, expanding their role from development acceleration to active code review.",
+          "why_it_matters": "Anthropic's Claude Opus 4.6 demonstrates capability in security vulnerability detection, indicating frontier models addressing safety-critical applications.",
           "tags": [
-            "safety",
-            "models"
+            "models",
+            "safety"
           ]
         },
         {
           "title": "Nvidia teams up with Hugging Face to offer cloud-based AI training",
           "url": "https://techcrunch.com/2023/08/08/nvidia-teams-up-with-hugging-face-to-offer-cloud-based-ai-training/",
           "source": "techcrunch.com",
-          "why_it_matters": "NVIDIA and Hugging Face's cloud training partnership improves access to GPU infrastructure for AI research and development organizations.",
+          "why_it_matters": "NVIDIA and Hugging Face's cloud-based AI training collaboration expands GPU compute accessibility for organizations.",
           "tags": [
-            "hardware",
-            "enterprise"
+            "enterprise",
+            "hardware"
           ]
         },
         {
           "title": "Introducing Training Cluster as a Service - a new collaboration with NVIDIA",
           "url": "https://huggingface.co/blog/nvidia-training-cluster",
           "source": "huggingface.co",
-          "why_it_matters": "Training Cluster as a Service reduces barriers for research organizations to access large-scale GPU compute for model development.",
+          "why_it_matters": "Hugging Face and NVIDIA's Training Cluster as a Service lowers barriers for research organizations to access large-scale GPU infrastructure.",
           "tags": [
-            "hardware",
-            "research"
+            "research",
+            "hardware"
           ]
+        },
+        {
+          "title": "I created my first AI-assisted pull request",
+          "url": "https://nelson.cloud/i-created-my-first-ai-assisted-pull-request-and-i-feel-like-a-fraud/",
+          "source": "nelson.cloud",
+          "why_it_matters": "Developer adoption of AI-assisted code generation is expanding into core development workflows like pull requests.",
+          "tags": [
+            "enterprise"
+          ],
+          "published_at": "2026-03-24T01:42:38Z",
+          "hn_score": 76
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-24T11:30:10.883581+00:00",
+        "updated_at": "2026-03-24T11:30:43.304067+00:00",
         "story_count": 15,
         "lanes_used": [
           "primary",
@@ -332,33 +331,18 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-24T11:30:42.856334+00:00",
+        "updated_at": "2026-03-24T11:31:15.560588+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions focus on ChatGPT capabilities, open-source model comparisons, and AI safety concerns. Communities like r/MachineLearning and r/OpenAI dominate conversations. Trending topics include GPT-4 updates, prompt engineering techniques, and AI job market impacts. Users debate AI ethics, copyright issues, and enterprise adoption rates across technical and general subreddits.",
+      "summary": "Top AI discussions centered on GPT-4 capabilities, open-source model releases, and AI safety concerns. Communities like r/MachineLearning and r/ChatGPT dominated conversations. Trending topics included prompt engineering techniques, AI job market impacts, and ethical implications of large language models. Users debated AI regulation and practical applications across healthcare and software development sectors.",
       "items": [
         {
-          "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1roc2qp/which_free_llm_works_best_with_openclaw_web_search/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "OpenAI",
-            "Anthropic",
-            "Claude",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rds8wk/introducing_smallclaw_openclaw_for_smalllocal_llms/",
-          "subreddit": "openclaw",
+          "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
+          "url": "https://www.reddit.com/r/artificial/comments/1qv4yyr/why_world_models_will_bring_us_to_agi_not_llms/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -366,93 +350,118 @@
             "model",
             "inference",
             "agent",
-            "Llama"
+            "Claude"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent",
-            "OpenAI"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Liquid AI Open-Sources LFM2: A New Generation of Edge LLMs",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1lzfocc/liquid_ai_opensources_lfm2_a_new_generation_of/",
-          "subreddit": "MachineLearning",
+          "title": "r/artificial on Reddit: Why would an LLM have self-preservation \"instincts\"",
+          "url": "https://www.reddit.com/r/artificial/comments/1nwztzr/why_would_an_llm_have_selfpreservation_instincts/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "machine learning",
-            "model",
             "inference",
             "training"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Neural Magic Releases LLM Compressor: A Novel Library to Compress LLMs for Faster Inference with vLLM",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1etz0op/neural_magic_releases_llm_compressor_a_novel/",
-          "subreddit": "MachineLearning",
+          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
+          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
             "model",
-            "inference",
+            "training",
+            "agent"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: How does a LLM understand your question?",
+          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
             "neural"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
-          "subreddit": "MachineLearning",
+          "title": "r/artificial on Reddit: Why is everyone so focused on generative AI when neural networks exist",
+          "url": "https://www.reddit.com/r/artificial/comments/1pfmyfz/why_is_everyone_so_focused_on_generative_ai_when/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "inference",
+            "training",
+            "neural"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Seeking guidance in understanding how LLMs work",
+          "url": "https://www.reddit.com/r/artificial/comments/1b1fo4l/seeking_guidance_in_understanding_how_llms_work/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "machine learning",
             "model",
-            "inference",
-            "Llama"
+            "training"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
+          "title": "r/technology on Reddit: OpenAI’s research on AI models deliberately lying is wild",
+          "url": "https://www.reddit.com/r/technology/comments/1nkorpc/openais_research_on_ai_models_deliberately_lying/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
-            "NVIDIA"
+            "training",
+            "OpenAI",
+            "neural"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: I built a 7-agent AI trading desk with OpenClaw — here's the full setup",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r1lp3n/i_built_a_7agent_ai_trading_desk_with_openclaw/",
-          "subreddit": "openclaw",
+          "title": "r/technology on Reddit: AI-generated code contains more bugs and errors than human output",
+          "url": "https://www.reddit.com/r/technology/comments/1ptpc95/aigenerated_code_contains_more_bugs_and_errors/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "agent",
+            "Claude"
+          ]
+        },
+        {
+          "title": "r/aicuriosity on Reddit: Master LLM Fine-Tuning & RLHF: DeepLearning.AI's New Post-Training Course Guide",
+          "url": "https://www.reddit.com/r/aicuriosity/comments/1oih360/master_llm_finetuning_rlhf_deeplearningais_new/",
+          "subreddit": "AiCuriosity",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: I tried (and failed) to create an AI model to predict the stock market (Deep Reinforcement Learning)",
+          "url": "https://www.reddit.com/r/artificial/comments/1cti6eu/i_tried_and_failed_to_create_an_ai_model_to/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -462,79 +471,64 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: OpenClaw builders: which API is actually the most affordable right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r84q2c/openclaw_builders_which_api_is_actually_the_most/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
-          "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "training",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: MInference (Milliontokens Inference): A Training-Free Efficient Method for the Pre-Filling Stage of Long-Context LLMs Based on Dynamic Sparse Attention",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dx9wi3/minference_milliontokens_inference_a_trainingfree/",
-          "subreddit": "MachineLearning",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "inference",
-            "training",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: A Comprehensive Study by BentoML on Benchmarking LLM Inference Backends: Performance Analysis of vLLM, LMDeploy, MLC-LLM, TensorRT-LLM, and TGI",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dccn3c/a_comprehensive_study_by_bentoml_on_benchmarking/",
-          "subreddit": "MachineLearning",
+          "title": "r/artificial on Reddit: Can an LLM Understand What It's Saying? (blog post)",
+          "url": "https://www.reddit.com/r/artificial/comments/18jwsk1/can_an_llm_understand_what_its_saying_blog_post/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
-            "inference",
-            "Llama"
+            "training"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Meet Time-LLM: A Reprogramming Machine Learning Framework to Repurpose LLMs for General Time Series Forecasting with the Backbone Language Models Kept Intact",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1ajssnu/meet_timellm_a_reprogramming_machine_learning/",
-          "subreddit": "MachineLearning",
+          "title": "r/artificial on Reddit: LLMs lie — and AGI will lie too. Here's why (with data, psychology, and simulations)",
+          "url": "https://www.reddit.com/r/artificial/comments/1k4xij2/llms_lie_and_agi_will_lie_too_heres_why_with_data/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
             "model",
-            "inference"
+            "training"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: OpenLLM offers a breakthrough approach by enabling you to run any open-source LLM as an OpenAI-compatible API endpoint with a single command",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1izw23b/openllm_offers_a_breakthrough_approach_by/",
-          "subreddit": "MachineLearning",
+          "title": "r/artificial on Reddit: Killed by LLM",
+          "url": "https://www.reddit.com/r/artificial/comments/1hu5zpe/killed_by_llm/",
+          "subreddit": "artificial",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
+            "model",
+            "neural"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: What would be the best platform/llm to output an entire book?",
+          "url": "https://www.reddit.com/r/artificial/comments/1bjbpo2/what_would_be_the_best_platformllm_to_output_an/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "Claude",
+            "Gemini"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: AI feedback loop will spell death for future generative models",
+          "url": "https://www.reddit.com/r/technology/comments/1f5wrjy/ai_feedback_loop_will_spell_death_for_future/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
             "inference",
-            "OpenAI"
+            "training"
           ]
         }
       ],
@@ -547,7 +541,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI and Google lead mention volumes with focus on their AI products and competitive positioning. Meta, Microsoft, and Anthropic generate substantial discussion around model releases and partnerships. Dominant topics include product announcements, pricing changes, API updates, and regulatory concerns. Sentiment mixed—users praise innovation but express concerns about corporate control, data privacy, and accessibility of AI tools.",
+      "summary": "OpenAI and Meta received highest mention volumes across subreddits. Key topics included Google's AI search integration, Microsoft's Copilot rollout, and Tesla's autonomous driving updates. Amazon and Apple discussions focused on AI-powered features and privacy concerns. Sentiment mixed—praise for innovation tempered by concerns about job displacement, data privacy, and market competition in the AI sector.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -737,9 +731,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -914,9 +908,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -1120,9 +1114,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -1150,6 +1144,23 @@
               "title": "r/OpenAI on Reddit: Openclaw vs chatgpt plus: why I switched to an AI agent instead",
               "url": "https://www.reddit.com/r/OpenAI/comments/1rse4fe/openclaw_vs_chatgpt_plus_why_i_switched_to_an_ai/",
               "subreddit": "OpenAI",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
+              "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
+              "subreddit": "openclaw",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1306,8 +1317,8 @@
             "posts_included": 10,
             "top_topics": [
               "Agents",
-              "OpenClaw",
-              "AI Agents"
+              "AI Agents",
+              "OpenClaw"
             ]
           }
         },
@@ -1495,9 +1506,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         }
@@ -1505,7 +1516,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-24T11:31:01.658059+00:00"
+        "run_at": "2026-03-24T11:31:31.833707+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1515,68 +1526,68 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-24T11:31:10.676582+00:00",
+      "generated_at": "2026-03-24T11:31:41.805474+00:00",
       "tickers": [
         {
           "symbol": "AMZN",
-          "top_stories": [],
+          "top_stories": [
+            {
+              "score": 56.2,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Amazon Expects AWS Annual Revenue to Hit $600 Billion - One News Page",
+              "source": "unknown",
+              "url": "https://www.onenewspage.com/n/Markets/1ztelp5l9y/Amazon-Expects-AWS-Annual-Revenue-to-Hit-600.htm",
+              "published_at": "2026-03-23T15:31:43.424260+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
+            }
+          ],
           "glance": [
             {
               "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Exclusive: Amazon plans smartphone comeback more than a decade after Fire Phone flop | Reuters",
+              "headline": "Amazon: Trending News, Latest Updates, Analysis",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 52.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Exclusive: Amazon CEO sees AI doubling prior AWS sales projections to $600 billion by 2036 | Reuters",
               "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
         {
-          "symbol": "LLY",
-          "top_stories": [
+          "symbol": "TSLA",
+          "top_stories": [],
+          "glance": [
             {
-              "score": 57.6,
+              "score": 45.6,
               "tags": [
-                "m_and_a_confirmed"
+                "product_launch_major"
               ],
-              "headline": "Sagespring Wealth Partners LLC Acquires 1,768 Shares of Eli Lilly and Company $LLY - Markets Daily",
-              "source": "unknown",
-              "url": "https://www.themarketsdaily.com/2026/03/22/sagespring-wealth-partners-llc-acquires-1768-shares-of-eli-lilly-and-company-lly.html",
-              "published_at": "2026-03-22T11:31:14.508727+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "headline": "Tesla Stock Slips Overnight After Musk Unveils $25B Terafab — Analyst Says Only 3 Firms Can Make Chips At This Scale",
+              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
             }
-          ],
-          "glance": []
+          ]
         },
         {
-          "symbol": "NTSK",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Netskope: CPP Investments Discloses 9.5% Stake | NTSK SEC Filing - Form SCHEDULE 13G",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NTSK/schedule-13g-netskope-inc-passive-investment-disclosure-5-e63a77626490.html",
-              "published_at": "2026-03-18T11:31:15.682957+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "AVGO",
+          "symbol": "NET",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Broadcom Stock (AVGO) Opinions on Q1 Earnings Beat | AVGO Stock News",
+              "headline": "ASX falls, Asia tumbles, gold crashes as Trump keeps markets on edge - ABC News",
               "source": "unknown",
-              "url": "https://quiverquant.com/news/Broadcom+Stock+(AVGO)+Opinions+on+Q1+Earnings+Beat",
-              "published_at": "2026-03-22T11:31:16.837897+00:00",
+              "url": "https://www.abc.net.au/news/2026-03-23/asx-falls-asia-tumbles-gold-crashes-markets-on-edge/106486008",
+              "published_at": "2026-03-23T11:31:47.031631+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1584,9 +1595,9 @@
         }
       ],
       "debug": {
-        "tickers_processed": 4,
-        "total_candidates": 80,
-        "removed_fresh_only": 3,
+        "tickers_processed": 3,
+        "total_candidates": 60,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-24"
       }
@@ -1594,46 +1605,64 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-24T11:31:19.151449+00:00",
+      "generated_at": "2026-03-24T11:31:48.563401+00:00",
       "tickers": [
         {
-          "symbol": "AMAT",
+          "symbol": "GLW",
+          "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "TABR Capital Management LLC Acquires New Shares in Corning Incorporated $GLW",
+              "source": "unknown",
+              "url": "https://www.marketbeat.com/instant-alerts/filing-tabr-capital-management-llc-acquires-new-shares-in-corning-incorporated-glw-2026-03-23/",
+              "published_at": "2026-03-23T11:31:50.494983+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "LRCX",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Applied Materials, Inc. stock faces earnings anticipation amid AI chip boom and dividend stability",
+              "headline": "Lam Research Corporation stock faces post-earnings reality check amid AI memory boom and cautious gu",
               "source": "unknown",
-              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/applied-materials-inc-stock-faces-earnings-anticipation-amid-ai-chip/68963863",
-              "published_at": "2026-03-23T11:31:21.482499+00:00",
+              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/lam-research-corporation-stock-faces-post-earnings-reality-check-amid-ai/68961448",
+              "published_at": "2026-03-22T11:31:52.707951+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MU",
+          "symbol": "BMY",
           "top_stories": [
             {
-              "score": 56.7,
+              "score": 63.2,
               "tags": [
+                "guidance",
                 "earnings"
               ],
-              "headline": "Micron Stock (MU) Extends Post-Earnings Decline — But Phillip Securities Lifts Price Target - TipRanks.com",
+              "headline": "Bristol Myers Squibb stock faces pressure after earnings miss and cautious FY2026 guidance amid pipe",
               "source": "unknown",
-              "url": "https://www.tipranks.com/news/micron-stock-mu-rebounds-after-earnings-slump-phillip-securities-lifts-price-target",
-              "published_at": "2026-03-23T17:31:22.612159+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
+              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bristol-myers-squibb-stock-faces-pressure-after-earnings-miss-and-cautious/68947602",
+              "published_at": "2026-03-21T11:31:53.891890+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 2,
-        "total_candidates": 30,
+        "tickers_processed": 3,
+        "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-24"
@@ -1689,7 +1718,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-24T11:31:24.188882+00:00",
+        "generated_at": "2026-03-24T11:31:53.896044+00:00",
         "count": 11
       }
     }
