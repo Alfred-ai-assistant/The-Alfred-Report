@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-27T07:30:10.850742"
+        "updated_at": "2026-03-27T07:30:43.646150"
       }
     },
     "todoist": {
@@ -100,7 +100,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-27T07:30:12.012713",
+        "updated_at": "2026-03-27T07:30:44.032876",
         "task_count": 4,
         "overdue_count": 0,
         "completed_today": 0
@@ -147,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-27T07:30:12.667926",
+        "updated_at": "2026-03-27T07:30:45.030642",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -321,11 +321,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-27T11:30:10.710075+00:00",
+        "updated_at": "2026-03-27T11:30:43.472397+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -335,56 +335,14 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-27T11:30:46.839750+00:00",
+        "updated_at": "2026-03-27T11:31:07.225968+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "AI discussions on Reddit focused on generative models, ChatGPT applications, and machine learning advancements. Top communities included r/artificial, r/MachineLearning, and r/OpenAI. Trending topics encompassed AI ethics, job displacement concerns, prompt engineering techniques, and latest model releases. Users actively debated AI regulation, creative applications, and technical implementation challenges across various subreddits.",
+      "summary": "Reddit's top AI discussions centered on generative models, with significant focus on ChatGPT updates and limitations. Key themes included AI ethics, job displacement concerns, and practical applications in coding and content creation. Communities like r/MachineLearning and r/OpenAI dominated conversations. Trending topics featured discussions about AI regulation, model accuracy improvements, and debates over AI-generated art versus human creativity.",
       "items": [
-        {
-          "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1roc2qp/which_free_llm_works_best_with_openclaw_web_search/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "OpenAI",
-            "Anthropic",
-            "Claude",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rds8wk/introducing_smallclaw_openclaw_for_smalllocal_llms/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
         {
           "title": "r/machinelearningnews on Reddit: Neural Magic Releases LLM Compressor: A Novel Library to Compress LLMs for Faster Inference with vLLM",
           "url": "https://www.reddit.com/r/machinelearningnews/comments/1etz0op/neural_magic_releases_llm_compressor_a_novel/",
@@ -411,54 +369,6 @@
             "model",
             "inference",
             "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: I built a 7-agent AI trading desk with OpenClaw — here's the full setup",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r1lp3n/i_built_a_7agent_ai_trading_desk_with_openclaw/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: OpenClaw builders: which API is actually the most affordable right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r84q2c/openclaw_builders_which_api_is_actually_the_most/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclawsetup on Reddit: The ULTIMATE OpenClaw Setup Guide! 🦞",
-          "url": "https://www.reddit.com/r/openclawsetup/comments/1r4uw0r/the_ultimate_openclaw_setup_guide/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "training",
-            "agent"
           ]
         },
         {
@@ -514,25 +424,104 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Best local model for Mac Mini M1 (16GB) with OpenClaw? Opus got expensive fast 😅",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rhfk1q/best_local_model_for_mac_mini_m1_16gb_with/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: Max Planck Researchers Introduce PoseGPT: An Artificial Intelligence Framework Employing Large Language Models (LLMs) to Understand and Reason about 3D Human Poses from Images or Textual Descriptions",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/18bxmhe/max_planck_researchers_introduce_posegpt_an/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
+            "machine learning",
             "model"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Openclaw memory",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rw40dd/openclaw_memory/",
-          "subreddit": "openclaw",
+          "title": "r/machinelearningnews on Reddit: OpenAI Researchers Introduce MLE-bench: A New Benchmark for Measuring How Well AI Agents Perform at Machine Learning Engineering",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1g26th2/openai_researchers_introduce_mlebench_a_new/",
+          "subreddit": "MachineLearning",
           "source": "reddit",
           "matched_terms": [
-            "model",
+            "AI",
+            "machine learning",
+            "agent",
+            "OpenAI"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Optimizing Test-Time Compute for LLMs: A Meta-Reinforcement Learning Approach with Cumulative Regret Minimization",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jbcsdg/optimizing_testtime_compute_for_llms_a/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Why would an LLM have self-preservation \"instincts\"",
+          "url": "https://www.reddit.com/r/artificial/comments/1nwztzr/why_would_an_llm_have_selfpreservation_instincts/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
             "inference",
-            "Llama"
+            "training"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
+          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "agent"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: How does a LLM understand your question?",
+          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "neural"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Why is everyone so focused on generative AI when neural networks exist",
+          "url": "https://www.reddit.com/r/artificial/comments/1pfmyfz/why_is_everyone_so_focused_on_generative_ai_when/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "inference",
+            "training",
+            "neural"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Seeking guidance in understanding how LLMs work",
+          "url": "https://www.reddit.com/r/artificial/comments/1b1fo4l/seeking_guidance_in_understanding_how_llms_work/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "training"
           ]
         }
       ],
@@ -545,7 +534,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "No company-specific Reddit posts detected across monitored organizations during this reporting period. This indicates minimal organic discussion or mentions of tracked companies in top subreddits. Consider expanding search parameters or monitoring specific company subreddits to capture brand conversations and user sentiment regarding organizational announcements, products, and industry positioning.",
+      "summary": "No posts found across monitored companies during this reporting period. This suggests either minimal company-specific discussions on Reddit or below-threshold engagement metrics for tracked organizations. Monitor trending AI company names separately, as Reddit discussions may reference companies without explicit mentions in tracked keywords.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -722,7 +711,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-27T11:31:10.291329+00:00"
+        "run_at": "2026-03-27T11:31:23.411184+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -732,77 +721,8 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-27T11:31:19.455361+00:00",
+      "generated_at": "2026-03-27T11:31:32.785405+00:00",
       "tickers": [
-        {
-          "symbol": "AMZN",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 52.9,
-              "tags": [
-                "other"
-              ],
-              "headline": "Amazon Offers $1,000 Prizes for Drivers Who Say Why They Love Their Job - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.19 Tier1+ Novelty-25"
-            },
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Exclusive: Amazon plans smartphone comeback more than a decade after Fire Phone flop | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Software Stocks Drop on Report Amazon Is Developing AI Tools - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
-            }
-          ]
-        },
-        {
-          "symbol": "LLY",
-          "top_stories": [
-            {
-              "score": 60.4,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Vanguard reports 0 shares of Eli Lilly | LLY SEC Filing - Form SCHEDULE 13G/A",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/LLY/schedule-13g-a-eli-lilly-co-amended-passive-investment-disclosure-2101a5d51d22.html",
-              "published_at": "2026-03-26T22:31:22.277858+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.34"
-            },
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "How the Loxo Oncology acquisition fueled Eli Lilly's rise in cancer drugs",
-              "source": "unknown",
-              "url": "https://www.statnews.com/2026/03/25/eli-lilly-cancer-drug-pipeline-fueled-loxo-oncology-jacob-van-naarden/",
-              "published_at": "2026-03-25T11:31:22.276769+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Firing on All Cylinders: Eli Lilly (NYSE:LLY) Q4 Earnings Lead the Way - StockStory",
-              "source": "unknown",
-              "url": "https://stockstory.org/us/stocks/nyse/lly/news/earnings/firing-on-all-cylinders-eli-lilly-nyselly-q4-earnings-lead-the-way",
-              "published_at": "2026-03-26T11:31:22.277394+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
         {
           "symbol": "AVGO",
           "top_stories": [
@@ -811,37 +731,37 @@
               "tags": [
                 "earnings"
               ],
-              "headline": "AVGO's Symantec CBX Expands Security Portfolio: Revenues to Surge? — TradingView News",
+              "headline": "Broadcom (AVGO) Stock: Why Analysts Think $100B AI Revenue Target Is Too Low - CoinCentral",
               "source": "unknown",
-              "url": "https://www.tradingview.com/news/zacks:47a16b884094b:0-avgo-s-symantec-cbx-expands-security-portfolio-revenues-to-surge/",
-              "published_at": "2026-03-24T11:31:24.576693+00:00",
+              "url": "https://coincentral.com/broadcom-avgo-stock-why-analysts-think-100b-ai-revenue-target-is-too-low/",
+              "published_at": "2026-03-25T11:31:37.921502+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "NET",
+          "symbol": "CMG",
           "top_stories": [
             {
-              "score": 60.7,
+              "score": 56.4,
               "tags": [
-                "guidance"
+                "earnings"
               ],
-              "headline": "Netcompany raises full-year margin guidance for 2026",
+              "headline": "Commercial Metals (CMC) Earnings Call Transcript | The Motley Fool",
               "source": "unknown",
-              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
-              "published_at": "2026-03-26T17:31:25.357292+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.22"
+              "url": "https://fool.com/earnings/call-transcripts/2026/03/26/commercial-metals-cmc-earnings-call-transcript",
+              "published_at": "2026-03-26T16:31:39.193312+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.21"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 4,
-        "total_candidates": 60,
-        "removed_fresh_only": 1,
+        "tickers_processed": 2,
+        "total_candidates": 70,
+        "removed_fresh_only": 6,
         "state_written": true,
         "report_date": "2026-03-27"
       }
@@ -849,56 +769,67 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-27T11:31:26.985099+00:00",
+      "generated_at": "2026-03-27T11:31:40.114819+00:00",
       "tickers": [
-        {
-          "symbol": "CRM",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Salesforce (CRM) Tumbles 6% Following First Revenue Shortfall in Nearly Two Decades - Blockonomi",
-              "source": "unknown",
-              "url": "https://blockonomi.com/salesforce-crm-tumbles-6-following-first-revenue-shortfall-in-nearly-two-decades/",
-              "published_at": "2026-03-24T11:31:27.839522+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
         {
           "symbol": "MU",
           "top_stories": [
             {
+              "score": 70.4,
+              "tags": [
+                "guidance"
+              ],
+              "headline": "The 'Problem' With Micron’s Guidance (NASDAQ:MU) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4885523-the-problem-with-micron-guidance",
+              "published_at": "2026-03-24T11:31:43.391019+00:00",
+              "why_ranked": "Event=guidance(95) Source=seekingalpha(67) Fresh=0.15"
+            },
+            {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Micron Falls as Q2 Earnings and AI Compression Put Memory Stocks on Edge - 24/7 Wall St.",
+              "headline": "Why Micron Stock Keeps Going Down | The Motley Fool",
               "source": "unknown",
-              "url": "https://247wallst.com/investing/2026/03/25/micron-falls-as-q2-earnings-and-ai-compression-put-memory-stocks-on-edge/",
-              "published_at": "2026-03-25T11:31:31.021049+00:00",
+              "url": "https://www.fool.com/investing/2026/03/26/why-micron-stock-keeps-going-down/",
+              "published_at": "2026-03-26T11:31:43.390453+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": [
             {
-              "score": 47.6,
+              "score": 45.6,
               "tags": [
-                "other"
+                "product_launch_major"
               ],
-              "headline": "Stocks making the biggest moves premarket: MU, SNDK, NEM",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
+              "headline": "Micron launches tender offer for $5.4 billion in senior notes By Investing.com",
+              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
             }
           ]
+        },
+        {
+          "symbol": "GEV",
+          "top_stories": [
+            {
+              "score": 60.4,
+              "tags": [
+                "sec_filing"
+              ],
+              "headline": "Vanguard reports 0 shares of GE Vernova | GEV SEC Filing - Form SCHEDULE 13G/A",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/GEV/schedule-13g-a-ge-vernova-inc-amended-passive-investment-disclosure-33970f1766b1.html",
+              "published_at": "2026-03-26T22:31:44.627731+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.34"
+            }
+          ],
+          "glance": []
         }
       ],
       "debug": {
         "tickers_processed": 2,
-        "total_candidates": 50,
-        "removed_fresh_only": 0,
+        "total_candidates": 40,
+        "removed_fresh_only": 1,
         "state_written": true,
         "report_date": "2026-03-27"
       }
@@ -953,7 +884,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-27T11:31:32.656943+00:00",
+        "generated_at": "2026-03-27T11:31:45.031675+00:00",
         "count": 11
       }
     }
