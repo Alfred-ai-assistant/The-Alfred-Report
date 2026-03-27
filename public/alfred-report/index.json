@@ -1,6 +1,10 @@
 {
   "reports": [
     {
+      "date": "2026-03-27",
+      "path": "/alfred-report/daily/2026-03-27.json"
+    },
+    {
       "date": "2026-03-26",
       "path": "/alfred-report/daily/2026-03-26.json"
     },
