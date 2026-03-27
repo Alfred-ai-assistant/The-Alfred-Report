@@ -66,16 +66,44 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-27T07:00:03.052185"
+        "updated_at": "2026-03-27T07:30:10.850742"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 503: \n",
-      "items": [],
+      "summary": "4 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g2cpjm82pGC887h",
+          "content": "Clean bedroom",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4QjQH9p9V9Ccjh",
+          "content": "Complete tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g4gHcXr9c2HFc2h",
+          "content": "do mother's tax return",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g5JfcVfvCQ7cx2h",
+          "content": "Move money for mothers rent",
+          "due": "every 1st",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 503: \n"
+        "updated_at": "2026-03-27T07:30:12.012713",
+        "task_count": 4,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
@@ -119,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-27T07:00:04.822845",
+        "updated_at": "2026-03-27T07:30:12.667926",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -129,13 +157,13 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI sector experienced significant activity across multiple dimensions this week. Model development continues at accelerated pace, with OpenAI and Anthropic releasing competing reasoning-optimized models simultaneously—OpenAI introducing gpt-oss-120b and gpt-oss-20b under open-source licensing, while Anthropic unveiled Claude Opus 4.6. Anthropic's latest iteration claims advantages in coding, agents, and computer use tasks, with demonstrated capabilities in security vulnerability detection.\n\nInfrastructure partnerships dominated enterprise news. NVIDIA and Hugging Face announced cloud integration connecting developers to generative AI supercomputing, with emphasis on LLM training accessibility. Separately, Hugging Face introduced inference-as-a-service powered by NVIDIA NIM microservices, targeting token efficiency optimization.\n\nPolicy and institutional developments showed mixed trajectories. A federal judge blocked Pentagon efforts to label Anthropic a supply chain risk, directly impacting national security review processes. Conversely, NYC hospitals terminated Palantir contracts amid the firm's UK expansion, reflecting persistent healthcare sector concerns about AI vendor selection.\n\nPerformance benchmarks and deployment demonstrated evolving economics. A $500 GPU matched Claude Sonnet coding performance, while a developer successfully deployed AI agents on $7/month VPS infrastructure using IRC transport. Real-world value extraction continued, with one organization reporting $500k annual savings from AI-driven legacy code rewriting.\n\nSafety concerns persisted in parallel, with documentation of user harm from AI model interactions alongside Google DeepMind's continued research publications on complex AI challenges.",
+      "summary": "The AI sector demonstrated sustained momentum across multiple dimensions this week. OpenAI and Anthropic released competing reasoning-optimized models—GPT-5.3-Codex and Claude Opus 4.6—reflecting escalating competition and divergent architectural strategies. OpenAI also open-sourced smaller models (gpt-oss-120b and gpt-oss-20b), broadening access to frontier capabilities. NVIDIA capitalized on this expansion, launching the Nemotron family, Cosmos platform, Isaac GR00T for robotics, and Clara for biomedical applications, while partnering with Hugging Face to democratize inference deployment. These infrastructure plays signal industry maturation beyond model development. Meanwhile, a notable data point emerged: a $500 GPU achieved competitive coding performance against Claude Sonnet, challenging assumptions about computational requirements. On the policy front, a federal judge blocked Pentagon efforts to designate Anthropic with supply chain risk labels, removing potential market friction. Conversely, New York City hospitals discontinued Palantir partnerships amid AI ethics concerns, suggesting growing institutional scrutiny. Regarding frontier capabilities, Anthropic's latest model excels at identifying security vulnerabilities—expanding utility beyond automation toward safety auditing. However, reports of AI systems generating convincing false information highlight persistent reliability challenges. Enterprise adoption continued gaining pace, with companies reporting substantial cost savings from AI-driven code rewriting, while innovations like minimal-resource AI agents demonstrated feasibility of distributed architectures.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "Competition between leading AI labs continues to intensify with simultaneous model releases, signaling accelerating development cycles and market positioning battles.",
+          "why_it_matters": "OpenAI and Anthropic's simultaneous model releases underscore intensifying competition in the frontier AI market, with both companies pursuing different architectural approaches.",
           "tags": [
             "models",
             "enterprise"
@@ -145,9 +173,20 @@
           "title": "OpenAI, Anthropic release new reasoning-optimized language models",
           "url": "https://siliconangle.com/2025/08/05/openai-anthropic-release-new-reasoning-optimized-language-models/",
           "source": "siliconangle.com",
-          "why_it_matters": "Both OpenAI and Anthropic are specifically optimizing for reasoning tasks, indicating this capability has become a key competitive differentiator in the frontier model space.",
+          "why_it_matters": "Both companies are specifically optimizing for reasoning tasks, indicating a shift in focus toward complex problem-solving capabilities.",
           "tags": [
             "models",
+            "research"
+          ]
+        },
+        {
+          "title": "NVIDIA Launches Open Models and Data to Accelerate AI Innovation",
+          "url": "https://blogs.nvidia.com/blog/open-models-data-ai/",
+          "source": "blogs.nvidia.com",
+          "why_it_matters": "NVIDIA's expansion of open models and tools across reasoning, robotics, and biomedical applications signals broader industry momentum toward accessible AI infrastructure.",
+          "tags": [
+            "hardware",
+            "open-source",
             "research"
           ]
         },
@@ -155,7 +194,7 @@
           "title": "Hugging Face Introduces Inference-as-a-Service with NVIDIA NIM for AI Developers",
           "url": "https://blockchain.news/news/hugging-face-inference-as-a-service-nvidia-nim",
           "source": "blockchain.news",
-          "why_it_matters": "Hugging Face and NVIDIA's inference partnership aims to improve token efficiency for developers, addressing a key operational cost concern in AI deployment.",
+          "why_it_matters": "Hugging Face and NVIDIA's inference-as-a-service partnership lowers barriers for developers to deploy AI models at scale with improved efficiency.",
           "tags": [
             "enterprise",
             "hardware"
@@ -165,55 +204,55 @@
           "title": "$500 GPU outperforms Claude Sonnet on coding benchmarks",
           "url": "https://github.com/itigges22/ATLAS",
           "source": "github.com",
-          "why_it_matters": "A budget GPU matching Claude Sonnet's performance on coding benchmarks challenges assumptions about the relationship between model size and specialized task performance.",
+          "why_it_matters": "A consumer-grade GPU achieving competitive coding performance against enterprise models challenges assumptions about required computational resources.",
           "tags": [
             "hardware",
             "models"
           ],
           "published_at": "2026-03-26T17:31:24Z",
-          "hn_score": 281
+          "hn_score": 296
         },
         {
           "title": "Judge blocks Pentagon effort to 'punish' Anthropic with supply chain risk label",
           "url": "https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk",
           "source": "cnn.com",
-          "why_it_matters": "A court decision against Pentagon supply chain restrictions on Anthropic has direct implications for how U.S. national security reviews affect AI company operations.",
+          "why_it_matters": "A federal judge's decision prevents the Pentagon from applying a supply chain risk designation to Anthropic, removing a potential market impediment.",
           "tags": [
-            "policy",
-            "safety"
+            "policy"
           ],
           "published_at": "2026-03-26T23:33:53Z",
-          "hn_score": 380
+          "hn_score": 386
         },
         {
           "title": "New York City hospitals drop Palantir as controversial AI firm expands in UK",
           "url": "https://www.theguardian.com/technology/2026/mar/26/new-york-hospitals-palantir-ai",
           "source": "theguardian.com",
-          "why_it_matters": "Major healthcare institutions ending partnerships with Palantir amid expansion in UK reflects ongoing concerns about AI vendor selection in sensitive sectors.",
+          "why_it_matters": "Major healthcare institutions are reconsidering Palantir partnerships amid ethical concerns, while the company expands internationally.",
           "tags": [
+            "policy",
             "enterprise",
-            "policy"
+            "safety"
           ],
           "published_at": "2026-03-26T20:35:04Z",
-          "hn_score": 287
+          "hn_score": 290
         },
         {
           "title": "Show HN: I put an AI agent on a $7/month VPS with IRC as its transport layer",
           "url": "https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/",
           "source": "georgelarson.me",
-          "why_it_matters": "Deployment of AI agents on minimal infrastructure demonstrates feasibility of resource-constrained AI applications in production environments.",
+          "why_it_matters": "Demonstrations of AI agents operating efficiently on minimal infrastructure suggest feasibility of distributed, cost-effective deployment models.",
           "tags": [
             "open-source",
             "enterprise"
           ],
           "published_at": "2026-03-26T22:41:25Z",
-          "hn_score": 257
+          "hn_score": 261
         },
         {
           "title": "AI users whose lives were wrecked by delusion",
           "url": "https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion",
           "source": "theguardian.com",
-          "why_it_matters": "Documentation of AI-induced user harm raises questions about the practical safety impacts of frontier models in real-world scenarios.",
+          "why_it_matters": "Reports of AI systems producing convincing false information highlight persistent safety challenges in current frontier models.",
           "tags": [
             "safety"
           ],
@@ -224,19 +263,18 @@
           "title": "We rewrote JSONata with AI in a day, saved $500k/year",
           "url": "https://www.reco.ai/blog/we-rewrote-jsonata-with-ai",
           "source": "reco.ai",
-          "why_it_matters": "Using AI to rewrite legacy code with significant cost savings demonstrates tangible enterprise value from current-generation language models.",
+          "why_it_matters": "Using AI to rewrite complex code substantially reduced operational costs, exemplifying productivity gains in software engineering.",
           "tags": [
-            "enterprise",
-            "models"
+            "enterprise"
           ],
           "published_at": "2026-03-26T22:36:41Z",
-          "hn_score": 174
+          "hn_score": 180
         },
         {
           "title": "Introducing Claude Opus 4.5 - Anthropic",
           "url": "https://www.anthropic.com/news/claude-opus-4-5",
           "source": "anthropic.com",
-          "why_it_matters": "Anthropic's latest model claims superiority in coding and agent tasks, maintaining competitive claims across multiple specialized capability domains.",
+          "why_it_matters": "Anthropic's Claude Opus 4.5 positions the company's latest model as specialized for coding, agent-based tasks, and computer use automation.",
           "tags": [
             "models"
           ]
@@ -245,7 +283,7 @@
           "title": "Publications - Google DeepMind",
           "url": "https://deepmind.google/research/publications/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's publication focus indicates continued research investment in core AI challenges beyond commercial model development.",
+          "why_it_matters": "Google DeepMind continues publishing research on advanced AI challenges, maintaining public knowledge contribution despite industry commercialization trends.",
           "tags": [
             "research"
           ]
@@ -254,17 +292,17 @@
           "title": "AI News February: Anthropic Defied the Pentagon, OpenAI Hit $730B & New Models Dropped",
           "url": "https://www.youtube.com/watch?v=va6VkUr94Q8",
           "source": "youtube.com",
-          "why_it_matters": "OpenAI's $730B funding round represents unprecedented capital concentration in the AI sector, reshaping competitive dynamics.",
+          "why_it_matters": "OpenAI's $730B funding round and multiple model releases demonstrate significant capital concentration in the frontier AI sector.",
           "tags": [
             "funding",
-            "enterprise"
+            "models"
           ]
         },
         {
           "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
           "url": "https://fortune.com/2026/02/06/anthropic-claude-ai-model-cybersecurity-security-vulnerabilities-risks/",
           "source": "fortune.com",
-          "why_it_matters": "Frontier models demonstrating security vulnerability detection capabilities indicate AI is advancing toward autonomous quality assurance roles.",
+          "why_it_matters": "Frontier models are now detecting security vulnerabilities, expanding their utility beyond code generation to security auditing functions.",
           "tags": [
             "models",
             "safety"
@@ -274,17 +312,7 @@
           "title": "NVIDIA and Hugging Face to Connect Millions of ...",
           "url": "https://nvidianews.nvidia.com/news/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing",
           "source": "nvidianews.nvidia.com",
-          "why_it_matters": "NVIDIA and Hugging Face integration expands developer access to enterprise-grade AI training infrastructure.",
-          "tags": [
-            "hardware",
-            "enterprise"
-          ]
-        },
-        {
-          "title": "Nvidia teams up with Hugging Face to offer cloud-based AI training",
-          "url": "https://techcrunch.com/2023/08/08/nvidia-teams-up-with-hugging-face-to-offer-cloud-based-ai-training/",
-          "source": "techcrunch.com",
-          "why_it_matters": "Cloud-based AI training partnerships between hardware providers and platforms democratize access to compute resources needed for model development.",
+          "why_it_matters": "NVIDIA's integration with Hugging Face simplifies LLM training and tuning for developers, consolidating infrastructure access.",
           "tags": [
             "hardware",
             "enterprise"
@@ -293,7 +321,7 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-27T11:00:02.915232+00:00",
+        "updated_at": "2026-03-27T11:30:10.710075+00:00",
         "story_count": 15,
         "lanes_used": [
           "primary",
@@ -307,13 +335,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-27T11:00:39.195636+00:00",
+        "updated_at": "2026-03-27T11:30:46.839750+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions center on generative models, ChatGPT capabilities, and ethics concerns. Machine learning and neural networks dominate technical conversations. Communities like r/MachineLearning, r/OpenAI, and r/artificial show strong engagement. Trending topics include AI job displacement, model training optimization, and recent breakthroughs in vision models. Users actively debate AI regulation and accessibility across platforms.",
+      "summary": "AI discussions on Reddit focused on generative models, ChatGPT applications, and machine learning advancements. Top communities included r/artificial, r/MachineLearning, and r/OpenAI. Trending topics encompassed AI ethics, job displacement concerns, prompt engineering techniques, and latest model releases. Users actively debated AI regulation, creative applications, and technical implementation challenges across various subreddits.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
@@ -517,7 +545,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI leads mentions with ChatGPT updates and API discussions. Google, Microsoft, and Meta feature prominently regarding their AI initiatives. Apple, Tesla, and Amazon appear in automation and ML deployment contexts. Dominant topics include product launches, competitive positioning, layoffs, and AI integration announcements. Enterprise adoption and stock performance discussions emerge alongside technical capability debates across subreddits.",
+      "summary": "No company-specific Reddit posts detected across monitored organizations during this reporting period. This indicates minimal organic discussion or mentions of tracked companies in top subreddits. Consider expanding search parameters or monitoring specific company subreddits to capture brand conversations and user sentiment regarding organizational announcements, products, and industry positioning.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -548,169 +576,12 @@
             "MachineLearning"
           ],
           "query": "\"Cerebras Systems\" OR \"Cerebras Systems IPO\" OR \"Cerebras Systems S-1\" OR \"CS-3\" OR \"CS-4\" reddit",
-          "items": [
-            {
-              "title": "r/technology on Reddit: AI chip maker Cerebras Systems raises $1 billion in late-stage funding",
-              "url": "https://www.reddit.com/r/technology/comments/1qvtv5m/ai_chip_maker_cerebras_systems_raises_1_billion/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/mlscaling on Reddit: \"Cerebras Systems Unveils World’s Fastest AI Chip with Whopping 4 Trillion Transistors\" (w/up to 1.2 petabytes, the CS-3 is designed to train next generation frontier models 10x larger than GPT-4/Gemini.)",
-              "url": "https://www.reddit.com/r/mlscaling/comments/1bggijc/cerebras_systems_unveils_worlds_fastest_ai_chip/",
-              "subreddit": "mlscaling",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3",
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/EquityZen on Reddit: Cerebras Systems (CESY)",
-              "url": "https://www.reddit.com/r/EquityZen/comments/1qphwa6/cerebras_systems_cesy/",
-              "subreddit": "EquityZen",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/amd_fundamentals on Reddit: Exclusive-AI chip firm Cerebras set to file for US IPO after delay, sources say",
-              "url": "https://www.reddit.com/r/amd_fundamentals/comments/1pr0qz7/exclusiveai_chip_firm_cerebras_set_to_file_for_us/",
-              "subreddit": "amd_fundamentals",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/hardware on Reddit: Cerebras withdraws IPO filing",
-              "url": "https://www.reddit.com/r/hardware/comments/1ny22ay/cerebras_withdraws_ipo_filing/",
-              "subreddit": "hardware",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/AMD_Stock on Reddit: AMD invests in Cerebras! This is the right direction.",
-              "url": "https://www.reddit.com/r/AMD_Stock/comments/1qw34dq/amd_invests_in_cerebras_this_is_the_right/",
-              "subreddit": "AMD_Stock",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: 10th December 2024: Cerebras Systems + US Energy Sandia National Labs have CLAIMED to demonstrate training of a 1 trillion parameter model on a single CS-3 system (!) This is ~1% the footprint & power of an equivalent GPU cluster.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1hpejko/10th_december_2024_cerebras_systems_us_energy/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3",
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: Cerebras Now The Fastest LLM Inference Processor; Its Not Even Close.",
-              "url": "https://www.reddit.com/r/singularity/comments/1gupper/cerebras_now_the_fastest_llm_inference_processor/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/singularity on Reddit: Cerebras CS-3 wafer-scale million-core AI chip, 25kW WSE-3, 125 PFLOPS inference engine, tsunami HPC",
-              "url": "https://www.reddit.com/r/singularity/comments/1p8w2el/cerebras_cs3_waferscale_millioncore_ai_chip_25kw/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/singularity on Reddit: This is bad news for NVIDIA. Cerebras chips used by Mistral AI are specifically designed for inference",
-              "url": "https://www.reddit.com/r/singularity/comments/1in0unp/this_is_bad_news_for_nvidia_cerebras_chips_used/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -742,148 +613,12 @@
             "MachineLearning"
           ],
           "query": "\"Groq\" OR \"Groq\" OR \"GroqCloud\" OR \"Groq Cloud\" reddit",
-          "items": [
-            {
-              "title": "r/LocalLLaMA on Reddit: Exclusive: Nvidia buying AI chip startup Groq's assets for about $20 billion in largest deal on record",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1puyq9r/exclusive_nvidia_buying_ai_chip_startup_groqs/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "GroqCloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Groq is lightning fast!",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1auxm3q/groq_is_lightning_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/investing on Reddit: Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record",
-              "url": "https://www.reddit.com/r/investing/comments/1puxj7p/exclusive_nvidia_buying_ai_chip_startup_groq_for/",
-              "subreddit": "investing",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/homeassistant on Reddit: Use Groq Cloud as a conversation agent",
-              "url": "https://www.reddit.com/r/homeassistant/comments/1f1rtzu/use_groq_cloud_as_a_conversation_agent/",
-              "subreddit": "homeassistant",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq Cloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Groq is probably a scam",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ahdhgx/groq_is_probably_a_scam/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Anyone get groq API access yet? Is it just as fast?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1aviqk0/anyone_get_groq_api_access_yet_is_it_just_as_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: This sums my experience with models on Groq",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1hwwvuz/this_sums_my_experience_with_models_on_groq/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "Let's discuss about Groq, which model you use and why.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1d6egfk/lets_discuss_about_groq_which_model_you_use_and/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/hardware on Reddit: Nvidia to buy AI chip startup Groq for $20 billion",
-              "url": "https://www.reddit.com/r/hardware/comments/1puy7qh/nvidia_to_buy_ai_chip_startup_groq_for_20_billion/",
-              "subreddit": "hardware",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "GroqCloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: The speed at which Groq chips run llama-3 is unbelievable.",
-              "url": "https://www.reddit.com/r/singularity/comments/1c845st/the_speed_at_which_groq_chips_run_llama3_is/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -915,181 +650,12 @@
             "MachineLearning"
           ],
           "query": "\"Sambanova Systems\" OR \"Sambanova\" OR \"SambaNova\" OR \"Sambanova Systems\" OR \"SambaNova Systems\" reddit",
-          "items": [
-            {
-              "title": "r/Theranos on Reddit: Any info on Sambanova?",
-              "url": "https://www.reddit.com/r/Theranos/comments/1bt0m6j/any_info_on_sambanova/",
-              "subreddit": "Theranos",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/hardware on Reddit: Intel in talks to acquire AI startup Sambanova Systems",
-              "url": "https://www.reddit.com/r/hardware/comments/1okihog/intel_in_talks_to_acquire_ai_startup_sambanova/",
-              "subreddit": "hardware",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/hardware on Reddit: Intel Takes Major Step in Plan to Acquire Chip Startup SambaNova",
-              "url": "https://www.reddit.com/r/hardware/comments/1pime06/intel_takes_major_step_in_plan_to_acquire_chip/",
-              "subreddit": "hardware",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: SambaNova's new chip runs AI models to 5 trillion parameters",
-              "url": "https://www.reddit.com/r/singularity/comments/16tsvym/sambanovas_new_chip_runs_ai_models_to_5_trillion/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: SambaNova Systems Enhances Modular AI Deployment through Composition of Experts on the SambaNova SN40L Platform",
-              "url": "https://www.reddit.com/r/singularity/comments/1cwrkqh/sambanova_systems_enhances_modular_ai_deployment/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: SambaNova announces new SN40L chip for AI, node made up of just eight of these chips is capable of supporting models with as many as five trillion parameters(GPT-4 has around 1,8T). “Every company can now have their own GPT model.”",
-              "url": "https://www.reddit.com/r/singularity/comments/16o0hgx/sambanova_announces_new_sn40l_chip_for_ai_node/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/learnmachinelearning on Reddit: [N] Faster Non-GPU based LLM Inference Platform is available",
-              "url": "https://www.reddit.com/r/learnmachinelearning/comments/1f3dnm7/n_faster_nongpu_based_llm_inference_platform_is/",
-              "subreddit": "learnmachinelearning",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/intelstock on Reddit: We should oppose the acquisition of SambaNova Systems",
-              "url": "https://www.reddit.com/r/intelstock/comments/1ooaaa9/we_should_oppose_the_acquisition_of_sambanova/",
-              "subreddit": "intelstock",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: SambaNova Systems running Llama 3 8B at 430 TPS on 8 chips with FP16.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1caxbx6/sambanova_systems_running_llama_3_8b_at_430_tps/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/machinelearningnews on Reddit: SambaNova Systems Breaks Records with Samba-1-Turbo: Transforming AI Processing with Unmatched Speed and Innovation",
-              "url": "https://www.reddit.com/r/machinelearningnews/comments/1d3bxz2/sambanova_systems_breaks_records_with_samba1turbo/",
-              "subreddit": "machinelearningnews",
-              "source": "reddit",
-              "matched_terms": [
-                "Sambanova",
-                "SambaNova",
-                "Sambanova Systems",
-                "SambaNova Systems",
-                "Sambanova Systems"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -1111,187 +677,12 @@
             "EquityZen"
           ],
           "query": "\"OpenAI\" OR \"OpenAI\" OR \"OpenClaw\" reddit",
-          "items": [
-            {
-              "title": "r/openclaw on Reddit: Anyone just using the OpenAI subscription (OAuth) to run open claw?",
-              "url": "https://www.reddit.com/r/openclaw/comments/1s1vdwm/anyone_just_using_the_openai_subscription_oauth/",
-              "subreddit": "openclaw",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
-              "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
-              "subreddit": "openclaw",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/OpenAI on Reddit: Openclaw vs chatgpt plus: why I switched to an AI agent instead",
-              "url": "https://www.reddit.com/r/OpenAI/comments/1rse4fe/openclaw_vs_chatgpt_plus_why_i_switched_to_an_ai/",
-              "subreddit": "OpenAI",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/OpenAI on Reddit: Finally something useful with OpenClaw",
-              "url": "https://www.reddit.com/r/OpenAI/comments/1rs2c40/finally_something_useful_with_openclaw/",
-              "subreddit": "OpenAI",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/ArtificialInteligence on Reddit: OpenAI bought OpenClaw!",
-              "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1r60vtl/openai_bought_openclaw/",
-              "subreddit": "ArtificialInteligence",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/OpenAI on Reddit: OpenClaw is about to be ClosedClaw...OpenAI in Advanced Talks to Hire OpenClaw Founder",
-              "url": "https://www.reddit.com/r/OpenAI/comments/1r5ptks/openclaw_is_about_to_be_closedclawopenai_in/",
-              "subreddit": "OpenAI",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/AI_Agents on Reddit: OpenClaw config — Using ChatGPT OAuth (Codex) + OpenAI API Key Models Together",
-              "url": "https://www.reddit.com/r/AI_Agents/comments/1rgczr7/openclaw_config_using_chatgpt_oauth_codex_openai/",
-              "subreddit": "AI_Agents",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/OpenAI on Reddit: Is Openclaw just hype, or is it really that good?",
-              "url": "https://www.reddit.com/r/OpenAI/comments/1rogyyl/is_openclaw_just_hype_or_is_it_really_that_good/",
-              "subreddit": "OpenAI",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/openclaw on Reddit: Using OpenClaw via an OpenAI subscription — is it sustainable for long-term, complex automation work?",
-              "url": "https://www.reddit.com/r/openclaw/comments/1rdid0d/using_openclaw_via_an_openai_subscription_is_it/",
-              "subreddit": "openclaw",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Anyone actually using Openclaw?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1r5v1jb/anyone_actually_using_openclaw/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "AI Agents",
-              "OpenClaw",
-              "Agents"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -1319,209 +710,50 @@
             "wallstreetbets"
           ],
           "query": "\"Netskope\" OR \"Netskope IPO\" OR \"Netskope S-1\" OR \"SASE\" OR \"Zero Trust\" reddit",
-          "items": [
-            {
-              "title": "r/netskope on Reddit: Why Netskope Might Be One of the Most Underrated Cybersecurity Plays Right Now",
-              "url": "https://www.reddit.com/r/netskope/comments/1rstcpm/why_netskope_might_be_one_of_the_most_underrated/",
-              "subreddit": "netskope",
-              "source": "reddit",
-              "matched_terms": [
-                "SASE",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/cybersecurity on Reddit: What do you think about Netskope ?",
-              "url": "https://www.reddit.com/r/cybersecurity/comments/vycbsc/what_do_you_think_about_netskope/",
-              "subreddit": "cybersecurity",
-              "source": "reddit",
-              "matched_terms": [
-                "Netskope"
-              ],
-              "topics": [],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/stocks on Reddit: NTSK Netscope IPO and future growth",
-              "url": "https://www.reddit.com/r/stocks/comments/1nla7do/ntsk_netscope_ipo_and_future_growth/",
-              "subreddit": "stocks",
-              "source": "reddit",
-              "matched_terms": [
-                "NTSK"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/wallstreetbets on Reddit: Netskope IPO Signals Strong Demand for Cybersecurity Stocks $NTSK",
-              "url": "https://www.reddit.com/r/wallstreetbets/comments/1nkkje2/netskope_ipo_signals_strong_demand_for/",
-              "subreddit": "wallstreetbets",
-              "source": "reddit",
-              "matched_terms": [
-                "Netskope IPO",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/EquityZen on Reddit: Netskope IPO",
-              "url": "https://www.reddit.com/r/EquityZen/comments/1mz3h4a/netskope_ipo/",
-              "subreddit": "EquityZen",
-              "source": "reddit",
-              "matched_terms": [
-                "Netskope IPO",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/cybersecurity on Reddit: Netskope vs Zscaler vs Palo Alto vs Cato",
-              "url": "https://www.reddit.com/r/cybersecurity/comments/1koz9gj/netskope_vs_zscaler_vs_palo_alto_vs_cato/",
-              "subreddit": "cybersecurity",
-              "source": "reddit",
-              "matched_terms": [
-                "SASE",
-                "Zero Trust",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/networking on Reddit: Thinking of scrapping current firewalls and moving everything to SASE (Netskope) - anyone done something similar?",
-              "url": "https://www.reddit.com/r/networking/comments/1kfh09i/thinking_of_scrapping_current_firewalls_and/",
-              "subreddit": "networking",
-              "source": "reddit",
-              "matched_terms": [
-                "SASE",
-                "Zero Trust",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/networking on Reddit: Anyone here actually happy with their SASE setup?",
-              "url": "https://www.reddit.com/r/networking/comments/1o408z4/anyone_here_actually_happy_with_their_sase_setup/",
-              "subreddit": "networking",
-              "source": "reddit",
-              "matched_terms": [
-                "SASE",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/business on Reddit: Netskope prices IPO at $19, valuing company at $7.3 billion",
-              "url": "https://www.reddit.com/r/business/comments/1njwfre/netskope_prices_ipo_at_19_valuing_company_at_73/",
-              "subreddit": "business",
-              "source": "reddit",
-              "matched_terms": [
-                "SASE",
-                "Zero Trust",
-                "Netskope"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/cybersecurity on Reddit: Netskope ZTNA",
-              "url": "https://www.reddit.com/r/cybersecurity/comments/1aj63i2/netskope_ztna/",
-              "subreddit": "cybersecurity",
-              "source": "reddit",
-              "matched_terms": [
-                "Netskope"
-              ],
-              "topics": [],
-              "topic_confidence": "medium"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         }
       ],
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-27T11:00:57.995028+00:00"
+        "run_at": "2026-03-27T11:31:10.291329+00:00"
       },
       "meta": {
         "companies_tracked": 5,
-        "total_posts": 50
+        "total_posts": 0
       }
     },
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-27T11:01:09.561527+00:00",
+      "generated_at": "2026-03-27T11:31:19.455361+00:00",
       "tickers": [
-        {
-          "symbol": "NVDA",
-          "top_stories": [
-            {
-              "score": 59.2,
-              "tags": [
-                "earnings",
-                "lawsuit"
-              ],
-              "headline": "Nvidia faces class-action lawsuit over crypto revenue disclosures",
-              "source": "unknown",
-              "url": "https://tradersunion.com/news/financial-news/show/1798987-nvidia-faces-class-action/",
-              "published_at": "2026-03-26T11:01:10.292756+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
         {
           "symbol": "AMZN",
           "top_stories": [],
           "glance": [
+            {
+              "score": 52.9,
+              "tags": [
+                "other"
+              ],
+              "headline": "Amazon Offers $1,000 Prizes for Drivers Who Say Why They Love Their Job - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.19 Tier1+ Novelty-25"
+            },
+            {
+              "score": 52.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Exclusive: Amazon plans smartphone comeback more than a decade after Fire Phone flop | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
             {
               "score": 52.3,
               "tags": [
@@ -1543,7 +775,7 @@
               "headline": "Vanguard reports 0 shares of Eli Lilly | LLY SEC Filing - Form SCHEDULE 13G/A",
               "source": "unknown",
               "url": "https://www.stocktitan.net/sec-filings/LLY/schedule-13g-a-eli-lilly-co-amended-passive-investment-disclosure-2101a5d51d22.html",
-              "published_at": "2026-03-26T22:01:12.645490+00:00",
+              "published_at": "2026-03-26T22:31:22.277858+00:00",
               "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.34"
             },
             {
@@ -1554,7 +786,7 @@
               "headline": "How the Loxo Oncology acquisition fueled Eli Lilly's rise in cancer drugs",
               "source": "unknown",
               "url": "https://www.statnews.com/2026/03/25/eli-lilly-cancer-drug-pipeline-fueled-loxo-oncology-jacob-van-naarden/",
-              "published_at": "2026-03-25T11:01:12.644437+00:00",
+              "published_at": "2026-03-25T11:31:22.276769+00:00",
               "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             },
             {
@@ -1565,104 +797,50 @@
               "headline": "Firing on All Cylinders: Eli Lilly (NYSE:LLY) Q4 Earnings Lead the Way - StockStory",
               "source": "unknown",
               "url": "https://stockstory.org/us/stocks/nyse/lly/news/earnings/firing-on-all-cylinders-eli-lilly-nyselly-q4-earnings-lead-the-way",
-              "published_at": "2026-03-26T11:01:12.645009+00:00",
+              "published_at": "2026-03-26T11:31:22.277394+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MRK",
+          "symbol": "AVGO",
           "top_stories": [
             {
-              "score": 57.6,
+              "score": 55.6,
               "tags": [
-                "m_and_a_confirmed"
+                "earnings"
               ],
-              "headline": "Merck to Acquire HBM Portfolio Company Terns Pharmaceuticals for USD 6.7 Billion — TradingView News",
+              "headline": "AVGO's Symantec CBX Expands Security Portfolio: Revenues to Surge? — TradingView News",
               "source": "unknown",
-              "url": "https://www.tradingview.com/news/eqs:795970922094b:0-merck-to-acquire-hbm-portfolio-company-terns-pharmaceuticals-for-usd-6-7-billion/",
-              "published_at": "2026-03-25T11:01:13.921810+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.tradingview.com/news/zacks:47a16b884094b:0-avgo-s-symantec-cbx-expands-security-portfolio-revenues-to-surge/",
+              "published_at": "2026-03-24T11:31:24.576693+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
-          "glance": [
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Merck to buy Terns Pharmaceuticals for $6.7 billion to boost cancer pipeline",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "TSLA",
-          "top_stories": [
-            {
-              "score": 97.3,
-              "tags": [
-                "m_and_a_rumor"
-              ],
-              "headline": "Exclusive: Tesla in talks with Chinese firms to buy $2.9 billion worth of solar equipment, sources say | Reuters",
-              "source": "reuters",
-              "url": "https://www.reuters.com/sustainability/climate-energy/tesla-talks-with-chinese-firms-buy-29-bln-worth-solar-equipment-sources-say-2026-03-20/",
-              "published_at": "2026-03-20T11:01:15.642879+00:00",
-              "why_ranked": "Event=m_and_a_rumor(70) Source=reuters(93) Fresh=0.15 Tier1+"
-            }
-          ],
-          "glance": [
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "European car sales rise modestly in February, Tesla reverses year-long skid | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 51.6,
-              "tags": [
-                "lawsuit"
-              ],
-              "headline": "Tesla Sued by Newly Formed West Texas Charging Patent Company",
-              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
-            }
-          ]
+          "glance": []
         },
         {
           "symbol": "NET",
           "top_stories": [
             {
-              "score": 60.4,
+              "score": 60.7,
               "tags": [
-                "earnings"
+                "guidance"
               ],
-              "headline": "AI Stock Analysis: Cloudflare Revenue Growth vs. Profitability in 2026 - News and Statistics - IndexBox",
+              "headline": "Netcompany raises full-year margin guidance for 2026",
               "source": "unknown",
-              "url": "https://www.indexbox.io/blog/ai-stock-prospects-investors-weigh-risks-as-cloudflare-grows-revenue/",
-              "published_at": "2026-03-27T02:01:16.799708+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.47"
-            },
-            {
-              "score": 60.0,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Vanguard Reports 0 Shares of Cloudflare | NET SEC Filing - Form SCHEDULE 13G/A",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NET/schedule-13g-a-cloudflare-inc-amended-passive-investment-disclosure-88b5e1bd36be.html",
-              "published_at": "2026-03-26T21:01:16.799576+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.31"
+              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
+              "published_at": "2026-03-26T17:31:25.357292+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.22"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 6,
-        "total_candidates": 80,
+        "tickers_processed": 4,
+        "total_candidates": 60,
         "removed_fresh_only": 1,
         "state_written": true,
         "report_date": "2026-03-27"
@@ -1671,7 +849,7 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-27T11:01:18.419461+00:00",
+      "generated_at": "2026-03-27T11:31:26.985099+00:00",
       "tickers": [
         {
           "symbol": "CRM",
@@ -1684,79 +862,42 @@
               "headline": "Salesforce (CRM) Tumbles 6% Following First Revenue Shortfall in Nearly Two Decades - Blockonomi",
               "source": "unknown",
               "url": "https://blockonomi.com/salesforce-crm-tumbles-6-following-first-revenue-shortfall-in-nearly-two-decades/",
-              "published_at": "2026-03-24T11:01:19.331585+00:00",
+              "published_at": "2026-03-24T11:31:27.839522+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "ASML",
+          "symbol": "MU",
           "top_stories": [
-            {
-              "score": 77.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "ASML employees join walkout, unions urge management to reconsider job cuts | Reuters",
-              "source": "reuters",
-              "url": "https://www.reuters.com/business/world-at-work/asml-employees-join-walkout-unions-urge-management-reconsider-job-cuts-2026-03-24/",
-              "published_at": "2026-03-24T11:01:22.190705+00:00",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+"
-            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Can High-NA EUV Adoption Accelerate ASML's Long-Term Revenue Growth?",
+              "headline": "Micron Falls as Q2 Earnings and AI Compression Put Memory Stocks on Edge - 24/7 Wall St.",
               "source": "unknown",
-              "url": "https://sg.finance.yahoo.com/news/high-na-euv-adoption-accelerate-141600899.html",
-              "published_at": "2026-03-25T11:01:22.190876+00:00",
+              "url": "https://247wallst.com/investing/2026/03/25/micron-falls-as-q2-earnings-and-ai-compression-put-memory-stocks-on-edge/",
+              "published_at": "2026-03-25T11:31:31.021049+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
-          "glance": []
-        },
-        {
-          "symbol": "LRCX",
-          "top_stories": [
+          "glance": [
             {
-              "score": 57.6,
+              "score": 47.6,
               "tags": [
-                "earnings"
+                "other"
               ],
-              "headline": "The Bull Case For Lam Research (LRCX) Could Change Following A Record AI-Fueled Earnings Beat And Outlook - Simply Wall St News",
-              "source": "unknown",
-              "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-lrcx/lam-research/news/the-bull-case-for-lam-research-lrcx-could-change-following-a",
-              "published_at": "2026-03-26T20:01:23.389966+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.29"
+              "headline": "Stocks making the biggest moves premarket: MU, SNDK, NEM",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
             }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "BMY",
-          "top_stories": [
-            {
-              "score": 63.2,
-              "tags": [
-                "guidance",
-                "earnings"
-              ],
-              "headline": "Bristol Myers Squibb stock faces pressure after earnings miss and cautious FY2026 guidance amid pipe",
-              "source": "unknown",
-              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bristol-myers-squibb-stock-faces-pressure-after-earnings-miss-and-cautious/68947602",
-              "published_at": "2026-03-20T11:01:24.529507+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
+          ]
         }
       ],
       "debug": {
-        "tickers_processed": 4,
-        "total_candidates": 60,
+        "tickers_processed": 2,
+        "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-03-27"
@@ -1812,7 +953,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-27T11:01:24.533058+00:00",
+        "generated_at": "2026-03-27T11:31:32.656943+00:00",
         "count": 11
       }
     }
