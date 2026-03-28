@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-03-28T07:30:08.045142"
+        "updated_at": "2026-03-28T07:30:54.728939"
       }
     },
     "todoist": {
@@ -100,7 +100,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-03-28T07:30:08.442097",
+        "updated_at": "2026-03-28T07:30:55.080390",
         "task_count": 4,
         "overdue_count": 0,
         "completed_today": 0
@@ -147,7 +147,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-03-28T07:30:09.226438",
+        "updated_at": "2026-03-28T07:30:55.965584",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -157,44 +157,41 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI industry continues consolidating around infrastructure dominance and capability competition. NVIDIA emerged as a central figure this period, announcing multiple initiatives with Hugging Face to expand developer access to DGX Cloud compute resources for model training and inference optimization. These partnerships emphasize democratizing AI development infrastructure at enterprise scale.\n\nIn frontier models, OpenAI and Anthropic released competing reasoning-optimized systems on the same day, with OpenAI offering open-source variants and Anthropic focusing on commercial deployment. Anthropic's Claude Opus 4.5 emphasized coding and autonomous agents, while Google DeepMind introduced multiple capabilities including SIMA 2 for virtual world interaction and Genie 3 world models.\n\nUtility expansion accelerated as frontier models demonstrated security vulnerability detection autonomous from human direction. Hugging Face integrated NVIDIA's NIM microservices for inference-as-a-service, reducing production deployment complexity.\n\nPolicy developments included a court ruling against Pentagon restrictions on Anthropic's supply chain, highlighting regulatory limits on government leverage over AI companies. Separately, an investigation into Iran school bombing coverage illustrated persistent gaps between AI attribution claims and actual causation, raising accountability questions.\n\nThe period reflects the sector's transition from capability races toward infrastructure control and practical deployment optimization, with compute accessibility emerging as a competitive differentiation vector.",
+      "summary": "The AI landscape shows two distinct competitive dynamics emerging this week. In frontier model development, OpenAI and Anthropic released specialized reasoning-optimized language models simultaneously—GPT-5.3-Codex and Claude Opus 4.6—intensifying direct competition. Both companies are prioritizing reasoning capabilities and coding applications. Anthropic's Claude Opus 4.5 has demonstrated particular strength in security vulnerability detection, positioning it competitively against specialized tools. Google DeepMind countered with announcements of Gemini 3, Genie 3, and advanced robotics capabilities, maintaining the three-way race for frontier capabilities. In infrastructure and developer access, NVIDIA emerged as the dominant force. The company announced multiple initiatives: integration with Hugging Face to provide DGX Cloud access to millions of developers, the AI Workbench toolkit, and distribution of Nemotron 3 open-source models. NVIDIA and Hugging Face's partnership directly addresses developer compute accessibility, leveraging the annual SIGGRAPH conference for announcements. Policy developments included a federal judge blocking the Pentagon's effort to label Anthropic as a supply chain risk, affecting government procurement dynamics. Finally, an investigation into Iran bombing coverage revealed how AI attribution claims can obscure more complex security realities, raising broader questions about AI accountability in geopolitical contexts.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "The simultaneous release of Claude Opus 4.6 and GPT-5.3-Codex highlights intensifying competition between the two leading AI labs, potentially signaling accelerated development cycles in the frontier model space.",
+          "why_it_matters": "The simultaneous release of competing models from OpenAI and Anthropic reflects intensifying competition in the frontier AI space and signals accelerating development cycles.",
           "tags": [
-            "models",
-            "enterprise"
+            "models"
           ]
         },
         {
           "title": "OpenAI, Anthropic release new reasoning-optimized language models",
           "url": "https://siliconangle.com/2025/08/05/openai-anthropic-release-new-reasoning-optimized-language-models/",
           "source": "siliconangle.com",
-          "why_it_matters": "Both OpenAI and Anthropic are releasing reasoning-optimized models with different licensing approaches, addressing a specific capability gap in language models for complex task solving.",
+          "why_it_matters": "Both companies releasing reasoning-optimized models on the same day demonstrates a convergence on similar technical priorities for advanced language model capabilities.",
           "tags": [
-            "models",
-            "open-source"
+            "models"
           ]
         },
         {
           "title": "Hugging Face Introduces Inference-as-a-Service with NVIDIA NIM for AI Developers",
           "url": "https://blockchain.news/news/hugging-face-inference-as-a-service-nvidia-nim",
           "source": "blockchain.news",
-          "why_it_matters": "Hugging Face's integration of NVIDIA NIM microservices for inference services could reduce barriers to deploying AI models in production environments for developers.",
+          "why_it_matters": "Hugging Face's new inference service powered by NVIDIA NIM provides developers with accessible deployment options, potentially lowering barriers to production AI applications.",
           "tags": [
-            "hardware",
             "enterprise",
-            "open-source"
+            "hardware"
           ]
         },
         {
           "title": "Research",
           "url": "https://deepmind.google/research/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's SIMA 2 agent demonstrates progress in multi-modal reasoning and learning within virtual environments, extending AI capabilities beyond language tasks.",
+          "why_it_matters": "Google DeepMind's announcements of SIMA 2 and Gemini Robotics showcase advances in embodied AI agents and multimodal world models, expanding capabilities beyond text.",
           "tags": [
             "research",
             "models"
@@ -204,9 +201,8 @@
           "title": "Anatomy of the .claude/ folder",
           "url": "https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder",
           "source": "blog.dailydoseofds.com",
-          "why_it_matters": "Technical documentation on Claude's internal architecture provides insights into model implementation details for developers using the platform.",
+          "why_it_matters": "Technical documentation on Claude's internal structure suggests Anthropic is sharing implementation details with developers.",
           "tags": [
-            "open-source",
             "enterprise"
           ],
           "published_at": "2026-03-27T14:35:45Z",
@@ -216,10 +212,9 @@
           "title": "Judge blocks Pentagon effort to 'punish' Anthropic with supply chain risk label",
           "url": "https://www.cnn.com/2026/03/26/business/anthropic-pentagon-injunction-supply-chain-risk",
           "source": "cnn.com",
-          "why_it_matters": "A court ruling against Pentagon efforts to restrict Anthropic's supply chain access suggests regulatory and legal constraints on government power to penalize AI companies.",
+          "why_it_matters": "A federal judge's decision to block the Pentagon's supply chain risk label against Anthropic has significant implications for government procurement and competitive fairness in the AI sector.",
           "tags": [
-            "policy",
-            "funding"
+            "policy"
           ],
           "published_at": "2026-03-26T23:33:53Z",
           "hn_score": 440
@@ -228,7 +223,7 @@
           "title": "AI got the blame for the Iran school bombing. The truth is more worrying",
           "url": "https://www.theguardian.com/news/2026/mar/26/ai-got-the-blame-for-the-iran-school-bombing-the-truth-is-far-more-worrying",
           "source": "theguardian.com",
-          "why_it_matters": "The article highlights how AI systems receive blame for outcomes they did not cause, raising important questions about attribution and accountability in AI-related incidents.",
+          "why_it_matters": "This investigation reveals how AI misattribution in geopolitical incidents can obscure underlying security realities and policy implications.",
           "tags": [
             "safety",
             "policy"
@@ -240,17 +235,16 @@
           "title": "Introducing Claude Opus 4.5 - Anthropic",
           "url": "https://www.anthropic.com/news/claude-opus-4-5",
           "source": "anthropic.com",
-          "why_it_matters": "Claude Opus 4.5's release demonstrates Anthropic's focus on coding, agents, and computer use capabilities as core competitive advantages.",
+          "why_it_matters": "Anthropic's Claude Opus 4.5 establishes a baseline for capabilities in coding and agentic applications, setting competitive benchmarks for the industry.",
           "tags": [
-            "models",
-            "enterprise"
+            "models"
           ]
         },
         {
           "title": "Google DeepMind",
           "url": "https://deepmind.google",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's announcements of Nano Banana 2, Genie 3, and Gemini 3 represent multiple advances across image generation, world models, and general intelligence.",
+          "why_it_matters": "Google DeepMind's release of Nano Banana 2, Genie 3, and Gemini 3 represents significant capability advances across image generation, world models, and general intelligence.",
           "tags": [
             "models",
             "research"
@@ -260,10 +254,9 @@
           "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
           "url": "https://fortune.com/2026/02/06/anthropic-claude-ai-model-cybersecurity-security-vulnerabilities-risks/",
           "source": "fortune.com",
-          "why_it_matters": "Frontier models are increasingly capable of autonomous security vulnerability detection, expanding their utility beyond productivity tools to active security applications.",
+          "why_it_matters": "Anthropic demonstrating vulnerability detection capabilities shows frontier models are now competitive with specialized security tools, with implications for enterprise adoption.",
           "tags": [
             "models",
-            "safety",
             "enterprise"
           ]
         },
@@ -271,7 +264,7 @@
           "title": "NVIDIA and Hugging Face to Connect Millions of ...",
           "url": "https://nvidianews.nvidia.com/news/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing",
           "source": "nvidianews.nvidia.com",
-          "why_it_matters": "NVIDIA and Hugging Face partnership integrating DGX Cloud with Hugging Face platform aims to democratize access to compute infrastructure for AI development at scale.",
+          "why_it_matters": "NVIDIA and Hugging Face's integration of DGX Cloud infrastructure democratizes access to AI supercomputing resources for millions of developers globally.",
           "tags": [
             "hardware",
             "enterprise"
@@ -281,7 +274,7 @@
           "title": "Nvidia teams up with Hugging Face to offer cloud-based AI training",
           "url": "https://techcrunch.com/2023/08/08/nvidia-teams-up-with-hugging-face-to-offer-cloud-based-ai-training/",
           "source": "techcrunch.com",
-          "why_it_matters": "NVIDIA's expanded partnership with Hugging Face for cloud-based AI training lowers infrastructure barriers for developers building large language models.",
+          "why_it_matters": "The SIGGRAPH-timed partnership announcement between NVIDIA and Hugging Face signals coordinated effort to expand developer ecosystem access to enterprise AI infrastructure.",
           "tags": [
             "hardware",
             "enterprise"
@@ -291,7 +284,7 @@
           "title": "엔비디아, 허깅페이스와 협력하여 수백만 명의 개발자를 생성형 AI ...",
           "url": "https://blogs.nvidia.co.kr/blog/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing/",
           "source": "blogs.nvidia.co.kr",
-          "why_it_matters": "Multilingual coverage of the NVIDIA-Hugging Face partnership indicates global developer audience engagement in compute accessibility initiatives.",
+          "why_it_matters": "NVIDIA's Korean language announcement of the developer partnership demonstrates regional expansion strategy for generative AI infrastructure adoption.",
           "tags": [
             "hardware",
             "enterprise"
@@ -301,7 +294,7 @@
           "title": "Nvidia puts generative AI at the forefront with AI Workbench ...",
           "url": "https://siliconangle.com/2023/08/08/nvidia-puts-generative-ai-forefront-ai-workbench-hugging-face-partnership/",
           "source": "siliconangle.com",
-          "why_it_matters": "NVIDIA's new AI Workbench products signal the company's positioning as an infrastructure enabler across the generative AI development lifecycle.",
+          "why_it_matters": "NVIDIA's AI Workbench launch provides developers with integrated tools for model development and deployment, addressing the tooling gap in AI workflows.",
           "tags": [
             "hardware",
             "enterprise"
@@ -311,20 +304,20 @@
           "title": "Nvidia Is The Only AI Model Maker That Can Afford To Give It Away",
           "url": "https://www.nextplatform.com/2025/12/17/nvidia-is-the-only-ai-model-maker-that-can-afford-to-give-it-away/",
           "source": "nextplatform.com",
-          "why_it_matters": "NVIDIA's ability to distribute AI models at scale suggests dominant market position and capital advantage in the competitive AI hardware and software ecosystem.",
+          "why_it_matters": "NVIDIA's distribution of Nemotron 3 models reflects the company's unique position in leveraging hardware dominance to establish software ecosystem advantage.",
           "tags": [
-            "hardware",
-            "funding"
+            "models",
+            "open-source"
           ]
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-03-28T11:30:07.910094+00:00",
+        "updated_at": "2026-03-28T11:30:54.549253+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -334,7 +327,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-03-28T11:30:43.434994+00:00",
+        "updated_at": "2026-03-28T11:31:29.577547+00:00",
         "video_count": 0
       }
     },
@@ -739,8 +732,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "earnings_financials",
+              "ipo_private_markets",
               "partnership"
             ]
           }
@@ -911,8 +904,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "earnings_financials",
+              "ipo_private_markets",
               "partnership"
             ]
           }
@@ -1121,8 +1114,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "earnings_financials",
+              "ipo_private_markets",
               "partnership"
             ]
           }
@@ -1306,9 +1299,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "OpenClaw",
               "AI Agents",
-              "Agents"
+              "Agents",
+              "OpenClaw"
             ]
           }
         },
@@ -1501,8 +1494,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "earnings_financials",
+              "ipo_private_markets",
               "partnership"
             ]
           }
@@ -1511,7 +1504,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-03-28T11:31:02.216869+00:00"
+        "run_at": "2026-03-28T11:31:46.200947+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1521,22 +1514,8 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-03-28T11:31:11.201726+00:00",
+      "generated_at": "2026-03-28T11:31:53.426034+00:00",
       "tickers": [
-        {
-          "symbol": "NVDA",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Is now the time to buy Nvidia? Cramer says ask these questions to arrive at an answer",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
-            }
-          ]
-        },
         {
           "symbol": "AMZN",
           "top_stories": [],
@@ -1546,128 +1525,100 @@
               "tags": [
                 "other"
               ],
-              "headline": "Software Stocks Drop on Report Amazon Is Developing AI Tools - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Exclusive: Amazon plans smartphone comeback more than a decade after Fire Phone flop | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Amazon Offers $1,000 Prizes for Drivers Who Say Why They Love Their Job - Bloomberg",
+              "headline": "Amazon: Trending News, Latest Updates, Analysis",
               "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
         {
-          "symbol": "LLY",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "How the Loxo Oncology acquisition fueled Eli Lilly's rise in cancer drugs",
-              "source": "unknown",
-              "url": "https://www.statnews.com/2026/03/25/eli-lilly-cancer-drug-pipeline-fueled-loxo-oncology-jacob-van-naarden/",
-              "published_at": "2026-03-25T11:31:15.739712+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "NTSK",
+          "symbol": "MRK",
           "top_stories": [
             {
               "score": 57.6,
               "tags": [
                 "sec_filing"
               ],
-              "headline": "Netskope filing: Vanguard reports 0 shares owned | NTSK SEC Filing - Form SCHEDULE 13G/A",
+              "headline": "[SCHEDULE 13G/A] Merck & Co., Inc. Amended Passive Investment Disclosure | MRK SEC Filing - Form SCHEDULE 13G/A",
               "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NTSK/schedule-13g-a-netskope-inc-amended-passive-investment-disclosure-8d9c07d8a322.html",
-              "published_at": "2026-03-27T11:31:17.017376+00:00",
+              "url": "https://www.stocktitan.net/sec-filings/MRK/schedule-13g-a-merck-co-inc-amended-passive-investment-disclosure-dbc5a1fdf84c.html",
+              "published_at": "2026-03-27T11:31:56.448538+00:00",
               "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "AVGO",
-          "top_stories": [
+            },
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "Merck (MRK) Stock; Edges Higher as $6.7B Terns Acquisition Boosts Cancer Pipeline Outlook - CoinCentral",
+              "source": "unknown",
+              "url": "https://coincentral.com/merck-mrk-stock-terns-pharma-6-7b-acquisition-cancer-pipeline/",
+              "published_at": "2026-03-26T11:31:56.448601+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Broadcom (AVGO) Stock: Why Analysts Think $100B AI Revenue Target Is Too Low - CoinCentral",
+              "headline": "What is Erste Group Bank's Estimate for MRK FY2026 Earnings?",
               "source": "unknown",
-              "url": "https://coincentral.com/broadcom-avgo-stock-why-analysts-think-100b-ai-revenue-target-is-too-low/",
-              "published_at": "2026-03-25T11:31:18.213542+00:00",
+              "url": "https://www.marketbeat.com/instant-alerts/what-is-erste-group-banks-estimate-for-mrk-fy2026-earnings-2026-03-27/",
+              "published_at": "2026-03-27T11:31:56.448840+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "NET",
+          "symbol": "CMG",
           "top_stories": [
             {
-              "score": 59.6,
+              "score": 57.6,
               "tags": [
-                "guidance"
+                "sec_filing"
               ],
-              "headline": "Netcompany raises full-year margin guidance for 2026",
+              "headline": "[SCHEDULE 13G/A] CHIPOTLE MEXICAN GRILL INC Amended Passive Investment Disclosure | CMG SEC Filing - Form SCHEDULE 13G/A",
               "source": "unknown",
-              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
-              "published_at": "2026-03-26T11:31:19.053178+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.stocktitan.net/sec-filings/CMG/schedule-13g-a-chipotle-mexican-grill-inc-amended-passive-investment--16a80a9d4cc1.html",
+              "published_at": "2026-03-26T11:31:59.669431+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "Computer Modelling Group acquires Rose Subsurface for $9.8M By Investing.com",
+              "source": "unknown",
+              "url": "https://www.investing.com/news/company-news/computer-modelling-group-acquires-rose-subsurface-for-98m-93CH-4579484",
+              "published_at": "2026-03-25T11:31:59.669764+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "RXRX",
+          "symbol": "XIACY",
           "top_stories": [
             {
-              "score": 58.2,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Vanguard Amends 13G/A, Reports 0 Shares of Recursion | RXRX SEC Filing - Form SCHEDULE 13G/A",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/RXRX/schedule-13g-a-recursion-pharmaceuticals-inc-amended-passive-investme-c49149995b94.html",
-              "published_at": "2026-03-27T15:31:20.350049+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.19"
-            },
-            {
-              "score": 56.2,
+              "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Recursion Pharmaceuticals (RXRX) Down 16.5% Since Last Earnings Report: Can It Rebound?",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/recursion-pharmaceuticals-rxrx-down-16-153011178.html",
-              "published_at": "2026-03-27T15:31:20.349337+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.19"
+              "headline": "Xiaomi Earnings Call: Plans to invest RMB 60 billion in AI over the next three years, opposes conceptualizing AI smartphones; price increases possible if memory cost rises exceed expectations.",
+              "source": "unknown",
+              "url": "https://news.futunn.com/en/post/70539371/xiaomi-media-conference-call-r-d-investment-projected-to-exceed",
+              "published_at": "2026-03-24T11:32:00.872536+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 7,
-        "total_candidates": 80,
-        "removed_fresh_only": 0,
+        "tickers_processed": 4,
+        "total_candidates": 70,
+        "removed_fresh_only": 6,
         "state_written": true,
         "report_date": "2026-03-28"
       }
@@ -1675,88 +1626,39 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-03-28T11:31:20.767682+00:00",
+      "generated_at": "2026-03-28T11:32:00.874153+00:00",
       "tickers": [
         {
-          "symbol": "GLW",
+          "symbol": "ASML",
           "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Vanguard reports 0 shares of Corning common stock | GLW SEC Filing - Form SCHEDULE 13G/A",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/GLW/schedule-13g-a-corning-inc-ny-amended-passive-investment-disclosure-9d62c0424996.html",
-              "published_at": "2026-03-26T11:31:22.722641+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "LRCX",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Vanguard reports 0% stake in Lam Research | LRCX SEC Filing - Form SCHEDULE 13G/A",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/LRCX/schedule-13g-a-lam-research-corp-amended-passive-investment-disclosur-675f10b24eff.html",
-              "published_at": "2026-03-27T11:31:25.102199+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "The Bull Case For Lam Research (LRCX) Could Change Following A Record AI-Fueled Earnings Beat And Outlook - Simply Wall St News",
+              "headline": "Can High-NA EUV Adoption Accelerate ASML's Long-Term Revenue Growth?",
               "source": "unknown",
-              "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-lrcx/lam-research/news/the-bull-case-for-lam-research-lrcx-could-change-following-a",
-              "published_at": "2026-03-26T11:31:25.102355+00:00",
+              "url": "https://sg.finance.yahoo.com/news/high-na-euv-adoption-accelerate-141600899.html",
+              "published_at": "2026-03-25T11:32:04.133046+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
-          "glance": []
-        },
-        {
-          "symbol": "BMY",
-          "top_stories": [
+          "glance": [
             {
-              "score": 63.2,
+              "score": 52.3,
               "tags": [
-                "guidance",
-                "earnings"
+                "other"
               ],
-              "headline": "Bristol Myers Squibb stock faces pressure after earnings miss and cautious FY2026 guidance amid pipe",
-              "source": "unknown",
-              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bristol-myers-squibb-stock-faces-pressure-after-earnings-miss-and-cautious/68947602",
-              "published_at": "2026-03-21T11:31:26.340688+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 59.2,
-              "tags": [
-                "earnings",
-                "lawsuit"
-              ],
-              "headline": "FY2026 Earnings Forecast for BMY Issued By Erste Group Bank",
-              "source": "unknown",
-              "url": "https://www.marketbeat.com/instant-alerts/fy2026-earnings-forecast-for-bmy-issued-by-erste-group-bank-2026-03-26/",
-              "published_at": "2026-03-26T11:31:26.340519+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "ASML employees join walkout, unions urge management to reconsider job cuts | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
-          ],
-          "glance": []
+          ]
         }
       ],
       "debug": {
-        "tickers_processed": 3,
+        "tickers_processed": 1,
         "total_candidates": 50,
-        "removed_fresh_only": 0,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-03-28"
       }
@@ -1811,7 +1713,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-03-28T11:31:26.342225+00:00",
+        "generated_at": "2026-03-28T11:32:06.365584+00:00",
         "count": 11
       }
     }
