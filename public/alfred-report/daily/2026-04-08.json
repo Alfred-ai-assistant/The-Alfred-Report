@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-08T07:00:03.271078"
+        "updated_at": "2026-04-08T07:30:18.132980"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-08T07:00:06.434886",
+        "updated_at": "2026-04-08T07:30:18.573661",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-08T07:00:07.504946",
+        "updated_at": "2026-04-08T07:30:19.614203",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -163,7 +163,7 @@
             "policy"
           ],
           "published_at": "2026-04-08T02:41:12Z",
-          "hn_score": 331
+          "hn_score": 332
         },
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
@@ -203,7 +203,7 @@
             "hardware"
           ],
           "published_at": "2026-04-07T08:38:17Z",
-          "hn_score": 314
+          "hn_score": 315
         },
         {
           "title": "Project Glasswing: Securing critical software for the AI era",
@@ -215,7 +215,7 @@
             "policy"
           ],
           "published_at": "2026-04-07T18:09:34Z",
-          "hn_score": 1315
+          "hn_score": 1321
         },
         {
           "title": "System Card: Claude Mythos Preview [pdf]",
@@ -227,7 +227,7 @@
             "safety"
           ],
           "published_at": "2026-04-07T18:18:36Z",
-          "hn_score": 714
+          "hn_score": 721
         },
         {
           "title": "Assessing Claude Mythos Preview's cybersecurity capabilities",
@@ -239,7 +239,7 @@
             "safety"
           ],
           "published_at": "2026-04-07T18:11:31Z",
-          "hn_score": 286
+          "hn_score": 288
         },
         {
           "title": "Taste in the age of AI and LLMs",
@@ -250,7 +250,7 @@
             "research"
           ],
           "published_at": "2026-04-07T15:54:16Z",
-          "hn_score": 247
+          "hn_score": 249
         },
         {
           "title": "AI may be making us think and write more alike",
@@ -261,7 +261,7 @@
             "research"
           ],
           "published_at": "2026-04-07T11:29:02Z",
-          "hn_score": 221
+          "hn_score": 222
         },
         {
           "title": "Claude Code login fails with OAuth timeout on Windows",
@@ -313,11 +313,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-08T11:00:03.134869+00:00",
+        "updated_at": "2026-04-08T11:30:17.929077+00:00",
         "story_count": 15,
         "lanes_used": [
-          "hn",
-          "primary"
+          "primary",
+          "hn"
         ]
       }
     },
@@ -327,7 +327,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-08T11:00:44.561484+00:00",
+        "updated_at": "2026-04-08T11:30:50.752628+00:00",
         "video_count": 0
       }
     },
@@ -836,6 +836,18 @@
               "topic_confidence": "high"
             },
             {
+              "title": "r/LocalLLaMA on Reddit: Anyone get groq API access yet? Is it just as fast?",
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1aviqk0/anyone_get_groq_api_access_yet_is_it_just_as_fast/",
+              "subreddit": "LocalLLaMA",
+              "source": "reddit",
+              "matched_terms": [
+                "Groq",
+                "Groq"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
               "title": "Let's discuss about Groq, which model you use and why.",
               "url": "https://www.reddit.com/r/LocalLLaMA/comments/1d6egfk/lets_discuss_about_groq_which_model_you_use_and/",
               "subreddit": "LocalLLaMA",
@@ -849,18 +861,6 @@
                 "earnings_financials",
                 "partnership"
               ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Anyone get groq API access yet? Is it just as fast?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1aviqk0/anyone_get_groq_api_access_yet_is_it_just_as_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
               "topic_confidence": "high"
             },
             {
@@ -880,6 +880,18 @@
               "topic_confidence": "high"
             },
             {
+              "title": "r/singularity on Reddit: The speed at which Groq chips run llama-3 is unbelievable.",
+              "url": "https://www.reddit.com/r/singularity/comments/1c845st/the_speed_at_which_groq_chips_run_llama3_is/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "Groq",
+                "Groq"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
               "title": "r/LocalLLaMA on Reddit: Dumb question: where can you go if you don’t have enough local compute? Are there any good providers?",
               "url": "https://www.reddit.com/r/LocalLLaMA/comments/1coc59y/dumb_question_where_can_you_go_if_you_dont_have/",
               "subreddit": "LocalLLaMA",
@@ -894,18 +906,6 @@
                 "earnings_financials",
                 "partnership"
               ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: The speed at which Groq chips run llama-3 is unbelievable.",
-              "url": "https://www.reddit.com/r/singularity/comments/1c845st/the_speed_at_which_groq_chips_run_llama3_is/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
               "topic_confidence": "high"
             }
           ],
@@ -1519,7 +1519,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-08T11:01:03.210795+00:00"
+        "run_at": "2026-04-08T11:31:09.619937+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1529,7 +1529,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-08T11:01:14.843044+00:00",
+      "generated_at": "2026-04-08T11:31:18.968241+00:00",
       "tickers": [
         {
           "symbol": "AMZN",
@@ -1542,7 +1542,7 @@
               "headline": "FinancialContent - Amazon’s Potential Pre-Earnings Rally as Middle East Tensions Show Signs of Easing",
               "source": "unknown",
               "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-4-6-amazons-potential-pre-earnings-rally-as-middle-east-tensions-show-signs-of-easing",
-              "published_at": "2026-04-06T11:01:16.771241+00:00",
+              "published_at": "2026-04-06T11:31:20.816847+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1558,30 +1558,18 @@
           ]
         },
         {
-          "symbol": "NET",
+          "symbol": "NTSK",
           "top_stories": [
             {
-              "score": 63.2,
+              "score": 57.6,
               "tags": [
-                "guidance",
-                "earnings"
+                "sec_filing"
               ],
-              "headline": "The Bull Case For Cloudflare (NET) Could Change Following Strong Revenue Beat But Soft EPS Guidance - Learn Why - Simply Wall St News",
+              "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
               "source": "unknown",
-              "url": "https://simplywall.st/stocks/us/software/nyse-net/cloudflare/news/the-bull-case-for-cloudflare-net-could-change-following-stro",
-              "published_at": "2026-04-02T11:01:21.288876+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Cloudflare (NET) Valuation Check After Earnings Beat And Growing Role In AI Infrastructure - Simply Wall St News",
-              "source": "unknown",
-              "url": "https://simplywall.st/stocks/us/software/nyse-net/cloudflare/news/cloudflare-net-valuation-check-after-earnings-beat-and-growi",
-              "published_at": "2026-04-05T11:01:21.288769+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
+              "published_at": "2026-04-01T11:31:23.174556+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1597,25 +1585,25 @@
               "headline": "Chipotle Mexican Grill's Q1 2026 Earnings: What to Expect",
               "source": "unknown",
               "url": "https://www.barchart.com/story/news/1177613/chipotle-mexican-grill-s-q1-2026-earnings-what-to-expect",
-              "published_at": "2026-04-07T11:01:22.103501+00:00",
+              "published_at": "2026-04-07T11:31:25.643404+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "XIACY",
+          "symbol": "RXRX",
           "top_stories": [
             {
-              "score": 66.4,
+              "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
-              "source": "seekingalpha",
-              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
-              "published_at": "2026-03-25T11:01:23.289518+00:00",
-              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
+              "headline": "Recursion Pharmaceuticals (RXRX) Down 16.5% Since Last Earnings Report: Can It Rebound?",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/recursion-pharmaceuticals-rxrx-down-16-153011178.html",
+              "published_at": "2026-03-25T11:31:26.423565+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1623,7 +1611,7 @@
       ],
       "debug": {
         "tickers_processed": 4,
-        "total_candidates": 80,
+        "total_candidates": 70,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-08"
@@ -1632,56 +1620,36 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-08T11:01:23.292707+00:00",
+      "generated_at": "2026-04-08T11:31:26.871526+00:00",
       "tickers": [
         {
-          "symbol": "TSM",
+          "symbol": "AMAT",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Taiwan Semiconductor Manufacturing Company Stock (TSM) Opinions on Pre-Earnings Momentum | TSM Stock News",
+              "headline": "A Look At Applied Materials (AMAT) Valuation After Earnings Beat AI Demand Tailwinds And Regulatory Resolution - Simply Wall St News",
               "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Taiwan+Semiconductor+Manufacturing+Company+Stock+(TSM)+Opinions+on+Pre-Earnings+Momentum",
-              "published_at": "2026-04-06T11:01:24.557017+00:00",
+              "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-amat/applied-materials/news/a-look-at-applied-materials-amat-valuation-after-earnings-be",
+              "published_at": "2026-04-03T11:31:29.658428+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "ASML",
-          "top_stories": [
-            {
-              "score": 60.4,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Analysis: ASML earnings preview; SK Hynix and TeraFab already facing EUV capacity difficulties",
-              "source": "unknown",
-              "url": "https://www.digitimes.com/news/a20260408PD204/asml-earnings-euv-capacity-sk-hynix-tesla.html",
-              "published_at": "2026-04-08T02:01:26.582601+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.47"
-            }
-          ],
+          "symbol": "MU",
+          "top_stories": [],
           "glance": [
             {
               "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "ASML shares fall on US Congress plan to further restrict China exports | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "ASML shares fall after proposed U.S. export curbs target an already fragile China market",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
+              "headline": "Micron Is Slumping and Rival’s $10 Billion US Listing Won’t Help - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
@@ -1696,16 +1664,34 @@
               "headline": "A Look At Lam Research (LRCX) Valuation After Earnings Beat New CEA Leti Partnership And Erste Downgrade - Simply Wall St News",
               "source": "unknown",
               "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-lrcx/lam-research/news/a-look-at-lam-research-lrcx-valuation-after-earnings-beat-ne",
-              "published_at": "2026-04-06T11:01:27.832656+00:00",
+              "published_at": "2026-04-06T11:31:31.770043+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "BMY",
+          "top_stories": [
+            {
+              "score": 63.2,
+              "tags": [
+                "guidance",
+                "earnings"
+              ],
+              "headline": "Bristol Myers Squibb stock faces pressure after earnings miss and cautious FY2026 guidance amid pipe",
+              "source": "unknown",
+              "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/bristol-myers-squibb-stock-faces-pressure-after-earnings-miss-and-cautious/68947602",
+              "published_at": "2026-03-18T11:31:32.987285+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 3,
-        "total_candidates": 50,
+        "tickers_processed": 4,
+        "total_candidates": 60,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-08"
@@ -1761,7 +1747,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-08T11:01:29.124941+00:00",
+        "generated_at": "2026-04-08T11:31:32.995718+00:00",
         "count": 11
       }
     }
