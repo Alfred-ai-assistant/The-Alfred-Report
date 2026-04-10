@@ -66,16 +66,38 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-10T07:00:02.744642"
+        "updated_at": "2026-04-10T07:30:10.541559"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 503: \n",
-      "items": [],
+      "summary": "3 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g2cpjm82pGC887h",
+          "content": "Clean bedroom",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6g5JfcVfvCQ7cx2h",
+          "content": "Move money for mothers rent",
+          "due": "every 1st",
+          "overdue": false
+        },
+        {
+          "id": "6gJV26Jqj4Xh4wJh",
+          "content": "Call about refrigerator",
+          "due": "No due date",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 503: \n"
+        "updated_at": "2026-04-10T07:30:10.969576",
+        "task_count": 3,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
@@ -119,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-10T07:00:04.806219",
+        "updated_at": "2026-04-10T07:30:11.753385",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -129,13 +151,13 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI market continues accelerating along multiple vectors. Anthropic and OpenAI demonstrated intensifying competition by releasing new models within minutes of each other—Anthropic unveiled Claude Opus 4.6 with improved coding and agentic capabilities, while OpenAI released GPT-5.3-Codex. Google DeepMind launched Gemma 4 as an open-source alternative, purpose-built for agentic workflows, expanding competitive pressure beyond proprietary vendors. Enterprise adoption dynamics are shifting, with pricing increases at OpenAI (ChatGPT Pro now $100/month) creating market stratification, while some users reallocate spending to alternatives. Frontier models are demonstrating expanded capabilities beyond generation—Anthropic's latest excels at identifying security vulnerabilities, suggesting evolution toward autonomous engineering tasks. Infrastructure partnerships are broadening access: NVIDIA and Hugging Face announced integration of DGX Cloud for LLM training and inference-as-a-service, democratizing supercomputing resources. However, emerging challenges accompany capability gains. Attribution errors in Claude and privacy concerns regarding plugin behavior highlight ongoing safety considerations. Sentiment research indicates young adults growing less hopeful and more angry about AI, suggesting psychological dimensions to public reception warrant policy attention. Overall, the landscape reflects simultaneous advancement in capability, competition, accessibility, and unresolved safety concerns.",
+      "summary": "The AI landscape this week reflects intensifying competition among providers alongside infrastructure consolidation. OpenAI and Anthropic's same-day model releases—GPT-5.3-Codex and Claude Opus 4.6 respectively—highlight accelerating development cycles. Anthropic's latest model demonstrates improved coding and agentic capabilities, while both companies have expanded their enterprise offerings, with ChatGPT Pro pricing now at $100/month and Claude integrating Chrome and Excel functionality. Google DeepMind advanced multimodal research with SIMA 2 and Gemini Robotics, emphasizing reasoning in virtual environments. On the infrastructure side, NVIDIA and Hugging Face announced a significant partnership connecting DGX Cloud compute to Hugging Face's developer platform, democratizing access to model training and inference for millions of developers. This represents a strategic alignment between hardware and open-source communities. However, emerging challenges temper optimism: young adults show declining confidence in AI, security vulnerabilities in frontier models raise safety concerns, and privacy issues around Claude Code's prompt handling underscore governance gaps. Developer behavior shows fragmentation, with some reallocating spending away from Claude Code toward alternatives. The broader narrative reflects simultaneous technological advancement, market consolidation around major players, and growing user scrutiny of data practices.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "The simultaneous release by OpenAI and Anthropic signals intensifying direct competition in the frontier AI model market, with both companies advancing capabilities in different areas.",
+          "why_it_matters": "The simultaneous release of Claude Opus 4.6 and GPT-5.3-Codex marks an intensifying competitive cycle between AI's leading labs, with implications for model capability parity and market positioning.",
           "tags": [
             "models",
             "enterprise"
@@ -145,20 +167,9 @@
           "title": "Anthropic releases Opus 4.5 with new Chrome and Excel integrations",
           "url": "https://techcrunch.com/2025/11/24/anthropic-releases-opus-4-5-with-new-chrome-and-excel-integrations/",
           "source": "techcrunch.com",
-          "why_it_matters": "Anthropic's integration of productivity tools like Chrome and Excel into Opus 4.5 demonstrates expansion into enterprise workflows beyond pure language capabilities.",
+          "why_it_matters": "Anthropic's integration of Chrome and Excel functionality into Opus 4.5 extends the model's practical utility for enterprise users beyond traditional chat interfaces.",
           "tags": [
             "models",
-            "enterprise"
-          ]
-        },
-        {
-          "title": "Google Launches Gemma 4, Its Most Capable Open Model Yet",
-          "url": "https://www.techbuzz.ai/articles/google-launches-gemma-4-its-most-capable-open-model-yet",
-          "source": "techbuzz.ai",
-          "why_it_matters": "Google's release of Gemma 4 as an open model with agentic capabilities represents significant advancement in accessible AI for enterprise applications.",
-          "tags": [
-            "models",
-            "open-source",
             "enterprise"
           ]
         },
@@ -166,64 +177,62 @@
           "title": "Study found that young adults have grown less hopeful and more angry about AI",
           "url": "https://www.nytimes.com/2026/04/09/style/gen-z-ai-gallup-study.html",
           "source": "nytimes.com",
-          "why_it_matters": "Sentiment shifts among young adults indicate growing psychological and emotional concerns about AI adoption that may influence policy and public discourse.",
+          "why_it_matters": "Declining optimism and rising frustration among young adults about AI reflects potential headwinds for adoption and public support despite technological advances.",
           "tags": [
-            "policy",
-            "safety"
+            "policy"
           ],
           "published_at": "2026-04-09T14:44:16Z",
-          "hn_score": 123
+          "hn_score": 124
         },
         {
           "title": "Research — Google DeepMind",
           "url": "https://deepmind.google/research/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's development of SIMA 2 and Gemini Robotics demonstrates research progress in embodied AI agents and reasoning in complex environments.",
+          "why_it_matters": "Google DeepMind's SIMA 2 agent and Gemini Robotics represent advances in multimodal reasoning and world modeling capabilities with applications to embodied AI systems.",
           "tags": [
-            "research",
-            "models"
+            "models",
+            "research"
           ]
         },
         {
           "title": "Claude mixes up who said what",
           "url": "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html",
           "source": "dwyer.co.za",
-          "why_it_matters": "Attribution errors in Claude indicate ongoing accuracy challenges in frontier models that could affect reliability in critical applications.",
+          "why_it_matters": "Claude's attribution errors highlight persistent accuracy challenges in AI systems, relevant to deployment in sensitive contexts.",
           "tags": [
-            "safety",
-            "models"
+            "safety"
           ],
           "published_at": "2026-04-09T09:25:28Z",
-          "hn_score": 437
+          "hn_score": 438
         },
         {
           "title": "Reallocating $100/Month Claude Code Spend to Zed and OpenRouter",
           "url": "https://braw.dev/blog/2026-04-06-reallocating-100-month-claude-spend/",
           "source": "braw.dev",
-          "why_it_matters": "User reallocation of AI spending from Claude to alternative platforms suggests price sensitivity and competitive dynamics in the AI tooling market.",
+          "why_it_matters": "Developer migration away from Claude Code toward alternative tools indicates shifting preferences in the AI-assisted development tooling landscape.",
           "tags": [
             "enterprise"
           ],
           "published_at": "2026-04-09T08:55:18Z",
-          "hn_score": 332
+          "hn_score": 333
         },
         {
           "title": "The Vercel plugin on Claude Code wants to read your prompts",
           "url": "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry",
           "source": "akshaychugh.xyz",
-          "why_it_matters": "Privacy concerns about plugin behavior in Claude Code highlight emerging security considerations in AI development environments.",
+          "why_it_matters": "Privacy concerns about Claude Code's prompt handling capabilities reflect growing user scrutiny of data practices in AI development tools.",
           "tags": [
             "safety",
-            "enterprise"
+            "policy"
           ],
           "published_at": "2026-04-09T15:17:27Z",
-          "hn_score": 266
+          "hn_score": 267
         },
         {
           "title": "ChatGPT Pro now starts at $100/month",
           "url": "https://chatgpt.com/pricing/",
           "source": "chatgpt.com",
-          "why_it_matters": "ChatGPT Pro's price increase to $100/month reflects premium positioning in consumer AI subscriptions and potential market stratification.",
+          "why_it_matters": "ChatGPT Pro's price increase to $100/month signals premium tier repositioning and potential monetization strategy refinement.",
           "tags": [
             "enterprise"
           ],
@@ -231,35 +240,33 @@
           "hn_score": 203
         },
         {
-          "title": "Introducing Claude Opus 4.6 - Anthropic",
-          "url": "https://www.anthropic.com/news/claude-opus-4-6",
-          "source": "anthropic.com",
-          "why_it_matters": "Claude Opus 4.6's improvements in coding and agentic task execution demonstrate continuous capability advancement in the Anthropic model lineup.",
-          "tags": [
-            "models",
-            "enterprise"
-          ]
-        },
-        {
           "title": "Instant 1.0, a backend for AI-coded apps",
           "url": "https://www.instantdb.com/essays/architecture",
           "source": "instantdb.com",
-          "why_it_matters": "Backend infrastructure purpose-built for AI-coded applications indicates emerging ecosystem development around AI-generated code.",
+          "why_it_matters": "Instant 1.0's backend infrastructure for AI-coded applications addresses emerging needs in the generative AI development stack.",
           "tags": [
-            "enterprise",
-            "open-source"
+            "open-source",
+            "enterprise"
           ],
           "published_at": "2026-04-09T18:30:59Z",
-          "hn_score": 157
+          "hn_score": 159
+        },
+        {
+          "title": "Introducing Claude Opus 4.6 - Anthropic",
+          "url": "https://www.anthropic.com/news/claude-opus-4-6",
+          "source": "anthropic.com",
+          "why_it_matters": "Claude Opus 4.6's improvements in code planning and agentic task execution extend capabilities for complex, multi-step automation scenarios.",
+          "tags": [
+            "models"
+          ]
         },
         {
           "title": "Anthropic's newest model excels at finding security vulnerabilities ...",
           "url": "https://fortune.com/2026/02/06/anthropic-claude-ai-model-cybersecurity-security-vulnerabilities-risks/",
           "source": "fortune.com",
-          "why_it_matters": "Frontier models increasingly identifying security vulnerabilities represents expansion of AI capabilities beyond code generation into security analysis.",
+          "why_it_matters": "Frontier models' emerging ability to identify security vulnerabilities represents a new capability tier with both defensive and offensive implications.",
           "tags": [
             "models",
-            "enterprise",
             "safety"
           ]
         },
@@ -267,41 +274,49 @@
           "title": "OpenAI and Anthropic Unveil New AI Models in Minutes | Tech Pulse",
           "url": "https://thenextgentechinsider.com/pulse/openai-and-anthropic-unveil-new-ai-models-in-minutes",
           "source": "thenextgentechinsider.com",
-          "why_it_matters": "The rapid competitive model release cycle between OpenAI and Anthropic underscores acceleration in frontier AI development.",
+          "why_it_matters": "The 20-minute competitive window between model releases exemplifies accelerating AI development cycles and direct market competition.",
           "tags": [
-            "models"
+            "models",
+            "enterprise"
           ]
         },
         {
           "title": "NVIDIA and Hugging Face to Connect Millions of ...",
           "url": "https://nvidianews.nvidia.com/news/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing",
           "source": "nvidianews.nvidia.com",
-          "why_it_matters": "NVIDIA and Hugging Face partnership democratizes access to AI supercomputing infrastructure, potentially lowering barriers to model training.",
+          "why_it_matters": "NVIDIA and Hugging Face's integration of DGX Cloud with Hugging Face's platform democratizes access to high-compute infrastructure for millions of developers.",
           "tags": [
             "hardware",
-            "open-source",
-            "enterprise"
+            "open-source"
           ]
         },
         {
           "title": "Hugging Face partners with NVIDIA to democratise AI inference",
           "url": "https://www.developer-tech.com/news/hugging-face-partners-nvidia-democratise-ai-inference/",
           "source": "developer-tech.com",
-          "why_it_matters": "Integration of NVIDIA capabilities into Hugging Face platform brings inference-as-a-service to a large developer community, advancing accessibility.",
+          "why_it_matters": "Inference-as-a-service capabilities through NVIDIA-Hugging Face partnership reduce barriers to deployment for developers leveraging community models.",
           "tags": [
             "hardware",
-            "open-source",
-            "enterprise"
+            "open-source"
+          ]
+        },
+        {
+          "title": "엔비디아, 허깅페이스와 협력하여 수백만 명의 개발자를 생성형 AI ...",
+          "url": "https://blogs.nvidia.co.kr/blog/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing/",
+          "source": "blogs.nvidia.co.kr",
+          "why_it_matters": "NVIDIA's multilingual announcement strategy reflects expansion of its GPU-computing partnerships across global developer communities.",
+          "tags": [
+            "hardware"
           ]
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-10T11:00:02.609403+00:00",
+        "updated_at": "2026-04-10T11:30:10.398911+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -311,7 +326,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-10T11:00:38.260695+00:00",
+        "updated_at": "2026-04-10T11:30:45.231182+00:00",
         "video_count": 0
       }
     },
@@ -717,9 +732,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         },
@@ -795,19 +810,6 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/homeassistant on Reddit: Use Groq Cloud as a conversation agent",
-              "url": "https://www.reddit.com/r/homeassistant/comments/1f1rtzu/use_groq_cloud_as_a_conversation_agent/",
-              "subreddit": "homeassistant",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq Cloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
               "title": "r/LocalLLaMA on Reddit: Anyone get groq API access yet? Is it just as fast?",
               "url": "https://www.reddit.com/r/LocalLLaMA/comments/1aviqk0/anyone_get_groq_api_access_yet_is_it_just_as_fast/",
               "subreddit": "LocalLLaMA",
@@ -832,25 +834,22 @@
               "topic_confidence": "high"
             },
             {
-              "title": "Let's discuss about Groq, which model you use and why.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1d6egfk/lets_discuss_about_groq_which_model_you_use_and/",
-              "subreddit": "LocalLLaMA",
+              "title": "r/homeassistant on Reddit: Use Groq Cloud as a conversation agent",
+              "url": "https://www.reddit.com/r/homeassistant/comments/1f1rtzu/use_groq_cloud_as_a_conversation_agent/",
+              "subreddit": "homeassistant",
               "source": "reddit",
               "matched_terms": [
                 "Groq",
+                "Groq Cloud",
                 "Groq"
               ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
+              "topics": [],
               "topic_confidence": "high"
             },
             {
-              "title": "r/singularity on Reddit: What are your thoughts on Groq and other open source inference providers - esp with falling API prices.",
-              "url": "https://www.reddit.com/r/singularity/comments/1l92wjv/what_are_your_thoughts_on_groq_and_other_open/",
-              "subreddit": "singularity",
+              "title": "Let's discuss about Groq, which model you use and why.",
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1d6egfk/lets_discuss_about_groq_which_model_you_use_and/",
+              "subreddit": "LocalLLaMA",
               "source": "reddit",
               "matched_terms": [
                 "Groq",
@@ -876,6 +875,22 @@
               "topic_confidence": "high"
             },
             {
+              "title": "r/singularity on Reddit: What are your thoughts on Groq and other open source inference providers - esp with falling API prices.",
+              "url": "https://www.reddit.com/r/singularity/comments/1l92wjv/what_are_your_thoughts_on_groq_and_other_open/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "Groq",
+                "Groq"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
               "title": "r/LocalLLaMA on Reddit: Dumb question: where can you go if you don’t have enough local compute? Are there any good providers?",
               "url": "https://www.reddit.com/r/LocalLLaMA/comments/1coc59y/dumb_question_where_can_you_go_if_you_dont_have/",
               "subreddit": "LocalLLaMA",
@@ -898,9 +913,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         },
@@ -1100,9 +1115,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         },
@@ -1302,9 +1317,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "OpenClaw",
               "Agents",
-              "AI Agents"
+              "AI Agents",
+              "OpenClaw"
             ]
           }
         },
@@ -1496,9 +1511,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "earnings_financials",
-              "ipo_private_markets",
-              "partnership"
+              "ipo_private_markets"
             ]
           }
         }
@@ -1506,7 +1521,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-10T11:00:56.811641+00:00"
+        "run_at": "2026-04-10T11:31:03.762315+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1516,7 +1531,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-10T11:01:08.455964+00:00",
+      "generated_at": "2026-04-10T11:31:13.395651+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
@@ -1543,7 +1558,7 @@
               "headline": "Amazon CEO reveals AI revenue, dismisses spending doubts in annual letter | Reuters",
               "source": "reuters",
               "url": "https://www.reuters.com/business/retail-consumer/amazon-says-annual-revenue-run-rate-chips-business-now-over-20-billion-2026-04-09/",
-              "published_at": "2026-04-09T11:01:10.339379+00:00",
+              "published_at": "2026-04-09T11:31:15.221617+00:00",
               "why_ranked": "Event=earnings(85) Source=reuters(93) Fresh=0.15 Tier1+"
             }
           ],
@@ -1559,45 +1574,22 @@
           ]
         },
         {
-          "symbol": "LLY",
-          "top_stories": [
-            {
-              "score": 56.2,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "FinancialContent - What to Expect From Eli Lilly's Next Quarterly Earnings Report",
-              "source": "unknown",
-              "url": "https://markets.financialcontent.com/stocks/article/barchart-2026-4-9-what-to-expect-from-eli-lillys-next-quarterly-earnings-report",
-              "published_at": "2026-04-09T15:01:11.515202+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
-            }
-          ],
+          "symbol": "AAPL",
+          "top_stories": [],
           "glance": [
             {
               "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Amazon to stock Lilly's new weight-loss pill at US kiosks, offer same-day delivery | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+              "headline": "Apple’s Foldable iPhone Remains on Track for September Debut (AAPL) - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
         {
           "symbol": "MRK",
           "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "[ARS] Merck & Co., Inc. SEC Filing | MRK SEC Filing - Form ARS",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/MRK/ars-merck-co-inc-sec-filing-85787dffccc2.html",
-              "published_at": "2026-04-08T11:01:12.338848+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            },
             {
               "score": 57.1,
               "tags": [
@@ -1607,55 +1599,67 @@
               "headline": "Guggenheim reiterates Merck stock rating ahead of earnings By Investing.com",
               "source": "unknown",
               "url": "https://www.investing.com/news/analyst-ratings/guggenheim-reiterates-merck-stock-rating-ahead-of-earnings-93CH-4605331",
-              "published_at": "2026-04-09T11:01:12.337956+00:00",
+              "published_at": "2026-04-09T11:31:18.390805+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "NET",
+          "symbol": "AVGO",
           "top_stories": [
             {
-              "score": 59.6,
+              "score": 58.7,
               "tags": [
-                "guidance"
+                "sec_filing"
               ],
-              "headline": "Netcompany raises full-year margin guidance for 2026",
+              "headline": "AVGO Rule 144: Proposed sale of 1,000 shares | AVGO SEC Filing - Form 144",
               "source": "unknown",
-              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
-              "published_at": "2026-03-27T11:01:20.020743+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.stocktitan.net/sec-filings/AVGO/144-broadcom-inc-sec-filing-c87f31f9d4a8.html",
+              "published_at": "2026-04-09T17:31:20.576012+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.22"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "CMG",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Chipotle Mexican Grill's Q1 2026 Earnings: What to Expect",
+              "source": "unknown",
+              "url": "https://www.barchart.com/story/news/1177613/chipotle-mexican-grill-s-q1-2026-earnings-what-to-expect",
+              "published_at": "2026-04-07T11:31:21.809559+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
           "symbol": "XIACY",
-          "top_stories": [],
-          "glance": [
+          "top_stories": [
             {
-              "score": 52.3,
+              "score": 66.4,
               "tags": [
-                "other"
+                "earnings"
               ],
-              "headline": "China's Xiaomi posts first quarterly profit decline in three years | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 45.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Xiaomi Launches Six New Power Banks Compliant With China's Toughest Safety Standard Yet",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
+              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
+              "published_at": "2026-03-27T11:31:22.935805+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
-          ]
+          ],
+          "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 6,
-        "total_candidates": 90,
+        "tickers_processed": 7,
+        "total_candidates": 80,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-10"
@@ -1664,7 +1668,7 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-10T11:01:22.196460+00:00",
+      "generated_at": "2026-04-10T11:31:22.939221+00:00",
       "tickers": [
         {
           "symbol": "TSM",
@@ -1677,16 +1681,78 @@
               "headline": "Taiwan Semi sees bullish views at GF ahead of earnings | Seeking Alpha",
               "source": "seekingalpha",
               "url": "https://seekingalpha.com/news/4573610-taiwan-semi-sees-bullish-views-at-gf-ahead-of-earnings",
-              "published_at": "2026-04-09T11:01:23.351806+00:00",
+              "published_at": "2026-04-09T11:31:24.125887+00:00",
               "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "ASML",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "MATCH Act Puts ASML China Revenue And Service Exposure Under Spotlight",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/match-act-puts-asml-china-170806376.html",
+              "published_at": "2026-04-08T11:31:26.244120+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "LRCX",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Lam Research Stock (LRCX) Opinions on AI-Driven Revenue Growth | LRCX Stock News",
+              "source": "unknown",
+              "url": "https://www.quiverquant.com/news/Lam+Research+Stock+(LRCX)+Opinions+on+AI-Driven+Revenue+Growth",
+              "published_at": "2026-04-08T11:31:27.446313+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "BMY",
+          "top_stories": [
+            {
+              "score": 66.1,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "Capital Investment Advisory Services LLC Acquires 18,028 Shares of Bristol Myers Squibb Company $BMY - Defense World",
+              "source": "unknown",
+              "url": "https://www.defenseworld.net/2026/04/10/capital-investment-advisory-services-llc-acquires-18028-shares-of-bristol-myers-squibb-company-bmy.html",
+              "published_at": "2026-04-10T07:31:28.617739+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.72"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Bristol-Myers Squibb Earnings Preview: What to Expect",
+              "source": "unknown",
+              "url": "https://www.barchart.com/story/news/1220063/bristol-myers-squibb-earnings-preview-what-to-expect",
+              "published_at": "2026-04-09T11:31:28.617447+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 1,
-        "total_candidates": 40,
+        "tickers_processed": 4,
+        "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-10"
@@ -1742,7 +1808,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-10T11:01:27.102644+00:00",
+        "generated_at": "2026-04-10T11:31:28.619395+00:00",
         "count": 11
       }
     }
