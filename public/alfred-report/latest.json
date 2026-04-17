@@ -6,12 +6,67 @@
   "sections": {
     "weather": {
       "title": "Weather — Arlington, VA",
-      "summary": "Unable to fetch forecast: The read operation timed out",
-      "items": [],
+      "summary": "Today: Mostly Sunny, high 83°F. Next 3 days show variable conditions with possible precipitation mid-week.",
+      "items": [
+        {
+          "name": "Today",
+          "temperature": "83°F",
+          "forecast": "Mostly Sunny",
+          "wind": "6 to 15 mph",
+          "wind_direction": "NW",
+          "precipitation_chance": "10%",
+          "details": "Mostly sunny, with a high near 83. Northwest wind 6 to 15 mph, with gusts as high as 25 mph."
+        },
+        {
+          "name": "Tonight",
+          "temperature": "61°F",
+          "forecast": "Mostly Clear",
+          "wind": "3 to 12 mph",
+          "wind_direction": "NE",
+          "precipitation_chance": "0%",
+          "details": "Mostly clear, with a low around 61. Northeast wind 3 to 12 mph, with gusts as high as 20 mph."
+        },
+        {
+          "name": "Saturday",
+          "temperature": "87°F",
+          "forecast": "Mostly Sunny",
+          "wind": "5 to 14 mph",
+          "wind_direction": "E",
+          "precipitation_chance": "3%",
+          "details": "Mostly sunny, with a high near 87. East wind 5 to 14 mph, with gusts as high as 22 mph."
+        },
+        {
+          "name": "Saturday Night",
+          "temperature": "51°F",
+          "forecast": "Chance Rain Showers",
+          "wind": "6 to 13 mph",
+          "wind_direction": "S",
+          "precipitation_chance": "47%",
+          "details": "A chance of rain showers after 8pm. Mostly cloudy, with a low around 51. South wind 6 to 13 mph, with gusts as high as 21 mph. Chance of precipitation is 50%. New rainfall amounts less than a tenth of an inch possible."
+        },
+        {
+          "name": "Sunday",
+          "temperature": "63°F",
+          "forecast": "Rain Showers",
+          "wind": "12 to 17 mph",
+          "wind_direction": "NW",
+          "precipitation_chance": "81%",
+          "details": "Rain showers. Mostly cloudy, with a high near 63. Northwest wind 12 to 17 mph, with gusts as high as 30 mph. Chance of precipitation is 80%."
+        },
+        {
+          "name": "Sunday Night",
+          "temperature": "42°F",
+          "forecast": "Chance Rain Showers",
+          "wind": "5 to 15 mph",
+          "wind_direction": "NW",
+          "precipitation_chance": "52%",
+          "details": "A chance of rain showers before 2am. Mostly clear, with a low around 42. Chance of precipitation is 50%."
+        }
+      ],
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "error": "The read operation timed out"
+        "updated_at": "2026-04-17T07:30:16.816020"
       }
     },
     "todoist": {
@@ -39,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-17T07:00:14.361540",
+        "updated_at": "2026-04-17T07:30:17.299861",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -86,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-17T07:00:15.130790",
+        "updated_at": "2026-04-17T07:30:18.196374",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -96,13 +151,13 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI market shows intensifying competition between established labs through rapid model releases. OpenAI launched GPT-5.4 for enterprise use and GPT-5.4 Cyber for verified cybersecurity professionals, while Anthropic released Claude Opus 4.6 and 4.7 within the same reporting period. Google DeepMind advanced the open-source segment with Gemma 4, positioning it for agentic enterprise workflows. Infrastructure providers are expanding capabilities: Hugging Face partnered with NVIDIA for inference services, while Cloudflare developed an inference layer specifically for AI agents. Practical applications continue emerging, from hardware integration projects to retail business simulations using AI systems. However, significant concerns surfaced around safety and policy. A major security incident exposed €54k in Gemini API usage through unprotected Firebase credentials, and SDL's ban on AI-written code commits reflects quality and attribution concerns. Industry skepticism extends to AI applications in cybersecurity, with observers questioning their validity as genuine defensive solutions. The ecosystem also diversifies with solutions like Darkbloom enabling private inference on consumer hardware, while ongoing debates evaluate local versus cloud deployment paradigms. Google DeepMind continues publishing foundational research, though the narrative overall reflects a maturing market balancing capability advancement with security and governance challenges.",
+      "summary": "The AI model market shows intensifying competition between OpenAI and Anthropic, with both companies releasing flagship systems within hours of each other. OpenAI introduced GPT-5.4 and a specialized cybersecurity variant (GPT-5.4 Cyber), while Anthropic countered with Claude Opus versions. Google added competitive pressure via Gemma 4, an open-source model designed for agentic workflows. All three vendors are explicitly targeting enterprise applications and autonomous agent architectures, suggesting this is now a primary competitive vector. Beyond the headline releases, infrastructure companies like Cloudflare are building agent-specific platforms, while privacy-focused approaches like Darkbloom indicate fragmentation in deployment strategies. Policy concerns are emerging: SDL banned AI-written commits, and a significant security incident exposed 54,000 euros' worth of Gemini API access through misconfigured credentials. Experimental deployments show AI agents operating in real economic scenarios, while researchers question assumptions about AI in cybersecurity. The ecosystem reflects simultaneous trends: vendor consolidation around capable closed models, growing open-source alternatives, infrastructure specialization for agents, and emerging safety and policy considerations.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "The simultaneous release of Claude Opus 4.6 and GPT-5.3-Codex represents an intensifying competitive dynamic between two leading AI labs, signaling accelerating model development cycles.",
+          "why_it_matters": "Anthropic and OpenAI are accelerating model releases in direct competition, with both companies launching new flagship systems on the same day. This signals intensifying rivalry in the high-capability AI model space.",
           "tags": [
             "models",
             "enterprise"
@@ -112,7 +167,7 @@
           "title": "OpenAI launches GPT-5.4, its most powerful model for enterprise work",
           "url": "https://fortune.com/2026/03/05/openai-new-model-gpt5-4-enterprise-agentic-anthropic/",
           "source": "fortune.com",
-          "why_it_matters": "OpenAI's GPT-5.4 targets enterprise users with advanced reasoning and autonomous operation capabilities, addressing specific professional use cases.",
+          "why_it_matters": "OpenAI's GPT-5.4 represents the company's most advanced enterprise model with autonomous capabilities, indicating a strategic push toward professional and business applications.",
           "tags": [
             "models",
             "enterprise"
@@ -122,7 +177,7 @@
           "title": "Google Launches Gemma 4, Its Most Capable Open Model Yet",
           "url": "https://www.techbuzz.ai/articles/google-launches-gemma-4-its-most-capable-open-model-yet",
           "source": "techbuzz.ai",
-          "why_it_matters": "Google DeepMind's Gemma 4 open-source model demonstrates continued competition in the enterprise reasoning space with focus on agentic workflows.",
+          "why_it_matters": "Google's Gemma 4 open-source model is positioned for agentic workflows, showing major vendors are developing models specifically designed for autonomous agent architectures.",
           "tags": [
             "models",
             "open-source",
@@ -130,65 +185,54 @@
           ]
         },
         {
-          "title": "Hugging Face Introduces Inference-as-a-Service with NVIDIA NIM for AI Developers",
-          "url": "https://blockchain.news/news/hugging-face-inference-as-a-service-nvidia-nim",
-          "source": "blockchain.news",
-          "why_it_matters": "Hugging Face and NVIDIA's inference partnership expands developer access to model deployment infrastructure through managed services.",
-          "tags": [
-            "enterprise",
-            "open-source"
-          ]
-        },
-        {
           "title": "Guy builds AI driven hardware hacker arm from duct tape, old cam and CNC machine",
           "url": "https://github.com/gainsec/autoprober",
           "source": "github.com",
-          "why_it_matters": "Community-driven hardware integration demonstrates practical applications of AI systems in robotics and physical automation.",
+          "why_it_matters": "Demonstrates creative applications of AI in hardware automation, showing practical implementation of AI-driven systems beyond traditional software contexts.",
           "tags": [
             "hardware"
           ],
           "published_at": "2026-04-16T21:56:37Z",
-          "hn_score": 186
+          "hn_score": 191
         },
         {
           "title": "SDL bans AI-written commits",
           "url": "https://github.com/libsdl-org/SDL/issues/15350",
           "source": "github.com",
-          "why_it_matters": "SDL's ban on AI-written commits reflects emerging concerns about code quality and attribution in software development practices.",
+          "why_it_matters": "SDL's ban on AI-written commits reflects policy decisions about quality control and accountability in software development pipelines.",
           "tags": [
-            "policy",
-            "safety"
+            "policy"
           ],
           "published_at": "2026-04-16T09:40:43Z",
-          "hn_score": 124
+          "hn_score": 125
         },
         {
           "title": "Claude Opus 4.7",
           "url": "https://www.anthropic.com/news/claude-opus-4-7",
           "source": "anthropic.com",
-          "why_it_matters": "Anthropic's Claude Opus 4.7 release continues the company's rapid model iteration cycle.",
+          "why_it_matters": "Anthropic released Claude Opus 4.7, continuing its cadence of model iterations in competition with OpenAI.",
           "tags": [
             "models"
           ],
           "published_at": "2026-04-16T14:23:50Z",
-          "hn_score": 1773
+          "hn_score": 1788
         },
         {
           "title": "The local LLM ecosystem doesn’t need Ollama",
           "url": "https://sleepingrobots.com/dreams/stop-using-ollama/",
           "source": "sleepingrobots.com",
-          "why_it_matters": "Discussion of local LLM ecosystems highlights ongoing debate about infrastructure requirements and tooling maturity.",
+          "why_it_matters": "Discussion indicates fragmentation and alternative approaches in the local LLM ecosystem beyond dominant tools.",
           "tags": [
             "open-source"
           ],
           "published_at": "2026-04-16T03:35:11Z",
-          "hn_score": 622
+          "hn_score": 623
         },
         {
           "title": "Darkbloom – Private inference on idle Macs",
           "url": "https://darkbloom.dev",
           "source": "darkbloom.dev",
-          "why_it_matters": "Darkbloom's private inference solution on consumer hardware addresses privacy-focused deployment scenarios.",
+          "why_it_matters": "Darkbloom presents privacy-focused inference capabilities using consumer hardware, representing a decentralized approach to model deployment.",
           "tags": [
             "open-source",
             "safety"
@@ -200,42 +244,40 @@
           "title": "€54k spike in 13h from unrestricted Firebase browser key accessing Gemini APIs",
           "url": "https://discuss.ai.google.dev/t/unexpected-54k-billing-spike-in-13-hours-firebase-browser-key-without-api-restrictions-used-for-gemini-requests/140262",
           "source": "discuss.ai.google.dev",
-          "why_it_matters": "A significant security incident involving exposed Firebase credentials and Gemini API access demonstrates infrastructure vulnerabilities in production systems.",
+          "why_it_matters": "A significant security incident involving exposed Firebase credentials accessing Gemini APIs highlights ongoing infrastructure security risks in AI services.",
           "tags": [
-            "safety",
-            "policy"
+            "safety"
           ],
           "published_at": "2026-04-16T12:13:30Z",
-          "hn_score": 386
+          "hn_score": 387
         },
         {
           "title": "Cloudflare's AI Platform: an inference layer designed for agents",
           "url": "https://blog.cloudflare.com/ai-platform/",
           "source": "blog.cloudflare.com",
-          "why_it_matters": "Cloudflare's inference platform targets the emerging agentic AI application category with specialized infrastructure.",
+          "why_it_matters": "Cloudflare is building infrastructure specifically for AI agent deployment, indicating vendor positioning around agentic AI workloads.",
           "tags": [
             "enterprise"
           ],
           "published_at": "2026-04-16T13:17:37Z",
-          "hn_score": 284
+          "hn_score": 286
         },
         {
           "title": "AI cybersecurity is not proof of work",
           "url": "https://antirez.com/news/163",
           "source": "antirez.com",
-          "why_it_matters": "Critical perspective on AI applications in cybersecurity questions the validity of current approaches to threat detection.",
+          "why_it_matters": "Questions fundamental assumptions about AI's role in cybersecurity defense, suggesting critical re-examination of AI capabilities in security contexts.",
           "tags": [
-            "safety",
-            "policy"
+            "safety"
           ],
           "published_at": "2026-04-16T10:48:00Z",
-          "hn_score": 222
+          "hn_score": 223
         },
         {
           "title": "We gave an AI a 3 year retail lease and asked it to make a profit",
           "url": "https://andonlabs.com/blog/andon-market-launch",
           "source": "andonlabs.com",
-          "why_it_matters": "Real-world business simulation provides empirical evidence of AI agent capabilities in autonomous commercial operations.",
+          "why_it_matters": "Demonstrates experimental deployment of AI agents in real-world business scenarios, providing practical data on autonomous economic performance.",
           "tags": [
             "enterprise"
           ],
@@ -246,7 +288,7 @@
           "title": "Publications - Google DeepMind",
           "url": "https://deepmind.google/research/publications/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's research publication output demonstrates ongoing investment in foundational AI research.",
+          "why_it_matters": "Google DeepMind continues publishing substantial research across AI challenges, maintaining public documentation of technical advancement.",
           "tags": [
             "research"
           ]
@@ -255,17 +297,27 @@
           "title": "OpenAI unveils model with limited rollout days after Anthropic",
           "url": "https://www.euronews.com/next/2026/04/16/openai-unveils-cybersecurity-model-with-limited-rollout-days-after-anthropics-model",
           "source": "euronews.com",
-          "why_it_matters": "OpenAI's specialized GPT-5.4 Cyber model with limited availability reflects industry movement toward role-based model customization and restricted access.",
+          "why_it_matters": "OpenAI launched a specialized cybersecurity model with restricted access, indicating segmented deployment strategies for sensitive applications.",
           "tags": [
             "models",
-            "policy",
+            "enterprise",
+            "safety"
+          ]
+        },
+        {
+          "title": "OpenAI and Anthropic Unveil New AI Models in Minutes | Tech Pulse",
+          "url": "https://thenextgentechinsider.com/pulse/openai-and-anthropic-unveil-new-ai-models-in-minutes",
+          "source": "thenextgentechinsider.com",
+          "why_it_matters": "OpenAI and Anthropic released competing models within 20 minutes, accelerating the pace of model competition and market announcements.",
+          "tags": [
+            "models",
             "enterprise"
           ]
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-17T11:00:03.070332+00:00",
+        "updated_at": "2026-04-17T11:30:16.635142+00:00",
         "story_count": 15,
         "lanes_used": [
           "hn",
@@ -279,13 +331,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-17T11:00:47.027569+00:00",
+        "updated_at": "2026-04-17T11:30:48.940599+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions centered on ChatGPT updates, open-source model comparisons, and ethical concerns. Key communities included r/MachineLearning, r/OpenAI, and r/LocalLLMs. Trending topics: multimodal capabilities, fine-tuning techniques, and AI safety discussions. Users debated commercial vs. open-source solutions, with growing interest in local deployment options and cost efficiency.",
+      "summary": "Top AI posts on Reddit focus on ChatGPT capabilities and limitations, open-source model developments, and AI job market concerns. Communities like r/MachineLearning and r/OpenAI dominate discussions. Trending topics include GPT-4 updates, ethical AI concerns, and practical applications. Users actively debate AI safety, copyright issues, and competition between major AI companies.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
@@ -408,18 +460,6 @@
           ]
         },
         {
-          "title": "r/openclaw on Reddit: To the many people here wondering about local models… just use an API",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rhrtr2/to_the_many_people_here_wondering_about_local/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "NVIDIA"
-          ]
-        },
-        {
           "title": "r/openclaw on Reddit: local LLm recomendations?",
           "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
           "subreddit": "openclaw",
@@ -482,6 +522,19 @@
             "model",
             "inference"
           ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Optimizing Test-Time Compute for LLMs: A Meta-Reinforcement Learning Approach with Cumulative Regret Minimization",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jbcsdg/optimizing_testtime_compute_for_llms_a/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "agent"
+          ]
         }
       ],
       "meta": {
@@ -493,7 +546,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI dominated mentions across 50 posts, followed by Google, Microsoft, and Meta. Primary discussion topics: product launches, pricing changes, competitive positioning, and integration announcements. Sentiment mixed—excitement over new features balanced by concerns about accessibility and market consolidation. Notable mentions of smaller AI startups gaining traction in specialized applications.",
+      "summary": "Tech giants OpenAI, Google, Microsoft, and Meta receive highest mention volumes across 50 tracked posts. Dominant topics include AI product launches, regulatory concerns, and acquisition rumors. Reddit discussions emphasize competition dynamics, stock performance, and workplace culture. Notable sentiment: skepticism toward corporate AI ethics, enthusiasm for open-source alternatives, and concerns about consolidation in the AI industry.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -683,9 +736,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -864,9 +917,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -1062,9 +1115,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -1174,23 +1227,6 @@
               "topic_confidence": "high"
             },
             {
-              "title": "Anyone getting this error with OpenAI OAuth? LLM request failed: DNS lookup for the provider endpoint failed. : r/openclaw",
-              "url": "https://www.reddit.com/r/openclaw/comments/1slgz7q/anyone_getting_this_error_with_openai_oauth_llm/",
-              "subreddit": "openclaw",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
               "title": "r/OpenAI on Reddit: Openclaw vs chatgpt plus: why I switched to an AI agent instead",
               "url": "https://www.reddit.com/r/OpenAI/comments/1rse4fe/openclaw_vs_chatgpt_plus_why_i_switched_to_an_ai/",
               "subreddit": "OpenAI",
@@ -1225,9 +1261,9 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/ArtificialInteligence on Reddit: OpenClaw is god-awful. It's either, you have to spend a fortune for APIs or have a NASA-level PC to run it local",
-              "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1qrzxs7/openclaw_is_godawful_its_either_you_have_to_spend/",
-              "subreddit": "ArtificialInteligence",
+              "title": "Anyone getting this error with OpenAI OAuth? LLM request failed: DNS lookup for the provider endpoint failed. : r/openclaw",
+              "url": "https://www.reddit.com/r/openclaw/comments/1slgz7q/anyone_getting_this_error_with_openai_oauth_llm/",
+              "subreddit": "openclaw",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1242,9 +1278,26 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/LocalLLaMA on Reddit: Anyone actually using Openclaw?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1r5v1jb/anyone_actually_using_openclaw/",
-              "subreddit": "LocalLLaMA",
+              "title": "r/OpenAI on Reddit: OpenClaw is about to be ClosedClaw...OpenAI in Advanced Talks to Hire OpenClaw Founder",
+              "url": "https://www.reddit.com/r/OpenAI/comments/1r5ptks/openclaw_is_about_to_be_closedclawopenai_in/",
+              "subreddit": "OpenAI",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/ArtificialInteligence on Reddit: OpenClaw is god-awful. It's either, you have to spend a fortune for APIs or have a NASA-level PC to run it local",
+              "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1qrzxs7/openclaw_is_godawful_its_either_you_have_to_spend/",
+              "subreddit": "ArtificialInteligence",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1264,9 +1317,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "AI Agents",
               "Agents",
-              "OpenClaw"
+              "OpenClaw",
+              "AI Agents"
             ]
           }
         },
@@ -1454,9 +1507,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
+              "partnership",
               "ipo_private_markets",
-              "partnership"
+              "earnings_financials"
             ]
           }
         }
@@ -1464,7 +1517,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-17T11:01:06.079912+00:00"
+        "run_at": "2026-04-17T11:31:08.104433+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1474,36 +1527,65 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-17T11:01:17.843590+00:00",
+      "generated_at": "2026-04-17T11:31:19.884113+00:00",
       "tickers": [
         {
-          "symbol": "NVDA",
+          "symbol": "GOOGL",
           "top_stories": [
             {
-              "score": 56.2,
+              "score": 100,
               "tags": [
                 "earnings"
               ],
-              "headline": "AMD Gains 6% Ahead of May Earnings: Is the AI Chip Challenger Finally Ready to Rival NVIDIA? - 24/7 Wall St.",
-              "source": "unknown",
-              "url": "https://247wallst.com/investing/2026/04/16/amd-gains-6-ahead-of-may-earnings-is-the-ai-chip-challenger-finally-ready-to-rival-nvidia/",
-              "published_at": "2026-04-16T15:01:18.612686+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
+              "headline": "Meta poised to surpass Google in digital ad revenue for first time, report says | Reuters",
+              "source": "reuters",
+              "url": "https://www.reuters.com/business/media-telecom/meta-poised-surpass-google-digital-ad-revenue-first-time-report-says-2026-04-13/",
+              "published_at": "2026-04-13T11:31:21.215267+00:00",
+              "why_ranked": "Event=earnings(85) Source=reuters(93) Fresh=0.15 Tier1+"
             }
           ],
-          "glance": []
-        },
-        {
-          "symbol": "LLY",
-          "top_stories": [],
           "glance": [
             {
-              "score": 53.2,
+              "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Novo weight-loss drug may preserve lean body mass better than Lilly's, study finds | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.21 Tier1+ Novelty-25"
+              "headline": "Google Faces Billions in Mass Arbitration Over Illegal Monopoly Rulings - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 45.6,
+              "tags": [
+                "product_launch_major"
+              ],
+              "headline": "Exclusive: Google launches AI jobs push",
+              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
+            }
+          ]
+        },
+        {
+          "symbol": "AAPL",
+          "top_stories": [
+            {
+              "score": 56.7,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Apple stock sees stunning Wall Street twist before earnings | AAPL - TheStreet",
+              "source": "unknown",
+              "url": "https://www.thestreet.com/investing/apple-stock-sees-stunning-wall-street-twist-before-earnings",
+              "published_at": "2026-04-16T17:31:22.402685+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
+            }
+          ],
+          "glance": [
+            {
+              "score": 51.6,
+              "tags": [
+                "lawsuit"
+              ],
+              "headline": "Apple Lawsuit Puts Apple Pay Oversight And Share Valuation In Focus - Simply Wall St News",
+              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
             }
           ]
         },
@@ -1518,47 +1600,33 @@
               "headline": "Will Keytruda Continue to Aid Merck's Top Line in Q1 Earnings? - The Globe and Mail",
               "source": "unknown",
               "url": "https://www.theglobeandmail.com/investing/markets/stocks/MRK/pressreleases/1320915/will-keytruda-continue-to-aid-mercks-top-line-in-q1-earnings/",
-              "published_at": "2026-04-15T11:01:21.879890+00:00",
+              "published_at": "2026-04-15T11:31:23.608796+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "TSLA",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Tesla stock adds nearly 8% as Elon Musk touts chip progress",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "RXRX",
+          "symbol": "XIACY",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 66.4,
               "tags": [
                 "earnings"
               ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+and+AI+Developments",
-              "published_at": "2026-04-11T11:01:26.201098+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
+              "published_at": "2026-03-27T11:31:27.903563+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 5,
-        "total_candidates": 80,
+        "tickers_processed": 4,
+        "total_candidates": 60,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-17"
@@ -1567,21 +1635,22 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-17T11:01:26.646255+00:00",
+      "generated_at": "2026-04-17T11:31:27.907664+00:00",
       "tickers": [
         {
           "symbol": "CRM",
           "top_stories": [
             {
-              "score": 60.0,
+              "score": 61.2,
               "tags": [
-                "sec_filing"
+                "m_and_a_confirmed",
+                "regulatory_action"
               ],
-              "headline": "[ARS] Salesforce, Inc. SEC Filing | CRM SEC Filing - Form ARS",
+              "headline": "Axtria Acquires Conexus Solutions, Uniting Agentic AI and CRM Mastery to Redefine Life Sciences Commercialization",
               "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/CRM/ars-salesforce-inc-sec-filing-630377c63989.html",
-              "published_at": "2026-04-16T21:01:27.524992+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.31"
+              "url": "https://www.prnewswire.com/apac/news-releases/axtria-acquires-conexus-solutions-uniting-agentic-ai-and-crm-mastery-to-redefine-life-sciences-commercialization-302743273.html",
+              "published_at": "2026-04-15T11:31:28.861619+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": [
@@ -1590,91 +1659,31 @@
               "tags": [
                 "product_launch_major"
               ],
-              "headline": "UiPath launches two offerings on Salesforce AgentExchange By Investing.com",
+              "headline": "Her Market Lab launches AI CRM platform for agents",
               "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
             }
           ]
         },
         {
-          "symbol": "TSM",
+          "symbol": "BMY",
           "top_stories": [
             {
-              "score": 78.3,
+              "score": 57.6,
               "tags": [
-                "earnings"
+                "m_and_a_confirmed"
               ],
-              "headline": "TSMC lifts revenue forecast, pledges more capital spending to meet AI chip demand | Reuters",
-              "source": "reuters",
-              "url": "https://reuters.com/world/asia-pacific/tsmc-set-post-50-quarterly-profit-jump-extend-record-earnings-on-insatiable-ai-2026-04-16",
-              "published_at": "2026-04-16T11:01:28.383421+00:00",
-              "why_ranked": "Event=earnings(85) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 73.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
-              "published_at": "2026-04-16T11:01:28.382724+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
-            }
-          ],
-          "glance": [
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Breakingviews - TSMC confronts new contenders for chipmaking crown",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            }
-          ]
-        },
-        {
-          "symbol": "ASML",
-          "top_stories": [
-            {
-              "score": 81.2,
-              "tags": [
-                "guidance",
-                "earnings"
-              ],
-              "headline": "ASML stock sinks amid tightening China restrictions despite strong earnings, guidance",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html",
-              "published_at": "2026-04-15T11:01:30.540753+00:00",
-              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
-            },
-            {
-              "score": 77.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "ASML Raises 2026 Sales Forecast as AI Investment Fuels Growth - Bloomberg",
-              "source": "bloomberg",
-              "url": "https://www.bloomberg.com/news/articles/2026-04-15/asml-raises-2026-sales-forecast-as-ai-investment-fuels-growth",
-              "published_at": "2026-04-15T11:01:30.540581+00:00",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+"
-            },
-            {
-              "score": 73.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
-              "published_at": "2026-04-16T11:01:30.540866+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+              "headline": "Cwm LLC Acquires 422,041 Shares of Bristol Myers Squibb Company $BMY",
+              "source": "unknown",
+              "url": "https://www.marketbeat.com/instant-alerts/filing-cwm-llc-acquires-422041-shares-of-bristol-myers-squibb-company-bmy-2026-04-16/",
+              "published_at": "2026-04-16T11:31:34.326234+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 3,
+        "tickers_processed": 2,
         "total_candidates": 60,
         "removed_fresh_only": 0,
         "state_written": true,
@@ -1731,7 +1740,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-17T11:01:33.037856+00:00",
+        "generated_at": "2026-04-17T11:31:34.328995+00:00",
         "count": 11
       }
     }
