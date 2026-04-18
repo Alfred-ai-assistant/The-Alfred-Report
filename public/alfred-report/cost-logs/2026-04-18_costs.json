@@ -2,31 +2,31 @@
   "date": "2026-04-18",
   "total_calls": 2,
   "cache_hits": 0,
-  "total_input_tokens": 1463,
-  "total_output_tokens": 1296,
-  "estimated_cost_usd": 0.0064,
+  "total_input_tokens": 1457,
+  "total_output_tokens": 1394,
+  "estimated_cost_usd": 0.0067,
   "calls": [
     {
-      "timestamp": "2026-04-18T11:00:41.921583+00:00",
+      "timestamp": "2026-04-18T11:30:45.681177+00:00",
       "section": "ai_news",
       "model": "claude-haiku-4-5",
-      "input_tokens": 1361,
-      "output_tokens": 1106,
+      "input_tokens": 1355,
+      "output_tokens": 1177,
       "cache_hit": false,
-      "input_cost": 0.0010888,
-      "output_cost": 0.004424,
-      "total_cost": 0.0055128
+      "input_cost": 0.0010840000000000001,
+      "output_cost": 0.0047079999999999995,
+      "total_cost": 0.005791999999999999
     },
     {
-      "timestamp": "2026-04-18T11:01:12.533063+00:00",
+      "timestamp": "2026-04-18T11:31:16.632765+00:00",
       "section": "reddit",
       "model": "claude-haiku-4-5",
       "input_tokens": 102,
-      "output_tokens": 190,
+      "output_tokens": 217,
       "cache_hit": false,
       "input_cost": 8.16e-05,
-      "output_cost": 0.0007599999999999999,
-      "total_cost": 0.0008416
+      "output_cost": 0.000868,
+      "total_cost": 0.0009496
     }
   ]
 }
