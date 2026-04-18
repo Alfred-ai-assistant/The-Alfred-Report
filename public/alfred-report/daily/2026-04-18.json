@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-18T07:30:11.868966"
+        "updated_at": "2026-04-18T07:30:46.005795"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-18T07:30:12.219121",
+        "updated_at": "2026-04-18T07:30:46.384488",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-18T07:30:12.891305",
+        "updated_at": "2026-04-18T07:30:47.012630",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -151,33 +151,36 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The AI market entered a phase of accelerated competitive releases this week, with OpenAI, Anthropic, and Google DeepMind launching new models within tight timeframes. Anthropic released Claude Opus 4.6 and the parameter-heavy Claude Mythos 5 (10 trillion parameters), while OpenAI countered with GPT-5.3-Codex and specialized variants like ChatGPT 5.4 Cyber for cybersecurity professionals. Google DeepMind launched Gemma 4, positioning it as their most capable open model with emphasis on agentic workflows for enterprise applications. Beyond the major labs, Meta, Baidu, and Microsoft also contributed significant model releases, reflecting global competition. This surge reflects strategic emphasis on specialized, domain-specific models—particularly for cybersecurity and autonomous agent systems—rather than solely pursuing generalist capabilities. Infrastructure providers are simultaneously enabling this development ecosystem: NVIDIA partnered with Hugging Face to connect millions of developers to DGX Cloud resources, while releasing the Nemotron family and expanded open models. These infrastructure moves suggest the industry is shifting focus toward democratizing model development and deployment, even as leading companies compete for frontier capabilities.",
+      "summary": "The AI landscape on April 18, 2026 reflects intense competition among established players and infrastructure providers. OpenAI and Anthropic dominated headlines with nearly simultaneous model releases—OpenAI unveiled GPT-5.3-Codex and GPT-5.4 Cyber, while Anthropic released Claude Opus 4.6 and Claude Mythos 5 (featuring 10 trillion parameters). These launches underscore an accelerating development cycle where companies race to capture enterprise attention with specialized capabilities, particularly in cybersecurity applications. Google DeepMind contributed its Gemma 4 open model optimized for agentic workflows, positioning itself alongside proprietary offerings. A critical infrastructure development emerged from the NVIDIA-Hugging Face partnership, which integrates DGX Cloud into Hugging Face's platform to democratize LLM training and deployment. NVIDIA simultaneously expanded its portfolio with new Nemotron models and open-source tools, signaling hardware vendors' strategic move into model development itself. These parallel movements—intense proprietary competition coupled with infrastructure democratization—reflect a maturing market where enterprise deployment readiness and specialized use cases drive product differentiation.",
       "items": [
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "OpenAI and Anthropic's simultaneous model releases signal intensifying competition in the large language model market. Both companies are racing to advance their flagship offerings with new versions.",
+          "why_it_matters": "OpenAI and Anthropic's simultaneous model releases signal intensifying direct competition in the large language model market. Both companies are racing to establish dominance with new flagship offerings.",
           "tags": [
-            "models"
+            "models",
+            "enterprise"
           ]
         },
         {
           "title": "New AI Model Releases News | April, 2026 (STARTUP EDITION)",
           "url": "https://blog.mean.ceo/new-ai-model-releases-news-april-2026/",
           "source": "blog.mean.ceo",
-          "why_it_matters": "Anthropic's Claude Mythos 5 represents a significant scaling effort with 10 trillion parameters, targeting specialized applications like cybersecurity. This demonstrates continued investment in parameter scaling and domain-specific capabilities.",
+          "why_it_matters": "Anthropic's Claude Mythos 5 represents a significant scaling effort with 10 trillion parameters, targeting specialized cybersecurity applications. This demonstrates continued investment in domain-specific AI capabilities.",
           "tags": [
-            "models"
+            "models",
+            "enterprise"
           ]
         },
         {
           "title": "Google Launches Gemma 4, Its Most Capable Open Model Yet",
           "url": "https://www.techbuzz.ai/articles/google-launches-gemma-4-its-most-capable-open-model-yet",
           "source": "techbuzz.ai",
-          "why_it_matters": "Google DeepMind's Gemma 4 focuses on agentic workflows for enterprise applications, indicating a strategic pivot toward autonomous AI systems. This positions Google competitively in the rapidly evolving agent-based AI market.",
+          "why_it_matters": "Google DeepMind's Gemma 4 positions itself as their most capable open model with emphasis on agentic workflows. This indicates a strategic focus on enterprise agent applications within Google's open-source offerings.",
           "tags": [
             "models",
+            "open-source",
             "enterprise"
           ]
         },
@@ -185,10 +188,8 @@
           "title": "Claude Design",
           "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
           "source": "anthropic.com",
-          "why_it_matters": "Anthropic's Claude design documentation appears to provide technical specifications relevant to developers and researchers implementing the model.",
-          "tags": [
-            "models"
-          ],
+          "why_it_matters": "Limited information available from this source.",
+          "tags": [],
           "published_at": "2026-04-17T15:04:09Z",
           "hn_score": 1071
         },
@@ -196,18 +197,19 @@
           "title": "Measuring Claude 4.7's tokenizer costs",
           "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
           "source": "claudecodecamp.com",
-          "why_it_matters": "Understanding tokenizer costs for Claude 4.7 is critical for enterprise users calculating operational expenses. Tokenization efficiency directly impacts deployment costs at scale.",
+          "why_it_matters": "Cost analysis of Claude 4.7's tokenizer is relevant for enterprise users evaluating deployment economics. This indicates ongoing optimization efforts in model efficiency.",
           "tags": [
+            "models",
             "enterprise"
           ],
           "published_at": "2026-04-17T15:29:36Z",
-          "hn_score": 621
+          "hn_score": 622
         },
         {
           "title": "Publications - Google DeepMind",
           "url": "https://deepmind.google/research/publications/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's publication repository demonstrates ongoing research into video understanding and representation learning. This indicates continued investment in multimodal AI capabilities.",
+          "why_it_matters": "Google DeepMind published 240 research papers with recent focus on video representation learning, demonstrating continued academic contributions to AI advancement.",
           "tags": [
             "research"
           ]
@@ -216,7 +218,7 @@
           "title": "Scan your website to see how ready it is for AI agents",
           "url": "https://isitagentready.com",
           "source": "isitagentready.com",
-          "why_it_matters": "The emergence of AI agent readiness assessment tools reflects growing enterprise focus on deploying autonomous AI systems. This suggests agent technology is moving from research to practical implementation phases.",
+          "why_it_matters": "A tool to assess website readiness for AI agents addresses the emerging market need for enterprise AI integration evaluation.",
           "tags": [
             "enterprise"
           ],
@@ -224,12 +226,23 @@
           "hn_score": 105
         },
         {
+          "title": "OpenAI, Anthropic prep to unleash AI's next leap | The Deep View",
+          "url": "https://www.thedeepview.com/articles/openai-anthropic-prep-to-unleash-ai-s-next-leap",
+          "source": "thedeepview.com",
+          "why_it_matters": "OpenAI and Anthropic are preparing major model releases in response to market-changing developments, indicating strategic product cycles aligned with industry shifts.",
+          "tags": [
+            "models",
+            "enterprise"
+          ]
+        },
+        {
           "title": "OpenAI unveils model with limited rollout days after Anthropic",
           "url": "https://www.euronews.com/next/2026/04/16/openai-unveils-cybersecurity-model-with-limited-rollout-days-after-anthropics-model",
           "source": "euronews.com",
-          "why_it_matters": "OpenAI's limited-rollout specialized model for cybersecurity professionals indicates sector-specific model development and targeted deployment strategies. This approach manages safety concerns while enabling professional use cases.",
+          "why_it_matters": "OpenAI's GPT-5.4 Cyber features restricted access for verified cybersecurity professionals, representing a new approach to specialized model deployment with controlled access.",
           "tags": [
             "models",
+            "enterprise",
             "safety"
           ]
         },
@@ -237,54 +250,44 @@
           "title": "OpenAI and Anthropic Unveil New AI Models in Minutes | Tech Pulse",
           "url": "https://thenextgentechinsider.com/pulse/openai-and-anthropic-unveil-new-ai-models-in-minutes",
           "source": "thenextgentechinsider.com",
-          "why_it_matters": "The 20-minute release window between competing companies demonstrates the accelerating pace of AI model development and competitive pressure in the market.",
+          "why_it_matters": "Rapid-fire model releases from OpenAI and Anthropic within 20 minutes demonstrate accelerating competition cycles in the frontier AI market.",
           "tags": [
-            "models"
+            "models",
+            "enterprise"
           ]
         },
         {
           "title": "Anthropic unveils new AI model as OpenAI rivalry heats up",
           "url": "https://techxplore.com/news/2026-02-anthropic-unveils-ai-openai-rivalry.html",
           "source": "techxplore.com",
-          "why_it_matters": "Anthropic's model releases amid OpenAI rivalry indicate sustained competition for market leadership in advanced language models.",
-          "tags": [
-            "models"
-          ]
+          "why_it_matters": "This story references past events from February 2026 and lacks current relevance to today's briefing.",
+          "tags": []
         },
         {
           "title": "Meta, Google, Baidu… ALL Dropped Game-Changing Models This Week",
           "url": "https://www.youtube.com/watch?v=Ui9yr7M-zCw&vl=en",
           "source": "youtube.com",
-          "why_it_matters": "Meta, Google, Baidu, and OpenAI releasing major models within a single week demonstrates the global scale and pace of AI development across multiple regions and companies.",
-          "tags": [
-            "models"
-          ]
-        },
-        {
-          "title": "AI Just Leveled Up Globally: Google, Meta, China & Microsoft Drop Bombshells in One Week",
-          "url": "https://www.youtube.com/watch?v=QtSsyysU1zo",
-          "source": "youtube.com",
-          "why_it_matters": "International competition in AI advancement, including China's OctoThinker and major moves from Microsoft, reflects the geopolitical significance of AI capabilities development.",
-          "tags": [
-            "models"
-          ]
+          "why_it_matters": "This story references 2025 events, predating the current briefing date and is not relevant to April 18, 2026.",
+          "tags": []
         },
         {
           "title": "NVIDIA and Hugging Face to Connect Millions of ...",
           "url": "https://nvidianews.nvidia.com/news/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing",
           "source": "nvidianews.nvidia.com",
-          "why_it_matters": "NVIDIA and Hugging Face integration streamlines developer access to generative AI infrastructure. This partnership democratizes LLM training and tuning by connecting millions of developers to supercomputing resources.",
+          "why_it_matters": "NVIDIA and Hugging Face integration democratizes access to generative AI supercomputing infrastructure. This partnership significantly lowers barriers for developers to train and tune large language models.",
           "tags": [
             "hardware",
-            "open-source"
+            "open-source",
+            "enterprise"
           ]
         },
         {
           "title": "@DmitryRyumin on Hugging Face: \"🌟✨ Exciting Announcement: NVIDIA AI Foundation Models ✨🌟 🚀 Interact…\"",
           "url": "https://huggingface.co/posts/DmitryRyumin/891608574268336",
           "source": "huggingface.co",
-          "why_it_matters": "NVIDIA's AI Foundation Models on Hugging Face provide optimized, accessible model APIs. This initiative lowers barriers to entry for developers implementing state-of-the-art models.",
+          "why_it_matters": "NVIDIA's AI Foundation Models offer optimized inference through accelerated computing, expanding accessible options for enterprises deploying state-of-the-art models.",
           "tags": [
+            "models",
             "hardware",
             "open-source"
           ]
@@ -293,8 +296,9 @@
           "title": "NVIDIA Unveils New Open Models, Data and Tools to Advance AI ...",
           "url": "https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/",
           "source": "blogs.nvidia.com",
-          "why_it_matters": "NVIDIA's Nemotron family and expanded open model ecosystem support agentic AI development across industries. This expansion positions NVIDIA as a critical infrastructure provider in the broader AI development landscape.",
+          "why_it_matters": "NVIDIA's release of Nemotron family models and supporting tools targets the agentic AI market. This represents hardware vendor expansion into model development and open-source contributions.",
           "tags": [
+            "models",
             "hardware",
             "open-source"
           ]
@@ -302,11 +306,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-18T11:30:09.779565+00:00",
+        "updated_at": "2026-04-18T11:30:45.878796+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -316,161 +320,57 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-18T11:30:45.683353+00:00",
+        "updated_at": "2026-04-18T11:31:18.912967+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions focused on generative models, with ChatGPT updates and open-source alternatives dominating conversations. Machine learning ethics and job displacement concerns emerged as secondary themes. Key communities included r/MachineLearning, r/OpenAI, and r/LocalLLMs. Trending topics: prompt engineering techniques, fine-tuning strategies, and comparisons between proprietary versus open-source AI tools. Users showed increased interest in running models locally.",
+      "summary": "Top AI discussions centered on ChatGPT capabilities, open-source model comparisons, and AI ethics concerns. Trending topics included prompt engineering techniques, job displacement worries, and GPU shortage impacts. Communities like r/MachineLearning, r/OpenAI, and r/StableDiffusion led conversations. Users debated AI regulation, model accuracy improvements, and practical applications in coding and content creation.",
       "items": [
         {
-          "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1roc2qp/which_free_llm_works_best_with_openclaw_web_search/",
-          "subreddit": "openclaw",
+          "title": "r/technology on Reddit: OpenAI’s research on AI models deliberately lying is wild",
+          "url": "https://www.reddit.com/r/technology/comments/1nkorpc/openais_research_on_ai_models_deliberately_lying/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
+            "training",
             "OpenAI",
-            "Anthropic",
-            "Claude",
-            "Llama"
+            "neural"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
+          "title": "r/aicuriosity on Reddit: Master LLM Fine-Tuning & RLHF: DeepLearning.AI's New Post-Training Course Guide",
+          "url": "https://www.reddit.com/r/aicuriosity/comments/1oih360/master_llm_finetuning_rlhf_deeplearningais_new/",
+          "subreddit": "AiCuriosity",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
-            "inference",
-            "agent"
+            "training"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Looking for the ultimate \"bang for buck\" LLM for OpenClaw. What’s the actual king of the low tier right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rvjfde/looking_for_the_ultimate_bang_for_buck_llm_for/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Gemini"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Awesome Free LLM APIs List",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s01ygw/awesome_free_llm_apis_list/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "Llama",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Need help getting multiple LLMs (Ollama + OpenAI) working with OpenClaw",
-          "url": "https://www.reddit.com/r/openclaw/comments/1ry3pne/need_help_getting_multiple_llms_ollama_openai/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "OpenAI",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: New AI architecture delivers 100x faster reasoning than LLMs with just 1,000 training examples",
+          "url": "https://www.reddit.com/r/technology/comments/1maj3m3/new_ai_architecture_delivers_100x_faster/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "machine learning",
             "model",
-            "inference",
-            "Llama"
+            "training"
           ]
         },
         {
-          "title": "r/openclaw on Reddit: Bought a $2k Mac Mini to run local LLMs. Pretty sure Claude fills the roll. What am I missing?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s5rlcg/bought_a_2k_mac_mini_to_run_local_llms_pretty/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "LLM",
-            "model",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: local LLm recomendations?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Has anyone here built a real local-first OpenClaw + Ollama setup that they use daily, instead of relying on paid APIs for everything?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rtwu3b/has_anyone_here_built_a_real_localfirst_openclaw/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "model",
-            "Claude",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: MInference (Milliontokens Inference): A Training-Free Efficient Method for the Pre-Filling Stage of Long-Context LLMs Based on Dynamic Sparse Attention",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dx9wi3/minference_milliontokens_inference_a_trainingfree/",
-          "subreddit": "MachineLearning",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "inference",
-            "training",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Small Models, Big Impact: ServiceNow AI Releases Apriel-5B to Outperform Larger LLMs with Fewer Resources",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jz1byb/small_models_big_impact_servicenow_ai_releases/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: AI feedback loop will spell death for future generative models",
+          "url": "https://www.reddit.com/r/technology/comments/1f5wrjy/ai_feedback_loop_will_spell_death_for_future/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -481,42 +381,137 @@
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: A Comprehensive Study by BentoML on Benchmarking LLM Inference Backends: Performance Analysis of vLLM, LMDeploy, MLC-LLM, TensorRT-LLM, and TGI",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dccn3c/a_comprehensive_study_by_bentoml_on_benchmarking/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: AI PCs aren't selling, and Microsoft's PC partners are scrambling",
+          "url": "https://www.reddit.com/r/technology/comments/1q8aayu/ai_pcs_arent_selling_and_microsofts_pc_partners/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
             "inference",
-            "Llama"
+            "training"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: OpenLLM offers a breakthrough approach by enabling you to run any open-source LLM as an OpenAI-compatible API endpoint with a single command",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1izw23b/openllm_offers_a_breakthrough_approach_by/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: AMD's senior director of AI thinks 'Claude has regressed' and that it 'cannot be trusted to perform complex engineering'",
+          "url": "https://www.reddit.com/r/technology/comments/1sfsnlp/amds_senior_director_of_ai_thinks_claude_has/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
-            "inference",
+            "model",
+            "training",
+            "Claude"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: OpenAI admits AI hallucinations are mathematically inevitable, not just engineering flaws",
+          "url": "https://www.reddit.com/r/technology/comments/1nmu06q/openai_admits_ai_hallucinations_are/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
             "OpenAI"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Meet Time-LLM: A Reprogramming Machine Learning Framework to Repurpose LLMs for General Time Series Forecasting with the Backbone Language Models Kept Intact",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1ajssnu/meet_timellm_a_reprogramming_machine_learning/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: ‘We could hit a wall’: why trillions of dollars of risk is no guarantee of AI reward",
+          "url": "https://www.reddit.com/r/technology/comments/1qff55g/we_could_hit_a_wall_why_trillions_of_dollars_of/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Chinese Firm Trains Massive AI Model for Just $5.5 Million",
+          "url": "https://www.reddit.com/r/technology/comments/1hn7pm7/chinese_firm_trains_massive_ai_model_for_just_55/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "Llama"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: LLMs can't stop making up software dependencies and sabotaging everything",
+          "url": "https://www.reddit.com/r/technology/comments/1jyxi68/llms_cant_stop_making_up_software_dependencies/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Meta's top AI researchers is leaving. He thinks LLMs are a dead end",
+          "url": "https://www.reddit.com/r/technology/comments/1oygsx4/metas_top_ai_researchers_is_leaving_he_thinks/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
             "model",
             "inference"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Reddit cashes in on AI gold rush with $203M in LLM training license fees.",
+          "url": "https://www.reddit.com/r/technology/comments/1ayr0z1/reddit_cashes_in_on_ai_gold_rush_with_203m_in_llm/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: The Less You Know About AI, the More You Are Likely to Use It",
+          "url": "https://www.reddit.com/r/technology/comments/1n6mcs0/the_less_you_know_about_ai_the_more_you_are/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: The AI data center race is getting way more complicated",
+          "url": "https://www.reddit.com/r/technology/comments/1kxlkar/the_ai_data_center_race_is_getting_way_more/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: LLMs No Longer Require Powerful Servers: Researchers from MIT, KAUST, ISTA, and Yandex Introduce a New AI Approach to Rapidly Compress Large Language Models without a Significant Loss of Quality",
+          "url": "https://www.reddit.com/r/technology/comments/1jy2tzq/llms_no_longer_require_powerful_servers/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model"
           ]
         }
       ],
@@ -529,7 +524,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "Tech giants dominated mentions: OpenAI, Google, and Microsoft led discussions around AI product launches and partnerships. Meta, Tesla, and Amazon received attention for AI implementation efforts. Key topics included pricing changes, feature rollouts, and corporate AI strategy announcements. Sentiment mixed—excitement about innovations offset concerns about data privacy and accessibility. Enterprise adoption and competitive positioning were recurring discussion points across company-specific subreddits and broader tech communities.",
+      "summary": "Tech giants dominated mentions: OpenAI, Google, Microsoft, and Meta led discussions about AI products and features. Apple faced scrutiny over privacy policies; Tesla attracted debate on autonomous driving. Amazon, Meta, and Google dominated AI integration discussions. Key topics: AI workforce impacts, competitive positioning, product reliability, and ethical concerns. Consumer sentiment mixed, with enthusiasm for innovations balanced against monopoly concerns and data privacy fears.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -720,8 +715,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "partnership",
+              "ipo_private_markets",
               "earnings_financials"
             ]
           }
@@ -896,8 +891,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "partnership",
+              "ipo_private_markets",
               "earnings_financials"
             ]
           }
@@ -1094,8 +1089,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "partnership",
+              "ipo_private_markets",
               "earnings_financials"
             ]
           }
@@ -1296,9 +1291,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "AI Agents",
               "Agents",
-              "OpenClaw",
-              "AI Agents"
+              "OpenClaw"
             ]
           }
         },
@@ -1485,8 +1480,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "ipo_private_markets",
               "partnership",
+              "ipo_private_markets",
               "earnings_financials"
             ]
           }
@@ -1495,7 +1490,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-18T11:31:04.456838+00:00"
+        "run_at": "2026-04-18T11:31:34.926535+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1505,25 +1500,8 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-18T11:31:16.633516+00:00",
+      "generated_at": "2026-04-18T11:31:45.284081+00:00",
       "tickers": [
-        {
-          "symbol": "NVDA",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "AMD Gains 6% Ahead of May Earnings: Is the AI Chip Challenger Finally Ready to Rival NVIDIA? - 24/7 Wall St.",
-              "source": "unknown",
-              "url": "https://247wallst.com/investing/2026/04/16/amd-gains-6-ahead-of-may-earnings-is-the-ai-chip-challenger-finally-ready-to-rival-nvidia/",
-              "published_at": "2026-04-16T11:31:17.330942+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
         {
           "symbol": "AMZN",
           "top_stories": [],
@@ -1533,122 +1511,72 @@
               "tags": [
                 "other"
               ],
-              "headline": "NiSource signs long-term power deal with Alphabet, expands Amazon agreement | Reuters",
+              "headline": "Amazon to buy satellite firm Globalstar in $11.57 billion deal to take on Musk's Starlink | Reuters",
               "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 51.6,
+              "tags": [
+                "lawsuit"
+              ],
+              "headline": "Amazon Fire TV Stick lawsuit: Amazon fire TV stick lawsuit: Claims company “bricked” old devices to push new sales - The Economic Times",
+              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
             }
           ]
         },
         {
-          "symbol": "LLY",
+          "symbol": "NTSK",
+          "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "sec_filing"
+              ],
+              "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
+              "published_at": "2026-03-28T11:31:49.381029+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "CMG",
           "top_stories": [],
           "glance": [
             {
-              "score": 52.3,
+              "score": 51.6,
               "tags": [
-                "other"
+                "lawsuit"
               ],
-              "headline": "Novo weight-loss drug may preserve lean body mass better than Lilly's, study finds | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+              "headline": "CMG Mortgage sued for raiding lenders' Arizona branches | National Mortgage News",
+              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
             }
           ]
-        },
-        {
-          "symbol": "AVGO",
-          "top_stories": [
-            {
-              "score": 56.4,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Broadcom stock rises as Goldman keeps $480 target after Meta AI chip deal",
-              "source": "unknown",
-              "url": "https://ts2.tech/en/broadcom-stock-rises-as-goldman-keeps-480-target-after-meta-ai-chip-deal/",
-              "published_at": "2026-04-17T16:31:22.080760+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.21"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "NET",
-          "top_stories": [
-            {
-              "score": 59.6,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "Netcompany raises full-year margin guidance for 2026",
-              "source": "unknown",
-              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
-              "published_at": "2026-03-28T11:31:22.857128+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Netflix, Inc. Q1 2026 Earnings Call Summary",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-inc-q1-2026-earnings-001444599.html",
-              "published_at": "2026-04-17T11:31:22.856723+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "RXRX",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+(RXRX)+Opinions+on+Upcoming+Earnings+and+AI+Developments",
-              "published_at": "2026-04-11T11:31:24.181399+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
         },
         {
           "symbol": "XIACY",
-          "top_stories": [],
-          "glance": [
+          "top_stories": [
             {
-              "score": 52.3,
+              "score": 66.4,
               "tags": [
-                "other"
+                "earnings"
               ],
-              "headline": "China's Xiaomi posts first quarterly profit decline in three years | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "Xiaomi Sales Grow Slowest in Years Despite Strong EV Demand - Bloomberg",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 45.6,
-              "tags": [
-                "product_launch_major"
-              ],
-              "headline": "Xiaomi Stock Tests New Lows as Buyback and Product Launches Collide",
-              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
+              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
+              "published_at": "2026-03-28T11:31:52.682409+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
-          ]
+          ],
+          "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 7,
-        "total_candidates": 80,
-        "removed_fresh_only": 0,
+        "tickers_processed": 4,
+        "total_candidates": 70,
+        "removed_fresh_only": 3,
         "state_written": true,
         "report_date": "2026-04-18"
       }
@@ -1656,29 +1584,97 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-18T11:31:25.153144+00:00",
+      "generated_at": "2026-04-18T11:31:52.683905+00:00",
       "tickers": [
         {
-          "symbol": "GEV",
+          "symbol": "TSM",
           "top_stories": [
             {
-              "score": 56.7,
+              "score": 78.3,
               "tags": [
                 "earnings"
               ],
-              "headline": "Should You Buy, Sell or Hold GEV Stock Before Q1 Earnings Release?",
-              "source": "unknown",
-              "url": "https://uk.finance.yahoo.com/news/buy-sell-hold-gev-stock-173500856.html",
-              "published_at": "2026-04-17T17:31:29.643188+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
+              "headline": "TSMC lifts revenue forecast, pledges more capital spending to meet AI chip demand | Reuters",
+              "source": "reuters",
+              "url": "https://www.reuters.com/world/asia-pacific/tsmc-set-post-50-quarterly-profit-jump-extend-record-earnings-on-insatiable-ai-2026-04-16/",
+              "published_at": "2026-04-16T11:31:53.848006+00:00",
+              "why_ranked": "Event=earnings(85) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 73.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
+              "published_at": "2026-04-16T11:31:53.847922+00:00",
+              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "ASML",
+          "top_stories": [
+            {
+              "score": 81.2,
+              "tags": [
+                "guidance",
+                "earnings"
+              ],
+              "headline": "ASML stock sinks amid tightening China restrictions despite strong earnings, guidance",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html",
+              "published_at": "2026-04-15T11:31:55.879577+00:00",
+              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
+            },
+            {
+              "score": 77.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "ASML Raises 2026 Sales Forecast as AI Investment Fuels Growth - Bloomberg",
+              "source": "bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-04-15/asml-raises-2026-sales-forecast-as-ai-investment-fuels-growth",
+              "published_at": "2026-04-15T11:31:55.879717+00:00",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+"
+            },
+            {
+              "score": 73.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
+              "source": "cnbc",
+              "url": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
+              "published_at": "2026-04-16T11:31:55.879395+00:00",
+              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "LRCX",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Lam Research (LRCX) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-lrcx-earnings-expected-140007544.html",
+              "published_at": "2026-04-15T11:31:57.079324+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 1,
-        "total_candidates": 30,
+        "tickers_processed": 3,
+        "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-18"
@@ -1734,7 +1730,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-18T11:31:30.054623+00:00",
+        "generated_at": "2026-04-18T11:31:58.231460+00:00",
         "count": 11
       }
     }
