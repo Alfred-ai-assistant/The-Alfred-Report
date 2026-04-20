@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-20T07:30:12.228960"
+        "updated_at": "2026-04-20T07:30:46.131092"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-20T07:30:12.764904",
+        "updated_at": "2026-04-20T07:30:46.503179",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-20T07:30:13.492203",
+        "updated_at": "2026-04-20T07:30:47.118562",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -314,11 +314,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-20T11:30:12.100369+00:00",
+        "updated_at": "2026-04-20T11:30:45.992990+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -328,95 +328,14 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-20T11:30:48.138134+00:00",
+        "updated_at": "2026-04-20T11:31:08.858677+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions focus on ChatGPT updates, open-source model releases, and AI job market impacts. Key communities include r/MachineLearning, r/OpenAI, and r/artificial. Trending topics include prompt engineering techniques, concerns about AI safety, limitations of current models, and practical applications in coding and content creation. Users actively debate ethical implications and accessibility of AI tools.",
+      "summary": "Top AI discussions centered on large language models, with significant focus on OpenAI's latest releases and ChatGPT improvements. Machine learning ethics and bias concerns dominated r/MachineLearning and r/artificial. Communities debated AI job displacement, while r/OpenAI and r/ChatGPT showed strong engagement around new features. Trending topics included prompt engineering techniques, fine-tuning methods, and concerns about AI regulation. Overall sentiment mixed between enthusiasm for capabilities and apprehension about societal impacts.",
       "items": [
-        {
-          "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1roc2qp/which_free_llm_works_best_with_openclaw_web_search/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "OpenAI",
-            "Anthropic",
-            "Claude",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rds8wk/introducing_smallclaw_openclaw_for_smalllocal_llms/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Awesome Free LLM APIs List",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s01ygw/awesome_free_llm_apis_list/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "Llama",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Looking for the ultimate \"bang for buck\" LLM for OpenClaw. What’s the actual king of the low tier right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rvjfde/looking_for_the_ultimate_bang_for_buck_llm_for/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Gemini"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
         {
           "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
           "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
@@ -429,30 +348,6 @@
             "model",
             "inference",
             "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Bought a $2k Mac Mini to run local LLMs. Pretty sure Claude fills the roll. What am I missing?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s5rlcg/bought_a_2k_mac_mini_to_run_local_llms_pretty/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "LLM",
-            "model",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: local LLm recomendations?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
           ]
         },
         {
@@ -532,6 +427,96 @@
             "model",
             "agent"
           ]
+        },
+        {
+          "title": "r/artificial on Reddit: LLM comprehension question",
+          "url": "https://www.reddit.com/r/artificial/comments/1silt3s/llm_comprehension_question/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "agent",
+            "OpenAI"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Max Planck Researchers Introduce PoseGPT: An Artificial Intelligence Framework Employing Large Language Models (LLMs) to Understand and Reason about 3D Human Poses from Images or Textual Descriptions",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/18bxmhe/max_planck_researchers_introduce_posegpt_an/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: OpenAI Researchers Introduce MLE-bench: A New Benchmark for Measuring How Well AI Agents Perform at Machine Learning Engineering",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1g26th2/openai_researchers_introduce_mlebench_a_new/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "machine learning",
+            "agent",
+            "OpenAI"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Why would an LLM have self-preservation \"instincts\"",
+          "url": "https://www.reddit.com/r/artificial/comments/1nwztzr/why_would_an_llm_have_selfpreservation_instincts/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
+          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "agent"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: How does a LLM understand your question?",
+          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "neural"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Seeking guidance in understanding how LLMs work",
+          "url": "https://www.reddit.com/r/artificial/comments/1b1fo4l/seeking_guidance_in_understanding_how_llms_work/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "training"
+          ]
         }
       ],
       "meta": {
@@ -543,7 +528,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI, Google, and Meta dominate mentions across posts. OpenAI discussions center on ChatGPT features and pricing; Google focuses on Gemini competition; Meta highlights open-source initiatives. Additional mentions include Microsoft Azure AI integration and Anthropic Claude developments. Common themes: competitive positioning, feature comparisons, API pricing concerns, and industry consolidation worries among developers and tech enthusiasts.",
+      "summary": "OpenAI dominated mentions across multiple subreddits with discussions about product updates and pricing. Google received substantial attention for Gemini developments and competitive positioning. Microsoft appeared frequently in contexts of Azure AI integration and partnership announcements. Meta faced criticism regarding AI safety practices in r/technology. Anthropic gained mentions for Claude's capabilities and alignment research. Tesla discussions focused on autonomous driving AI, while other tech companies received scattered mentions primarily around AI hiring and research initiatives.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -611,151 +596,12 @@
             "MachineLearning"
           ],
           "query": "\"Groq\" OR \"Groq\" OR \"GroqCloud\" OR \"Groq Cloud\" reddit",
-          "items": [
-            {
-              "title": "r/LocalLLaMA on Reddit: Exclusive: Nvidia buying AI chip startup Groq's assets for about $20 billion in largest deal on record",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1puyq9r/exclusive_nvidia_buying_ai_chip_startup_groqs/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "GroqCloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/homeassistant on Reddit: Use Groq Cloud as a conversation agent",
-              "url": "https://www.reddit.com/r/homeassistant/comments/1f1rtzu/use_groq_cloud_as_a_conversation_agent/",
-              "subreddit": "homeassistant",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq Cloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Groq is probably a scam",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ahdhgx/groq_is_probably_a_scam/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Groq is lightning fast!",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1auxm3q/groq_is_lightning_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: This sums my experience with models on Groq",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1hwwvuz/this_sums_my_experience_with_models_on_groq/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Anyone get groq API access yet? Is it just as fast?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1aviqk0/anyone_get_groq_api_access_yet_is_it_just_as_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "Let's discuss about Groq, which model you use and why.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1d6egfk/lets_discuss_about_groq_which_model_you_use_and/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Is Groq private or it also uses our data to train models?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ca7p4d/is_groq_private_or_it_also_uses_our_data_to_train/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: What are your thoughts on Groq and other open source inference providers - esp with falling API prices.",
-              "url": "https://www.reddit.com/r/singularity/comments/1l92wjv/what_are_your_thoughts_on_groq_and_other_open/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: The speed at which Groq chips run llama-3 is unbelievable.",
-              "url": "https://www.reddit.com/r/singularity/comments/1c845st/the_speed_at_which_groq_chips_run_llama3_is/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "ipo_private_markets",
-              "partnership",
-              "earnings_financials"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -787,12 +633,173 @@
             "MachineLearning"
           ],
           "query": "\"Sambanova Systems\" OR \"Sambanova\" OR \"SambaNova\" OR \"Sambanova Systems\" OR \"SambaNova Systems\" reddit",
-          "items": [],
+          "items": [
+            {
+              "title": "r/Theranos on Reddit: Any info on Sambanova?",
+              "url": "https://www.reddit.com/r/Theranos/comments/1bt0m6j/any_info_on_sambanova/",
+              "subreddit": "Theranos",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/hardware on Reddit: Intel Takes Major Step in Plan to Acquire Chip Startup SambaNova",
+              "url": "https://www.reddit.com/r/hardware/comments/1pime06/intel_takes_major_step_in_plan_to_acquire_chip/",
+              "subreddit": "hardware",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/hardware on Reddit: Intel in talks to acquire AI startup Sambanova Systems",
+              "url": "https://www.reddit.com/r/hardware/comments/1okihog/intel_in_talks_to_acquire_ai_startup_sambanova/",
+              "subreddit": "hardware",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/singularity on Reddit: SambaNova's new chip runs AI models to 5 trillion parameters",
+              "url": "https://www.reddit.com/r/singularity/comments/16tsvym/sambanovas_new_chip_runs_ai_models_to_5_trillion/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/singularity on Reddit: SambaNova Systems Enhances Modular AI Deployment through Composition of Experts on the SambaNova SN40L Platform",
+              "url": "https://www.reddit.com/r/singularity/comments/1cwrkqh/sambanova_systems_enhances_modular_ai_deployment/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/learnmachinelearning on Reddit: [N] Faster Non-GPU based LLM Inference Platform is available",
+              "url": "https://www.reddit.com/r/learnmachinelearning/comments/1f3dnm7/n_faster_nongpu_based_llm_inference_platform_is/",
+              "subreddit": "learnmachinelearning",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/intelstock on Reddit: We should oppose the acquisition of SambaNova Systems",
+              "url": "https://www.reddit.com/r/intelstock/comments/1ooaaa9/we_should_oppose_the_acquisition_of_sambanova/",
+              "subreddit": "intelstock",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/machinelearningnews on Reddit: SambaNova Systems Breaks Records with Samba-1-Turbo: Transforming AI Processing with Unmatched Speed and Innovation",
+              "url": "https://www.reddit.com/r/machinelearningnews/comments/1d3bxz2/sambanova_systems_breaks_records_with_samba1turbo/",
+              "subreddit": "machinelearningnews",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/LocalLLaMA on Reddit: SambaNova Systems running Llama 3 8B at 430 TPS on 8 chips with FP16.",
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1caxbx6/sambanova_systems_running_llama_3_8b_at_430_tps/",
+              "subreddit": "LocalLLaMA",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/singularity on Reddit: SambaNova announces new SN40L chip for AI, node made up of just eight of these chips is capable of supporting models with as many as five trillion parameters(GPT-4 has around 1,8T). “Every company can now have their own GPT model.”",
+              "url": "https://www.reddit.com/r/singularity/comments/16o0hgx/sambanova_announces_new_sn40l_chip_for_ai_node/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "Sambanova",
+                "SambaNova",
+                "Sambanova Systems",
+                "SambaNova Systems",
+                "Sambanova Systems"
+              ],
+              "topics": [],
+              "topic_confidence": "high"
+            }
+          ],
           "company_summary": null,
           "meta": {
-            "posts_found": 0,
-            "posts_included": 0,
-            "top_topics": []
+            "posts_found": 10,
+            "posts_included": 10,
+            "top_topics": [
+              "ipo_private_markets",
+              "partnership",
+              "earnings_financials"
+            ]
           }
         },
         {
@@ -859,7 +866,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-20T11:31:17.162939+00:00"
+        "run_at": "2026-04-20T11:31:29.261159+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -869,72 +876,116 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-20T11:31:26.774017+00:00",
+      "generated_at": "2026-04-20T11:31:39.505772+00:00",
       "tickers": [
         {
-          "symbol": "LLY",
-          "top_stories": [
-            {
-              "score": 61.9,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Eli Lilly (LLY) Set to Acquire Kelonia Therapeutics in Major Deal",
-              "source": "unknown",
-              "url": "https://gurufocus.com/news/8802491/eli-lilly-lly-set-to-acquire-kelonia-therapeutics-in-major-deal",
-              "published_at": "2026-04-20T01:31:29.549812+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.43"
-            }
-          ],
+          "symbol": "NVDA",
+          "top_stories": [],
           "glance": [
             {
               "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Novo weight-loss drug may preserve lean body mass better than Lilly's, study finds | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+              "headline": "Nvidia Investment Sends Xanadu CEO Weedbrook’s Stake to $1.5 Billion - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
         {
-          "symbol": "TSLA",
+          "symbol": "LLY",
           "top_stories": [
             {
-              "score": 57.6,
+              "score": 100,
               "tags": [
-                "earnings"
+                "m_and_a_confirmed"
               ],
-              "headline": "Stock market records, Iran updates, and Tesla earnings: What to watch this week",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/stock-market-records-iran-updates-and-tesla-earnings-what-to-watch-this-week-115312657.html",
-              "published_at": "2026-04-19T20:31:31.539772+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.29"
+              "headline": "Lilly in advanced talks to acquire Kelonia Therapeutics for over $2 billion, WSJ says | Reuters",
+              "source": "reuters",
+              "url": "https://reuters.com/legal/litigation/eli-lilly-advanced-talks-acquire-kelonia-therapeutics-over-2-billion-wsj-says-2026-04-19",
+              "published_at": "2026-04-19T21:31:42.528056+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=reuters(93) Fresh=0.31 Tier1+"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "RXRX",
+          "symbol": "NTSK",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 57.6,
+              "tags": [
+                "sec_filing"
+              ],
+              "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
+              "published_at": "2026-03-30T11:31:43.719929+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "AVGO",
+          "top_stories": [],
+          "glance": [
+            {
+              "score": 47.6,
+              "tags": [
+                "product_launch_major"
+              ],
+              "headline": "Broadcom (AVGO) Is Up 9.4% After New Meta and Google AI Chip Deals and VMware AI Security Launches - Has The Bull Case Changed? - Simply Wall St News",
+              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.29"
+            }
+          ]
+        },
+        {
+          "symbol": "CMG",
+          "top_stories": [],
+          "glance": [
+            {
+              "score": 51.6,
+              "tags": [
+                "lawsuit"
+              ],
+              "headline": "CMG Mortgage sued for raiding lenders' Arizona branches | National Mortgage News",
+              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
+            }
+          ]
+        },
+        {
+          "symbol": "XIACY",
+          "top_stories": [
+            {
+              "score": 79.1,
               "tags": [
                 "earnings"
               ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+and+AI+Developments",
-              "published_at": "2026-04-13T11:31:33.770169+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
+              "published_at": "2026-04-20T11:31:47.531136+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=1.00"
+            },
+            {
+              "score": 60.4,
+              "tags": [
+                "contract_win"
+              ],
+              "headline": "Stellantis exploring partnership with China's Dongfeng - report (STLA:NYSE) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4575150-stellantis-exploring-partnership-with-chinas-dongfeng---report",
+              "published_at": "2026-04-15T11:31:47.531406+00:00",
+              "why_ranked": "Event=contract_win(70) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 3,
-        "total_candidates": 50,
+        "tickers_processed": 6,
+        "total_candidates": 70,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-20"
@@ -943,42 +994,8 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-20T11:31:34.177585+00:00",
+      "generated_at": "2026-04-20T11:31:47.534320+00:00",
       "tickers": [
-        {
-          "symbol": "CRM",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "[ARS] Salesforce, Inc. SEC Filing | CRM SEC Filing - Form ARS",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/CRM/ars-salesforce-inc-sec-filing-630377c63989.html",
-              "published_at": "2026-04-16T11:31:35.081001+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "TSM",
-          "top_stories": [
-            {
-              "score": 73.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "TSMC first-quarter profit rises 58%, beats estimates as AI demand fuels record run",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/16/tsmc-q1-profit-58-percent-ai-chip-demand-record.html",
-              "published_at": "2026-04-16T11:31:35.868205+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
         {
           "symbol": "LRCX",
           "top_stories": [
@@ -987,10 +1004,10 @@
               "tags": [
                 "earnings"
               ],
-              "headline": "Lam Research (LRCX) Q3 Earnings Preview: What You Should Know Beyond the Headline Estimates",
+              "headline": "LRCX Likely to Beat Q3 Earnings Estimates: How to Play the Stock?",
               "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-lrcx-q3-earnings-131503188.html",
-              "published_at": "2026-04-17T11:31:39.213885+00:00",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/lrcx-likely-beat-q3-earnings-120800518.html",
+              "published_at": "2026-04-17T11:31:51.751713+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -998,7 +1015,7 @@
         }
       ],
       "debug": {
-        "tickers_processed": 3,
+        "tickers_processed": 1,
         "total_candidates": 50,
         "removed_fresh_only": 0,
         "state_written": true,
@@ -1055,7 +1072,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-20T11:31:40.063338+00:00",
+        "generated_at": "2026-04-20T11:31:52.992628+00:00",
         "count": 11
       }
     }
