@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-21T07:30:10.502342"
+        "updated_at": "2026-04-21T07:30:46.029654"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-21T07:30:10.882184",
+        "updated_at": "2026-04-21T07:30:46.474054",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-21T07:30:11.587319",
+        "updated_at": "2026-04-21T07:30:47.131053",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -325,7 +325,7 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-21T11:30:10.328091+00:00",
+        "updated_at": "2026-04-21T11:30:45.904657+00:00",
         "story_count": 15,
         "lanes_used": [
           "hn",
@@ -339,162 +339,57 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-21T11:30:33.029265+00:00",
+        "updated_at": "2026-04-21T11:31:08.246496+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI posts on Reddit focus on generative models, ChatGPT updates, and ethical concerns. Key communities include r/MachineLearning, r/OpenAI, and r/artificial. Trending topics include prompt engineering techniques, AI regulation debates, job displacement concerns, and breakthroughs in multimodal AI. Users actively discuss practical applications, API pricing changes, and comparisons between competing AI platforms.",
+      "summary": "Top AI posts on Reddit focused on ChatGPT updates, open-source model development, and AI job market concerns. Key communities include r/MachineLearning and r/OpenAI. Trending topics: large language models, AI safety discussions, pricing changes, and real-world AI applications. Users debated AI ethics, regulation, and career implications. Interest in both commercial tools and community-driven AI projects remained high.",
       "items": [
         {
-          "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1roc2qp/which_free_llm_works_best_with_openclaw_web_search/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "OpenAI",
-            "Anthropic",
-            "Claude",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Introducing SmallClaw - Openclaw for Small/Local LLMS",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rds8wk/introducing_smallclaw_openclaw_for_smalllocal_llms/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Awesome Free LLM APIs List",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s01ygw/awesome_free_llm_apis_list/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "Llama",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Looking for the ultimate \"bang for buck\" LLM for OpenClaw. What’s the actual king of the low tier right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rvjfde/looking_for_the_ultimate_bang_for_buck_llm_for/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Gemini"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: 96% Accuracy: Harvard Scientists Unveil Revolutionary ChatGPT-Like AI for Cancer Diagnosis",
+          "url": "https://www.reddit.com/r/technology/comments/1g6guii/96_accuracy_harvard_scientists_unveil/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "machine learning",
             "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Bought a $2k Mac Mini to run local LLMs. Pretty sure Claude fills the roll. What am I missing?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s5rlcg/bought_a_2k_mac_mini_to_run_local_llms_pretty/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "LLM",
-            "model",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: To the many people here wondering about local models… just use an API",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rhrtr2/to_the_many_people_here_wondering_about_local/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: local LLm recomendations?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: MInference (Milliontokens Inference): A Training-Free Efficient Method for the Pre-Filling Stage of Long-Context LLMs Based on Dynamic Sparse Attention",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dx9wi3/minference_milliontokens_inference_a_trainingfree/",
-          "subreddit": "MachineLearning",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "inference",
             "training",
-            "Llama"
+            "neural"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Small Models, Big Impact: ServiceNow AI Releases Apriel-5B to Outperform Larger LLMs with Fewer Resources",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jz1byb/small_models_big_impact_servicenow_ai_releases/",
-          "subreddit": "MachineLearning",
+          "title": "r/aicuriosity on Reddit: Master LLM Fine-Tuning & RLHF: DeepLearning.AI's New Post-Training Course Guide",
+          "url": "https://www.reddit.com/r/aicuriosity/comments/1oih360/master_llm_finetuning_rlhf_deeplearningais_new/",
+          "subreddit": "AiCuriosity",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: New AI architecture delivers 100x faster reasoning than LLMs with just 1,000 training examples",
+          "url": "https://www.reddit.com/r/technology/comments/1maj3m3/new_ai_architecture_delivers_100x_faster/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: AI feedback loop will spell death for future generative models",
+          "url": "https://www.reddit.com/r/technology/comments/1f5wrjy/ai_feedback_loop_will_spell_death_for_future/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -505,42 +400,134 @@
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: A Comprehensive Study by BentoML on Benchmarking LLM Inference Backends: Performance Analysis of vLLM, LMDeploy, MLC-LLM, TensorRT-LLM, and TGI",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dccn3c/a_comprehensive_study_by_bentoml_on_benchmarking/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: AMD's senior director of AI thinks 'Claude has regressed' and that it 'cannot be trusted to perform complex engineering'",
+          "url": "https://www.reddit.com/r/technology/comments/1sfsnlp/amds_senior_director_of_ai_thinks_claude_has/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "Claude"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: AI PCs aren't selling, and Microsoft's PC partners are scrambling",
+          "url": "https://www.reddit.com/r/technology/comments/1q8aayu/ai_pcs_arent_selling_and_microsofts_pc_partners/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
             "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Chinese Firm Trains Massive AI Model for Just $5.5 Million",
+          "url": "https://www.reddit.com/r/technology/comments/1hn7pm7/chinese_firm_trains_massive_ai_model_for_just_55/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
             "Llama"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: OpenLLM offers a breakthrough approach by enabling you to run any open-source LLM as an OpenAI-compatible API endpoint with a single command",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1izw23b/openllm_offers_a_breakthrough_approach_by/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: ‘We could hit a wall’: why trillions of dollars of risk is no guarantee of AI reward",
+          "url": "https://www.reddit.com/r/technology/comments/1qff55g/we_could_hit_a_wall_why_trillions_of_dollars_of/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
-            "inference",
-            "OpenAI"
+            "model",
+            "training"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Meet Time-LLM: A Reprogramming Machine Learning Framework to Repurpose LLMs for General Time Series Forecasting with the Backbone Language Models Kept Intact",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1ajssnu/meet_timellm_a_reprogramming_machine_learning/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: LLMs can't stop making up software dependencies and sabotaging everything",
+          "url": "https://www.reddit.com/r/technology/comments/1jyxi68/llms_cant_stop_making_up_software_dependencies/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Reddit cashes in on AI gold rush with $203M in LLM training license fees.",
+          "url": "https://www.reddit.com/r/technology/comments/1ayr0z1/reddit_cashes_in_on_ai_gold_rush_with_203m_in_llm/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Meta's top AI researchers is leaving. He thinks LLMs are a dead end",
+          "url": "https://www.reddit.com/r/technology/comments/1oygsx4/metas_top_ai_researchers_is_leaving_he_thinks/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
             "model",
             "inference"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Is AI lying to me? Scientists warn of growing capacity for deception | Researchers find instances of systems double-crossing opponents, bluffing, pretending to be human and modifying behaviour in tests",
+          "url": "https://www.reddit.com/r/technology/comments/1coysre/is_ai_lying_to_me_scientists_warn_of_growing/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: LLMs No Longer Require Powerful Servers: Researchers from MIT, KAUST, ISTA, and Yandex Introduce a New AI Approach to Rapidly Compress Large Language Models without a Significant Loss of Quality",
+          "url": "https://www.reddit.com/r/technology/comments/1jy2tzq/llms_no_longer_require_powerful_servers/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: A.I. Is Homogenizing Our Thoughts",
+          "url": "https://www.reddit.com/r/technology/comments/1lkzzev/ai_is_homogenizing_our_thoughts/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "training"
+          ]
+        },
+        {
+          "title": "The Truth About AI: It’s Only As Smart As The Data We Feed It : r/technology",
+          "url": "https://www.reddit.com/r/technology/comments/1hh1bkt/the_truth_about_ai_its_only_as_smart_as_the_data/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "training"
           ]
         }
       ],
@@ -553,7 +540,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI and Google dominate mentions across 50 posts, followed by Meta and Microsoft. Key topics include product launches, API pricing changes, and ethical AI practices. Discussion centers on competition in generative AI, employment impacts, data privacy concerns, and integration of AI into existing products. Sentiment varies between excitement about innovation and skepticism regarding corporate responsibility.",
+      "summary": "Tech giants dominated mentions: OpenAI (ChatGPT discussions), Google (Gemini), Microsoft (Copilot), and Meta (Llama). Apple and Amazon appeared in AI integration discussions. Topics centered on product updates, pricing models, and competition. Sentiment mixed—enthusiasm for innovations offset by privacy concerns and skepticism about claims. Developer communities discussed integration challenges and API costs most frequently.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -744,9 +731,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         },
@@ -916,9 +903,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         },
@@ -1114,9 +1101,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         },
@@ -1316,9 +1303,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "OpenClaw",
               "AI Agents",
-              "Agents",
-              "OpenClaw"
+              "Agents"
             ]
           }
         },
@@ -1506,9 +1493,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "earnings_financials",
               "ipo_private_markets",
-              "partnership"
+              "partnership",
+              "earnings_financials"
             ]
           }
         }
@@ -1516,7 +1503,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-21T11:30:51.716859+00:00"
+        "run_at": "2026-04-21T11:31:24.256009+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1526,33 +1513,19 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-21T11:31:06.329276+00:00",
+      "generated_at": "2026-04-21T11:31:34.327000+00:00",
       "tickers": [
-        {
-          "symbol": "NVDA",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Monday stocks from analyst calls include Nvidia, Apple, Tesla, Okta",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
-            }
-          ]
-        },
         {
           "symbol": "AMZN",
           "top_stories": [],
           "glance": [
             {
-              "score": 50.0,
+              "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "Stocks making the biggest moves after hours: AMZN, AAPL, STLD",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.31"
+              "headline": "Amazon to buy satellite firm Globalstar in $11.57 billion deal to take on Musk's Starlink | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
             }
           ]
         },
@@ -1560,103 +1533,89 @@
           "symbol": "LLY",
           "top_stories": [
             {
-              "score": 75.6,
+              "score": 57.6,
               "tags": [
                 "m_and_a_confirmed"
               ],
-              "headline": "Eli Lilly agrees to acquire cancer drug maker Kelonia in deal worth up to $7 billion",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/20/eli-lilly-to-acquire-cancer-drug-maker-kelonia.html",
-              "published_at": "2026-04-20T11:31:09.459468+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=cnbc(83) Fresh=0.15"
+              "headline": "Lilly to acquire Kelonia Therapeutics to advance in vivo CAR-T cell therapies",
+              "source": "unknown",
+              "url": "https://www.prnewswire.com/news-releases/lilly-to-acquire-kelonia-therapeutics-to-advance-in-vivo-car-t-cell-therapies-302747122.html",
+              "published_at": "2026-04-20T11:31:37.257329+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": [
+            {
+              "score": 52.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Eli Lilly to buy Boston's Kelonia for up to $7 billion in cancer push | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
+            }
+          ]
+        },
+        {
+          "symbol": "TSLA",
+          "top_stories": [
+            {
+              "score": 77.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "Tesla's energy storage division to pick up slack as car margins drop and credits fade | Reuters",
+              "source": "reuters",
+              "url": "https://www.reuters.com/sustainability/climate-energy/teslas-energy-storage-division-pick-up-slack-car-margins-drop-credits-fade-2026-04-20/",
+              "published_at": "2026-04-20T11:31:39.381226+00:00",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+"
             },
             {
-              "score": 59.3,
+              "score": 57.6,
               "tags": [
-                "sec_filing"
+                "regulatory_action"
               ],
-              "headline": "[SCHEDULE 13G/A] ELI LILLY & Co Amended Passive Investment Disclosure | LLY SEC Filing - Form SCHEDULE 13G/A",
+              "headline": "Tesla redefined the American road. Where does Elon Musk go from here?",
               "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/LLY/schedule-13g-a-eli-lilly-co-amended-passive-investment-disclosure-a62d022b0ded.html",
-              "published_at": "2026-04-20T19:31:09.459378+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.26"
+              "url": "https://www.usatoday.com/story/news/usa250/2026/04/15/how-elon-musks-tesla-has-redefined-the-american-road/88623724007/",
+              "published_at": "2026-04-14T11:31:39.382224+00:00",
+              "why_ranked": "Event=regulatory_action(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Tesla Q1 earnings preview: Robotaxi rollout, mega capex spending in focus",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/article/tesla-q1-earnings-preview-robotaxi-rollout-mega-capex-spending-in-focus-135049863.html",
+              "published_at": "2026-04-20T11:31:39.381745+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "TSLA",
+          "symbol": "RXRX",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Stock market records, Iran updates, and Tesla earnings: What to watch this week",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/stock-market-records-iran-updates-and-tesla-earnings-what-to-watch-this-week-115312657.html",
-              "published_at": "2026-04-20T11:31:11.432547+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
-            }
-          ],
-          "glance": [
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Monday stocks from analyst calls include Nvidia, Apple, Tesla, Okta",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "CMG",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 51.6,
-              "tags": [
-                "lawsuit"
-              ],
-              "headline": "CMG Mortgage sued for raiding lenders' Arizona branches | National Mortgage News",
-              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
-            }
-          ]
-        },
-        {
-          "symbol": "XIACY",
-          "top_stories": [
-            {
-              "score": 79.1,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
-              "source": "seekingalpha",
-              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
-              "published_at": "2026-04-21T11:31:14.662659+00:00",
-              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=1.00"
-            },
-            {
-              "score": 60.4,
-              "tags": [
-                "contract_win"
-              ],
-              "headline": "Stellantis exploring partnership with China's Dongfeng - report (STLA:NYSE) | Seeking Alpha",
-              "source": "seekingalpha",
-              "url": "https://seekingalpha.com/news/4575150-stellantis-exploring-partnership-with-chinas-dongfeng---report",
-              "published_at": "2026-04-14T11:31:14.662883+00:00",
-              "why_ranked": "Event=contract_win(70) Source=seekingalpha(67) Fresh=0.15"
+              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
+              "source": "unknown",
+              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+and+AI+Developments",
+              "published_at": "2026-04-14T11:31:41.530644+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 6,
-        "total_candidates": 80,
-        "removed_fresh_only": 0,
+        "tickers_processed": 4,
+        "total_candidates": 70,
+        "removed_fresh_only": 4,
         "state_written": true,
         "report_date": "2026-04-21"
       }
@@ -1664,67 +1623,38 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-21T11:31:14.663951+00:00",
+      "generated_at": "2026-04-21T11:31:41.967345+00:00",
       "tickers": [
         {
-          "symbol": "CRM",
+          "symbol": "TSM",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Salesforce (CRM) Stock Plunges 30% YTD as AI Threatens Traditional SaaS Revenue Model - Blockonomi",
+              "headline": "Analysts rerate Taiwan Semiconductor after earnings | TSM - TheStreet",
               "source": "unknown",
-              "url": "https://blockonomi.com/salesforce-crm-stock-plunges-30-ytd-as-ai-threatens-traditional-saas-revenue-model/",
-              "published_at": "2026-04-20T11:31:15.558659+00:00",
+              "url": "https://www.thestreet.com/investing/stocks/analysts-rerate-taiwan-semiconductor-stock-after-earnings",
+              "published_at": "2026-04-18T11:31:43.671530+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "GLW",
+          "symbol": "MU",
           "top_stories": [
             {
-              "score": 58.4,
+              "score": 67.2,
               "tags": [
                 "earnings"
               ],
-              "headline": "GLW Corning Earnings April 2026: Beat or Miss? | Meyka",
-              "source": "unknown",
-              "url": "https://meyka.com/blog/glw-corning-earnings-april-2026-beat-or-miss-2004/",
-              "published_at": "2026-04-20T22:31:16.721220+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.34"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "ASML",
-          "top_stories": [
-            {
-              "score": 81.2,
-              "tags": [
-                "guidance",
-                "earnings"
-              ],
-              "headline": "ASML stock sinks amid tightening China restrictions despite strong earnings, guidance",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html",
-              "published_at": "2026-04-14T11:31:17.945377+00:00",
-              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
-            },
-            {
-              "score": 73.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
-              "published_at": "2026-04-16T11:31:17.945179+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
+              "headline": "Micron alone accounts for 51% of all S&P 500 EPS revisions since the war began: Goldman Sachs (MU:NASDAQ) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4576710-micron-alone-accounts-for-51-of-all-sp-500-eps-revisions-since-the-war-began-goldman-sachs",
+              "published_at": "2026-04-20T16:31:46.063469+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.21"
             }
           ],
           "glance": []
@@ -1737,10 +1667,10 @@
               "tags": [
                 "earnings"
               ],
-              "headline": "GE Vernova Earnings: What To Look For From GEV - StockStory",
+              "headline": "FinancialContent - GE Vernova Earnings: What To Look For From GEV",
               "source": "unknown",
-              "url": "https://stockstory.org/us/stocks/nyse/gev/news/earnings/ge-vernova-earnings-what-to-look-for-from-gev",
-              "published_at": "2026-04-21T03:31:19.936549+00:00",
+              "url": "https://markets.financialcontent.com/stocks/article/stockstory-2026-4-21-ge-vernova-earnings-what-to-look-for-from-gev",
+              "published_at": "2026-04-21T03:31:47.009698+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.51"
             }
           ],
@@ -1748,9 +1678,9 @@
         }
       ],
       "debug": {
-        "tickers_processed": 4,
+        "tickers_processed": 3,
         "total_candidates": 50,
-        "removed_fresh_only": 0,
+        "removed_fresh_only": 3,
         "state_written": true,
         "report_date": "2026-04-21"
       }
@@ -1805,7 +1735,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-21T11:31:20.365229+00:00",
+        "generated_at": "2026-04-21T11:31:47.423870+00:00",
         "count": 11
       }
     }
