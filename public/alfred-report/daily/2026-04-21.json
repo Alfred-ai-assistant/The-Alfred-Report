@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-21T07:00:11.238708"
+        "updated_at": "2026-04-21T07:30:10.502342"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-21T07:00:13.173066",
+        "updated_at": "2026-04-21T07:30:10.882184",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-21T07:00:13.800644",
+        "updated_at": "2026-04-21T07:30:11.587319",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -163,7 +163,7 @@
             "open-source"
           ],
           "published_at": "2026-04-21T03:43:03Z",
-          "hn_score": 214
+          "hn_score": 227
         },
         {
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
@@ -227,7 +227,7 @@
             "safety"
           ],
           "published_at": "2026-04-20T12:23:39Z",
-          "hn_score": 570
+          "hn_score": 572
         },
         {
           "title": "NSA is using Anthropic's Mythos despite blacklist",
@@ -239,7 +239,7 @@
             "safety"
           ],
           "published_at": "2026-04-20T10:00:35Z",
-          "hn_score": 463
+          "hn_score": 464
         },
         {
           "title": "AI Resistance: some recent anti-AI stuff that’s worth discussing",
@@ -251,7 +251,7 @@
             "safety"
           ],
           "published_at": "2026-04-20T20:19:13Z",
-          "hn_score": 359
+          "hn_score": 363
         },
         {
           "title": "Deezer says 44% of songs uploaded to its platform daily are AI-generated",
@@ -263,7 +263,7 @@
             "research"
           ],
           "published_at": "2026-04-20T15:41:02Z",
-          "hn_score": 346
+          "hn_score": 350
         },
         {
           "title": "OpenAI ad partner now selling ChatGPT ad placements based on “prompt relevance”",
@@ -274,7 +274,7 @@
             "enterprise"
           ],
           "published_at": "2026-04-20T21:20:52Z",
-          "hn_score": 267
+          "hn_score": 271
         },
         {
           "title": "Kimi vendor verifier – verify accuracy of inference providers",
@@ -286,7 +286,7 @@
             "open-source"
           ],
           "published_at": "2026-04-20T18:39:53Z",
-          "hn_score": 261
+          "hn_score": 265
         },
         {
           "title": "Claude Token Counter, now with model comparisons",
@@ -310,7 +310,7 @@
             "hardware"
           ],
           "published_at": "2026-04-21T04:12:12Z",
-          "hn_score": 172
+          "hn_score": 184
         },
         {
           "title": "Introducing Claude Opus 4.6 - Anthropic",
@@ -325,11 +325,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-21T11:00:03.638429+00:00",
+        "updated_at": "2026-04-21T11:30:10.328091+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -339,13 +339,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-21T11:00:47.140785+00:00",
+        "updated_at": "2026-04-21T11:30:33.029265+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions centered on GPT-4 capabilities, open-source model comparisons, and job displacement concerns. Key communities included r/MachineLearning, r/OpenAI, and r/LocalLLMs. Trending topics: fine-tuning techniques, ethical AI development, and real-world application case studies. Users actively debated regulation, AI safety, and emerging foundation model architectures. Significant engagement around cost-effectiveness of different AI platforms.",
+      "summary": "Top AI posts on Reddit focus on generative models, ChatGPT updates, and ethical concerns. Key communities include r/MachineLearning, r/OpenAI, and r/artificial. Trending topics include prompt engineering techniques, AI regulation debates, job displacement concerns, and breakthroughs in multimodal AI. Users actively discuss practical applications, API pricing changes, and comparisons between competing AI platforms.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Which free LLM works best with OpenClaw + web search?",
@@ -455,6 +455,18 @@
           ]
         },
         {
+          "title": "r/openclaw on Reddit: To the many people here wondering about local models… just use an API",
+          "url": "https://www.reddit.com/r/openclaw/comments/1rhrtr2/to_the_many_people_here_wondering_about_local/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "NVIDIA"
+          ]
+        },
+        {
           "title": "r/openclaw on Reddit: local LLm recomendations?",
           "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
           "subreddit": "openclaw",
@@ -530,19 +542,6 @@
             "model",
             "inference"
           ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Optimizing Test-Time Compute for LLMs: A Meta-Reinforcement Learning Approach with Cumulative Regret Minimization",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jbcsdg/optimizing_testtime_compute_for_llms_a/",
-          "subreddit": "MachineLearning",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "machine learning",
-            "model",
-            "agent"
-          ]
         }
       ],
       "meta": {
@@ -554,7 +553,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "OpenAI, Google, and Microsoft dominated mentions across 50 posts. Dominant topics: competitive AI model releases, enterprise adoption challenges, and data privacy concerns. Apple and Meta also featured prominently in discussions about AI integration in consumer products. Recurring themes: API pricing debates, model reliability issues, and workforce automation impacts. Sentiment mixed, with praise for innovation offset by concerns about market concentration and accessibility.",
+      "summary": "OpenAI and Google dominate mentions across 50 posts, followed by Meta and Microsoft. Key topics include product launches, API pricing changes, and ethical AI practices. Discussion centers on competition in generative AI, employment impacts, data privacy concerns, and integration of AI into existing products. Sentiment varies between excitement about innovation and skepticism regarding corporate responsibility.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -745,9 +744,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "earnings_financials",
               "ipo_private_markets",
-              "partnership",
-              "earnings_financials"
+              "partnership"
             ]
           }
         },
@@ -917,9 +916,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "earnings_financials",
               "ipo_private_markets",
-              "partnership",
-              "earnings_financials"
+              "partnership"
             ]
           }
         },
@@ -1115,9 +1114,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "earnings_financials",
               "ipo_private_markets",
-              "partnership",
-              "earnings_financials"
+              "partnership"
             ]
           }
         },
@@ -1159,23 +1158,6 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/OpenAI on Reddit: OpenClaw isn’t revolutionary, but it definitely changed how I work",
-              "url": "https://www.reddit.com/r/OpenAI/comments/1snbim2/openclaw_isnt_revolutionary_but_it_definitely/",
-              "subreddit": "OpenAI",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
               "title": "r/openclaw on Reddit: Anyone just using the OpenAI subscription (OAuth) to run open claw?",
               "url": "https://www.reddit.com/r/openclaw/comments/1s1vdwm/anyone_just_using_the_openai_subscription_oauth/",
               "subreddit": "openclaw",
@@ -1196,6 +1178,23 @@
               "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
               "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
               "subreddit": "openclaw",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/OpenAI on Reddit: OpenClaw isn’t revolutionary, but it definitely changed how I work",
+              "url": "https://www.reddit.com/r/OpenAI/comments/1snbim2/openclaw_isnt_revolutionary_but_it_definitely/",
+              "subreddit": "OpenAI",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1295,9 +1294,9 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/LocalLLaMA on Reddit: Anyone actually using Openclaw?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1r5v1jb/anyone_actually_using_openclaw/",
-              "subreddit": "LocalLLaMA",
+              "title": "r/OpenAI on Reddit: OpenAI's \"agent\" story is 18 months behind what RunLobster (OpenClaw) users have been running in production",
+              "url": "https://www.reddit.com/r/OpenAI/comments/1sm9ics/openais_agent_story_is_18_months_behind_what/",
+              "subreddit": "OpenAI",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1318,8 +1317,8 @@
             "posts_included": 10,
             "top_topics": [
               "AI Agents",
-              "OpenClaw",
-              "Agents"
+              "Agents",
+              "OpenClaw"
             ]
           }
         },
@@ -1507,9 +1506,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "earnings_financials",
               "ipo_private_markets",
-              "partnership",
-              "earnings_financials"
+              "partnership"
             ]
           }
         }
@@ -1517,7 +1516,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-21T11:01:06.080193+00:00"
+        "run_at": "2026-04-21T11:30:51.716859+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1527,7 +1526,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-21T11:01:18.080400+00:00",
+      "generated_at": "2026-04-21T11:31:06.329276+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
@@ -1545,19 +1544,7 @@
         },
         {
           "symbol": "AMZN",
-          "top_stories": [
-            {
-              "score": 61.9,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Amazon (AMZN) Acquires Globalstar, Boosting Low Earth Orbit Communications",
-              "source": "unknown",
-              "url": "https://www.gurufocus.com/news/8804766/amazon-amzn-acquires-globalstar-boosting-low-earth-orbit-communications",
-              "published_at": "2026-04-21T01:01:20.013725+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.43"
-            }
-          ],
+          "top_stories": [],
           "glance": [
             {
               "score": 50.0,
@@ -1580,7 +1567,7 @@
               "headline": "Eli Lilly agrees to acquire cancer drug maker Kelonia in deal worth up to $7 billion",
               "source": "cnbc",
               "url": "https://www.cnbc.com/2026/04/20/eli-lilly-to-acquire-cancer-drug-maker-kelonia.html",
-              "published_at": "2026-04-20T11:01:21.245221+00:00",
+              "published_at": "2026-04-20T11:31:09.459468+00:00",
               "why_ranked": "Event=m_and_a_confirmed(90) Source=cnbc(83) Fresh=0.15"
             },
             {
@@ -1591,7 +1578,7 @@
               "headline": "[SCHEDULE 13G/A] ELI LILLY & Co Amended Passive Investment Disclosure | LLY SEC Filing - Form SCHEDULE 13G/A",
               "source": "unknown",
               "url": "https://www.stocktitan.net/sec-filings/LLY/schedule-13g-a-eli-lilly-co-amended-passive-investment-disclosure-a62d022b0ded.html",
-              "published_at": "2026-04-20T19:01:21.245153+00:00",
+              "published_at": "2026-04-20T19:31:09.459378+00:00",
               "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.26"
             }
           ],
@@ -1608,7 +1595,7 @@
               "headline": "Stock market records, Iran updates, and Tesla earnings: What to watch this week",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/news/stock-market-records-iran-updates-and-tesla-earnings-what-to-watch-this-week-115312657.html",
-              "published_at": "2026-04-20T11:01:23.185013+00:00",
+              "published_at": "2026-04-20T11:31:11.432547+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -1624,21 +1611,18 @@
           ]
         },
         {
-          "symbol": "RXRX",
-          "top_stories": [
+          "symbol": "CMG",
+          "top_stories": [],
+          "glance": [
             {
-              "score": 55.6,
+              "score": 51.6,
               "tags": [
-                "earnings"
+                "lawsuit"
               ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+and+AI+Developments",
-              "published_at": "2026-04-14T11:01:25.757472+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "CMG Mortgage sued for raiding lenders' Arizona branches | National Mortgage News",
+              "why_ranked": "Event=lawsuit(75) Source=unknown(43) Fresh=0.15"
             }
-          ],
-          "glance": []
+          ]
         },
         {
           "symbol": "XIACY",
@@ -1651,30 +1635,19 @@
               "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
               "source": "seekingalpha",
               "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
-              "published_at": "2026-04-21T11:01:26.649401+00:00",
+              "published_at": "2026-04-21T11:31:14.662659+00:00",
               "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=1.00"
             },
             {
-              "score": 65.1,
+              "score": 60.4,
               "tags": [
-                "other"
+                "contract_win"
               ],
-              "headline": "China's Xiaomi posts first quarterly profit decline in three years | Reuters",
-              "source": "reuters",
-              "url": "https://www.reuters.com/world/asia-pacific/xiaomi-reports-237-drop-q4-profit-2026-03-24/",
-              "published_at": "2026-04-21T11:01:26.648816+00:00",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=1.00 Tier1+ Novelty-25"
-            },
-            {
-              "score": 65.1,
-              "tags": [
-                "other"
-              ],
-              "headline": "Xiaomi Sales Grow Slowest in Years Despite Strong EV Demand - Bloomberg",
-              "source": "bloomberg",
-              "url": "https://bloomberg.com/news/articles/2026-03-24/xiaomi-sales-grows-slowest-in-years-in-sign-of-poor-phone-demand",
-              "published_at": "2026-04-21T11:01:26.648924+00:00",
-              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=1.00 Tier1+ Novelty-25"
+              "headline": "Stellantis exploring partnership with China's Dongfeng - report (STLA:NYSE) | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4575150-stellantis-exploring-partnership-with-chinas-dongfeng---report",
+              "published_at": "2026-04-14T11:31:14.662883+00:00",
+              "why_ranked": "Event=contract_win(70) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1691,21 +1664,21 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-21T11:01:26.652066+00:00",
+      "generated_at": "2026-04-21T11:31:14.663951+00:00",
       "tickers": [
         {
-          "symbol": "TSM",
+          "symbol": "CRM",
           "top_stories": [
             {
-              "score": 56.7,
+              "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "3 Reasons TSMC Stock Is a 'Strong Buy' After Q1 Earnings",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-tsmc-stock-strong-164148095.html",
-              "published_at": "2026-04-20T17:01:27.924857+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.22"
+              "headline": "Salesforce (CRM) Stock Plunges 30% YTD as AI Threatens Traditional SaaS Revenue Model - Blockonomi",
+              "source": "unknown",
+              "url": "https://blockonomi.com/salesforce-crm-stock-plunges-30-ytd-as-ai-threatens-traditional-saas-revenue-model/",
+              "published_at": "2026-04-20T11:31:15.558659+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1720,8 +1693,8 @@
               ],
               "headline": "GLW Corning Earnings April 2026: Beat or Miss? | Meyka",
               "source": "unknown",
-              "url": "https://meyka.com/blog/glw-corning-earnings-april-2026-beat-or-miss-2004-2/",
-              "published_at": "2026-04-20T22:01:28.814791+00:00",
+              "url": "https://meyka.com/blog/glw-corning-earnings-april-2026-beat-or-miss-2004/",
+              "published_at": "2026-04-20T22:31:16.721220+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.34"
             }
           ],
@@ -1739,7 +1712,7 @@
               "headline": "ASML stock sinks amid tightening China restrictions despite strong earnings, guidance",
               "source": "cnbc",
               "url": "https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html",
-              "published_at": "2026-04-14T11:01:30.152791+00:00",
+              "published_at": "2026-04-14T11:31:17.945377+00:00",
               "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
             },
             {
@@ -1750,7 +1723,7 @@
               "headline": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
               "source": "cnbc",
               "url": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
-              "published_at": "2026-04-16T11:01:30.152416+00:00",
+              "published_at": "2026-04-16T11:31:17.945179+00:00",
               "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.15"
             }
           ],
@@ -1767,7 +1740,7 @@
               "headline": "GE Vernova Earnings: What To Look For From GEV - StockStory",
               "source": "unknown",
               "url": "https://stockstory.org/us/stocks/nyse/gev/news/earnings/ge-vernova-earnings-what-to-look-for-from-gev",
-              "published_at": "2026-04-21T03:01:32.222180+00:00",
+              "published_at": "2026-04-21T03:31:19.936549+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.51"
             }
           ],
@@ -1832,7 +1805,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-21T11:01:32.668416+00:00",
+        "generated_at": "2026-04-21T11:31:20.365229+00:00",
         "count": 11
       }
     }
