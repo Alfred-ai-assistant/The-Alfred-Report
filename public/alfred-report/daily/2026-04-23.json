@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-23T07:00:08.009728"
+        "updated_at": "2026-04-23T07:30:10.459432"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-23T07:00:11.074782",
+        "updated_at": "2026-04-23T07:30:11.167551",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-23T07:00:11.939086",
+        "updated_at": "2026-04-23T07:30:11.904343",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -193,7 +193,7 @@
             "research"
           ],
           "published_at": "2026-04-22T14:44:32Z",
-          "hn_score": 312
+          "hn_score": 313
         },
         {
           "title": "Introducing Claude Opus 4.6 - Anthropic",
@@ -254,7 +254,7 @@
             "enterprise"
           ],
           "published_at": "2026-04-22T17:47:07Z",
-          "hn_score": 140
+          "hn_score": 141
         },
         {
           "title": "Kernel code removals driven by LLM-created security reports",
@@ -288,7 +288,7 @@
             "policy"
           ],
           "published_at": "2026-04-23T05:14:05Z",
-          "hn_score": 64
+          "hn_score": 71
         },
         {
           "title": "Top MAGA influencer revealed to be AI",
@@ -315,12 +315,12 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-23T11:00:04.947108+00:00",
+        "updated_at": "2026-04-23T11:30:10.239461+00:00",
         "story_count": 15,
         "lanes_used": [
+          "hn",
           "primary",
-          "tier1",
-          "hn"
+          "tier1"
         ]
       }
     },
@@ -330,7 +330,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-23T11:00:45.687709+00:00",
+        "updated_at": "2026-04-23T11:30:33.596162+00:00",
         "video_count": 0
       }
     },
@@ -701,21 +701,6 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/singularity on Reddit: Cerebras Demonstrates Trillion Parameter Model Training on a Single CS-3 System",
-              "url": "https://www.reddit.com/r/singularity/comments/1hr9jnr/cerebras_demonstrates_trillion_parameter_model/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
               "title": "r/singularity on Reddit: Cerebras Systems Unveils World’s Fastest AI Chip with Whopping 4 Trillion Transistors - Cerebras",
               "url": "https://www.reddit.com/r/singularity/comments/1bdrcro/cerebras_systems_unveils_worlds_fastest_ai_chip/",
               "subreddit": "singularity",
@@ -730,6 +715,21 @@
                 "partnership"
               ],
               "topic_confidence": "high"
+            },
+            {
+              "title": "r/singularity on Reddit: Cerebras Demonstrates Trillion Parameter Model Training on a Single CS-3 System",
+              "url": "https://www.reddit.com/r/singularity/comments/1hr9jnr/cerebras_demonstrates_trillion_parameter_model/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "CS-3"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "medium"
             }
           ],
           "company_summary": null,
@@ -737,8 +737,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "earnings_financials",
+              "partnership",
               "ipo_private_markets"
             ]
           }
@@ -913,8 +913,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "earnings_financials",
+              "partnership",
               "ipo_private_markets"
             ]
           }
@@ -1111,8 +1111,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "earnings_financials",
+              "partnership",
               "ipo_private_markets"
             ]
           }
@@ -1155,6 +1155,23 @@
               "topic_confidence": "high"
             },
             {
+              "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
+              "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
+              "subreddit": "openclaw",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
               "title": "r/openclaw on Reddit: Using OpenClaw via an OpenAI subscription — is it sustainable for long-term, complex automation work?",
               "url": "https://www.reddit.com/r/openclaw/comments/1rdid0d/using_openclaw_via_an_openai_subscription_is_it/",
               "subreddit": "openclaw",
@@ -1172,9 +1189,9 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/openclaw on Reddit: I have switched to OpenAI Models in OpenClaw and OMG they are TERRIBLE",
-              "url": "https://www.reddit.com/r/openclaw/comments/1rggyfj/i_have_switched_to_openai_models_in_openclaw_and/",
-              "subreddit": "openclaw",
+              "title": "r/ArtificialInteligence on Reddit: OpenClaw is god-awful. It's either, you have to spend a fortune for APIs or have a NASA-level PC to run it local",
+              "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1qrzxs7/openclaw_is_godawful_its_either_you_have_to_spend/",
+              "subreddit": "ArtificialInteligence",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1257,43 +1274,26 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/LocalLLaMA on Reddit: Anyone actually using Openclaw?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1r5v1jb/anyone_actually_using_openclaw/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/ArtificialInteligence on Reddit: OpenClaw is god-awful. It's either, you have to spend a fortune for APIs or have a NASA-level PC to run it local",
-              "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1qrzxs7/openclaw_is_godawful_its_either_you_have_to_spend/",
-              "subreddit": "ArtificialInteligence",
-              "source": "reddit",
-              "matched_terms": [
-                "OpenAI",
-                "OpenClaw",
-                "OpenAI"
-              ],
-              "topics": [
-                "OpenClaw",
-                "Agents",
-                "AI Agents"
-              ],
-              "topic_confidence": "high"
-            },
-            {
               "title": "r/AI_Agents on Reddit: OpenClaw config — Using ChatGPT OAuth (Codex) + OpenAI API Key Models Together",
               "url": "https://www.reddit.com/r/AI_Agents/comments/1rgczr7/openclaw_config_using_chatgpt_oauth_codex_openai/",
               "subreddit": "AI_Agents",
+              "source": "reddit",
+              "matched_terms": [
+                "OpenAI",
+                "OpenClaw",
+                "OpenAI"
+              ],
+              "topics": [
+                "OpenClaw",
+                "Agents",
+                "AI Agents"
+              ],
+              "topic_confidence": "high"
+            },
+            {
+              "title": "r/LocalLLaMA on Reddit: Anyone actually using Openclaw?",
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1r5v1jb/anyone_actually_using_openclaw/",
+              "subreddit": "LocalLLaMA",
               "source": "reddit",
               "matched_terms": [
                 "OpenAI",
@@ -1508,8 +1508,8 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
               "earnings_financials",
+              "partnership",
               "ipo_private_markets"
             ]
           }
@@ -1518,7 +1518,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-23T11:01:04.594549+00:00"
+        "run_at": "2026-04-23T11:30:53.391102+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1528,7 +1528,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-23T11:01:16.924900+00:00",
+      "generated_at": "2026-04-23T11:31:02.384915+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
@@ -1555,7 +1555,7 @@
               "headline": "PepsiCo partners with Google Cloud on multi-year AI deal By Investing.com",
               "source": "unknown",
               "url": "https://www.investing.com/news/company-news/pepsico-partners-with-google-cloud-on-multiyear-ai-deal-93CH-4629585",
-              "published_at": "2026-04-22T11:01:18.557884+00:00",
+              "published_at": "2026-04-22T11:31:04.093228+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1565,94 +1565,49 @@
           "symbol": "AAPL",
           "top_stories": [
             {
-              "score": 56.4,
+              "score": 56.2,
               "tags": [
                 "earnings"
               ],
               "headline": "Apple Q2 Earnings Preview: Is AAPL Stock a Buy, Sell, or Hold?",
               "source": "unknown",
               "url": "https://www.barchart.com/story/news/1452448/apple-q2-earnings-preview-is-aapl-stock-a-buy-sell-or-hold",
-              "published_at": "2026-04-22T16:01:19.881484+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.21"
+              "published_at": "2026-04-22T15:31:06.264208+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "LLY",
+          "symbol": "NTSK",
           "top_stories": [
             {
               "score": 57.6,
               "tags": [
-                "m_and_a_confirmed"
+                "sec_filing"
               ],
-              "headline": "M&amp;A News: Eli Lilly (LLY) Announces Blockbuster $7 Billion Acquisition of Kelonia Therapeutics - TipRanks.com",
+              "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
               "source": "unknown",
-              "url": "https://www.tipranks.com/news/ma-news-eli-lilly-lly-announces-blockbuster-7-billion-acquisition-of-kelonia-therapeutics",
-              "published_at": "2026-04-20T11:01:20.956258+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
+              "published_at": "2026-04-02T11:31:08.548072+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "TSLA",
+          "symbol": "AVGO",
           "top_stories": [
             {
-              "score": 74.4,
+              "score": 56.7,
               "tags": [
                 "earnings"
               ],
-              "headline": "Tesla (TSLA) Q1 2026 earnings report",
-              "source": "cnbc",
-              "url": "https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html",
-              "published_at": "2026-04-22T16:01:22.929397+00:00",
-              "why_ranked": "Event=earnings(85) Source=cnbc(83) Fresh=0.21"
-            },
-            {
-              "score": 55.2,
-              "tags": [
-                "other"
-              ],
-              "headline": "Intel lands Tesla as first major customer for 14A chip technology | Reuters",
-              "source": "reuters",
-              "url": "https://www.reuters.com/business/autos-transportation/tesla-ceo-musk-says-company-plans-use-intels-14a-process-terafab-2026-04-22/",
-              "published_at": "2026-04-22T22:01:22.930616+00:00",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.34 Tier1+ Novelty-25"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "NET",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "State of Alaska Department of Revenue Makes New Investment in Cloudflare, Inc. $NET",
+              "headline": "Broadcom Stock (AVGO) Opinions on Q1 Earnings and AI Partnerships | AVGO Stock News",
               "source": "unknown",
-              "url": "https://www.marketbeat.com/instant-alerts/filing-state-of-alaska-department-of-revenue-makes-new-investment-in-cloudflare-inc-net-2026-04-21/",
-              "published_at": "2026-04-21T11:01:24.161148+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "CMG",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Chipotle Mexican Grill (CMG) Expected to Beat Earnings Estimates: Should You Buy?",
-              "source": "unknown",
-              "url": "https://sg.finance.yahoo.com/news/chipotle-mexican-grill-cmg-expected-140013060.html",
-              "published_at": "2026-04-22T11:01:24.972267+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "url": "https://quiverquant.com/news/Broadcom+Stock+(AVGO)+Opinions+on+Q1+Earnings+and+AI+Partnerships",
+              "published_at": "2026-04-22T17:31:09.737202+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
             }
           ],
           "glance": []
@@ -1661,23 +1616,34 @@
           "symbol": "XIACY",
           "top_stories": [
             {
-              "score": 66.4,
+              "score": 79.1,
               "tags": [
                 "earnings"
               ],
-              "headline": "Tesla earnings preview: Spotlight on robotaxi progress, AI5 chips, and capex spending | Seeking Alpha",
+              "headline": "Xiaomi Corporation 2025 Q4 - Results - Earnings Call Presentation (OTCMKTS:XIACY) 2026-03-25 | Seeking Alpha",
               "source": "seekingalpha",
-              "url": "https://seekingalpha.com/news/4576684-tesla-earnings-preview-spotlight-on-robotaxi-progress-ai5-chips-and-capex-spending",
-              "published_at": "2026-04-21T11:01:26.225810+00:00",
-              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
+              "url": "https://seekingalpha.com/article/4885653-xiaomi-corporation-2025-q4-results-earnings-call-presentation",
+              "published_at": "2026-04-23T11:31:11.861419+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=1.00"
+            },
+            {
+              "score": 65.1,
+              "tags": [
+                "other"
+              ],
+              "headline": "China's Xiaomi posts first quarterly profit decline in three years | Reuters",
+              "source": "reuters",
+              "url": "https://www.reuters.com/world/asia-pacific/xiaomi-reports-237-drop-q4-profit-2026-03-24/",
+              "published_at": "2026-04-23T11:31:11.861073+00:00",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=1.00 Tier1+ Novelty-25"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 8,
-        "total_candidates": 90,
+        "tickers_processed": 6,
+        "total_candidates": 70,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-23"
@@ -1686,28 +1652,40 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-23T11:01:26.229735+00:00",
+      "generated_at": "2026-04-23T11:31:11.863909+00:00",
       "tickers": [
         {
-          "symbol": "GLW",
+          "symbol": "TSM",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 57.6,
               "tags": [
-                "earnings"
+                "m_and_a_confirmed"
               ],
-              "headline": "GLW Corning Earnings April 2026: Beat or Miss? | Meyka",
+              "headline": "TSMC's Unit TSMC Global Acquires Fixed-Income Securities For $28.1 Mln — TradingView News",
               "source": "unknown",
-              "url": "https://meyka.com/blog/glw-corning-earnings-april-2026-beat-or-miss-2004-2/",
-              "published_at": "2026-04-20T11:01:28.283814+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N4140SD:0-tsmc-s-unit-tsmc-global-acquires-fixed-income-securities-for-28-1-mln/",
+              "published_at": "2026-04-21T11:31:13.057530+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
           "symbol": "ASML",
-          "top_stories": [],
+          "top_stories": [
+            {
+              "score": 60.2,
+              "tags": [
+                "guidance"
+              ],
+              "headline": "ASML Q1 2026: Sales Hit €8.8B, Raises 2026 Guidance on Strong AI Demand - News and Statistics - IndexBox",
+              "source": "unknown",
+              "url": "https://www.indexbox.io/blog/asml-reports-strong-q1-2026-results-and-raises-annual-outlook/",
+              "published_at": "2026-04-22T15:31:15.164742+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.19"
+            }
+          ],
           "glance": [
             {
               "score": 52.3,
@@ -1730,7 +1708,7 @@
               "headline": "Lam Research perks up as Q3 results, guidance top estimates (LRCX:NASDAQ) | Seeking Alpha",
               "source": "seekingalpha",
               "url": "https://seekingalpha.com/news/4578041-lam-research-perks-up-as-q3-results-guidance-top-estimates",
-              "published_at": "2026-04-22T20:01:30.674779+00:00",
+              "published_at": "2026-04-22T20:31:16.401431+00:00",
               "why_ranked": "Event=guidance(95) Source=seekingalpha(67) Fresh=0.29"
             },
             {
@@ -1741,7 +1719,7 @@
               "headline": "Lam Research posts record $5.84B revenue, EPS $1.45 | LRCX Stock News",
               "source": "unknown",
               "url": "https://www.stocktitan.net/news/LRCX/lam-research-corporation-reports-financial-results-for-the-quarter-fp885j85c9zq.html",
-              "published_at": "2026-04-22T20:01:30.674595+00:00",
+              "published_at": "2026-04-22T20:31:16.401346+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.29"
             }
           ],
@@ -1750,7 +1728,7 @@
       ],
       "debug": {
         "tickers_processed": 3,
-        "total_candidates": 50,
+        "total_candidates": 40,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-23"
@@ -1806,7 +1784,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-23T11:01:31.863254+00:00",
+        "generated_at": "2026-04-23T11:31:17.264376+00:00",
         "count": 11
       }
     }
