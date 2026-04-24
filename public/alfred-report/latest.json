@@ -6,12 +6,67 @@
   "sections": {
     "weather": {
       "title": "Weather — Arlington, VA",
-      "summary": "Unable to fetch forecast: The read operation timed out",
-      "items": [],
+      "summary": "Today: Mostly Sunny then Scattered Showers And Thunderstorms, high 81°F. Next 3 days show variable conditions with possible precipitation mid-week.",
+      "items": [
+        {
+          "name": "Today",
+          "temperature": "81°F",
+          "forecast": "Mostly Sunny then Scattered Showers And Thunderstorms",
+          "wind": "5 mph",
+          "wind_direction": "NE",
+          "precipitation_chance": "47%",
+          "details": "Isolated rain showers between 1pm and 2pm, then scattered showers and thunderstorms between 2pm and 3pm, then scattered showers and thunderstorms. Mostly sunny, with a high near 81. Northeast wind around 5 mph. Chance of precipitation is 50%. New rainfall amounts between a tenth and quarter of an inch possible."
+        },
+        {
+          "name": "Tonight",
+          "temperature": "54°F",
+          "forecast": "Scattered Showers And Thunderstorms",
+          "wind": "6 mph",
+          "wind_direction": "SE",
+          "precipitation_chance": "34%",
+          "details": "Scattered showers and thunderstorms. Partly cloudy, with a low around 54. Southeast wind around 6 mph. Chance of precipitation is 30%. New rainfall amounts between a tenth and quarter of an inch possible."
+        },
+        {
+          "name": "Saturday",
+          "temperature": "63°F",
+          "forecast": "Rain Showers Likely",
+          "wind": "6 to 12 mph",
+          "wind_direction": "E",
+          "precipitation_chance": "72%",
+          "details": "Rain showers likely before 5pm, then showers and thunderstorms likely. Mostly cloudy, with a high near 63. East wind 6 to 12 mph, with gusts as high as 21 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible."
+        },
+        {
+          "name": "Saturday Night",
+          "temperature": "47°F",
+          "forecast": "Showers And Thunderstorms",
+          "wind": "12 mph",
+          "wind_direction": "NE",
+          "precipitation_chance": "88%",
+          "details": "Showers and thunderstorms. Cloudy, with a low around 47. Northeast wind around 12 mph, with gusts as high as 20 mph. Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible."
+        },
+        {
+          "name": "Sunday",
+          "temperature": "57°F",
+          "forecast": "Rain Showers Likely",
+          "wind": "10 mph",
+          "wind_direction": "NE",
+          "precipitation_chance": "74%",
+          "details": "Rain showers likely. Mostly cloudy, with a high near 57. Northeast wind around 10 mph, with gusts as high as 18 mph. Chance of precipitation is 70%."
+        },
+        {
+          "name": "Sunday Night",
+          "temperature": "44°F",
+          "forecast": "Slight Chance Rain Showers",
+          "wind": "5 to 9 mph",
+          "wind_direction": "NE",
+          "precipitation_chance": "22%",
+          "details": "A slight chance of rain showers before 2am. Partly cloudy, with a low around 44. Chance of precipitation is 20%."
+        }
+      ],
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "error": "The read operation timed out"
+        "updated_at": "2026-04-24T07:30:12.793563"
       }
     },
     "todoist": {
@@ -39,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-24T07:00:17.261936",
+        "updated_at": "2026-04-24T07:30:13.602191",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -86,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-24T07:00:17.970447",
+        "updated_at": "2026-04-24T07:30:14.295878",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -148,7 +203,7 @@
             "safety"
           ],
           "published_at": "2026-04-23T17:48:38Z",
-          "hn_score": 756
+          "hn_score": 763
         },
         {
           "title": "MeshCore development team splits over trademark dispute and AI-generated code",
@@ -159,10 +214,10 @@
             "policy"
           ],
           "published_at": "2026-04-23T16:55:13Z",
-          "hn_score": 228
+          "hn_score": 230
         },
         {
-          "title": "Introducing Claude Opus 4.6 - Anthropic",
+          "title": "Introducing Claude Opus 4.6",
           "url": "https://www.anthropic.com/news/claude-opus-4-6",
           "source": "anthropic.com",
           "why_it_matters": "Anthropic upgraded Claude Opus with improved coding skills and sustained agentic task performance, advancing autonomous AI capabilities.",
@@ -249,11 +304,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-24T11:00:04.632651+00:00",
+        "updated_at": "2026-04-24T11:30:12.560714+00:00",
         "story_count": 15,
         "lanes_used": [
-          "hn",
-          "primary"
+          "primary",
+          "hn"
         ]
       }
     },
@@ -263,13 +318,13 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-24T11:00:49.634867+00:00",
+        "updated_at": "2026-04-24T11:30:35.292732+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions focus on ChatGPT developments, open-source model releases, and AI ethics concerns. Machine learning career guidance and coding assistance dominate technical communities like r/MachineLearning and r/learnprogramming. Trending topics include AI regulation, job displacement fears, and novel AI applications in creative fields. Communities show mixed sentiment—enthusiasm for capabilities alongside skepticism about responsible deployment and accuracy limitations.",
+      "summary": "Top AI discussions centered on large language models, ChatGPT capabilities, and ethical concerns. Machine learning breakthroughs and job displacement dominated conversations. Communities like r/MachineLearning and r/OpenAI showed highest engagement. Trending topics included AI regulation, automation risks, and practical AI applications in coding and content creation.",
       "items": [
         {
           "title": "r/openclaw on Reddit: Looking for the ultimate \"bang for buck\" LLM for OpenClaw. What’s the actual king of the low tier right now?",
@@ -375,6 +430,18 @@
           ]
         },
         {
+          "title": "r/openclaw on Reddit: To the many people here wondering about local models… just use an API",
+          "url": "https://www.reddit.com/r/openclaw/comments/1rhrtr2/to_the_many_people_here_wondering_about_local/",
+          "subreddit": "openclaw",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "NVIDIA"
+          ]
+        },
+        {
           "title": "r/openclaw on Reddit: local LLm recomendations?",
           "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
           "subreddit": "openclaw",
@@ -450,19 +517,6 @@
             "model",
             "inference"
           ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Optimizing Test-Time Compute for LLMs: A Meta-Reinforcement Learning Approach with Cumulative Regret Minimization",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jbcsdg/optimizing_testtime_compute_for_llms_a/",
-          "subreddit": "MachineLearning",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "machine learning",
-            "model",
-            "agent"
-          ]
         }
       ],
       "meta": {
@@ -474,7 +528,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "Tech giants OpenAI, Google, and Microsoft lead mentions, primarily around product updates and competitive positioning. Apple and Meta discussions center on AI integration in devices and platforms. Amazon and Tesla conversations focus on automation and AI-driven services. Dominant themes include enterprise AI adoption, data privacy concerns, and layoffs attributed to automation. Users express both excitement about innovations and anxiety regarding corporate control of AI development.",
+      "summary": "Tech giants dominated mentions: OpenAI, Google, and Meta led discussions around AI product launches. Amazon and Microsoft featured heavily in cloud computing and enterprise AI contexts. Apple received attention for privacy-focused AI features. Common themes included competitive positioning, product updates, acquisition rumors, and employee sentiment regarding corporate AI strategies across r/technology and company-specific subreddits.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -614,6 +668,21 @@
               "topic_confidence": "medium"
             },
             {
+              "title": "r/singularity on Reddit: This is bad news for NVIDIA. Cerebras chips used by Mistral AI are specifically designed for inference",
+              "url": "https://www.reddit.com/r/singularity/comments/1in0unp/this_is_bad_news_for_nvidia_cerebras_chips_used/",
+              "subreddit": "singularity",
+              "source": "reddit",
+              "matched_terms": [
+                "CS-3"
+              ],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
+              "topic_confidence": "medium"
+            },
+            {
               "title": "r/hardware on Reddit: Cerebras withdraws IPO filing",
               "url": "https://www.reddit.com/r/hardware/comments/1ny22ay/cerebras_withdraws_ipo_filing/",
               "subreddit": "hardware",
@@ -642,21 +711,6 @@
                 "partnership"
               ],
               "topic_confidence": "medium"
-            },
-            {
-              "title": "r/singularity on Reddit: This is bad news for NVIDIA. Cerebras chips used by Mistral AI are specifically designed for inference",
-              "url": "https://www.reddit.com/r/singularity/comments/1in0unp/this_is_bad_news_for_nvidia_cerebras_chips_used/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
             }
           ],
           "company_summary": null,
@@ -664,9 +718,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "ipo_private_markets",
-              "earnings_financials",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -819,15 +873,19 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/LocalLLaMA on Reddit: groq LPU and its future",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1bbfzvk/groq_lpu_and_its_future/",
-              "subreddit": "LocalLLaMA",
+              "title": "r/singularity on Reddit: What are your thoughts on Groq and other open source inference providers - esp with falling API prices.",
+              "url": "https://www.reddit.com/r/singularity/comments/1l92wjv/what_are_your_thoughts_on_groq_and_other_open/",
+              "subreddit": "singularity",
               "source": "reddit",
               "matched_terms": [
                 "Groq",
                 "Groq"
               ],
-              "topics": [],
+              "topics": [
+                "ipo_private_markets",
+                "earnings_financials",
+                "partnership"
+              ],
               "topic_confidence": "high"
             }
           ],
@@ -836,9 +894,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "ipo_private_markets",
-              "earnings_financials",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -1038,9 +1096,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "ipo_private_markets",
-              "earnings_financials",
-              "partnership"
+              "earnings_financials"
             ]
           }
         },
@@ -1240,9 +1298,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "AI Agents",
+              "Agents",
               "OpenClaw",
-              "Agents"
+              "AI Agents"
             ]
           }
         },
@@ -1398,12 +1456,12 @@
               "topic_confidence": "medium"
             },
             {
-              "title": "r/sysadmin on Reddit: Best SASE options in 2026?",
-              "url": "https://www.reddit.com/r/sysadmin/comments/1ri1lwz/best_sase_options_in_2026/",
+              "title": "r/sysadmin on Reddit: Which zero trust vendor do you use and why?",
+              "url": "https://www.reddit.com/r/sysadmin/comments/1fuko12/which_zero_trust_vendor_do_you_use_and_why/",
               "subreddit": "sysadmin",
               "source": "reddit",
               "matched_terms": [
-                "SASE",
+                "Zero Trust",
                 "Netskope"
               ],
               "topics": [
@@ -1414,12 +1472,12 @@
               "topic_confidence": "high"
             },
             {
-              "title": "r/sysadmin on Reddit: Which zero trust vendor do you use and why?",
-              "url": "https://www.reddit.com/r/sysadmin/comments/1fuko12/which_zero_trust_vendor_do_you_use_and_why/",
+              "title": "r/sysadmin on Reddit: Best SASE options in 2026?",
+              "url": "https://www.reddit.com/r/sysadmin/comments/1ri1lwz/best_sase_options_in_2026/",
               "subreddit": "sysadmin",
               "source": "reddit",
               "matched_terms": [
-                "Zero Trust",
+                "SASE",
                 "Netskope"
               ],
               "topics": [
@@ -1435,9 +1493,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "partnership",
               "ipo_private_markets",
-              "earnings_financials",
-              "partnership"
+              "earnings_financials"
             ]
           }
         }
@@ -1445,7 +1503,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-24T11:01:08.414324+00:00"
+        "run_at": "2026-04-24T11:30:53.837073+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1455,21 +1513,21 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-24T11:01:20.502953+00:00",
+      "generated_at": "2026-04-24T11:31:05.429651+00:00",
       "tickers": [
         {
           "symbol": "NVDA",
           "top_stories": [
             {
-              "score": 65.0,
+              "score": 67.2,
               "tags": [
                 "earnings"
               ],
               "headline": "Intel stock soars on Q1 earnings beat, strong outlook",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/sectors/technology/article/intel-stock-soars-on-q1-earnings-beat-strong-outlook-191552257.html",
-              "published_at": "2026-04-24T08:01:21.329880+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.78"
+              "published_at": "2026-04-24T10:31:06.243182+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.92"
             }
           ],
           "glance": []
@@ -1485,8 +1543,8 @@
               "headline": "Brazil regulator approves deeper probe into Google's news content use | Reuters",
               "source": "reuters",
               "url": "https://reuters.com/legal/litigation/brazil-regulator-approves-deeper-probe-into-googles-news-content-use-2026-04-23",
-              "published_at": "2026-04-23T18:01:22.209871+00:00",
-              "why_ranked": "Event=probe_or_investigation(80) Source=reuters(93) Fresh=0.24 Tier1+"
+              "published_at": "2026-04-23T17:31:07.123052+00:00",
+              "why_ranked": "Event=probe_or_investigation(80) Source=reuters(93) Fresh=0.22 Tier1+"
             }
           ],
           "glance": []
@@ -1502,7 +1560,7 @@
               "headline": "Apple may have revealed a big earnings clue by announcing Tim Cook successor",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/news/apple-may-have-revealed-a-big-earnings-clue-by-announcing-tim-cook-successor-182550256.html",
-              "published_at": "2026-04-21T11:01:23.415242+00:00",
+              "published_at": "2026-04-21T11:31:08.311080+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -1519,7 +1577,7 @@
               "headline": "Analysts Estimate Merck (MRK) to Report a Decline in Earnings: What to Look Out for",
               "source": "yahoo",
               "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-estimate-merck-mrk-report-140009103.html",
-              "published_at": "2026-04-23T11:01:24.705892+00:00",
+              "published_at": "2026-04-23T11:31:09.606389+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
@@ -1536,7 +1594,7 @@
               "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
               "source": "unknown",
               "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
-              "published_at": "2026-04-03T11:01:25.563545+00:00",
+              "published_at": "2026-04-03T11:31:10.501054+00:00",
               "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
             }
           ],
@@ -1553,61 +1611,44 @@
               "headline": "Broadcom Stock (AVGO) Opinions on Q1 Earnings and AI Partnerships | AVGO Stock News",
               "source": "unknown",
               "url": "https://www.quiverquant.com/news/Broadcom+Stock+%28AVGO%29+Opinions+on+Q1+Earnings+and+AI+Partnerships",
-              "published_at": "2026-04-22T11:01:26.732890+00:00",
+              "published_at": "2026-04-22T11:31:11.741192+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "CMG",
+          "symbol": "NET",
           "top_stories": [
             {
-              "score": 55.6,
+              "score": 72.3,
               "tags": [
-                "earnings"
+                "guidance"
               ],
-              "headline": "Will Chipotle (CMG) Beat Estimates Again in Its Next Earnings Report?",
+              "headline": "Netcompany raises full-year margin guidance for 2026",
               "source": "unknown",
-              "url": "https://sg.finance.yahoo.com/news/chipotle-cmg-beat-estimates-again-161002800.html",
-              "published_at": "2026-04-22T11:01:28.009441+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "RXRX",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Christopher Gibson reports four Class A share sales | RXRX SEC Filing - Form 144",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/RXRX/144-recursion-pharmaceuticals-inc-sec-filing-2a7511009172.html",
-              "published_at": "2026-04-22T11:01:28.852798+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
+              "published_at": "2026-04-24T11:31:12.530669+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=1.00"
             },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+and+AI+Developments",
-              "published_at": "2026-04-10T11:01:28.853239+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "NETSTREIT Corp. Q1 2026 Earnings Call Summary",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/netstreit-corp-q1-2026-earnings-123000929.html",
+              "published_at": "2026-04-21T11:31:12.530191+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 8,
-        "total_candidates": 80,
+        "tickers_processed": 7,
+        "total_candidates": 70,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-24"
@@ -1616,8 +1657,36 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-24T11:01:29.261344+00:00",
+      "generated_at": "2026-04-24T11:31:13.791542+00:00",
       "tickers": [
+        {
+          "symbol": "TSM",
+          "top_stories": [
+            {
+              "score": 57.6,
+              "tags": [
+                "m_and_a_confirmed"
+              ],
+              "headline": "TSMC's Unit TSMC Global Acquires Fixed-Income Securities For $58.5 Mln — TradingView News",
+              "source": "unknown",
+              "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N4150TR:0-tsmc-s-unit-tsmc-global-acquires-fixed-income-securities-for-58-5-mln/",
+              "published_at": "2026-04-22T11:31:15.028044+00:00",
+              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Taiwan Semiconductor Manufacturing Company (TSM) in Focus as Barclays Raises Target After Strong Earnings - Insider Monkey",
+              "source": "unknown",
+              "url": "https://www.insidermonkey.com/blog/taiwan-semiconductor-manufacturing-company-tsm-in-focus-as-barclays-raises-target-after-strong-earnings-1744812/",
+              "published_at": "2026-04-23T11:31:15.027833+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
         {
           "symbol": "GLW",
           "top_stories": [
@@ -1627,91 +1696,61 @@
                 "earnings"
               ],
               "headline": "Countdown to Corning (GLW) Q1 Earnings: A Look at Estimates Beyond Revenue and EPS",
-              "source": "unknown",
-              "url": "https://ca.finance.yahoo.com/news/countdown-corning-glw-q1-earnings-131506604.html",
-              "published_at": "2026-04-23T11:01:31.327883+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/countdown-corning-glw-q1-earnings-131506604.html",
+              "published_at": "2026-04-23T11:31:15.819378+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "GEV",
-          "top_stories": [
-            {
-              "score": 59.6,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "GE Vernova hits record high on strong quarter, guidance raise",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/article/ge-vernova-stock-soars-8-on-strong-quarter-guidance-raise-132104910.html",
-              "published_at": "2026-04-22T11:01:34.546763+00:00",
-              "why_ranked": "Event=guidance(95) Source=yahoo(43) Fresh=0.15"
-            },
-            {
-              "score": 57.0,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "GE Vernova Stock (GEV) Opinions on Q1 Earnings Beat | GEV Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/GE+Vernova+Stock+%28GEV%29+Opinions+on+Q1+Earnings+Beat",
-              "published_at": "2026-04-23T18:01:34.545862+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.24"
-            }
-          ],
+          "symbol": "ASML",
+          "top_stories": [],
           "glance": [
             {
               "score": 52.3,
               "tags": [
                 "other"
               ],
-              "headline": "GE Vernova lifts 2026 outlook as AI boom fuels power equipment demand | Reuters",
+              "headline": "ASML says firm will not be chip industry's bottleneck | Reuters",
               "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            },
-            {
-              "score": 47.6,
-              "tags": [
-                "other"
-              ],
-              "headline": "Stocks making the biggest moves midday: AGPU, ASTS, UAL, GEV",
-              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
             }
           ]
         },
         {
-          "symbol": "BMY",
+          "symbol": "LRCX",
           "top_stories": [
             {
-              "score": 77.6,
+              "score": 63.2,
               "tags": [
-                "guidance"
+                "sec_filing",
+                "earnings"
               ],
-              "headline": "IBM shares drop as company beats but opts to maintain guidance",
-              "source": "cnbc",
-              "url": "https://cnbc.com/2026/04/22/ibm-q1-earnings-report-2026.html",
-              "published_at": "2026-04-22T11:01:35.430286+00:00",
-              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
+              "headline": "Lam Research Q3 revenue rises to $5.8B | LRCX Quarterly Report (10-Q)",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/LRCX/10-q-lam-research-corp-quarterly-earnings-report-3c507d28ce9f.html",
+              "published_at": "2026-04-23T20:31:18.206206+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.29"
             },
             {
-              "score": 56.4,
+              "score": 57.0,
               "tags": [
                 "earnings"
               ],
-              "headline": "IBM Q1 earnings beat offset by softer software momentum, says Bank of America | NYSE:IBM",
+              "headline": "Lam Research (LRCX) Reports Strong Earnings Amid Optimistic Q4 Outlook",
               "source": "unknown",
-              "url": "https://proactiveinvestors.com/companies/news/1091108/ibm-q1-earnings-beat-offset-by-softer-software-momentum-says-bank-of-america-1091108.html",
-              "published_at": "2026-04-23T16:01:35.430505+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.21"
+              "url": "https://www.gurufocus.com/news/8813388/lam-research-lrcx-reports-strong-earnings-amid-optimistic-q4-outlook",
+              "published_at": "2026-04-23T18:31:18.205845+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.24"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 3,
-        "total_candidates": 60,
+        "tickers_processed": 4,
+        "total_candidates": 40,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-24"
@@ -1767,7 +1806,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-24T11:01:35.434005+00:00",
+        "generated_at": "2026-04-24T11:31:19.053833+00:00",
         "count": 11
       }
     }
