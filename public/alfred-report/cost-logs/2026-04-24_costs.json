@@ -3,19 +3,19 @@
   "total_calls": 1,
   "cache_hits": 0,
   "total_input_tokens": 102,
-  "total_output_tokens": 176,
-  "estimated_cost_usd": 0.0008,
+  "total_output_tokens": 212,
+  "estimated_cost_usd": 0.0009,
   "calls": [
     {
-      "timestamp": "2026-04-24T11:31:05.428111+00:00",
+      "timestamp": "2026-04-24T11:31:33.877280+00:00",
       "section": "reddit",
       "model": "claude-haiku-4-5",
       "input_tokens": 102,
-      "output_tokens": 176,
+      "output_tokens": 212,
       "cache_hit": false,
       "input_cost": 8.16e-05,
-      "output_cost": 0.000704,
-      "total_cost": 0.0007856
+      "output_cost": 0.000848,
+      "total_cost": 0.0009296
     }
   ]
 }

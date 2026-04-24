@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-24T07:30:12.793563"
+        "updated_at": "2026-04-24T07:30:46.157126"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-24T07:30:13.602191",
+        "updated_at": "2026-04-24T07:30:46.548570",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-24T07:30:14.295878",
+        "updated_at": "2026-04-24T07:30:47.310216",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -304,11 +304,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-24T11:30:12.560714+00:00",
+        "updated_at": "2026-04-24T11:30:45.989138+00:00",
         "story_count": 15,
         "lanes_used": [
-          "primary",
-          "hn"
+          "hn",
+          "primary"
         ]
       }
     },
@@ -318,158 +318,57 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-24T11:30:35.292732+00:00",
+        "updated_at": "2026-04-24T11:31:07.874212+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions centered on large language models, ChatGPT capabilities, and ethical concerns. Machine learning breakthroughs and job displacement dominated conversations. Communities like r/MachineLearning and r/OpenAI showed highest engagement. Trending topics included AI regulation, automation risks, and practical AI applications in coding and content creation.",
+      "summary": "Top AI discussions centered on generative models, with significant attention to ChatGPT updates and open-source alternatives. Key themes included AI ethics, job displacement concerns, and technical implementations. Communities like r/MachineLearning and r/artificial dominated conversations. Trending topics featured multimodal AI capabilities, prompt engineering techniques, and debates about AI regulation. Emerging interest in local LLM deployment and privacy-preserving AI solutions.",
       "items": [
         {
-          "title": "r/openclaw on Reddit: Looking for the ultimate \"bang for buck\" LLM for OpenClaw. What’s the actual king of the low tier right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rvjfde/looking_for_the_ultimate_bang_for_buck_llm_for/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Gemini"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: [Help] Optimizing OpenClaw for a CPU-only VM (8 Cores/16GB RAM) - Ollama works, but OpenClaw times out.",
-          "url": "https://www.reddit.com/r/openclaw/comments/1spwcuq/help_optimizing_openclaw_for_a_cpuonly_vm_8/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Awesome Free LLM APIs List",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s01ygw/awesome_free_llm_apis_list/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "Llama",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: 96% Accuracy: Harvard Scientists Unveil Revolutionary ChatGPT-Like AI for Cancer Diagnosis",
+          "url": "https://www.reddit.com/r/technology/comments/1g6guii/96_accuracy_harvard_scientists_unveil/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "machine learning",
             "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Mini PC for OpenClaw / AI agents under $700 — what should I get?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1ssqo5h/mini_pc_for_openclaw_ai_agents_under_700_what/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Bought a $2k Mac Mini to run local LLMs. Pretty sure Claude fills the roll. What am I missing?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s5rlcg/bought_a_2k_mac_mini_to_run_local_llms_pretty/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "LLM",
-            "model",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: To the many people here wondering about local models… just use an API",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rhrtr2/to_the_many_people_here_wondering_about_local/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "NVIDIA"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: local LLm recomendations?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/machinelearningnews on Reddit: MInference (Milliontokens Inference): A Training-Free Efficient Method for the Pre-Filling Stage of Long-Context LLMs Based on Dynamic Sparse Attention",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dx9wi3/minference_milliontokens_inference_a_trainingfree/",
-          "subreddit": "MachineLearning",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "inference",
             "training",
-            "Llama"
+            "neural"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Small Models, Big Impact: ServiceNow AI Releases Apriel-5B to Outperform Larger LLMs with Fewer Resources",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1jz1byb/small_models_big_impact_servicenow_ai_releases/",
-          "subreddit": "MachineLearning",
+          "title": "r/aicuriosity on Reddit: Master LLM Fine-Tuning & RLHF: DeepLearning.AI's New Post-Training Course Guide",
+          "url": "https://www.reddit.com/r/aicuriosity/comments/1oih360/master_llm_finetuning_rlhf_deeplearningais_new/",
+          "subreddit": "AiCuriosity",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: New AI architecture delivers 100x faster reasoning than LLMs with just 1,000 training examples",
+          "url": "https://www.reddit.com/r/technology/comments/1maj3m3/new_ai_architecture_delivers_100x_faster/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: AI feedback loop will spell death for future generative models",
+          "url": "https://www.reddit.com/r/technology/comments/1f5wrjy/ai_feedback_loop_will_spell_death_for_future/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
@@ -480,42 +379,136 @@
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: A Comprehensive Study by BentoML on Benchmarking LLM Inference Backends: Performance Analysis of vLLM, LMDeploy, MLC-LLM, TensorRT-LLM, and TGI",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1dccn3c/a_comprehensive_study_by_bentoml_on_benchmarking/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: AMD's senior director of AI thinks 'Claude has regressed' and that it 'cannot be trusted to perform complex engineering'",
+          "url": "https://www.reddit.com/r/technology/comments/1sfsnlp/amds_senior_director_of_ai_thinks_claude_has/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "model",
-            "inference",
-            "Llama"
+            "training",
+            "Claude"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: OpenLLM offers a breakthrough approach by enabling you to run any open-source LLM as an OpenAI-compatible API endpoint with a single command",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1izw23b/openllm_offers_a_breakthrough_approach_by/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: OpenAI admits AI hallucinations are mathematically inevitable, not just engineering flaws",
+          "url": "https://www.reddit.com/r/technology/comments/1nmu06q/openai_admits_ai_hallucinations_are/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
-            "machine learning",
-            "inference",
+            "model",
+            "training",
             "OpenAI"
           ]
         },
         {
-          "title": "r/machinelearningnews on Reddit: Meet Time-LLM: A Reprogramming Machine Learning Framework to Repurpose LLMs for General Time Series Forecasting with the Backbone Language Models Kept Intact",
-          "url": "https://www.reddit.com/r/machinelearningnews/comments/1ajssnu/meet_timellm_a_reprogramming_machine_learning/",
-          "subreddit": "MachineLearning",
+          "title": "r/technology on Reddit: Chinese Firm Trains Massive AI Model for Just $5.5 Million",
+          "url": "https://www.reddit.com/r/technology/comments/1hn7pm7/chinese_firm_trains_massive_ai_model_for_just_55/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "Llama"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Meta's top AI researchers is leaving. He thinks LLMs are a dead end",
+          "url": "https://www.reddit.com/r/technology/comments/1oygsx4/metas_top_ai_researchers_is_leaving_he_thinks/",
+          "subreddit": "technology",
           "source": "reddit",
           "matched_terms": [
             "AI",
             "LLM",
             "machine learning",
+            "model"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Meta blames hallucinations after its AI said Trump rally shooting didn’t happen",
+          "url": "https://www.reddit.com/r/technology/comments/1egdvg9/meta_blames_hallucinations_after_its_ai_said/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
             "model",
-            "inference"
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: Reddit cashes in on AI gold rush with $203M in LLM training license fees.",
+          "url": "https://www.reddit.com/r/technology/comments/1ayr0z1/reddit_cashes_in_on_ai_gold_rush_with_203m_in_llm/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: ‘We could hit a wall’: why trillions of dollars of risk is no guarantee of AI reward",
+          "url": "https://www.reddit.com/r/technology/comments/1qff55g/we_could_hit_a_wall_why_trillions_of_dollars_of/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: The Less You Know About AI, the More You Are Likely to Use It",
+          "url": "https://www.reddit.com/r/technology/comments/1n6mcs0/the_less_you_know_about_ai_the_more_you_are/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: The AI data center race is getting way more complicated",
+          "url": "https://www.reddit.com/r/technology/comments/1kxlkar/the_ai_data_center_race_is_getting_way_more/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "model",
+            "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: LLMs can't stop making up software dependencies and sabotaging everything",
+          "url": "https://www.reddit.com/r/technology/comments/1jyxi68/llms_cant_stop_making_up_software_dependencies/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training"
+          ]
+        },
+        {
+          "title": "r/technology on Reddit: LLMs No Longer Require Powerful Servers: Researchers from MIT, KAUST, ISTA, and Yandex Introduce a New AI Approach to Rapidly Compress Large Language Models without a Significant Loss of Quality",
+          "url": "https://www.reddit.com/r/technology/comments/1jy2tzq/llms_no_longer_require_powerful_servers/",
+          "subreddit": "technology",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model"
           ]
         }
       ],
@@ -528,7 +521,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "Tech giants dominated mentions: OpenAI, Google, and Meta led discussions around AI product launches. Amazon and Microsoft featured heavily in cloud computing and enterprise AI contexts. Apple received attention for privacy-focused AI features. Common themes included competitive positioning, product updates, acquisition rumors, and employee sentiment regarding corporate AI strategies across r/technology and company-specific subreddits.",
+      "summary": "Tech giants dominated mentions with OpenAI, Google, and Microsoft leading discussion volume. Primary topics included product launches, competitive positioning, and acquisition announcements. Apple and Meta discussions focused on AI integration in consumer products. Sentiment varied—positive reactions to feature announcements, critical discussions around pricing and layoffs. Smaller companies gained traction in niche subreddits. Overall trend showed increased scrutiny of corporate AI strategies and business implications.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -719,8 +712,8 @@
             "posts_included": 10,
             "top_topics": [
               "partnership",
-              "ipo_private_markets",
-              "earnings_financials"
+              "earnings_financials",
+              "ipo_private_markets"
             ]
           }
         },
@@ -895,8 +888,8 @@
             "posts_included": 10,
             "top_topics": [
               "partnership",
-              "ipo_private_markets",
-              "earnings_financials"
+              "earnings_financials",
+              "ipo_private_markets"
             ]
           }
         },
@@ -1097,8 +1090,8 @@
             "posts_included": 10,
             "top_topics": [
               "partnership",
-              "ipo_private_markets",
-              "earnings_financials"
+              "earnings_financials",
+              "ipo_private_markets"
             ]
           }
         },
@@ -1494,8 +1487,8 @@
             "posts_included": 10,
             "top_topics": [
               "partnership",
-              "ipo_private_markets",
-              "earnings_financials"
+              "earnings_financials",
+              "ipo_private_markets"
             ]
           }
         }
@@ -1503,7 +1496,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-24T11:30:53.837073+00:00"
+        "run_at": "2026-04-24T11:31:23.928166+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -1513,89 +1506,47 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-24T11:31:05.429651+00:00",
+      "generated_at": "2026-04-24T11:31:33.878821+00:00",
       "tickers": [
         {
-          "symbol": "NVDA",
-          "top_stories": [
-            {
-              "score": 67.2,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Intel stock soars on Q1 earnings beat, strong outlook",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/sectors/technology/article/intel-stock-soars-on-q1-earnings-beat-strong-outlook-191552257.html",
-              "published_at": "2026-04-24T10:31:06.243182+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.92"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "GOOGL",
-          "top_stories": [
-            {
-              "score": 100,
-              "tags": [
-                "probe_or_investigation"
-              ],
-              "headline": "Brazil regulator approves deeper probe into Google's news content use | Reuters",
-              "source": "reuters",
-              "url": "https://reuters.com/legal/litigation/brazil-regulator-approves-deeper-probe-into-googles-news-content-use-2026-04-23",
-              "published_at": "2026-04-23T17:31:07.123052+00:00",
-              "why_ranked": "Event=probe_or_investigation(80) Source=reuters(93) Fresh=0.22 Tier1+"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "AAPL",
+          "symbol": "AMZN",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Apple may have revealed a big earnings clue by announcing Tim Cook successor",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/news/apple-may-have-revealed-a-big-earnings-clue-by-announcing-tim-cook-successor-182550256.html",
-              "published_at": "2026-04-21T11:31:08.311080+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "MRK",
-          "top_stories": [
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Analysts Estimate Merck (MRK) to Report a Decline in Earnings: What to Look Out for",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-estimate-merck-mrk-report-140009103.html",
-              "published_at": "2026-04-23T11:31:09.606389+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "NTSK",
-          "top_stories": [
-            {
-              "score": 57.6,
-              "tags": [
-                "sec_filing"
-              ],
-              "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
+              "headline": "Amazon Revenue Mix Points to Margin Expansion Beyond Retail | Investing.com",
               "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
-              "published_at": "2026-04-03T11:31:10.501054+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.investing.com/analysis/amazon-revenue-mix-points-to-margin-expansion-beyond-retail-200678985",
+              "published_at": "2026-04-22T11:31:35.635612+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": [
+            {
+              "score": 52.9,
+              "tags": [
+                "other"
+              ],
+              "headline": "In two Amazon units, 'builder' replaces traditional job titles | Reuters",
+              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.19 Tier1+ Novelty-25"
+            }
+          ]
+        },
+        {
+          "symbol": "LLY",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Eli Lilly (LLY) Earnings Expected to Grow: What to Know Ahead of Next Week's Release",
+              "source": "unknown",
+              "url": "https://ca.finance.yahoo.com/news/eli-lilly-lly-earnings-expected-140007486.html",
+              "published_at": "2026-04-23T11:31:36.784444+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1608,48 +1559,54 @@
               "tags": [
                 "earnings"
               ],
-              "headline": "Broadcom Stock (AVGO) Opinions on Q1 Earnings and AI Partnerships | AVGO Stock News",
-              "source": "unknown",
-              "url": "https://www.quiverquant.com/news/Broadcom+Stock+%28AVGO%29+Opinions+on+Q1+Earnings+and+AI+Partnerships",
-              "published_at": "2026-04-22T11:31:11.741192+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "What to watch as Nvidia, AMD, and Broadcom report earnings",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/sectors/technology/article/what-to-watch-as-nvidia-amd-and-broadcom-report-earnings-131636149.html",
+              "published_at": "2026-04-21T11:31:38.915248+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "NET",
+          "symbol": "CMG",
           "top_stories": [
-            {
-              "score": 72.3,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "Netcompany raises full-year margin guidance for 2026",
-              "source": "unknown",
-              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
-              "published_at": "2026-04-24T11:31:12.530669+00:00",
-              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=1.00"
-            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "NETSTREIT Corp. Q1 2026 Earnings Call Summary",
+              "headline": "Chipotle Mexican Grill (CMG) Expected to Beat Earnings Estimates: Should You Buy?",
               "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/netstreit-corp-q1-2026-earnings-123000929.html",
-              "published_at": "2026-04-21T11:31:12.530191+00:00",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/chipotle-mexican-grill-cmg-expected-140013060.html",
+              "published_at": "2026-04-22T11:31:40.193856+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "XIACY",
+          "top_stories": [
+            {
+              "score": 66.4,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Tesla earnings preview: Spotlight on robotaxi progress, AI5 chips, and capex spending | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/news/4576684-tesla-earnings-preview-spotlight-on-robotaxi-progress-ai5-chips-and-capex-spending",
+              "published_at": "2026-04-21T11:31:41.379332+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 7,
+        "tickers_processed": 5,
         "total_candidates": 70,
-        "removed_fresh_only": 0,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-04-24"
       }
@@ -1657,35 +1614,21 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-24T11:31:13.791542+00:00",
+      "generated_at": "2026-04-24T11:31:41.381324+00:00",
       "tickers": [
         {
-          "symbol": "TSM",
-          "top_stories": [
+          "symbol": "CRM",
+          "top_stories": [],
+          "glance": [
             {
-              "score": 57.6,
+              "score": 45.6,
               "tags": [
-                "m_and_a_confirmed"
+                "product_launch_major"
               ],
-              "headline": "TSMC's Unit TSMC Global Acquires Fixed-Income Securities For $58.5 Mln — TradingView News",
-              "source": "unknown",
-              "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N4150TR:0-tsmc-s-unit-tsmc-global-acquires-fixed-income-securities-for-58-5-mln/",
-              "published_at": "2026-04-22T11:31:15.028044+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Taiwan Semiconductor Manufacturing Company (TSM) in Focus as Barclays Raises Target After Strong Earnings - Insider Monkey",
-              "source": "unknown",
-              "url": "https://www.insidermonkey.com/blog/taiwan-semiconductor-manufacturing-company-tsm-in-focus-as-barclays-raises-target-after-strong-earnings-1744812/",
-              "published_at": "2026-04-23T11:31:15.027833+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Inogic Launches AI-Powered Solutions for Dynamics 365 CRM: Predictive Analytics, AI Document Search & Next Best Action",
+              "why_ranked": "Event=product_launch_major(60) Source=unknown(43) Fresh=0.15"
             }
-          ],
-          "glance": []
+          ]
         },
         {
           "symbol": "GLW",
@@ -1696,53 +1639,55 @@
                 "earnings"
               ],
               "headline": "Countdown to Corning (GLW) Q1 Earnings: A Look at Estimates Beyond Revenue and EPS",
+              "source": "unknown",
+              "url": "https://ca.finance.yahoo.com/news/countdown-corning-glw-q1-earnings-131506604.html",
+              "published_at": "2026-04-23T11:31:43.485873+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "LRCX",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Lam Research (LRCX) Q3 Earnings and Revenues Beat Estimates",
               "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/countdown-corning-glw-q1-earnings-131506604.html",
-              "published_at": "2026-04-23T11:31:15.819378+00:00",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-lrcx-q3-earnings-214507441.html",
+              "published_at": "2026-04-22T11:31:45.666280+00:00",
               "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "ASML",
-          "top_stories": [],
-          "glance": [
-            {
-              "score": 52.3,
-              "tags": [
-                "other"
-              ],
-              "headline": "ASML says firm will not be chip industry's bottleneck | Reuters",
-              "why_ranked": "Event=other(20) Source=reuters(93) Fresh=0.15 Tier1+ Novelty-25"
-            }
-          ]
-        },
-        {
-          "symbol": "LRCX",
+          "symbol": "BMY",
           "top_stories": [
             {
-              "score": 63.2,
+              "score": 77.6,
               "tags": [
-                "sec_filing",
-                "earnings"
+                "guidance"
               ],
-              "headline": "Lam Research Q3 revenue rises to $5.8B | LRCX Quarterly Report (10-Q)",
-              "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/LRCX/10-q-lam-research-corp-quarterly-earnings-report-3c507d28ce9f.html",
-              "published_at": "2026-04-23T20:31:18.206206+00:00",
-              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.29"
+              "headline": "IBM shares drop as company beats but opts to maintain guidance",
+              "source": "cnbc",
+              "url": "https://cnbc.com/2026/04/22/ibm-q1-earnings-report-2026.html",
+              "published_at": "2026-04-22T11:31:47.005819+00:00",
+              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
             },
             {
-              "score": 57.0,
+              "score": 56.2,
               "tags": [
                 "earnings"
               ],
-              "headline": "Lam Research (LRCX) Reports Strong Earnings Amid Optimistic Q4 Outlook",
+              "headline": "IBM Q1 earnings beat offset by softer software momentum, says Bank of America | NYSE:IBM",
               "source": "unknown",
-              "url": "https://www.gurufocus.com/news/8813388/lam-research-lrcx-reports-strong-earnings-amid-optimistic-q4-outlook",
-              "published_at": "2026-04-23T18:31:18.205845+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.24"
+              "url": "https://proactiveinvestors.com/companies/news/1091108/ibm-q1-earnings-beat-offset-by-softer-software-momentum-says-bank-of-america-1091108.html",
+              "published_at": "2026-04-23T15:31:47.006001+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
             }
           ],
           "glance": []
@@ -1750,8 +1695,8 @@
       ],
       "debug": {
         "tickers_processed": 4,
-        "total_candidates": 40,
-        "removed_fresh_only": 0,
+        "total_candidates": 50,
+        "removed_fresh_only": 2,
         "state_written": true,
         "report_date": "2026-04-24"
       }
@@ -1806,7 +1751,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-24T11:31:19.053833+00:00",
+        "generated_at": "2026-04-24T11:31:47.010000+00:00",
         "count": 11
       }
     }
