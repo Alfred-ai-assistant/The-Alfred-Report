@@ -66,7 +66,7 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-25T07:30:10.454822"
+        "updated_at": "2026-04-25T07:30:45.959034"
       }
     },
     "todoist": {
@@ -94,7 +94,7 @@
       ],
       "meta": {
         "source": "Todoist",
-        "updated_at": "2026-04-25T07:30:10.799034",
+        "updated_at": "2026-04-25T07:30:46.204307",
         "task_count": 3,
         "overdue_count": 0,
         "completed_today": 0
@@ -141,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-25T07:30:11.363941",
+        "updated_at": "2026-04-25T07:30:46.891190",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -151,13 +151,13 @@
     },
     "ai_news": {
       "title": "AI in the News",
-      "summary": "The past 24 hours reflect an intensifying competitive landscape across AI model development, with OpenAI and Anthropic releasing multiple new models in rapid succession. OpenAI unveiled GPT-5.5, GPT-5.5 Pro, GPT-5.3-Codex, and GPT-5.4, each targeting different use cases from API access to enterprise professional work. Anthropic countered with Claude Opus 4.6, which emphasizes improved coding capabilities and agentic task execution. Google DeepMind launched Gemma 4, their most capable open-source model, designed specifically for agentic workflows and enterprise applications.\n\nCapital movements underpin this competition: Google plans up to $40 billion in Anthropic investment, while Tesla disclosed a $2 billion AI hardware acquisition, indicating major players are securing both software and infrastructure assets. OpenAI is advancing into specialized domains, developing a cybersecurity product for enterprise partners.\n\nParallel developments reveal industry maturation. Google introduced an AGI measurement framework and launched a Kaggle hackathon to build evaluation standards, signaling attempts to formalize progress metrics. Emerging tooling like Browser Harness enables autonomous agent capabilities. However, customer concerns surface: one user publicly cancelled Claude due to token efficiency and support issues.\n\nRegulatory dimensions also emerged, with South Korean police arresting an individual for posting AI-generated imagery, highlighting early-stage policy responses to synthetic media. Overall, the narrative shows simultaneous advancement in model capabilities, capital concentration, specialized applications, and emerging regulatory scrutiny.",
+      "summary": "The AI landscape continues consolidating around a handful of dominant players. OpenAI and Anthropic released competing models within hours, with OpenAI launching multiple variants (GPT-5.5, GPT-5.3-Codex, GPT-5.4) while Anthropic countered with Claude Opus 4.6. Google DeepMind advanced the open-source ecosystem with Gemma 4, designed for enterprise agentic workflows. Google's announced $40 billion investment in Anthropic signals confidence in the company's long-term viability despite OpenAI's dominance. Infrastructure providers are enabling broader deployment: NVIDIA and Hugging Face announced integration of DGX Cloud with inference optimization, achieving fivefold improvements in token processing efficiency. This partnership extends generative AI access to millions of developers. Beyond model releases, specialized applications are emerging—OpenAI is developing cybersecurity products targeting enterprise needs. Policy concerns surfaced as South Korean authorities arrested an individual for distributing AI-generated misinformation. Quality concerns also emerged when a user reported canceling Claude due to token pricing and perceived performance degradation. Google contributed to AGI measurement standards through a cognitive framework and Kaggle hackathon. Overall, the sector demonstrates accelerating model releases, rising capital commitments, infrastructure democratization, and initial regulatory responses to synthetic media.",
       "items": [
         {
           "title": "OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API",
           "url": "https://developers.openai.com/api/docs/changelog",
           "source": "developers.openai.com",
-          "why_it_matters": "OpenAI's release of GPT-5.5 and GPT-5.5 Pro expands its API offerings with new model variants for developers.",
+          "why_it_matters": "OpenAI expands its API offerings with new model variants, providing developers with additional options for production deployments.",
           "tags": [
             "models",
             "enterprise"
@@ -169,17 +169,16 @@
           "title": "Anthropic and OpenAI Release Dueling AI Models on the Same Day",
           "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2",
           "source": "businessinsider.com",
-          "why_it_matters": "The simultaneous release of competing models by OpenAI and Anthropic signals an intensifying market competition between the two leading AI companies.",
+          "why_it_matters": "OpenAI and Anthropic released competing models on the same day, demonstrating intensifying competition in the frontier AI market.",
           "tags": [
-            "models",
-            "enterprise"
+            "models"
           ]
         },
         {
           "title": "OpenAI launches GPT-5.4, its most powerful model for enterprise work",
           "url": "https://fortune.com/2026/03/05/openai-new-model-gpt5-4-enterprise-agentic-anthropic/",
           "source": "fortune.com",
-          "why_it_matters": "OpenAI's GPT-5.4 targets enterprise customers with enhanced reasoning and autonomous capabilities, positioning it as a professional-grade solution.",
+          "why_it_matters": "OpenAI's GPT-5.4 targets enterprise users with improved reasoning and autonomous capabilities, signaling focus on professional applications.",
           "tags": [
             "models",
             "enterprise"
@@ -189,7 +188,7 @@
           "title": "Google Launches Gemma 4, Its Most Capable Open Model Yet",
           "url": "https://www.techbuzz.ai/articles/google-launches-gemma-4-its-most-capable-open-model-yet",
           "source": "techbuzz.ai",
-          "why_it_matters": "Google DeepMind's Gemma 4 open model represents their most capable open-source offering, designed specifically for agentic workflows.",
+          "why_it_matters": "Google DeepMind's Gemma 4 advances open-source AI capabilities with emphasis on agentic workflows for enterprise deployment.",
           "tags": [
             "models",
             "open-source",
@@ -197,10 +196,21 @@
           ]
         },
         {
+          "title": "Hugging Face Introduces Inference-as-a-Service with NVIDIA NIM for AI Developers",
+          "url": "https://blockchain.news/postamp?id=hugging-face-inference-as-a-service-nvidia-nim",
+          "source": "blockchain.news",
+          "why_it_matters": "The partnership between Hugging Face and NVIDIA enables developers to access inference services at scale, reducing barriers to AI deployment.",
+          "tags": [
+            "hardware",
+            "enterprise",
+            "open-source"
+          ]
+        },
+        {
           "title": "I cancelled Claude: Token issues, declining quality, and poor support",
           "url": "https://nickyreinert.de/en/2026/2026-04-24-claude-critics/",
           "source": "nickyreinert.de",
-          "why_it_matters": "A user's public complaint about Claude's token efficiency and support quality provides insight into customer satisfaction challenges.",
+          "why_it_matters": "A user reports canceling Claude due to token pricing concerns and perceived quality degradation, raising questions about service reliability.",
           "tags": [
             "enterprise"
           ],
@@ -211,7 +221,7 @@
           "title": "Google plans to invest up to $40B in Anthropic",
           "url": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic",
           "source": "bloomberg.com",
-          "why_it_matters": "Google's potential $40 billion investment in Anthropic would represent a significant capital injection for the AI startup.",
+          "why_it_matters": "Google's planned $40 billion investment in Anthropic represents one of the largest capital commitments to an AI company, reshaping competitive dynamics.",
           "tags": [
             "funding"
           ],
@@ -222,7 +232,7 @@
           "title": "South Korea police arrest man for posting AI photo of runaway wolf",
           "url": "https://www.bbc.com/news/articles/c4gx1n0dl9no",
           "source": "bbc.com",
-          "why_it_matters": "South Korean law enforcement action against AI-generated imagery raises questions about regulatory approaches to synthetic media.",
+          "why_it_matters": "South Korean police arrest for AI-generated misinformation highlights emerging legal frameworks addressing synthetic media.",
           "tags": [
             "policy",
             "safety"
@@ -234,7 +244,7 @@
           "title": "Introducing Claude Opus 4.6 - Anthropic",
           "url": "https://www.anthropic.com/news/claude-opus-4-6",
           "source": "anthropic.com",
-          "why_it_matters": "Anthropic's Claude Opus 4.6 improves upon previous versions with better coding skills and agentic task capabilities.",
+          "why_it_matters": "Anthropic's Claude Opus 4.6 improves coding and agentic task execution, advancing capabilities for professional workflows.",
           "tags": [
             "models",
             "enterprise"
@@ -244,7 +254,7 @@
           "title": "Publications - Google DeepMind",
           "url": "https://deepmind.google/research/publications/",
           "source": "deepmind.google",
-          "why_it_matters": "Google DeepMind's publication activity demonstrates ongoing research contributions to complex AI challenges.",
+          "why_it_matters": "Google DeepMind continues publishing foundational research across complex AI challenges, contributing to the broader scientific understanding.",
           "tags": [
             "research"
           ]
@@ -253,17 +263,16 @@
           "title": "Scoop: OpenAI plans new product for cybersecurity use",
           "url": "https://www.axios.com/2026/04/09/openai-new-model-cyber-mythos-anthopic",
           "source": "axios.com",
-          "why_it_matters": "OpenAI's planned cybersecurity product represents expansion into specialized enterprise applications.",
+          "why_it_matters": "OpenAI is developing cybersecurity-focused products, indicating expansion into specialized vertical applications.",
           "tags": [
-            "enterprise",
-            "policy"
+            "enterprise"
           ]
         },
         {
           "title": "OpenAI and Anthropic Unveil New AI Models in Minutes | Tech Pulse",
           "url": "https://thenextgentechinsider.com/pulse/openai-and-anthropic-unveil-new-ai-models-in-minutes",
           "source": "thenextgentechinsider.com",
-          "why_it_matters": "The rapid competitive release cycle between OpenAI and Anthropic indicates accelerating innovation timelines in the industry.",
+          "why_it_matters": "OpenAI and Anthropic's rapid model releases within 20 minutes signal accelerating development cycles in frontier AI competition.",
           "tags": [
             "models"
           ]
@@ -272,49 +281,36 @@
           "title": "Measuring Progress Towards AGI: A Cognitive Framework",
           "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/",
           "source": "blog.google",
-          "why_it_matters": "Google's introduction of an AGI measurement framework and associated hackathon reflects efforts to standardize progress evaluation.",
+          "why_it_matters": "Google introduces a framework for measuring AGI progress and launches an evaluation hackathon, contributing to standardized benchmarking efforts.",
           "tags": [
             "research"
           ]
         },
         {
-          "title": "nvidia - Hugging Face",
-          "url": "https://huggingface.co/nvidia",
-          "source": "huggingface.co",
-          "why_it_matters": "NVIDIA's presence on Hugging Face indicates continued industry participation in open-source AI communities.",
+          "title": "NVIDIA and Hugging Face to Connect Millions of ...",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-hugging-face-to-connect-millions-of-developers-to-generative-ai-supercomputing",
+          "source": "nvidianews.nvidia.com",
+          "why_it_matters": "NVIDIA and Hugging Face integration streamlines access to supercomputing resources for LLM training and deployment at scale.",
           "tags": [
-            "open-source",
-            "hardware"
+            "hardware",
+            "enterprise",
+            "open-source"
           ]
         },
         {
-          "title": "Tesla discloses $2B AI hardware company acquisition in filing",
-          "url": "https://electrek.co/2026/04/23/tesla-tsla-quietly-discloses-2-billion-ai-hardware-acquisition-10q/",
-          "source": "electrek.co",
-          "why_it_matters": "Tesla's $2 billion AI hardware acquisition signals vertical integration of computing infrastructure for AI workloads.",
+          "title": "NVIDIA Collaborates with Hugging Face to Enhance Efficient ...",
+          "url": "https://news.aibase.com/news/10651",
+          "source": "news.aibase.com",
+          "why_it_matters": "NVIDIA's collaboration with Hugging Face achieves significant efficiency gains in token processing for inference services.",
           "tags": [
             "hardware",
-            "funding"
-          ],
-          "published_at": "2026-04-24T16:51:46Z",
-          "hn_score": 75
-        },
-        {
-          "title": "Show HN: Browser Harness – Gives LLM freedom to complete any browser task",
-          "url": "https://github.com/browser-use/browser-harness",
-          "source": "github.com",
-          "why_it_matters": "The Browser Harness project demonstrates emerging tooling for autonomous LLM agents to complete web-based tasks.",
-          "tags": [
-            "models",
-            "open-source"
-          ],
-          "published_at": "2026-04-24T14:31:38Z",
-          "hn_score": 106
+            "enterprise"
+          ]
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-25T11:30:10.288347+00:00",
+        "updated_at": "2026-04-25T11:30:45.823324+00:00",
         "story_count": 15,
         "lanes_used": [
           "hn",
@@ -328,79 +324,14 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-25T11:30:43.462094+00:00",
+        "updated_at": "2026-04-25T11:31:09.482347+00:00",
         "video_count": 0
       }
     },
     "ai_reddit_trending": {
       "title": "AI on Reddit",
-      "summary": "Top AI discussions on Reddit focus on generative models, ChatGPT developments, and machine learning ethics. Communities r/MachineLearning and r/OpenAI dominate conversations. Trending topics include AI regulation concerns, job displacement worries, and breakthrough research announcements. Users debate AI safety, transparency, and real-world applications across healthcare, education, and creative industries. Sentiment mixed between enthusiasm for capabilities and apprehension about societal impacts.",
+      "summary": "Top AI posts on Reddit focus on generative models, ChatGPT updates, and machine learning applications. r/MachineLearning and r/OpenAI lead discussions. Trending topics include prompt engineering techniques, AI ethics concerns, and career guidance in AI fields. Users debate AI regulation, copyright issues in training data, and real-world implementation challenges across technical and non-technical communities.",
       "items": [
-        {
-          "title": "r/openclaw on Reddit: Possible to run openclaw for free?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rh7g1i/possible_to_run_openclaw_for_free/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Looking for the ultimate \"bang for buck\" LLM for OpenClaw. What’s the actual king of the low tier right now?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1rvjfde/looking_for_the_ultimate_bang_for_buck_llm_for/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Gemini"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: [Help] Optimizing OpenClaw for a CPU-only VM (8 Cores/16GB RAM) - Ollama works, but OpenClaw times out.",
-          "url": "https://www.reddit.com/r/openclaw/comments/1spwcuq/help_optimizing_openclaw_for_a_cpuonly_vm_8/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Connecting OpenClaw Agent to Google AI (AI Pro Plan)",
-          "url": "https://www.reddit.com/r/openclaw/comments/1r3jmu1/connecting_openclaw_agent_to_google_ai_ai_pro_plan/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "inference",
-            "agent"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Awesome Free LLM APIs List",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s01ygw/awesome_free_llm_apis_list/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "Llama",
-            "NVIDIA"
-          ]
-        },
         {
           "title": "r/machinelearningnews on Reddit: Meet vLLM: An Open-Source LLM Inference And Serving Library That Accelerates HuggingFace Transformers By 24x",
           "url": "https://www.reddit.com/r/machinelearningnews/comments/14ib7bt/meet_vllm_an_opensource_llm_inference_and_serving/",
@@ -413,30 +344,6 @@
             "model",
             "inference",
             "Llama"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: Bought a $2k Mac Mini to run local LLMs. Pretty sure Claude fills the roll. What am I missing?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1s5rlcg/bought_a_2k_mac_mini_to_run_local_llms_pretty/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "LLM",
-            "model",
-            "agent",
-            "Claude"
-          ]
-        },
-        {
-          "title": "r/openclaw on Reddit: local LLm recomendations?",
-          "url": "https://www.reddit.com/r/openclaw/comments/1sadmrm/local_llm_recomendations/",
-          "subreddit": "openclaw",
-          "source": "reddit",
-          "matched_terms": [
-            "AI",
-            "LLM",
-            "model",
-            "agent"
           ]
         },
         {
@@ -530,6 +437,83 @@
             "agent",
             "OpenAI"
           ]
+        },
+        {
+          "title": "r/artificial on Reddit: Why world models will bring us to AGI, not LLMs",
+          "url": "https://www.reddit.com/r/artificial/comments/1qv4yyr/why_world_models_will_bring_us_to_agi_not_llms/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "inference",
+            "agent",
+            "Claude"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: Max Planck Researchers Introduce PoseGPT: An Artificial Intelligence Framework Employing Large Language Models (LLMs) to Understand and Reason about 3D Human Poses from Images or Textual Descriptions",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/18bxmhe/max_planck_researchers_introduce_posegpt_an/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "model"
+          ]
+        },
+        {
+          "title": "r/machinelearningnews on Reddit: OpenAI Researchers Introduce MLE-bench: A New Benchmark for Measuring How Well AI Agents Perform at Machine Learning Engineering",
+          "url": "https://www.reddit.com/r/machinelearningnews/comments/1g26th2/openai_researchers_introduce_mlebench_a_new/",
+          "subreddit": "MachineLearning",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "machine learning",
+            "agent",
+            "OpenAI"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Why would an LLM have self-preservation \"instincts\"",
+          "url": "https://www.reddit.com/r/artificial/comments/1nwztzr/why_would_an_llm_have_selfpreservation_instincts/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "machine learning",
+            "inference",
+            "training"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: Do You Know How LLM’s Work?",
+          "url": "https://www.reddit.com/r/artificial/comments/1lmitaz/do_you_know_how_llms_work/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "agent"
+          ]
+        },
+        {
+          "title": "r/artificial on Reddit: How does a LLM understand your question?",
+          "url": "https://www.reddit.com/r/artificial/comments/1adnfa8/how_does_a_llm_understand_your_question/",
+          "subreddit": "artificial",
+          "source": "reddit",
+          "matched_terms": [
+            "AI",
+            "LLM",
+            "model",
+            "training",
+            "neural"
+          ]
         }
       ],
       "meta": {
@@ -541,7 +525,7 @@
     },
     "company_reddit_watch": {
       "title": "Company Reddit Watch",
-      "summary": "Major tech companies like OpenAI, Google, and Microsoft dominate Reddit mentions regarding AI initiatives. Amazon and Meta appear in discussions about AI infrastructure and content moderation. Smaller AI startups generate niche community interest. Primary topics include product launches, funding announcements, competitive positioning, and ethical concerns. Users frequently compare company approaches to AI development and regulatory compliance. Sentiment varies by company, with enthusiasm for innovation tempered by privacy and monopoly concerns.",
+      "summary": "OpenAI, Google, and Meta dominate company mentions across Reddit. Primary discussion topics include product releases, API pricing changes, and competitive comparisons. Users analyze technical capabilities, debate company ethics, and share implementation experiences. Sentiment mixed—praise for innovation tempered by concerns about accessibility, data privacy, and market consolidation among major AI firms.",
       "companies": [
         {
           "company_name": "Cerebras Systems",
@@ -572,170 +556,12 @@
             "MachineLearning"
           ],
           "query": "\"Cerebras Systems\" OR \"Cerebras Systems IPO\" OR \"Cerebras Systems S-1\" OR \"CS-3\" OR \"CS-4\" reddit",
-          "items": [
-            {
-              "title": "r/investing on Reddit: Cerebras Systems Files for IPO, targeting mid-May, $23 Billion Valuation, $510 Million in Projected Revenue for 2025 CEO: \"We took [the fast inference business] away from [Nvidia].\"",
-              "url": "https://www.reddit.com/r/investing/comments/1sphtcp/cerebras_systems_files_for_ipo_targeting_midmay/",
-              "subreddit": "investing",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/technology on Reddit: AI chip maker Cerebras Systems raises $1 billion in late-stage funding",
-              "url": "https://www.reddit.com/r/technology/comments/1qvtv5m/ai_chip_maker_cerebras_systems_raises_1_billion/",
-              "subreddit": "technology",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3",
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/EquityZen on Reddit: Cerebras Systems (CESY)",
-              "url": "https://www.reddit.com/r/EquityZen/comments/1qphwa6/cerebras_systems_cesy/",
-              "subreddit": "EquityZen",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/mlscaling on Reddit: \"Cerebras Systems Unveils World’s Fastest AI Chip with Whopping 4 Trillion Transistors\" (w/up to 1.2 petabytes, the CS-3 is designed to train next generation frontier models 10x larger than GPT-4/Gemini.)",
-              "url": "https://www.reddit.com/r/mlscaling/comments/1bggijc/cerebras_systems_unveils_worlds_fastest_ai_chip/",
-              "subreddit": "mlscaling",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3",
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: Cerebras CS-3 wafer-scale million-core AI chip, 25kW WSE-3, 125 PFLOPS inference engine, tsunami HPC",
-              "url": "https://www.reddit.com/r/singularity/comments/1p8w2el/cerebras_cs3_waferscale_millioncore_ai_chip_25kw/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/singularity on Reddit: Cerebras Now The Fastest LLM Inference Processor; Its Not Even Close.",
-              "url": "https://www.reddit.com/r/singularity/comments/1gupper/cerebras_now_the_fastest_llm_inference_processor/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/AMD_Stock on Reddit: AMD invests in Cerebras! This is the right direction.",
-              "url": "https://www.reddit.com/r/AMD_Stock/comments/1qw34dq/amd_invests_in_cerebras_this_is_the_right/",
-              "subreddit": "AMD_Stock",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/singularity on Reddit: Cerebras Demonstrates Trillion Parameter Model Training on a Single CS-3 System",
-              "url": "https://www.reddit.com/r/singularity/comments/1hr9jnr/cerebras_demonstrates_trillion_parameter_model/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/singularity on Reddit: This is bad news for NVIDIA. Cerebras chips used by Mistral AI are specifically designed for inference",
-              "url": "https://www.reddit.com/r/singularity/comments/1in0unp/this_is_bad_news_for_nvidia_cerebras_chips_used/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "medium"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: 10th December 2024: Cerebras Systems + US Energy Sandia National Labs have CLAIMED to demonstrate training of a 1 trillion parameter model on a single CS-3 system (!) This is ~1% the footprint & power of an equivalent GPU cluster.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1hpejko/10th_december_2024_cerebras_systems_us_energy/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "CS-3",
-                "Cerebras Systems"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "partnership",
-              "ipo_private_markets",
-              "earnings_financials"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -767,151 +593,12 @@
             "MachineLearning"
           ],
           "query": "\"Groq\" OR \"Groq\" OR \"GroqCloud\" OR \"Groq Cloud\" reddit",
-          "items": [
-            {
-              "title": "r/LocalLLaMA on Reddit: Exclusive: Nvidia buying AI chip startup Groq's assets for about $20 billion in largest deal on record",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1puyq9r/exclusive_nvidia_buying_ai_chip_startup_groqs/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "GroqCloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Groq is lightning fast!",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1auxm3q/groq_is_lightning_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Groq is probably a scam",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ahdhgx/groq_is_probably_a_scam/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/homeassistant on Reddit: Use Groq Cloud as a conversation agent",
-              "url": "https://www.reddit.com/r/homeassistant/comments/1f1rtzu/use_groq_cloud_as_a_conversation_agent/",
-              "subreddit": "homeassistant",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq Cloud",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: This sums my experience with models on Groq",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1hwwvuz/this_sums_my_experience_with_models_on_groq/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "Let's discuss about Groq, which model you use and why.",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1d6egfk/lets_discuss_about_groq_which_model_you_use_and/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Anyone get groq API access yet? Is it just as fast?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1aviqk0/anyone_get_groq_api_access_yet_is_it_just_as_fast/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: The speed at which Groq chips run llama-3 is unbelievable.",
-              "url": "https://www.reddit.com/r/singularity/comments/1c845st/the_speed_at_which_groq_chips_run_llama3_is/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/LocalLLaMA on Reddit: Is Groq private or it also uses our data to train models?",
-              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ca7p4d/is_groq_private_or_it_also_uses_our_data_to_train/",
-              "subreddit": "LocalLLaMA",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [],
-              "topic_confidence": "high"
-            },
-            {
-              "title": "r/singularity on Reddit: What are your thoughts on Groq and other open source inference providers - esp with falling API prices.",
-              "url": "https://www.reddit.com/r/singularity/comments/1l92wjv/what_are_your_thoughts_on_groq_and_other_open/",
-              "subreddit": "singularity",
-              "source": "reddit",
-              "matched_terms": [
-                "Groq",
-                "Groq"
-              ],
-              "topics": [
-                "ipo_private_markets",
-                "earnings_financials",
-                "partnership"
-              ],
-              "topic_confidence": "high"
-            }
-          ],
+          "items": [],
           "company_summary": null,
           "meta": {
-            "posts_found": 10,
-            "posts_included": 10,
-            "top_topics": [
-              "partnership",
-              "ipo_private_markets",
-              "earnings_financials"
-            ]
+            "posts_found": 0,
+            "posts_included": 0,
+            "top_topics": []
           }
         },
         {
@@ -1110,9 +797,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
+              "earnings_financials",
               "ipo_private_markets",
-              "earnings_financials"
+              "partnership"
             ]
           }
         },
@@ -1312,9 +999,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
+              "Agents",
               "AI Agents",
-              "OpenClaw",
-              "Agents"
+              "OpenClaw"
             ]
           }
         },
@@ -1507,9 +1194,9 @@
             "posts_found": 10,
             "posts_included": 10,
             "top_topics": [
-              "partnership",
+              "earnings_financials",
               "ipo_private_markets",
-              "earnings_financials"
+              "partnership"
             ]
           }
         }
@@ -1517,127 +1204,147 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-25T11:31:02.122395+00:00"
+        "run_at": "2026-04-25T11:31:25.972674+00:00"
       },
       "meta": {
         "companies_tracked": 5,
-        "total_posts": 50
+        "total_posts": 30
       }
     },
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-25T11:31:14.218594+00:00",
+      "generated_at": "2026-04-25T11:31:35.774494+00:00",
       "tickers": [
         {
-          "symbol": "GOOGL",
-          "top_stories": [
-            {
-              "score": 56.2,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Bank of America resets Google stock forecast ahead of earnings - TheStreet",
-              "source": "unknown",
-              "url": "https://www.thestreet.com/investing/stocks/bank-of-america-resets-google-stock-forecast-ahead-of-earnings",
-              "published_at": "2026-04-24T15:31:15.452947+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.19"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "AAPL",
+          "symbol": "NVDA",
           "top_stories": [
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Apple Q2 Earnings Preview: Is AAPL Stock a Buy, Sell, or Hold?",
+              "headline": "Nvidia Reports Earnings Next Month. Here's Why I'm Not Buying the Stock Before the Report. | The Motley Fool",
               "source": "unknown",
-              "url": "https://www.barchart.com/story/news/1452448/apple-q2-earnings-preview-is-aapl-stock-a-buy-sell-or-hold",
-              "published_at": "2026-04-22T11:31:16.637516+00:00",
+              "url": "https://www.fool.com/investing/2026/04/24/nvidia-reports-earnings-next-month-heres-why-im-no/",
+              "published_at": "2026-04-24T11:31:36.553051+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": [
+            {
+              "score": 49.6,
+              "tags": [
+                "other"
+              ],
+              "headline": "Nvidia stock closes at record, pushing market cap past $5 trillion",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.29"
+            }
+          ]
+        },
+        {
+          "symbol": "AMZN",
+          "top_stories": [
+            {
+              "score": 56.7,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "Amazon Reports Earnings on Wednesday—Here's How Much the Stock Is Expected to Move",
+              "source": "unknown",
+              "url": "https://www.investopedia.com/amazon-stock-expected-to-move-after-earnings-q1-2026-11955138",
+              "published_at": "2026-04-24T17:31:37.706274+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.22"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "LLY",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "LLY Stock Slides Toward Sixth Weekly Loss, But 200-DMA Holds Firm: Is It Setting Up For Earnings Run?",
+              "source": "unknown",
+              "url": "https://stocktwits.com/news-articles/markets/equity/eli-lilly-lly-stock-200-dma-support-q1-earnings-rebound/cZBh5EURec5",
+              "published_at": "2026-04-24T11:31:38.860953+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "MRK",
+          "symbol": "AVGO",
           "top_stories": [
             {
-              "score": 66.0,
+              "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Q4 Earnings Roundup: Merck (NYSE:MRK) And The Rest Of The Branded Pharmaceuticals Segment",
+              "headline": "Broadcom Stock (AVGO) Opinions on Q1 Earnings and AI Partnerships | AVGO Stock News",
               "source": "unknown",
-              "url": "https://uk.finance.yahoo.com/news/q4-earnings-roundup-merck-nyse-092523152.html",
-              "published_at": "2026-04-25T09:31:17.926941+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.85"
-            },
-            {
-              "score": 57.6,
-              "tags": [
-                "m_and_a_confirmed"
-              ],
-              "headline": "Merck (MRK) Secures Approval for $6.7B Acquisition of Terns Pharmaceuticals (TERN)",
-              "source": "unknown",
-              "url": "https://www.gurufocus.com/news/8816049/merck-mrk-secures-approval-for-67b-acquisition-of-terns-pharmaceuticals-tern",
-              "published_at": "2026-04-24T11:31:17.927066+00:00",
-              "why_ranked": "Event=m_and_a_confirmed(90) Source=unknown(43) Fresh=0.15"
+              "url": "https://www.quiverquant.com/news/Broadcom+Stock+(AVGO)+Opinions+on+Q1+Earnings+and+AI+Partnerships",
+              "published_at": "2026-04-22T11:31:41.296677+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
         },
         {
-          "symbol": "NTSK",
+          "symbol": "NET",
+          "top_stories": [
+            {
+              "score": 72.3,
+              "tags": [
+                "guidance"
+              ],
+              "headline": "Netcompany raises full-year margin guidance for 2026",
+              "source": "unknown",
+              "url": "https://www.globenewswire.com/news-release/2026/03/26/3263313/0/en/Netcompany-raises-full-year-margin-guidance-for-2026.html",
+              "published_at": "2026-04-25T11:31:42.094377+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=1.00"
+            },
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "NETSTREIT Corp. Q1 2026 Earnings Call Summary",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/netstreit-corp-q1-2026-earnings-123000929.html",
+              "published_at": "2026-04-21T11:31:42.094117+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "RXRX",
           "top_stories": [
             {
               "score": 57.6,
               "tags": [
                 "sec_filing"
               ],
-              "headline": "Netskope 2026 annual report shows rapid growth, losses | NTSK Annual Report (10-K)",
+              "headline": "Christopher Gibson reports four Class A share sales | RXRX SEC Filing - Form 144",
               "source": "unknown",
-              "url": "https://www.stocktitan.net/sec-filings/NTSK/10-k-netskope-inc-files-annual-report-8c039db78f95.html",
-              "published_at": "2026-03-28T11:31:18.767042+00:00",
+              "url": "https://www.stocktitan.net/sec-filings/RXRX/144-recursion-pharmaceuticals-inc-sec-filing-2a7511009172.html",
+              "published_at": "2026-04-22T11:31:43.286981+00:00",
               "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "CMG",
-          "top_stories": [
+            },
             {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "What Analyst Projections for Key Metrics Reveal About Chipotle (CMG) Q1 Earnings",
+              "headline": "Recursion Pharmaceuticals Stock (RXRX) Opinions on Upcoming Earnings and AI Developments | RXRX Stock News",
               "source": "unknown",
-              "url": "https://ca.finance.yahoo.com/news/analyst-projections-key-metrics-reveal-131507560.html",
-              "published_at": "2026-04-24T11:31:20.858483+00:00",
+              "url": "https://www.quiverquant.com/news/Recursion+Pharmaceuticals+Stock+%28RXRX%29+Opinions+on+Upcoming+Earnings+and+AI+Developments",
+              "published_at": "2026-04-11T11:31:43.287936+00:00",
               "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
-            }
-          ],
-          "glance": []
-        },
-        {
-          "symbol": "XIACY",
-          "top_stories": [
-            {
-              "score": 66.4,
-              "tags": [
-                "earnings"
-              ],
-              "headline": "Tesla earnings preview: Spotlight on robotaxi progress, AI5 chips, and capex spending | Seeking Alpha",
-              "source": "seekingalpha",
-              "url": "https://seekingalpha.com/news/4576684-tesla-earnings-preview-spotlight-on-robotaxi-progress-ai5-chips-and-capex-spending",
-              "published_at": "2026-04-21T11:31:22.088513+00:00",
-              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1645,7 +1352,7 @@
       ],
       "debug": {
         "tickers_processed": 6,
-        "total_candidates": 60,
+        "total_candidates": 70,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-25"
@@ -1654,21 +1361,72 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-25T11:31:22.091607+00:00",
+      "generated_at": "2026-04-25T11:31:43.717848+00:00",
       "tickers": [
         {
-          "symbol": "GLW",
+          "symbol": "TSM",
           "top_stories": [
             {
-              "score": 56.2,
+              "score": 66.4,
               "tags": [
                 "earnings"
               ],
-              "headline": "GLW Stock Before Q1 Earnings: Is it a Smart Buy or Risky Move?",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/glw-stock-q1-earnings-smart-154700148.html",
-              "published_at": "2026-04-24T15:31:24.089731+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.19"
+              "headline": "TSMC Q1 Earnings Call: What It Means For SMH | Seeking Alpha",
+              "source": "seekingalpha",
+              "url": "https://seekingalpha.com/article/4893921-tsmc-q1-earnings-call-what-means-smh",
+              "published_at": "2026-04-24T11:31:45.436235+00:00",
+              "why_ranked": "Event=earnings(85) Source=seekingalpha(67) Fresh=0.15"
+            }
+          ],
+          "glance": [
+            {
+              "score": 52.3,
+              "tags": [
+                "other"
+              ],
+              "headline": "TSMC Shares Surge as Taiwan Lifts Single-Stock Limit for Funds - Bloomberg",
+              "why_ranked": "Event=other(20) Source=bloomberg(93) Fresh=0.15 Tier1+ Novelty-25"
+            },
+            {
+              "score": 47.6,
+              "tags": [
+                "other"
+              ],
+              "headline": "TSMC shares jump to record high as Taiwan eases single-stock investment caps for funds",
+              "why_ranked": "Event=other(20) Source=cnbc(83) Fresh=0.15"
+            }
+          ]
+        },
+        {
+          "symbol": "AMAT",
+          "top_stories": [
+            {
+              "score": 55.6,
+              "tags": [
+                "earnings"
+              ],
+              "headline": "What to Expect From Applied Materials' Q2 2026 Earnings Report",
+              "source": "unknown",
+              "url": "https://www.barchart.com/story/news/1496043/what-to-expect-from-applied-materials-q2-2026-earnings-report",
+              "published_at": "2026-04-24T11:31:46.666103+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+            }
+          ],
+          "glance": []
+        },
+        {
+          "symbol": "ASML",
+          "top_stories": [
+            {
+              "score": 69.0,
+              "tags": [
+                "guidance"
+              ],
+              "headline": "ASML Ups Guidance As AI Partnership And €12b Buyback Shape Cash Returns - Simply Wall St News",
+              "source": "unknown",
+              "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-asml/asml-holding/news/asml-ups-guidance-as-ai-partnership-and-12b-buyback-shape-ca",
+              "published_at": "2026-04-25T08:31:47.476776+00:00",
+              "why_ranked": "Event=guidance(95) Source=unknown(43) Fresh=0.78"
             }
           ],
           "glance": []
@@ -1677,15 +1435,27 @@
           "symbol": "LRCX",
           "top_stories": [
             {
+              "score": 61.2,
+              "tags": [
+                "sec_filing",
+                "earnings"
+              ],
+              "headline": "Lam Research Q3 revenue rises to $5.8B | LRCX Quarterly Report (10-Q)",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/sec-filings/LRCX/10-q-lam-research-corp-quarterly-earnings-report-3c507d28ce9f.html",
+              "published_at": "2026-04-23T11:31:48.676364+00:00",
+              "why_ranked": "Event=sec_filing(90) Source=unknown(43) Fresh=0.15"
+            },
+            {
               "score": 55.6,
               "tags": [
                 "earnings"
               ],
-              "headline": "Lam Research (LRCX) Q3 Earnings and Revenues Beat Estimates",
-              "source": "yahoo",
-              "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-lrcx-q3-earnings-214507441.html",
-              "published_at": "2026-04-22T11:31:26.165870+00:00",
-              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.15"
+              "headline": "Lam Research posts record $5.84B revenue, EPS $1.45 | LRCX Stock News",
+              "source": "unknown",
+              "url": "https://www.stocktitan.net/news/LRCX/lam-research-corporation-reports-financial-results-for-the-quarter-fp885j85c9zq.html",
+              "published_at": "2026-04-22T11:31:48.676056+00:00",
+              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
             }
           ],
           "glance": []
@@ -1694,34 +1464,23 @@
           "symbol": "BMY",
           "top_stories": [
             {
-              "score": 77.6,
-              "tags": [
-                "guidance"
-              ],
-              "headline": "IBM shares drop as company beats but opts to maintain guidance",
-              "source": "cnbc",
-              "url": "https://cnbc.com/2026/04/22/ibm-q1-earnings-report-2026.html",
-              "published_at": "2026-04-22T11:31:27.465039+00:00",
-              "why_ranked": "Event=guidance(95) Source=cnbc(83) Fresh=0.15"
-            },
-            {
-              "score": 55.6,
+              "score": 57.0,
               "tags": [
                 "earnings"
               ],
-              "headline": "IBM Q1 earnings beat offset by softer software momentum, says Bank of America | NYSE:IBM",
-              "source": "unknown",
-              "url": "https://proactiveinvestors.com/companies/news/1091108/ibm-q1-earnings-beat-offset-by-softer-software-momentum-says-bank-of-america-1091108.html",
-              "published_at": "2026-04-23T11:31:27.465218+00:00",
-              "why_ranked": "Event=earnings(85) Source=unknown(43) Fresh=0.15"
+              "headline": "Should You Buy, Hold, or Sell BMY Stock Ahead of Q1 Earnings?",
+              "source": "yahoo",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/buy-hold-sell-bmy-stock-182400864.html",
+              "published_at": "2026-04-24T18:31:49.949170+00:00",
+              "why_ranked": "Event=earnings(85) Source=yahoo(43) Fresh=0.24"
             }
           ],
           "glance": []
         }
       ],
       "debug": {
-        "tickers_processed": 3,
-        "total_candidates": 40,
+        "tickers_processed": 5,
+        "total_candidates": 60,
         "removed_fresh_only": 0,
         "state_written": true,
         "report_date": "2026-04-25"
@@ -1777,7 +1536,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-25T11:31:27.468713+00:00",
+        "generated_at": "2026-04-25T11:31:49.952061+00:00",
         "count": 11
       }
     }
