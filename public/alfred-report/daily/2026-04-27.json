@@ -66,16 +66,38 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-27T07:00:03.748611"
+        "updated_at": "2026-04-27T07:30:11.677837"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 503: \n",
-      "items": [],
+      "summary": "3 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g5JfcVfvCQ7cx2h",
+          "content": "Move money for mothers rent",
+          "due": "every 1st",
+          "overdue": false
+        },
+        {
+          "id": "6gPq2xwgrgPpw4qh",
+          "content": "Activate Parentvue",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6gQ6C4M7XxXwQ2jh",
+          "content": "Call orthodontist about retainer",
+          "due": "No due date",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 503: \n"
+        "updated_at": "2026-04-27T07:30:12.167142",
+        "task_count": 3,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
@@ -119,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-27T07:00:05.694685",
+        "updated_at": "2026-04-27T07:30:12.877577",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -171,7 +193,7 @@
             "safety"
           ],
           "published_at": "2026-04-26T16:27:29Z",
-          "hn_score": 712
+          "hn_score": 724
         },
         {
           "title": "AI should elevate your thinking, not replace it",
@@ -182,7 +204,7 @@
             "safety"
           ],
           "published_at": "2026-04-26T20:03:12Z",
-          "hn_score": 527
+          "hn_score": 540
         },
         {
           "title": "Introducing Claude Opus 4.6 - Anthropic",
@@ -282,17 +304,17 @@
             "research"
           ],
           "published_at": "2026-04-26T20:58:31Z",
-          "hn_score": 88
+          "hn_score": 89
         }
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-27T11:00:02.992649+00:00",
+        "updated_at": "2026-04-27T11:30:11.492615+00:00",
         "story_count": 15,
         "lanes_used": [
-          "tier1",
           "hn",
-          "primary"
+          "primary",
+          "tier1"
         ]
       }
     },
@@ -302,7 +324,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-27T11:00:39.419590+00:00",
+        "updated_at": "2026-04-27T11:30:33.445334+00:00",
         "video_count": 0
       }
     },
@@ -496,7 +518,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-27T11:00:55.410114+00:00"
+        "run_at": "2026-04-27T11:30:49.380362+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -506,7 +528,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-27T11:01:04.846908+00:00",
+      "generated_at": "2026-04-27T11:30:55.984510+00:00",
       "tickers": [],
       "debug": {
         "tickers_processed": 0,
@@ -519,7 +541,7 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-27T11:01:15.449975+00:00",
+      "generated_at": "2026-04-27T11:31:01.553325+00:00",
       "tickers": [],
       "debug": {
         "tickers_processed": 0,
@@ -579,7 +601,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-27T11:01:19.438349+00:00",
+        "generated_at": "2026-04-27T11:31:10.537494+00:00",
         "count": 11
       }
     }
