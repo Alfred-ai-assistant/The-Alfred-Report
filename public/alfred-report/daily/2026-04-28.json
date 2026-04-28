@@ -66,16 +66,38 @@
       "meta": {
         "location": "Arlington, VA (22207)",
         "source": "National Weather Service (weather.gov)",
-        "updated_at": "2026-04-28T07:00:03.743319"
+        "updated_at": "2026-04-28T07:30:18.636091"
       }
     },
     "todoist": {
       "title": "To Do List",
-      "summary": "Error fetching tasks: HTTP 503: \n",
-      "items": [],
+      "summary": "3 outstanding • 0 completed today",
+      "items": [
+        {
+          "id": "6g5JfcVfvCQ7cx2h",
+          "content": "Move money for mothers rent",
+          "due": "every 1st",
+          "overdue": false
+        },
+        {
+          "id": "6gPq2xwgrgPpw4qh",
+          "content": "Activate Parentvue",
+          "due": "No due date",
+          "overdue": false
+        },
+        {
+          "id": "6gQ6C4M7XxXwQ2jh",
+          "content": "Call orthodontist about retainer",
+          "due": "No due date",
+          "overdue": false
+        }
+      ],
       "meta": {
         "source": "Todoist",
-        "error": "HTTP 503: \n"
+        "updated_at": "2026-04-28T07:30:19.312602",
+        "task_count": 3,
+        "overdue_count": 0,
+        "completed_today": 0
       }
     },
     "kanban": {
@@ -119,7 +141,7 @@
       ],
       "meta": {
         "source": "GitHub Projects v2 (iMac OpenClaw Tech Kanban)",
-        "updated_at": "2026-04-28T07:00:05.626863",
+        "updated_at": "2026-04-28T07:30:20.109002",
         "total_cards": 57,
         "in_progress": 0,
         "ready": 1,
@@ -181,7 +203,7 @@
             "funding"
           ],
           "published_at": "2026-04-27T11:43:59Z",
-          "hn_score": 371
+          "hn_score": 374
         },
         {
           "title": "Super ZSNES – GPU Powered SNES Emulator",
@@ -190,7 +212,7 @@
           "why_it_matters": "This appears to be unrelated to AI news.",
           "tags": [],
           "published_at": "2026-04-27T17:50:10Z",
-          "hn_score": 296
+          "hn_score": 300
         },
         {
           "title": "Microsoft and OpenAI end their exclusive and revenue-sharing deal",
@@ -202,7 +224,7 @@
             "funding"
           ],
           "published_at": "2026-04-27T13:22:42Z",
-          "hn_score": 889
+          "hn_score": 895
         },
         {
           "title": "4TB of voice samples just stolen from 40k AI contractors at Mercor",
@@ -214,7 +236,7 @@
             "policy"
           ],
           "published_at": "2026-04-27T09:57:10Z",
-          "hn_score": 540
+          "hn_score": 545
         },
         {
           "title": "Show HN: OSS Agent I built topped the TerminalBench on Gemini-3-flash-preview",
@@ -226,7 +248,7 @@
             "research"
           ],
           "published_at": "2026-04-27T12:35:55Z",
-          "hn_score": 343
+          "hn_score": 347
         },
         {
           "title": "Mistral built a $14B AI empire by not being American",
@@ -238,7 +260,7 @@
             "enterprise"
           ],
           "published_at": "2026-04-27T10:14:15Z",
-          "hn_score": 216
+          "hn_score": 217
         },
         {
           "title": "Introducing Claude Opus 4.6 - Anthropic",
@@ -294,11 +316,11 @@
       ],
       "meta": {
         "source": "HackerNews, Brave Search, arXiv",
-        "updated_at": "2026-04-28T11:00:02.962875+00:00",
+        "updated_at": "2026-04-28T11:30:18.488976+00:00",
         "story_count": 15,
         "lanes_used": [
-          "hn",
-          "primary"
+          "primary",
+          "hn"
         ]
       }
     },
@@ -308,7 +330,7 @@
       "items": [],
       "meta": {
         "source": "AI Daily Digest Playlist",
-        "updated_at": "2026-04-28T11:00:36.917192+00:00",
+        "updated_at": "2026-04-28T11:30:41.897626+00:00",
         "video_count": 0
       }
     },
@@ -502,7 +524,7 @@
       "generated_from": {
         "source": "brave_search",
         "timeframe_hours": 24,
-        "run_at": "2026-04-28T11:00:52.772493+00:00"
+        "run_at": "2026-04-28T11:30:57.717460+00:00"
       },
       "meta": {
         "companies_tracked": 5,
@@ -512,7 +534,7 @@
     "portfolio_news": {
       "section": "portfolio_news",
       "title": "Stock Portfolio News",
-      "generated_at": "2026-04-28T11:01:01.365651+00:00",
+      "generated_at": "2026-04-28T11:31:04.228832+00:00",
       "tickers": [],
       "debug": {
         "tickers_processed": 0,
@@ -525,7 +547,7 @@
     "watchlist_news": {
       "section": "watchlist_news",
       "title": "Stock Watchlist News",
-      "generated_at": "2026-04-28T11:01:06.754759+00:00",
+      "generated_at": "2026-04-28T11:31:09.909623+00:00",
       "tickers": [],
       "debug": {
         "tickers_processed": 0,
@@ -585,7 +607,7 @@
         }
       ],
       "meta": {
-        "generated_at": "2026-04-28T11:01:10.544325+00:00",
+        "generated_at": "2026-04-28T11:31:14.028505+00:00",
         "count": 11
       }
     }
