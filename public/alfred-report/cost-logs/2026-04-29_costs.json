@@ -2,20 +2,20 @@
   "date": "2026-04-29",
   "total_calls": 1,
   "cache_hits": 0,
-  "total_input_tokens": 1019,
-  "total_output_tokens": 1134,
-  "estimated_cost_usd": 0.0054,
+  "total_input_tokens": 1035,
+  "total_output_tokens": 1057,
+  "estimated_cost_usd": 0.0051,
   "calls": [
     {
-      "timestamp": "2026-04-29T11:30:47.460103+00:00",
+      "timestamp": "2026-04-29T11:30:51.593916+00:00",
       "section": "ai_news",
       "model": "claude-haiku-4-5",
-      "input_tokens": 1019,
-      "output_tokens": 1134,
+      "input_tokens": 1035,
+      "output_tokens": 1057,
       "cache_hit": false,
-      "input_cost": 0.0008152000000000001,
-      "output_cost": 0.004536,
-      "total_cost": 0.0053512
+      "input_cost": 0.0008280000000000001,
+      "output_cost": 0.004228,
+      "total_cost": 0.005056
     }
   ]
 }
